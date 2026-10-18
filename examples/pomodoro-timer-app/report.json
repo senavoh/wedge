@@ -1,0 +1,56 @@
+{
+  "title": "Paid Pomodoro focus timer for students",
+  "subtitle": "Idea check: a $4.99/month iOS focus timer with nicer design, streaks and study stats.",
+  "mode": "idea",
+  "depth": "quick",
+  "date": "2026-10-18",
+  "founder": {"budget": "under $500", "skills": "solo iOS developer (SwiftUI)", "hours": "10/week", "risk": "side income first", "channel": "online"},
+  "verdict": {"call": "PIVOT", "score": 54, "summary": "The pain is real: students are angry right now at focus apps that added subscriptions, ads and clutter, Forest above all. But the pitch sells features (streaks, stats, design) that Forest, Flora, FocusPomo and FLIP already give away, and a $4.99/month subscription is the exact thing reviewers are rejecting. Pivot the price and the angle: a one-tap, ad-free timer sold once, aimed at people leaving Forest."},
+  "opportunities": [
+    {"name": "$4.99/mo student focus timer", "one_liner": "Pomodoro timer with nicer design, streaks and study stats, sold as a subscription.",
+     "score": 54,
+     "scores": {"pain": 6, "willingness_to_pay": 4, "competition_gap": 3, "founder_fit": 8, "reachability": 5, "build_cost": 9},
+     "why": "Pain 6: many different reviewers across six apps, some cancelling or leaving (e5, e12, e18), but every quote comes from one source type (App Store). Willingness to pay 4: people do pay small one-time sums (e13, e19, e20) but push back on subscriptions (e2, e7). Competition gap 3: streaks and stats are already free in strong, well-rated apps (e23, e25, e26, e27). Founder fit 8 and build cost 9: a SwiftUI developer can ship this in weeks for under $500. Reachability 5: App Store search is crowded and student communities could not be verified in this run.",
+     "evidence": ["e1", "e2", "e7", "e13", "e19", "e23", "e25", "e26", "e27"]}
+  ],
+  "gap": {"statement": "Students who want a simple, good-looking focus timer can't get one that stays out of the way, because the big apps now push subscriptions, ads or clutter on top of the timer.", "evidence": ["e1", "e2", "e9", "e10", "e14", "e15", "e17"]},
+  "pains": [
+    {"theme": "Subscriptions and paywalls on features people already had", "severity": "high", "summary": "Forest's move to a subscription made paying users feel robbed; other apps paywalled features that used to be free.", "by_competitor": {"Forest": 4, "Focus Friend": 1, "Focus Tree": 1, "Deep": 1}, "evidence": ["e1", "e2", "e3", "e4", "e5", "e6", "e7"]},
+    {"theme": "Ads in a study app, even after paying", "severity": "high", "summary": "Ads break focus sessions, and some show up after a lifetime purchase.", "by_competitor": {"Pomodoro - Focus Timer": 3, "Study Bunny": 2, "Focus Plant": 1}, "evidence": ["e8", "e9", "e10", "e11", "e12", "e13"]},
+    {"theme": "Bloat: too many taps to start a session", "severity": "high", "summary": "Users want the old one-tap start back and are looking for alternatives.", "by_competitor": {"Forest": 4, "Focus Plant": 1}, "evidence": ["e14", "e15", "e16", "e17", "e18"]}
+  ],
+  "competitors": [
+    {"name": "Forest", "url": "https://www.forestapp.cc/", "pricing": "Free core; Plus subscription, price varies by region; one-time Pro closed to new users", "positioning": "Forest Pro is no longer available to new users.", "strengths": ["49.5k App Store ratings at 4.8", "Streaks and stats in the free core"], "weaknesses": ["Subscription and UI backlash in Sep-Oct 2026 reviews"], "evidence": ["e22", "e23", "e24", "e30", "e1", "e14"]},
+    {"name": "Flora", "url": "https://apps.apple.com/us/app/flora-green-focus/id1225155794", "pricing": "Free; in-app tours $0.99 to $1.99", "positioning": "Free with daily, weekly and monthly statistics.", "strengths": ["82.9k App Store ratings"], "weaknesses": ["unknown: review feed empty during this run"], "evidence": ["e26"]},
+    {"name": "FocusPomo", "url": "https://apps.apple.com/us/app/focuspomo-pomodoro-timer/id1528322796", "pricing": "Free with premium (price not on fetched page)", "positioning": "Powerful focus statistics.", "strengths": ["Frequent updates to statistics"], "weaknesses": ["unknown: review feed empty during this run"], "evidence": ["e25"]},
+    {"name": "Study Bunny", "url": "https://apps.apple.com/us/app/study-bunny-focus-timer/id1478345385", "pricing": "Free with ads; ad-free month or lifetime purchase", "positioning": "Student study timer with streaks and a pet.", "strengths": ["Streaks motivate students"], "weaknesses": ["Heavy ads"], "evidence": ["e21", "e10", "e11", "e19"]},
+    {"name": "Deep / Pomino / FLIP", "url": "https://apps.apple.com/us/app/deep-focus-pomodoro-timer/id1542156522", "pricing": "Deep: $19.99 per 3 months or lifetime; Pomino: one-time Pro", "positioning": "Small indie timers with stats behind Pro.", "strengths": ["Stats and study reports"], "weaknesses": ["Subscription price pushback"], "evidence": ["e28", "e29", "e27", "e7"]}
+  ],
+  "features": {"columns": ["Streaks", "Study stats", "No ads", "One-time purchase", "One-tap start"],
+    "rows": [
+      {"name": "Forest", "values": ["yes", "yes", "unknown", "no", "partial"]},
+      {"name": "Flora", "values": ["unknown", "yes", "unknown", "unknown", "unknown"]},
+      {"name": "FocusPomo", "values": ["unknown", "yes", "unknown", "unknown", "unknown"]},
+      {"name": "Study Bunny", "values": ["yes", "unknown", "no", "yes", "unknown"]},
+      {"name": "Deep", "values": ["unknown", "unknown", "unknown", "partial", "unknown"]}
+    ]},
+  "critic": [
+    {"risk": "Free incumbents already ship streaks, stats and good design, so the pitch's features are not a reason to pay.", "severity": "high"},
+    {"risk": "Reviewers in this category reject subscriptions; $4.99/month runs into that.", "severity": "high", "rebuttal": "Only the pivot answers it: sell a one-time unlock, which reviewers say they accept (e2, e13, e19)."},
+    {"risk": "App Store discovery is crowded: leaders have 8k to 83k ratings.", "severity": "high"},
+    {"risk": "Forest could add a classic one-tap mode and win back unhappy users.", "severity": "medium"},
+    {"risk": "Tried and died: no postmortems found. Session reportedly earns about $5k/month (Indie Hackers, page blocked, unverified), so indie timers can work.", "severity": "low"}
+  ],
+  "win_plan": {
+    "positioning": "A focus timer that starts in one tap. No ads, no subscription.",
+    "switching_triggers": [{"trigger": "Forest's subscription and UI update (Sep-Oct 2026)", "move": "Be the answer when people ask for a Forest alternative; show one-tap start and pay-once pricing up front.", "evidence": ["e5", "e18"]}],
+    "offers": ["One-time unlock, no subscription", "No ads ever, free tier included", "Promise that no feature moves behind a paywall later"],
+    "build_first": [{"feature": "One-tap start and repeat, including from the lock screen", "why": "Answers pain: bloat."}, {"feature": "Ad-free free tier", "why": "Answers pain: ads."}, {"feature": "Local streaks and stats", "why": "Table stakes, not a differentiator."}],
+    "where_to_find": [{"place": "Forest App Store reviews", "url": "https://apps.apple.com/us/app/forest-focus-for-productivity/id866450515", "why": "Fresh subscription and UI complaints"}, {"place": "Study Bunny App Store reviews", "url": "https://apps.apple.com/us/app/study-bunny-focus-timer/id1478345385", "why": "Students complaining about ads"}],
+    "trust": ["Price shown on the App Store page", "Written no-paywall-later promise"],
+    "stop_doing": ["Ads in a study app", "Paywalling features users already had", "Several screens before a session starts"]
+  },
+  "pricing": {"recommendation": "Free, ad-free tier plus a one-time unlock around $4.99 to $9.99", "competitor_range": "Free to $19.99 per 3 months; users mention paying $10 lifetime", "rationale": "Reviewers pay small one-time sums and reject subscriptions (e2, e13, e19). A monthly price runs into the category's loudest complaint."},
+  "validation": {"experiment": "TestFlight beta of a one-tap, ad-free timer, offered to people looking for a Forest alternative.", "pass_bar": "100 beta signups and 20 people who say they would pay once", "days": 7, "steps": ["Day 1-3: build one-tap timer with local streaks in SwiftUI", "Day 4: TestFlight link and a one-page site", "Day 5-7: share it where students ask for Forest alternatives, following each community's rules"]},
+  "kill_criteria": ["Under 30 beta signups after 7 days", "Testers say they would only use it free"]
+}

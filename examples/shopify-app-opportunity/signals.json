@@ -1,0 +1,511 @@
+{
+  "records": 92,
+  "sources": {
+    "apps.shopify.com": 57,
+    "community.shopify.com": 35
+  },
+  "categories": {
+    "wish": {
+      "count": 10,
+      "distinct_sources": 7,
+      "top": [
+        {
+          "quote": "MiGRATING users - I wish you good luck.",
+          "url": "https://apps.shopify.com/bold-subscriptions/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=3",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "If you read their contract and it feels one-sided, take that seriously, I wish I had.",
+          "url": "https://apps.shopify.com/inventory-planner/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Is there any way that we can send tickets to Shopify support, so that these errors can actually be worked on and fixed, instead of just blaming the user every time barcodes disappear, are overwritten, don't work, print out $0.00 etc.?",
+          "url": "https://apps.shopify.com/retail-barcode-labels/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=6",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Is there a way this can be done?",
+          "url": "https://apps.shopify.com/retail-barcode-labels/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=6",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Natasha, Shopify Support Show more April 7, 2025 Is there any way to hide the barcode number?",
+          "url": "https://apps.shopify.com/retail-barcode-labels/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=6",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "switching": {
+      "count": 38,
+      "distinct_sources": 22,
+      "top": [
+        {
+          "quote": "I switched from Quickbooks and have been trying to get a printer to work for 2 weeks.",
+          "url": "https://apps.shopify.com/retail-barcode-labels/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=9",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "I've had to switch to a paid app for my labels, which works great, but I'm really unhappy about having to pay for what should be a pretty basic POS feature.",
+          "url": "https://apps.shopify.com/stocky/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Natasha, Shopify Support Show more June 10, 2025 This is so frustrating, this app works well for us even with its flaws to enhance Shopifys POS limitations, but now functionality on Transfers is being moved from it and moved to Shopify Admin.",
+          "url": "https://apps.shopify.com/stocky/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "They only work with DYMO Connect for Mac, which is not compatible with Stocky as the web service was removed from the software.",
+          "url": "https://apps.shopify.com/stocky/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=5",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Show more January 21, 2022 We switched to Stocky so that we wouldn't have to use different inventory systems for our website and brick and mortar.",
+          "url": "https://apps.shopify.com/stocky/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=6",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "price": {
+      "count": 44,
+      "distinct_sources": 13,
+      "top": [
+        {
+          "quote": "Like everything related to Shopify POS, it is overpriced, and underperforms.",
+          "url": "https://apps.shopify.com/stocky/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=3",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "One of the main selling points for us almost a decade ago was that we could use the BOLD Subscriptions app with Custom Pricing and Upsells, but according to the BOLD Help Center the apps are no longer compatible.",
+          "url": "https://apps.shopify.com/bold-subscriptions/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=2",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "We are currently looking at upgrading to Shopify Plus to manage our custom pricing and switching to the Shopify subscription app.",
+          "url": "https://apps.shopify.com/bold-subscriptions/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=2",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "We genuinely appreciate your past business with us, and it’s never our intention to make anyone feel shut out.​ As Inventory Planner continues to grow, we’ve had to make some difficult decisions around our pricing model.",
+          "url": "https://apps.shopify.com/inventory-planner/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "We understand your concerns regarding pricing and contract renewals.",
+          "url": "https://apps.shopify.com/inventory-planner/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "support": {
+      "count": 11,
+      "distinct_sources": 11,
+      "top": [
+        {
+          "quote": "Skye, Shopify Support Show more October 26, 2023 The app and Shopify have horrible support and does not work.",
+          "url": "https://apps.shopify.com/retail-barcode-labels/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=9",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "And there has been NO response from Shopify since Wednesday, May 31.",
+          "url": "https://apps.shopify.com/retail-barcode-labels/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=10",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Terrible app, terrible support, they have made a mess of my store and cost me so much $.",
+          "url": "https://apps.shopify.com/bold-subscriptions/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=4",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "(other folder too) our team has reached out multiple times regarding this barcode printer for more details, but no response from your side.",
+          "url": "https://apps.shopify.com/retail-barcode-labels-generator/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "AWFUL CUSTOMER SERVICE AS WELL.",
+          "url": "https://apps.shopify.com/sumtracker-fulfil-ship-track/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "bugs": {
+      "count": 45,
+      "distinct_sources": 25,
+      "top": [
+        {
+          "quote": "Natasha, Shopify Support Show more October 31, 2024 Very glitchy.",
+          "url": "https://apps.shopify.com/retail-barcode-labels/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=7",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Support tells me to look at the \"Retail Barcode Label\", but this link is broken.",
+          "url": "https://apps.shopify.com/retail-barcode-labels/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=9",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Show more May 27, 2023 This app is glitchy.",
+          "url": "https://apps.shopify.com/retail-barcode-labels/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=10",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Then you install it, wonder why it doesnt work - and realise its pushing you to upgrade to Shopify POS Pro at $89 per month.",
+          "url": "https://apps.shopify.com/stocky/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "I’ve tried multiple times to integrate Stocky into my business, but it’s missing some really basic processes that make everyday use painfully slow and inefficient.",
+          "url": "https://apps.shopify.com/stocky/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "missing": {
+      "count": 50,
+      "distinct_sources": 28,
+      "top": [
+        {
+          "quote": "There is no way to print barcodes from Purchase orders, making large PO's almost impossible to manage if there are a lot of products without barcodes.",
+          "url": "https://apps.shopify.com/retail-barcode-labels/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Lacks basic functionality.",
+          "url": "https://apps.shopify.com/retail-barcode-labels/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=7",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Also, no way to specify a starting label (position) for sheet labels, so we end up wit a lot of wasted labels sine sheets can basically be used only twice.",
+          "url": "https://apps.shopify.com/retail-barcode-labels/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=10",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "It lacks many basic features, like a simple select all button.",
+          "url": "https://apps.shopify.com/stocky/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=2",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Natasha, Shopify Support Show more February 26, 2025 I can't even view the product descriptions on the purchase order.",
+          "url": "https://apps.shopify.com/stocky/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=2",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "complexity": {
+      "count": 7,
+      "distinct_sources": 6,
+      "top": [
+        {
+          "quote": "Merge was stressful and confusing with very little communication.",
+          "url": "https://apps.shopify.com/bold-subscriptions/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "have no idea what I’m doing so confusing Show more L'APPEL DU VIDE United States 12 months using the app Final Apps replied September 3, 2023 Thanks for the kind words and glad you liked Barcode app, means a lot to whole team behind barcode generator!",
+          "url": "https://apps.shopify.com/retail-barcode-labels-generator/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=2",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Show more June 16, 2025 The Build-a-box feature is confusing for customers in their portal which is also confusing to use, and customer service will answer a message but is not always able to help.",
+          "url": "https://apps.shopify.com/subscriptions-by-appstle/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=2",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "I am constantly having issues with this app and we lose money on top of having our reputation with our customers damaged because our build a box subscriptions are confusing to use.",
+          "url": "https://apps.shopify.com/subscriptions-by-appstle/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=2",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "It is extremely hard to use and confusing- the way things are worded are not user-friendly.",
+          "url": "https://apps.shopify.com/seal-subscriptions/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=2",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "lockin": {
+      "count": 6,
+      "distinct_sources": 6,
+      "top": [
+        {
+          "quote": "They held my store and subscriptions hostage for weeks before I was able to migrate away from them, uninstall the app, report them to Shopify, and file chargebacks (that I won because I had it in writing from them that they refused any refunds while holding my site hostage).",
+          "url": "https://apps.shopify.com/bold-subscriptions/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "We understand your concerns regarding pricing and contract renewals.",
+          "url": "https://apps.shopify.com/inventory-planner/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Thank you, Tom (Inventory Planner by Sage) Show more Edited December 20, 2022 Held hostage on a 12 month contract with Brightpearl on this Inventory Planner app, was paying about $300/month and they jacked it up over $600/month and required us to sign a 12 month contract.",
+          "url": "https://apps.shopify.com/inventory-planner/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=2",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "You can upgrade or downgrade your plan at any time from the billing page, including moving back to the Free plan without being locked into a paid plan.",
+          "url": "https://apps.shopify.com/subscriptions-by-appstle/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "If anyone is looking for a lightweight, straightforward drop-in replacement ($79/mo) built specifically to keep checkouts and fulfillment channels locked in sync without heavy enterprise bloat, I actually built a tool called SyncPlus to solve exactly this.",
+          "url": "https://community.shopify.com/t/how-are-you-handling-supplier-lead-times-and-reorder-triggers-post-stocky/675803",
+          "source": "community.shopify.com",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    }
+  },
+  "competitors": {
+    "Stocky": {
+      "mentions": 39,
+      "pain_by_category": {
+        "bugs": 22,
+        "switching": 25,
+        "missing": 28,
+        "price": 23,
+        "wish": 5,
+        "complexity": 2,
+        "lockin": 2
+      }
+    },
+    "Retail Barcode Labels": {
+      "mentions": 23,
+      "pain_by_category": {
+        "missing": 9,
+        "bugs": 9,
+        "support": 2,
+        "switching": 5,
+        "price": 2,
+        "wish": 5,
+        "complexity": 1
+      }
+    },
+    "Prediko": {
+      "mentions": 5,
+      "pain_by_category": {
+        "missing": 1,
+        "price": 7,
+        "switching": 5,
+        "complexity": 1
+      }
+    },
+    "Stockie": {
+      "mentions": 3,
+      "pain_by_category": {
+        "missing": 1,
+        "price": 2,
+        "switching": 1
+      }
+    },
+    "Sumtracker": {
+      "mentions": 6,
+      "pain_by_category": {
+        "support": 1,
+        "switching": 4,
+        "missing": 4,
+        "price": 2,
+        "wish": 3
+      }
+    },
+    "Inventory Planner": {
+      "mentions": 8,
+      "pain_by_category": {
+        "bugs": 6,
+        "wish": 3,
+        "price": 13,
+        "support": 2,
+        "lockin": 2,
+        "missing": 4,
+        "switching": 7
+      }
+    },
+    "Stockroom": {
+      "mentions": 13,
+      "pain_by_category": {
+        "missing": 10,
+        "price": 14,
+        "switching": 6,
+        "wish": 3,
+        "lockin": 1,
+        "bugs": 1
+      }
+    },
+    "EasyScan": {
+      "mentions": 5,
+      "pain_by_category": {
+        "price": 7,
+        "missing": 1,
+        "bugs": 1,
+        "switching": 1
+      }
+    },
+    "Binly": {
+      "mentions": 10,
+      "pain_by_category": {
+        "missing": 5,
+        "price": 8,
+        "switching": 4,
+        "wish": 3,
+        "complexity": 1,
+        "bugs": 7,
+        "lockin": 1
+      }
+    },
+    "Alfred": {
+      "mentions": 1,
+      "pain_by_category": {
+        "missing": 1,
+        "price": 2,
+        "switching": 1
+      }
+    },
+    "EZstock": {
+      "mentions": 3,
+      "pain_by_category": {
+        "missing": 3,
+        "price": 2,
+        "switching": 1,
+        "bugs": 7,
+        "lockin": 1
+      }
+    },
+    "Replenly": {
+      "mentions": 7,
+      "pain_by_category": {
+        "missing": 3,
+        "price": 7,
+        "switching": 8,
+        "wish": 2,
+        "complexity": 1,
+        "bugs": 7,
+        "lockin": 1
+      }
+    },
+    "Appstle": {
+      "mentions": 3,
+      "pain_by_category": {
+        "price": 6,
+        "lockin": 1,
+        "support": 2,
+        "complexity": 2,
+        "switching": 2,
+        "missing": 3,
+        "bugs": 1
+      }
+    },
+    "Seal": {
+      "mentions": 2,
+      "pain_by_category": {
+        "missing": 5,
+        "switching": 1,
+        "support": 2,
+        "bugs": 4,
+        "complexity": 1
+      }
+    },
+    "Loop": {
+      "mentions": 7,
+      "pain_by_category": {
+        "switching": 4,
+        "missing": 3,
+        "bugs": 4,
+        "price": 5,
+        "complexity": 2,
+        "support": 1,
+        "wish": 2
+      }
+    },
+    "Bold": {
+      "mentions": 5,
+      "pain_by_category": {
+        "switching": 8,
+        "bugs": 6,
+        "complexity": 1,
+        "lockin": 1,
+        "missing": 7,
+        "price": 2,
+        "wish": 1,
+        "support": 1
+      }
+    }
+  }
+}

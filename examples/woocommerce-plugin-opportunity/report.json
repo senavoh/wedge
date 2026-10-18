@@ -1,0 +1,476 @@
+{
+ "title": "What WooCommerce plugin to build next",
+ "subtitle": "An expertise-mode scout for a PHP/WooCommerce plugin developer: categories where stores already pay but complain, or where a plugin was abandoned or repriced.",
+ "mode": "expertise",
+ "depth": "quick",
+ "date": "2026-10-18",
+ "founder": {
+  "budget": "under $1k",
+  "skills": "WordPress/WooCommerce plugin dev, PHP, 8 years",
+  "hours": "15/week",
+  "risk": "side income first",
+  "channel": "online"
+ },
+ "verdict": {
+  "call": "PIVOT",
+  "score": 61,
+  "summary": "The loudest verified pain is product catalog sync to Meta and Google on large WooCommerce stores. The official plugins are rated 2.1 and 2.7 on WordPress.org, and reviews from different authors describe sync jobs that crash servers or stall. But a catalog-sync plugin isn't an open gap: CTX Feed markets itself for large catalogs, WebToffee already ships batched, scheduled Meta sync, and Google can crawl the store for free, so it scores 61 and fails GO. The pivot is a sync-health monitor that works alongside existing sync plugins, not another feed generator. Test that before writing much code."
+ },
+ "opportunities": [
+  {
+   "name": "Throttled catalog sync for large-catalog stores (Meta + Google)",
+   "one_liner": "Batched, observable product sync that doesn't take down a 10k+ SKU store.",
+   "score": 61,
+   "scores": {
+    "pain": 8,
+    "willingness_to_pay": 6,
+    "competition_gap": 4,
+    "founder_fit": 7,
+    "reachability": 5,
+    "build_cost": 5
+   },
+   "why": "Pain 8: recent reviews from different authors across three vendors describe sync overloading big servers or stalling (e1, e2, e4, e5, e6), plus silent sync failures (e10-e14). WTP 6: stores pay for feed plugins (e40) and complain about license and refund terms (e19, e20, e23), not about paying. But official sync is free (e42). Gap 4: well-rated paid alternatives exist and switchers name them (e24-e27); CTX markets large catalogs (e46) and WebToffee ships batch and scheduled Meta sync (e48, e49), though CTX admits big catalogs break feeds (e47). Fit 7: core Woo/PHP work, but Meta API review is a stretch. Reach 5: the only verified gathering place is the WordPress.org forums, which ban self-promotion (e51). Build 5: an MVP takes weeks, reliability at 50k SKUs takes months.",
+   "evidence": [
+    "e1",
+    "e2",
+    "e4",
+    "e5",
+    "e6",
+    "e10",
+    "e19",
+    "e24",
+    "e46",
+    "e48"
+   ]
+  },
+  {
+   "name": "Product add-ons / custom options plugin",
+   "one_liner": "Another product options and price-calculator plugin.",
+   "score": 57,
+   "scores": {
+    "pain": 5,
+    "willingness_to_pay": 7,
+    "competition_gap": 3,
+    "founder_fit": 9,
+    "reachability": 5,
+    "build_cost": 6
+   },
+   "why": "Stores pay (official Product Add-Ons is $79/yr, e44) and complain about price jumps (e28) and broken add-on pricing (e30). But most PPOM complaints are 5 to 10 years old (e29, e30, e31), and well-loved cheap alternatives exist: ThemeHigh Extra Product Options is 4.9/5 with only 5 one-star reviews out of 219, and Advanced Product Fields is 4.8/5 (WordPress.org API). wc-kalkulator was closed on 2026-06-21 for a security issue, but it was small.",
+   "evidence": [
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e44"
+   ]
+  },
+  {
+   "name": "Booster for WooCommerce lifetime-holder replacement",
+   "one_liner": "Replace the modules repriced away from lifetime buyers.",
+   "score": 49,
+   "scores": {
+    "pain": 4,
+    "willingness_to_pay": 6,
+    "competition_gap": 4,
+    "founder_fit": 8,
+    "reachability": 4,
+    "build_cost": 3
+   },
+   "why": "Lifetime buyers lost support when it moved to $129.99/yr (e32, e33, e34). The complaints come from one vendor and are mostly 2 to 5 years old. The buyers are hard to find, and Booster has 100+ modules to match.",
+   "evidence": [
+    "e32",
+    "e33",
+    "e34"
+   ]
+  }
+ ],
+ "gap": {
+  "statement": "WooCommerce stores with thousands of products that sell through Facebook/Instagram and Google Shopping can't keep their catalog in sync without stalling or overloading their server, because the official plugins run heavy, unthrottled sync jobs, and the paid feed plugins that claim to handle large catalogs still draw \"feed gets stuck\" complaints.",
+  "evidence": [
+   "e1",
+   "e2",
+   "e3",
+   "e4",
+   "e5",
+   "e6",
+   "e7",
+   "e8"
+  ]
+ },
+ "pains": [
+  {
+   "theme": "Sync overloads the server or stalls on big catalogs",
+   "severity": "high",
+   "summary": "Catalog/feed jobs crash servers with 24 to 32 GB of RAM, or get stuck partway through.",
+   "by_competitor": {
+    "Meta for WooCommerce": 3,
+    "Product Feed PRO": 3,
+    "CTX Feed": 2
+   },
+   "evidence": [
+    "e1",
+    "e2",
+    "e3",
+    "e4",
+    "e5",
+    "e6",
+    "e7",
+    "e8",
+    "e9"
+   ]
+  },
+  {
+   "theme": "Products silently don't sync",
+   "severity": "high",
+   "summary": "Setup says it's connected, but products never appear and nobody can explain why.",
+   "by_competitor": {
+    "Meta for WooCommerce": 3,
+    "Google for WooCommerce": 2
+   },
+   "evidence": [
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14"
+   ]
+  },
+  {
+   "theme": "Sync tied to ad accounts, with suspensions",
+   "severity": "medium",
+   "summary": "Store owners want catalog sync without the ads account, and suspensions block selling.",
+   "by_competitor": {
+    "Google for WooCommerce": 3,
+    "Meta for WooCommerce": 1
+   },
+   "evidence": [
+    "e15",
+    "e16",
+    "e17",
+    "e18"
+   ]
+  },
+  {
+   "theme": "Paid feed vendors break trust",
+   "severity": "medium",
+   "summary": "License changes, refused refunds, and updates that rewrite feed settings.",
+   "by_competitor": {
+    "Product Feed PRO": 3,
+    "CTX Feed": 2
+   },
+   "evidence": [
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e23"
+   ]
+  },
+  {
+   "theme": "Add-on plugin vendor churn",
+   "severity": "low",
+   "summary": "Price jumps, features moved to paid add-ons, broken add-on pricing (mostly old).",
+   "by_competitor": {
+    "PPOM": 4
+   },
+   "evidence": [
+    "e28",
+    "e29",
+    "e30",
+    "e31"
+   ]
+  },
+  {
+   "theme": "Lifetime licenses repriced",
+   "severity": "low",
+   "summary": "Booster lifetime buyers lost support when it became a paid yearly plan.",
+   "by_competitor": {
+    "Booster": 3
+   },
+   "evidence": [
+    "e32",
+    "e33",
+    "e34"
+   ]
+  }
+ ],
+ "competitors": [
+  {
+   "name": "Meta for WooCommerce",
+   "url": "https://wordpress.org/plugins/facebook-for-woocommerce/",
+   "pricing": "Free (official)",
+   "positioning": "Official Meta plugin: catalog sync, Pixel/CAPI, shops.",
+   "strengths": [
+    "400k active installs",
+    "Official integration"
+   ],
+   "weaknesses": [
+    "2.1/5; 315 of 481 ratings are 1-star",
+    "Sync overload on large catalogs (e1, e2)"
+   ],
+   "evidence": [
+    "e1",
+    "e2",
+    "e13"
+   ]
+  },
+  {
+   "name": "Google for WooCommerce",
+   "url": "https://woocommerce.com/products/google-listings-and-ads/",
+   "pricing": "Free (e42)",
+   "positioning": "Sync your WooCommerce products to Google Merchant Center for free",
+   "strengths": [
+    "800k active installs",
+    "Free"
+   ],
+   "weaknesses": [
+    "2.7/5 on WordPress.org; 132 of 268 ratings are 1-star",
+    "Pushes ad account setup (e16, e17)"
+   ],
+   "evidence": [
+    "e42",
+    "e10",
+    "e16"
+   ]
+  },
+  {
+   "name": "Product Feed PRO (AdTribes)",
+   "url": "https://adtribes.io/pricing/",
+   "pricing": "Free core; Business normally $499/yr, $249.50/yr on sale; no free trial",
+   "positioning": "Generate unlimited product feeds for WooCommerce — for free.",
+   "strengths": [
+    "4.7/5 from 1,070 ratings",
+    "Recommended by switchers (e24)"
+   ],
+   "weaknesses": [
+    "Stuck feeds (e5, e6)",
+    "License changes (e19)"
+   ],
+   "evidence": [
+    "e40",
+    "e41",
+    "e5",
+    "e19"
+   ]
+  },
+  {
+   "name": "CTX Feed (WebAppick)",
+   "url": "https://webappick.com/plugin/woocommerce-product-feed-pro/",
+   "pricing": "Pro price not captured",
+   "positioning": "Built for large product catalogs",
+   "strengths": [
+    "4.6/5 from 837 ratings",
+    "5 to 30 minute cron in Pro (e43)"
+   ],
+   "weaknesses": [
+    "Stuck feeds (e9)",
+    "Refund disputes (e20, e23)"
+   ],
+   "evidence": [
+    "e43",
+    "e46",
+    "e47",
+    "e9",
+    "e20"
+   ]
+  },
+  {
+   "name": "WebToffee Product Feed",
+   "url": "https://www.webtoffee.com/docs/product-feed/facebook-instagram-catalog-sync-configuration/",
+   "pricing": "Not captured",
+   "positioning": "Facebook/Instagram catalog sync with products per batch and scheduled sync.",
+   "strengths": [
+    "Already ships batching and scheduling (e48, e49)"
+   ],
+   "weaknesses": [
+    "Not mined (no reviews collected)"
+   ],
+   "evidence": [
+    "e48",
+    "e49"
+   ]
+  }
+ ],
+ "features": {
+  "columns": [
+   "Free tier",
+   "Batch size control",
+   "Scheduled sync",
+   "Meta catalog",
+   "Google feed",
+   "Sync failure alerts"
+  ],
+  "rows": [
+   {
+    "name": "Meta for WooCommerce",
+    "values": [
+     "yes",
+     "no",
+     "unknown",
+     "yes",
+     "no",
+     "unknown"
+    ]
+   },
+   {
+    "name": "Google for WooCommerce",
+    "values": [
+     "yes",
+     "unknown",
+     "unknown",
+     "no",
+     "yes",
+     "unknown"
+    ]
+   },
+   {
+    "name": "Product Feed PRO",
+    "values": [
+     "yes",
+     "unknown",
+     "yes",
+     "yes",
+     "yes",
+     "unknown"
+    ]
+   },
+   {
+    "name": "CTX Feed",
+    "values": [
+     "yes",
+     "unknown",
+     "yes",
+     "yes",
+     "yes",
+     "unknown"
+    ]
+   },
+   {
+    "name": "WebToffee",
+    "values": [
+     "unknown",
+     "yes",
+     "yes",
+     "yes",
+     "yes",
+     "unknown"
+    ]
+   }
+  ]
+ },
+ "critic": [
+  {
+   "risk": "Someone tried and died",
+   "severity": "low",
+   "rebuttal": "No shut-down or postmortem of a WooCommerce catalog-sync plugin was found."
+  },
+  {
+   "risk": "Free incumbent: Google Merchant Center can crawl the store daily with no plugin (e50), and Meta can pull a scheduled feed URL.",
+   "severity": "high"
+  },
+  {
+   "risk": "Already exists and copyable: CTX markets large catalogs (e46), and WebToffee ships per-batch and scheduled Meta sync (e48, e49). The only edge left is execution quality.",
+   "severity": "high"
+  },
+  {
+   "risk": "Channel closed: WordPress.org forums ban self-promotion (e51), and the woocommerce.com marketplace is gated.",
+   "severity": "medium"
+  },
+  {
+   "risk": "Meta API approval (business verification, app review) for direct sync",
+   "severity": "high",
+   "rebuttal": "Hosted feed URLs need no app review, but that turns the product into another feed generator (see the previous risk). The pivot reads job status locally and avoids the issue."
+  },
+  {
+   "risk": "Pain is real but nobody pays",
+   "severity": "medium",
+   "rebuttal": "Stores already pay for feed plugins (e40) and complain about terms, not about paying (e19, e23)."
+  }
+ ],
+ "win_plan": {
+  "positioning": "Know when Facebook or Google stopped showing your products, before your sales tell you.",
+  "switching_triggers": [
+   {
+    "trigger": "Site slows or crashes during a catalog sync",
+    "move": "Offer a free sync-health check that shows which jobs failed and why",
+    "evidence": [
+     "e1",
+     "e2"
+    ]
+   },
+   {
+    "trigger": "Feed vendor changes license or renewal terms",
+    "move": "Public price that never rises at renewal",
+    "evidence": [
+     "e19",
+     "e23"
+    ]
+   }
+  ],
+  "offers": [
+   "Free read-only sync-health scan",
+   "Price locked at renewal",
+   "Works alongside your current sync plugin"
+  ],
+  "build_first": [
+   {
+    "feature": "Dashboard of failed Action Scheduler sync jobs for Meta and Google plugins",
+    "why": "pain: sync overload (e3, e8)"
+   },
+   {
+    "feature": "Product-level diff between store and catalog status",
+    "why": "pain: silent sync failures (e10, e12, e14)"
+   },
+   {
+    "feature": "Email alerts on sync drift",
+    "why": "pain: silent sync failures (e13)"
+   }
+  ],
+  "where_to_find": [
+   {
+    "place": "Meta for WooCommerce support forum",
+    "url": "https://wordpress.org/support/plugin/facebook-for-woocommerce/",
+    "why": "Most 1-star reviews in the category. Answer questions only, no links."
+   },
+   {
+    "place": "Google for WooCommerce support forum",
+    "url": "https://wordpress.org/support/plugin/google-listings-and-ads/",
+    "why": "Sync and connection failures. No self-promotion allowed."
+   },
+   {
+    "place": "Product Feed PRO and CTX Feed review pages",
+    "url": "https://wordpress.org/support/plugin/woo-product-feed-pro/reviews/",
+    "why": "Stuck-feed complaints from paying users."
+   }
+  ],
+  "trust": [
+   "Read-only by default",
+   "Public, fixed renewal price",
+   "Refund policy honoured as written"
+  ],
+  "stop_doing": [
+   "Changing license terms after sale (e19)",
+   "Non-refundable auto-renewals (e23)",
+   "Updates that rewrite feed settings (e21)"
+  ]
+ },
+ "pricing": {
+  "recommendation": "Unvalidated; test $49 to $79/yr per site after the 7-day check",
+  "competitor_range": "Free (official) to $249.50/yr (AdTribes Business, on sale)",
+  "rationale": "Stores already pay feed vendors, but official sync is free. The price has to sit below a feed-plugin licence."
+ },
+ "validation": {
+  "experiment": "Ship a free, read-only sync-health check and answer 15 open WordPress.org sync-failure threads with real diagnostics (no links).",
+  "pass_bar": "10 stores run the check and 3 ask for paid alerts",
+  "days": 7,
+  "steps": [
+   "Day 1-2: build a read-only check of Action Scheduler failures for the Meta and Google plugins",
+   "Day 3-5: answer 15 open sync threads with diagnostics, no links",
+   "Day 6-7: invite people from your own site or blog, then count runs and paid asks"
+  ]
+ },
+ "kill_criteria": [
+  "Fewer than 5 stores run the check in 7 days",
+  "Stores say the sync plugin's own logs and Merchant Center diagnostics are enough"
+ ]
+}

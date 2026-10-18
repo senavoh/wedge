@@ -341,3 +341,34 @@ code { font-family: var(--mono); font-size: .92em; }
 .demo { margin: 24px 0 0; }
 .demo img { width: 100%; height: auto; border-radius: 14px; box-shadow: var(--shadow-lg); }
 .demo figcaption { margin-top: 12px; font-size: 14px; color: var(--mute); text-align: center; }
+
+/* Record of every run */
+.record { margin-top: 56px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 32px; align-items: start; }
+.record__head p { color: var(--mute); margin: 0; line-height: 1.6; }
+.record__list { list-style: none; margin: 0; padding: 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); box-shadow: var(--shadow); overflow: hidden; }
+.record__list li + li { border-top: 1px solid var(--line); }
+.record__list a { display: grid; grid-template-columns: 64px 32px minmax(0, 1fr) auto; align-items: center; gap: 12px; padding: 11px 16px; text-decoration: none; color: var(--ink); font-size: 15px; }
+.record__list a:hover { background: var(--sunk); }
+.record__list .verdict { justify-self: start; }
+.record__score { color: var(--mute); font-variant-numeric: tabular-nums; font-size: 14px; }
+.record__title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.record__arrow { color: var(--faint); }
+
+/* GO illustration */
+.gosample { margin-top: 32px; border: 1.5px dashed var(--faint); border-radius: var(--r); padding: 28px; background: transparent; }
+.gosample__tag { display: inline-block; margin: 0 0 16px; font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--mute); background: var(--sunk); padding: 4px 10px; border-radius: 99px; }
+.gosample__top { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 18px; }
+.gosample__title { margin: 0; font-size: 22px; letter-spacing: -.02em; color: var(--ink); }
+.gosample__checks { list-style: none; margin: 0 0 18px; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 24px; }
+.gosample__checks li { position: relative; padding-left: 30px; color: var(--mute); line-height: 1.5; }
+.gosample__checks li b { color: var(--ink); font-weight: 600; }
+.gosample__checks li::before { content: "✓"; position: absolute; left: 0; top: 1px; width: 20px; height: 20px; border-radius: 50%; display: grid; place-items: center; font-size: 11px; font-weight: 700; background: var(--ok-bg); color: var(--ok); }
+.gosample__note { margin: 0; color: var(--mute); font-size: 14px; }
+.gosample__note a { color: var(--ink); }
+@media (max-width: 760px) {
+  .record { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .gosample__checks { grid-template-columns: minmax(0, 1fr); }
+  .record__list a { grid-template-columns: 60px 28px minmax(0, 1fr); }
+  .record__arrow { display: none; }
+  .record__title { white-space: normal; line-height: 1.35; }
+}

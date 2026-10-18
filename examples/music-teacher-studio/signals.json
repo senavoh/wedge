@@ -1,0 +1,400 @@
+{
+  "records": 180,
+  "sources": {
+    "appstore": 13,
+    "hn": 109,
+    "forums.pianoworld.com": 52,
+    "pianopantry.com": 3,
+    "composecreate.com": 1,
+    "en.wikipedia.org": 1,
+    "colourfulkeys.ie": 1
+  },
+  "categories": {
+    "wish": {
+      "count": 18,
+      "distinct_sources": 14,
+      "top": [
+        {
+          "quote": "Ask HN: Appointment Scheduling Software Does anyone know of an appointment scheduling app for small businesses, suitable for a business that has lots of appointments, like music lessons or massage/spa businesses?",
+          "url": "https://news.ycombinator.com/item?id=10255334",
+          "source": "hn",
+          "date": "2015-09-21",
+          "weight": 1.04
+        },
+        {
+          "quote": "Lastly I wish more self-checkout stations had the spinning bag carousels and more space to put stuff.",
+          "url": "https://news.ycombinator.com/item?id=37800953",
+          "source": "hn",
+          "date": "2023-10-07",
+          "weight": 1.0
+        },
+        {
+          "quote": "Mose AZNpiano Share Post Stanny 1000 Post Club Member 1,461 posts Joined Nov 2006 # 2092194 05/30/13 02:02 PM Re: Policy Questions Oh how I wish!",
+          "url": "https://forums.pianoworld.com/ubbthreads.php/topics/2091400/policy-questions.html",
+          "source": "forums.pianoworld.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "cmb, I wish I had you as a student!",
+          "url": "https://forums.pianoworld.com/ubbthreads.php/topics/2812593/all/biweekly-adult-student-scheduling-issue.html",
+          "source": "forums.pianoworld.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "How I wish my schedule still had the free time and unlimited flexibility I had as a kid.",
+          "url": "https://forums.pianoworld.com/ubbthreads.php/topics/2812593/all/biweekly-adult-student-scheduling-issue.html",
+          "source": "forums.pianoworld.com",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "switching": {
+      "count": 41,
+      "distinct_sources": 24,
+      "top": [
+        {
+          "quote": "Even if you invent the perfect notation, it's like asking everyone to switch to esperanto because english grammar is flawed.",
+          "url": "https://news.ycombinator.com/item?id=48499109",
+          "source": "hn",
+          "date": "2026-06-12",
+          "weight": 1.0
+        },
+        {
+          "quote": "He got that job by twice switching away from jobs that he'd stopped enjoying and he now loves what he does.",
+          "url": "https://news.ycombinator.com/item?id=33217298",
+          "source": "hn",
+          "date": "2022-10-15",
+          "weight": 1.0
+        },
+        {
+          "quote": "Share Post AZNpiano 8000 Post Club Member 8,949 posts Joined Aug 2007 Orange County, CA # 2092311 05/30/13 05:03 PM Re: Policy Questions Minniemay Originally Posted by Minniemay Only one student had a sports conflict, so he never came and now he has moved away from here, so .",
+          "url": "https://forums.pianoworld.com/ubbthreads.php/topics/2091400/policy-questions.html",
+          "source": "forums.pianoworld.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Share Post T TimR 4000 Post Club Member 4,555 posts Joined Aug 2004 Virginia, USA # 2092701 05/31/13 08:20 AM Re: Policy Questions AZNpiano Originally Posted by AZNpiano Originally Posted by Minniemay Only one student had a sports conflict, so he never came and now he has moved away from here, so .",
+          "url": "https://forums.pianoworld.com/ubbthreads.php/topics/2091400/policy-questions.html",
+          "source": "forums.pianoworld.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "If the answer is no, ask to be switched to another teacher by the school.",
+          "url": "https://forums.pianoworld.com/ubbthreads.php/topics/2776244/all/teacher-cancellations.html",
+          "source": "forums.pianoworld.com",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "price": {
+      "count": 24,
+      "distinct_sources": 13,
+      "top": [
+        {
+          "quote": "The current version is the 580, available here: http://www.gouletpens.com/TWSBI_580_Fountain_Pens_s/1120.htm If you only jot down the occasional sentence, a fountain pen is probably not worth the bother of manually refilling or the risk of a leak if you don't know how to use it properly.",
+          "url": "https://news.ycombinator.com/item?id=7010984",
+          "source": "hn",
+          "date": "2014-01-04",
+          "weight": 1.0
+        },
+        {
+          "quote": "In districts that can't afford dedicated staff for art or P.E., classroom teachers often teach these subjects, squeezing them in when they can.",
+          "url": "https://news.ycombinator.com/item?id=29530634",
+          "source": "hn",
+          "date": "2021-12-12",
+          "weight": 1.0
+        },
+        {
+          "quote": "Plus I can't afford to offend them.",
+          "url": "https://forums.pianoworld.com/ubbthreads.php/topics/3635485/mukas.html",
+          "source": "forums.pianoworld.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Only these two pricing plans \"sounds different\" and ma",
+          "url": "https://forums.pianoworld.com/ubbthreads.php/topics/2932642/all/setting-fees-sliding-scales.html",
+          "source": "forums.pianoworld.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "And as I pointed out, the meds were thousands of dollars each month - sadly, I read that most of the people die because they can't afford the hospital bill, the doctor's bills, the med bills for the many meds they have to take for many years.",
+          "url": "https://forums.pianoworld.com/ubbthreads.php/topics/2120312/all/how-to-accept-debit-credit-card-payments-on-your-website.html",
+          "source": "forums.pianoworld.com",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "support": {
+      "count": 2,
+      "distinct_sources": 2,
+      "top": [
+        {
+          "quote": "If a private school continues to cancel lessons and gets a reputation for poor customer service, how long would it will it stay in business?",
+          "url": "https://forums.pianoworld.com/ubbthreads.php/topics/2776244/all/teacher-cancellations.html",
+          "source": "forums.pianoworld.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "I e-mailed all my parents about an April recital, and received no response from the mom.",
+          "url": "https://forums.pianoworld.com/ubbthreads.php/topics/2106152/all/scheduling-headache-advice-please.html",
+          "source": "forums.pianoworld.com",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "bugs": {
+      "count": 24,
+      "distinct_sources": 19,
+      "top": [
+        {
+          "quote": "For example: - Bitmap sending is pretty slow, which is why using the foot pedals to turn bars wasn’t viable.",
+          "url": "https://news.ycombinator.com/item?id=43906442",
+          "source": "hn",
+          "date": "2025-05-06",
+          "weight": 5.0
+        },
+        {
+          "quote": "You need to fix this app This app takes forever to find how to make a practice video and it’s so glitchy!",
+          "url": "https://apps.apple.com/us/app/id1451645821?see-all=reviews#review-13402846924",
+          "source": "appstore",
+          "date": "2025-11-15",
+          "weight": 2.0
+        },
+        {
+          "quote": "The metronome is clunky - you can’t type in a specific bpm, you can hold and quickly slow down the tempo, but to speed up you have to hit the plus sign to increase the tempo by 1 BPM at a time.",
+          "url": "https://apps.apple.com/us/app/id1451645821?see-all=reviews#review-9350651715",
+          "source": "appstore",
+          "date": "2022-12-01",
+          "weight": 2.0
+        },
+        {
+          "quote": "Needless to say there were some embarrassing crashes along the way .",
+          "url": "https://news.ycombinator.com/item?id=47435129",
+          "source": "hn",
+          "date": "2026-03-19",
+          "weight": 1.02
+        },
+        {
+          "quote": "I’ve had nonstop problems with it glitching and then I have to sit and watch my phone to let the timer run.",
+          "url": "https://apps.apple.com/us/app/id1451645821?see-all=reviews#review-14635203216",
+          "source": "appstore",
+          "date": "2026-10-06",
+          "weight": 1.0
+        }
+      ]
+    },
+    "missing": {
+      "count": 29,
+      "distinct_sources": 18,
+      "top": [
+        {
+          "quote": "Lacks some desirable features Overall the concept is good.",
+          "url": "https://apps.apple.com/us/app/id1451645821?see-all=reviews#review-9350651715",
+          "source": "appstore",
+          "date": "2022-12-01",
+          "weight": 2.0
+        },
+        {
+          "quote": "Logic Pro X The one thing that has always kept me from Live (and this probably applies to .001% of DAW users) is last I checked it doesn't support score based composition.",
+          "url": "https://news.ycombinator.com/item?id=6054662",
+          "source": "hn",
+          "date": "2013-07-16",
+          "weight": 1.0
+        },
+        {
+          "quote": "Opus doesn't have to be great at everything to be great at what it does, just like AAC-LC doesn't have to be.",
+          "url": "https://news.ycombinator.com/item?id=48765572",
+          "source": "hn",
+          "date": "2026-07-02",
+          "weight": 1.0
+        },
+        {
+          "quote": "If someone doesn't have the technology to do skype or facetime, you can offer a makeup day at the end of the month AT YOUR CONVENIENCE (such as 8:00 AM on a Saturday) and if they can't make it, they lose out.",
+          "url": "https://forums.pianoworld.com/ubbthreads.php/topics/2091400/policy-questions.html",
+          "source": "forums.pianoworld.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "If theatre mom put any inkling of work to helping her child, I would still not re-schedule for her, but I would prolly not be ranting on here, either!",
+          "url": "https://forums.pianoworld.com/ubbthreads.php/topics/3268975/all/can-i-reschedule-the-schedule-rant.html",
+          "source": "forums.pianoworld.com",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "complexity": {
+      "count": 21,
+      "distinct_sources": 12,
+      "top": [
+        {
+          "quote": "Also, the award system feels rather clunky and sloppily put together (see the Year and a Half certificate, for example.",
+          "url": "https://apps.apple.com/us/app/id1451645821?see-all=reviews#review-14272481949",
+          "source": "appstore",
+          "date": "2026-07-06",
+          "weight": 2.0
+        },
+        {
+          "quote": "The metronome is clunky - you can’t type in a specific bpm, you can hold and quickly slow down the tempo, but to speed up you have to hit the plus sign to increase the tempo by 1 BPM at a time.",
+          "url": "https://apps.apple.com/us/app/id1451645821?see-all=reviews#review-9350651715",
+          "source": "appstore",
+          "date": "2022-12-01",
+          "weight": 2.0
+        },
+        {
+          "quote": "Ask HN: I had a confusing WhatsApp exchange I just had a weird exchange on WhatsApp, here's what happened: - I got messaged by an account I don't know and don't share groups with.",
+          "url": "https://news.ycombinator.com/item?id=31529098",
+          "source": "hn",
+          "date": "2022-05-27",
+          "weight": 1.02
+        },
+        {
+          "quote": "In my read people think guitar is easier than it is because the 4-chords pop chart is not hard to achieve, but if you want to exceed that the learning curve shifts quickly.",
+          "url": "https://news.ycombinator.com/item?id=30268922",
+          "source": "hn",
+          "date": "2022-02-09",
+          "weight": 1.0
+        },
+        {
+          "quote": "I always wanted to learn some Beatles songs, and the sheet music that my mother bought so many years ago was always too complex to be fun.",
+          "url": "https://news.ycombinator.com/item?id=9830841",
+          "source": "hn",
+          "date": "2015-07-04",
+          "weight": 1.0
+        }
+      ]
+    },
+    "lockin": {
+      "count": 97,
+      "distinct_sources": 16,
+      "top": [
+        {
+          "quote": "Do you have a cancellation policy in place, and if so, how strict is it?",
+          "url": "https://forums.pianoworld.com/ubbthreads.php/topics/3635485/mukas.html",
+          "source": "forums.pianoworld.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Make sure the studio policy is clear and presented when first taking on a student, with a clear cancellation policy.",
+          "url": "https://forums.pianoworld.com/ubbthreads.php/topics/3635485/mukas.html",
+          "source": "forums.pianoworld.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "If a teacher must travel to a student's home, lessons should be paid for in advance, with a strict 48-hour cancellation policy.",
+          "url": "https://forums.pianoworld.com/ubbthreads.php/topics/3635485/mukas.html",
+          "source": "forums.pianoworld.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "I suspect the OP's music school is one of those institutions that want to maximize profit, hence the year-long contract.",
+          "url": "https://forums.pianoworld.com/ubbthreads.php/topics/2776244/all/teacher-cancellations.html",
+          "source": "forums.pianoworld.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "OR: The music school is struggling so badly to keep customers, the management has to resort to year-long contracts while keeping absent teachers.",
+          "url": "https://forums.pianoworld.com/ubbthreads.php/topics/2776244/all/teacher-cancellations.html",
+          "source": "forums.pianoworld.com",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    }
+  },
+  "competitors": {
+    "My Music Staff": {
+      "mentions": 5,
+      "pain_by_category": {
+        "price": 3,
+        "complexity": 5,
+        "bugs": 1,
+        "switching": 4
+      }
+    },
+    "TutorBird": {
+      "mentions": 0,
+      "pain_by_category": {}
+    },
+    "Practice Space": {
+      "mentions": 5,
+      "pain_by_category": {
+        "bugs": 1,
+        "switching": 4,
+        "complexity": 3
+      }
+    },
+    "Tonara": {
+      "mentions": 4,
+      "pain_by_category": {
+        "bugs": 1,
+        "switching": 4,
+        "complexity": 3
+      }
+    },
+    "Venmo": {
+      "mentions": 4,
+      "pain_by_category": {
+        "lockin": 6,
+        "price": 2,
+        "switching": 6,
+        "missing": 1
+      }
+    },
+    "Square": {
+      "mentions": 8,
+      "pain_by_category": {
+        "switching": 4,
+        "price": 2,
+        "complexity": 5
+      }
+    },
+    "Excel": {
+      "mentions": 6,
+      "pain_by_category": {
+        "bugs": 2,
+        "switching": 5,
+        "missing": 1,
+        "complexity": 3
+      }
+    },
+    "Opus1": {
+      "mentions": 1,
+      "pain_by_category": {}
+    },
+    "Duet": {
+      "mentions": 4,
+      "pain_by_category": {
+        "bugs": 4,
+        "lockin": 1,
+        "switching": 3,
+        "wish": 4,
+        "price": 3,
+        "complexity": 2
+      }
+    },
+    "Fons": {
+      "mentions": 1,
+      "pain_by_category": {
+        "price": 3,
+        "complexity": 2
+      }
+    }
+  }
+}

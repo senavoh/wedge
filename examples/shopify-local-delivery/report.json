@@ -1,0 +1,67 @@
+{
+  "title": "Local delivery and pickup scheduling app for small Shopify food and flower shops",
+  "subtitle": "Quick idea stress-test from Shopify App Store low-star reviews, Shopify Community threads, app listings and Shopify docs. Reddit was blocked and not used.",
+  "mode": "idea",
+  "depth": "quick",
+  "date": "2026-10-18",
+  "founder": {"budget": "under $2k", "skills": "Shopify app developer (Remix)", "hours": "15/week", "risk": "side income first", "channel": "online"},
+  "verdict": {"call": "PIVOT", "score": 56, "summary": "The pain is real: merchants say date-picker apps get skipped at checkout, break themes, answer support slowly, and in Zapiet's case cost too much. But the gap is not open. Pickeasy (4.9, 1,327 reviews), Buunto, Bird and Scrollengine already sell slots and daily capacity for $0 to $20 a month, and the critic found the route-sheet add-on pivot already served too. Don't build a general scheduling app. Spend one week testing the add-on by hand with the two florists, and drop it if they won't pay."},
+  "opportunities": [
+    {"name": "General delivery and pickup scheduler (as proposed)", "one_liner": "Date/time slots, zones, daily capacity and driver route sheets in one Shopify app.", "score": 56,
+     "scores": {"pain": 6, "willingness_to_pay": 7, "competition_gap": 2, "founder_fit": 7, "reachability": 6, "build_cost": 6},
+     "why": "Pain 6: many different merchants complain on two sources (App Store reviews and Community threads), and some leave (e1-e7, e14-e20, e31-e33). But 1-2 star reviews are only 1-3% of reviews for the leaders. Willingness to pay 7: merchants pay $10-$180 a month and complain about Zapiet's price, not about paying at all (e8-e11, c3). Competition gap 2: strong, loved, cheap incumbents serve this exact buyer, including all-in-one apps with routes and drivers (c4-c10, c13). The top complaints are tied to specific apps, not shared by all. Validation Functions also let any public app enforce the date on any plan, including express checkouts (c11, c12). Founder fit 7: a Remix Shopify dev on a cheap stack; support load on peak days (Valentine's, Mother's Day) is the stretch at 15 h/week. Reachability 6: Community threads, App Store search and two florists, but App Store ranking against about 70 apps is the gatekeeper. Build cost 6: an MVP takes weeks, but theme compatibility and Built for Shopify parity take months.",
+     "evidence": ["e1", "e8", "e14", "e23", "c4", "c5", "c7", "c11"]}
+  ],
+  "gap": {"statement": "Small food and flower shops on Shopify that take dated local orders can't count on a picker that forces a date or slot without breaking their theme, because the cart-widget apps they use can be skipped at checkout or clash with themes. Well-rated incumbents and Shopify's validation Functions mean this is fixable by anyone, not an open gap.", "evidence": ["e1", "e2", "e3", "e4", "e5", "e34"]},
+  "pains": [
+    {"theme": "Date picker gets skipped at checkout or breaks the theme", "severity": "high", "summary": "Cart widgets that customers bypass, or that take down checkout; several reviews are from 2019-2021.", "by_competitor": {"Zapiet": 2, "Identixweb": 2, "Pickeasy": 3, "Omega": 1}, "evidence": ["e1", "e2", "e3", "e4", "e5", "e6", "e7", "e34"]},
+    {"theme": "Support is slow or never answers", "severity": "high", "summary": "Days without a reply, including during the holiday season.", "by_competitor": {"Zapiet": 2, "Pickeasy": 1, "Identixweb": 1}, "evidence": ["e14", "e15", "e16", "e17"]},
+    {"theme": "Clunky setup and painful uninstall", "severity": "medium", "summary": "Overcomplicated for a simple job, and code left behind after uninstalling.", "by_competitor": {"Zapiet": 4, "Identixweb": 1}, "evidence": ["e12", "e18", "e19", "e20", "e21", "e22"]},
+    {"theme": "Too expensive (mostly Zapiet)", "severity": "medium", "summary": "Zapiet starts at $49.99 a month, but $0-$20 alternatives exist.", "by_competitor": {"Zapiet": 3}, "evidence": ["e8", "e9", "e10", "e11", "e12", "e13"]},
+    {"theme": "Daily capacity limits missing or failing", "severity": "medium", "summary": "Florists and bakeries need per-day or per-hour caps. Most apps now offer them.", "by_competitor": {"Bird": 1, "Zapiet": 1}, "evidence": ["e13", "e23", "e24", "e25", "e26"]},
+    {"theme": "No usable route or production paperwork", "severity": "low", "summary": "Printed clipboard sheets, and delivery dates missing from invoices.", "by_competitor": {"Shopify Local Delivery": 1, "Genie": 1}, "evidence": ["e27", "e28", "e29", "e30"]}
+  ],
+  "competitors": [
+    {"name": "Zapiet Pickup + Delivery", "url": "https://apps.shopify.com/click-and-collect", "pricing": "From $49.99/mo (250 orders); order limits from $79.99; $179.99 top tier", "positioning": "Smarter delivery options for pickup, local delivery & shipping", "strengths": ["4.9 from 1,887 reviews", "Zones, slots and limits in one app"], "weaknesses": ["Price (e8, e9)", "Support delays (e14, e17)", "Theme and checkout breakage (e1, e4)"], "evidence": ["c3", "e1", "e8"]},
+    {"name": "Pickeasy", "url": "https://apps.shopify.com/order-delivery-date-time", "pricing": "Free (10 orders/mo, slots and order limits); $9.99-$29.99", "positioning": "Order Delivery Date Picker for Store Pickup & Local Delivery", "strengths": ["4.9 from 1,327 reviews", "Cheap"], "weaknesses": ["Theme edits gone wrong (e5)", "Some setups need Shopify Plus (e34)"], "evidence": ["c4", "e5", "e34"]},
+    {"name": "Buunto Date Picker", "url": "https://apps.shopify.com/buunto-date-picker", "pricing": "Free (10 orders); per-day and per-slot limits from $19.99; $36.99 unlimited", "positioning": "Schedule delivery dates and time slots for local delivery, store pickup and click and collect.", "strengths": ["4.8 from 213 reviews, 3 one-star"], "weaknesses": ["Occasional theme incompatibility"], "evidence": ["c5"]},
+    {"name": "Scrollengine Local Delivery & Store Pickup", "url": "https://apps.shopify.com/local-delivery-store-pickup", "pricing": "From $19/mo (scheduling, driver app, 10 routes); limits from $49", "positioning": "Unifies date scheduling, route planning and tracking", "strengths": ["5.0 from 129 reviews", "Already the all-in-one bundle"], "weaknesses": ["Capacity limits gated to $49"], "evidence": ["c6", "c7"]},
+    {"name": "Super Local Delivery & Pickup (toolstr)", "url": "https://apps.shopify.com/local-delivery-routes", "pricing": "Free plan (scheduling widget, zones, driver app, 4 routes/mo); $25-$75 + usage", "positioning": "Local delivery and pickup solution for grocery, florist, bakery, meals, pharmacy, butchery and more.", "strengths": ["Targets this exact buyer"], "weaknesses": ["Only 15 reviews"], "evidence": ["c8"]},
+    {"name": "Shopify native local delivery", "url": "https://www.shopify.com/local-delivery", "pricing": "Free on any plan", "positioning": "Local delivery is available for free on any Shopify plan.", "strengths": ["Zones by radius or postcode (c2)"], "weaknesses": ["No customer date or slot picker found in the docs", "Its driver app reportedly shut down in Jan 2023"], "evidence": ["c1", "c2"]}
+  ],
+  "features": {"columns": ["Date/slot picker", "Daily or slot capacity", "Postcode/radius zones", "Routes + driver app", "Free plan"],
+    "rows": [
+      {"name": "Zapiet", "values": ["yes", "yes", "yes", "partial", "no"]},
+      {"name": "Pickeasy", "values": ["yes", "yes", "yes", "unknown", "yes"]},
+      {"name": "Buunto", "values": ["yes", "yes", "yes", "no", "yes"]},
+      {"name": "Scrollengine", "values": ["yes", "yes", "yes", "yes", "no"]},
+      {"name": "toolstr", "values": ["yes", "unknown", "yes", "yes", "yes"]},
+      {"name": "Shopify native", "values": ["no", "no", "yes", "unknown", "yes"]}
+    ]},
+  "critic": [
+    {"risk": "Crowded category (about 70 apps) where apps rated 4.8-5.0 with free tiers already do slots, capacity, and routes with drivers.", "severity": "high"},
+    {"risk": "The route and production-sheet pivot is already served: EasyRoutes is free up to 50 orders a month and includes pick and packing lists, Mipler sells a delivery-date production report, and Zapiet exports CSV by delivery date.", "severity": "high"},
+    {"risk": "Any incumbent can copy it in a week (a Liquid template or a grouped CSV).", "severity": "high"},
+    {"risk": "The Built for Shopify badge needs 50 net paid installs and 5 reviews; the incumbents already have it.", "severity": "medium"},
+    {"risk": "An add-on depends on each picker app's attribute names, and an upstream change breaks it.", "severity": "medium"},
+    {"risk": "Others have died here: Shopify's own Local Delivery app (around Jan 2023), and reportedly a delivery-date app removed in 2025.", "severity": "medium"},
+    {"risk": "Shopify ships a free native date picker.", "severity": "low", "rebuttal": "Shopify's local delivery docs cover zones and pricing only, and Shopify closed its own driver app. It has moved away from this space."}
+  ],
+  "win_plan": {
+    "positioning": "Tomorrow's production list and driver sheet, printed from whichever date app you already use (hypothesis).",
+    "switching_triggers": [{"trigger": "Fed up with Zapiet's price or support", "move": "Answer Community threads helpfully; offer a free manual setup", "evidence": ["e31", "e33", "e8"]}],
+    "offers": ["Free under 10 orders a day", "No theme code, clean uninstall", "Flat public price"],
+    "build_first": [{"feature": "Printable daily production and route sheet from existing picker attributes", "why": "Only theme not clearly served by a 4.9 incumbent (pain: paperwork, e27-e30). The critic disputes even this."}],
+    "where_to_find": [
+      {"place": "Shopify Community: florist daily order limit thread", "url": "https://community.shopify.com/t/how-can-i-set-a-daily-order-limit-for-my-online-florist-business/88882", "why": "Florists asking for capacity tools"},
+      {"place": "Shopify Community: tracking local delivery orders", "url": "https://community.shopify.com/t/best-apps-for-my-team-to-track-the-status-of-local-delivery-orders/417840", "why": "Printed clipboard sheets today"},
+      {"place": "Zapiet 1-2 star reviews", "url": "https://apps.shopify.com/click-and-collect/reviews?ratings%5B%5D=1&ratings%5B%5D=2", "why": "Merchants on their way out"}
+    ],
+    "trust": ["No theme edits", "Public pricing"],
+    "stop_doing": ["Order-tier price jumps", "Injecting code into theme files"]
+  },
+  "pricing": {"recommendation": "Not before validation; if anything, a $5-$9/mo add-on", "competitor_range": "$0 (10 orders) to $179.99/mo", "rationale": "Free tiers and $9.99-$19.99 plans set a low ceiling. An add-on has to cost less than the picker it sits on."},
+  "validation": {"experiment": "Make each florist's real delivery-day sheet by hand from their Shopify orders for one week, then ask them to pre-pay for an app that does it.", "pass_bar": "Both florists say they tried EasyRoutes Free and a CSV export and still want it, and at least one pre-pays $9 or more", "days": 7,
+    "steps": ["Day 1: ask both florists what they print or write down each delivery morning", "Day 2: have them try EasyRoutes Free and their picker's CSV export", "Days 3-6: hand-make their daily sheet from real orders", "Day 7: ask for a pre-payment"]},
+  "kill_criteria": ["Neither florist pre-pays", "EasyRoutes Free or a CSV export covers their need", "Fewer than 3 more merchants show interest from Community answers within 2 weeks"]
+}

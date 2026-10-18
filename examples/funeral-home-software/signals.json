@@ -1,0 +1,302 @@
+{
+  "records": 195,
+  "sources": {
+    "gather.app": 2,
+    "osirissoftware.com": 2,
+    "passare.com": 1,
+    "frontrunnerpro.com": 1,
+    "partingpro.com": 1,
+    "appstore": 3,
+    "hn": 148,
+    "sourceforge.net": 32,
+    "apps.apple.com": 1,
+    "connectingdirectors.com": 1,
+    "softwaresuggest.com": 2,
+    "toolradar.com": 1
+  },
+  "categories": {
+    "wish": {
+      "count": 1,
+      "distinct_sources": 1,
+      "top": [
+        {
+          "quote": "I wish I could show you, but I can't.",
+          "url": "https://news.ycombinator.com/item?id=511017",
+          "source": "hn",
+          "date": "2009-03-11",
+          "weight": 1.0
+        }
+      ]
+    },
+    "switching": {
+      "count": 6,
+      "distinct_sources": 6,
+      "top": [
+        {
+          "quote": "I, for one, am going to put my tin foil beanie back on and switch to a more obscure OS and architecture combination - and on a more serious note, I feel let down by how unprofessional and downright clueless the government over here handles pretty much all technology related matters.",
+          "url": "https://news.ycombinator.com/item?id=3102365",
+          "source": "hn",
+          "date": "2011-10-12",
+          "weight": 1.24
+        },
+        {
+          "quote": "(3 Reviews and Ratings ) Write a Review Alternatives to Funeral Buddy Popular Alternatives & Related Software Datagate Telecom Billing (12 Ratings) Datagate is a SaaS, telecom billing solution for MSPs that sell UCaaS, VoIP, mobile voice & data services under their own brand.",
+          "url": "https://sourceforge.net/software/product/Funeral-Buddy/",
+          "source": "sourceforge.net",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "(1 Review and Rating ) Write a Review Alternatives to Obit Popular Alternatives & Related Software Sovos (184 Ratings) For over four decades, Sovos has helped organizations of every size meet their tax and regulatory obligations with confidence.",
+          "url": "https://sourceforge.net/software/product/Obit/",
+          "source": "sourceforge.net",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "(1 Review and Rating ) Write a Review Alternatives to Sacred Grounds Popular Alternatives & Related Software Epsilon3 (265 Ratings) Epsilon3 is an AI-powered procedure and resource management tool designed for teams building, testing, and operating advanced products and systems.",
+          "url": "https://sourceforge.net/software/product/Sacred-Grounds/",
+          "source": "sourceforge.net",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Although I resisted for awhile, I'm so happy to have switched from the desktop to the cloud version of TerraPro because I can literally work from anywhere I have an internet connection without having to remote connect to a desktop.",
+          "url": "https://sourceforge.net/software/product/TerraPro/",
+          "source": "sourceforge.net",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "price": {
+      "count": 132,
+      "distinct_sources": 43,
+      "top": [
+        {
+          "quote": "Funeral pricing comparison website targeted with legal threats",
+          "url": "https://news.ycombinator.com/item?id=14443047",
+          "source": "hn",
+          "date": "2017-05-30",
+          "weight": 1.16
+        },
+        {
+          "quote": "Gather Pricing Gather Pricing We Funeral Directors!",
+          "url": "https://www.gather.app/pricing",
+          "source": "gather.app",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "(888) 492-2697 Home Products Case Management AI Obituary Builder Gather Analytics Websites KeepTrack™ Live Streaming Success Stories Pricing About Us Our Story Our Team Referral Program Videos Blog In The News Contact Us Careers See Gather in Action ✕ Let’s get custom.",
+          "url": "https://www.gather.app/pricing",
+          "source": "gather.app",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Gather’s pricing model depends on a few factors specific to your team, so we’ll need to get in touch to give you accurate pricing info.",
+          "url": "https://www.gather.app/pricing",
+          "source": "gather.app",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Chat with us about pricing Request Pricing Simpler Pricing.",
+          "url": "https://www.gather.app/pricing",
+          "source": "gather.app",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "support": {
+      "count": 3,
+      "distinct_sources": 3,
+      "top": [
+        {
+          "quote": "Receive a dedicated account manager and support.",
+          "url": "https://www.gather.app/",
+          "source": "gather.app",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "I got a job at Microsoft as a technical account manager for premier support.",
+          "url": "https://news.ycombinator.com/item?id=10399639",
+          "source": "hn",
+          "date": "2015-10-16",
+          "weight": 1.0
+        },
+        {
+          "quote": "Waiting weeks for a monitoring rollout isn't an option when infrastructure doesn't stop running.",
+          "url": "https://sourceforge.net/software/product/Bereavement-Management-System/",
+          "source": "sourceforge.net",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "bugs": {
+      "count": 15,
+      "distinct_sources": 10,
+      "top": [
+        {
+          "quote": "They really need to fix the formatting and glitches.",
+          "url": "https://apps.apple.com/us/app/id6744944645?see-all=reviews#review-14605606309",
+          "source": "appstore",
+          "date": "2026-09-28",
+          "weight": 2.0
+        },
+        {
+          "quote": "You need to fix the glitches on the mobile app.",
+          "url": "https://apps.apple.com/us/app/id6744944645?see-all=reviews#review-14605606309",
+          "source": "appstore",
+          "date": "2026-09-28",
+          "weight": 2.0
+        },
+        {
+          "quote": "Graduated as an undergrad into the teeth of the dotcom crash.",
+          "url": "https://news.ycombinator.com/item?id=34431981",
+          "source": "hn",
+          "date": "2023-01-18",
+          "weight": 1.0
+        },
+        {
+          "quote": "My personal opinion, which shouldn't be taken as anything more than that, is that A: the next few years are going to be rough, possibly rougher than the dotcom crash but B: in the end, programmer is still a good career choice.",
+          "url": "https://news.ycombinator.com/item?id=34431981",
+          "source": "hn",
+          "date": "2023-01-18",
+          "weight": 1.0
+        },
+        {
+          "quote": "And that's how I rode out the dotcom crash: overall I'd say I was incredibly fortunate.",
+          "url": "https://news.ycombinator.com/item?id=21321185",
+          "source": "hn",
+          "date": "2019-10-22",
+          "weight": 1.0
+        }
+      ]
+    },
+    "missing": {
+      "count": 2,
+      "distinct_sources": 2,
+      "top": [
+        {
+          "quote": "We literally have no way to process all our fruit and vegetable produce without underpaid migrant workers.",
+          "url": "https://news.ycombinator.com/item?id=47846025",
+          "source": "hn",
+          "date": "2026-04-21",
+          "weight": 1.0
+        },
+        {
+          "quote": "Prompts where required information is missing and takes you directly to the source to complete.",
+          "url": "https://sourceforge.net/software/product/Funeral-Buddy/",
+          "source": "sourceforge.net",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "complexity": {
+      "count": 4,
+      "distinct_sources": 3,
+      "top": [
+        {
+          "quote": "We're not another clunky, over-priced enterprise system.",
+          "url": "https://sourceforge.net/software/funeral-home/",
+          "source": "sourceforge.net",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Designed to replace clunky, old scheduling spreadsheets, Resource Guru helps managers get organized fast.",
+          "url": "https://sourceforge.net/software/product/Sacred-Grounds/",
+          "source": "sourceforge.net",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "lockin": {
+      "count": 2,
+      "distinct_sources": 2,
+      "top": [
+        {
+          "quote": "Guided implementation takes weeks, not months, with UK-based support and no minimum term on monthly plans.",
+          "url": "https://sourceforge.net/software/product/EverlyPro/",
+          "source": "sourceforge.net",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    }
+  },
+  "competitors": {
+    "Passare": {
+      "mentions": 9,
+      "pain_by_category": {
+        "price": 23,
+        "support": 1,
+        "bugs": 4
+      }
+    },
+    "Osiris": {
+      "mentions": 18,
+      "pain_by_category": {
+        "price": 68,
+        "complexity": 3,
+        "lockin": 1,
+        "switching": 4,
+        "missing": 1
+      }
+    },
+    "Gather": {
+      "mentions": 19,
+      "pain_by_category": {
+        "price": 64,
+        "support": 1,
+        "complexity": 3,
+        "switching": 4
+      }
+    },
+    "Parting Pro": {
+      "mentions": 10,
+      "pain_by_category": {
+        "price": 21,
+        "complexity": 1
+      }
+    },
+    "Sacred Grounds": {
+      "mentions": 5,
+      "pain_by_category": {
+        "price": 13,
+        "complexity": 4,
+        "switching": 1,
+        "lockin": 1,
+        "bugs": 1
+      }
+    },
+    "TerraPro": {
+      "mentions": 28,
+      "pain_by_category": {
+        "price": 89,
+        "complexity": 4,
+        "lockin": 2,
+        "switching": 5,
+        "missing": 1,
+        "bugs": 1
+      }
+    },
+    "Funeral Buddy": {
+      "mentions": 7,
+      "pain_by_category": {
+        "price": 30,
+        "complexity": 2,
+        "lockin": 1,
+        "switching": 1,
+        "missing": 1
+      }
+    }
+  }
+}

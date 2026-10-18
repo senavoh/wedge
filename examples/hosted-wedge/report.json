@@ -1,0 +1,408 @@
+{
+ "title": "Hosted Wedge for ex-GummySearch users",
+ "subtitle": "Idea stress test: a $19-29/mo hosted version of the open-source Wedge skill, for indie founders who want customer-pain research that doesn't depend on Reddit.",
+ "mode": "idea",
+ "depth": "quick",
+ "date": "2026-10-18",
+ "founder": {
+  "budget": "under $1k",
+  "skills": "built the open-source Wedge skill (Python + agent instructions); small web apps",
+  "hours": "15/week",
+  "risk": "side income",
+  "channel": "online"
+ },
+ "verdict": {
+  "call": "KILL",
+  "score": 54,
+  "summary": "The premise holds: GummySearch stopped taking payments on Nov 30, 2025 after failing to get a commercial Reddit Data API license, and it shuts down Dec 1, 2026. Reddit now requires approval for new API apps. But the exact wedge, no-Reddit pain research pitched at GummySearch refugees for $29/mo, is already on sale (GripeFind). Free substitutes (ChatGPT Deep Research, an MIT-licensed MCP with the same sources, Wedge itself) cover most of the rest. Buyer pain after the shutdown is thin: launches in this category get 0 to 2 HN comments."
+ },
+ "opportunities": [
+  {
+   "name": "Hosted Wedge, $19-29/mo",
+   "one_liner": "Verified customer-pain research from app stores, marketplaces, forums, HN and GitHub, no Reddit.",
+   "score": 54,
+   "scores": {
+    "pain": 5,
+    "willingness_to_pay": 6,
+    "competition_gap": 3,
+    "founder_fit": 8,
+    "reachability": 5,
+    "build_cost": 7
+   },
+   "why": "pain 5: many authors distrust flattering AI validators (e21-e28) and Reddit gating broke tools (e12, e14-e20), but few buyers say they are still stuck after GummySearch (e29, e32). willingness_to_pay 6: GummySearch sold $29/$59/$199 plans to a 135k user base (e4, e6-e8); competitors charge $29-$99/mo (c2, c4, c7); DimeADozen has 3,100+ one-time buyers (c8); there is price resistance (e29); GummySearch revenue is unverified (e11). competition_gap 3: GripeFind sells the same no-Reddit pitch to the same buyer at the same price (c1-c3, c13); source-linked reports already exist (c10); free options exist (c6, c11, r1-r3, r8-r10). founder_fit 8: engine already built, web-app skills, fits $1k and 15 h/week. reachability 5: HN, Indie Hackers and Product Hunt are free, but category launches get 0-2 comments (c13-c15, e32), and Reddit, where this buyer gathered, is closed to the product. build_cost 7: weeks of work, but hosted LLM and fetch costs are unmeasured.",
+   "evidence": [
+    "e21",
+    "e24",
+    "e29",
+    "e4",
+    "e6",
+    "c1",
+    "c2",
+    "c8",
+    "c13"
+   ]
+  }
+ ],
+ "gap": {
+  "statement": "Indie founders who lost GummySearch can't get customer-pain research they trust, because the remaining options either depend on gated Reddit access or score ideas with flattering, unsourced AI output. GripeFind already sells the no-Reddit half at $29/mo, and DimeADozen sells source-linked reports.",
+  "evidence": [
+   "e21",
+   "e24",
+   "e27",
+   "e29",
+   "e32",
+   "e33",
+   "e37"
+  ]
+ },
+ "pains": [
+  {
+   "theme": "AI validators flatter or make things up",
+   "severity": "medium",
+   "summary": "Same score for every idea, 'confirmation-bias validation tool', LLMs too agreeable, 'hallucinated nonsense'.",
+   "by_competitor": {
+    "AI idea validators": 4,
+    "ChatGPT/LLMs": 4
+   },
+   "evidence": [
+    "e21",
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27",
+    "e28"
+   ]
+  },
+  {
+   "theme": "Reddit access is gated; Reddit tools broke",
+   "severity": "high",
+   "summary": "Self-service API apps are gone, approvals refused, apps broke. These are mostly builders, not research buyers.",
+   "by_competitor": {
+    "Reddit API": 8
+   },
+   "evidence": [
+    "e12",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e19",
+    "e20"
+   ]
+  },
+  {
+   "theme": "Manual pain research takes hours, so people build their own",
+   "severity": "medium",
+   "summary": "Founders browse Reddit by hand, or write their own free miners (a substitute).",
+   "by_competitor": {
+    "DIY scripts": 5
+   },
+   "evidence": [
+    "e33",
+    "e34",
+    "e35",
+    "e36",
+    "e37"
+   ]
+  },
+  {
+   "theme": "GummySearch refugees want a replacement but resist paying",
+   "severity": "low",
+   "summary": "Thin: 'Syften is paid', and a $29 tier was 'not much better than reddit search' (Trustpilot, unreachable for re-check).",
+   "by_competitor": {
+    "GummySearch": 3,
+    "Syften": 1
+   },
+   "evidence": [
+    "e29",
+    "e30",
+    "e32"
+   ]
+  }
+ ],
+ "competitors": [
+  {
+   "name": "GripeFind",
+   "url": "https://gripefind.com",
+   "pricing": "$29/mo for 50 queries; 3 free queries",
+   "positioning": "Coming from GummySearch?",
+   "strengths": [
+    "Same no-Reddit-API pitch, same price, same buyer"
+   ],
+   "weaknesses": [
+    "Show HN launch got 2 points, 0 comments"
+   ],
+   "evidence": [
+    "c1",
+    "c2",
+    "c3",
+    "c13"
+   ]
+  },
+  {
+   "name": "Syften",
+   "url": "https://syften.com/pricing",
+   "pricing": "$29.95 / $49.95 / $119.95 per month",
+   "positioning": "AI-filtered keyword monitoring across 15+ community sources",
+   "strengths": [
+    "Many non-Reddit sources, running since 2019"
+   ],
+   "weaknesses": [
+    "Monitoring, not research; seen as 'paid' (e29)"
+   ],
+   "evidence": [
+    "c4",
+    "c5",
+    "e29"
+   ]
+  },
+  {
+   "name": "F5Bot",
+   "url": "https://f5bot.com/",
+   "pricing": "Free",
+   "positioning": "Keyword alerts for Reddit, HN, Lobsters",
+   "strengths": [
+    "Free, huge usage"
+   ],
+   "weaknesses": [
+    "Alerts only, no analysis"
+   ],
+   "evidence": [
+    "c6"
+   ]
+  },
+  {
+   "name": "Reddinbox",
+   "url": "https://reddinbox.com/pricing",
+   "pricing": "$39 / $99 per month",
+   "positioning": "AI audience intelligence across Reddit, X, Bluesky, HN, Facebook",
+   "strengths": [
+    "Multi-source"
+   ],
+   "weaknesses": [
+    "Still leans on Reddit"
+   ],
+   "evidence": [
+    "c7",
+    "c16"
+   ]
+  },
+  {
+   "name": "DimeADozen",
+   "url": "https://www.dimeadozen.ai/",
+   "pricing": "$9 starter report, $129 full, one-time",
+   "positioning": "verifiable, not LLM-hallucinated",
+   "strengths": [
+    "3,100+ paying customers; already sells the 'verified' angle"
+   ],
+   "weaknesses": [
+    "Reports, not ongoing research"
+   ],
+   "evidence": [
+    "c8",
+    "c9",
+    "c10"
+   ]
+  },
+  {
+   "name": "ValidatorAI / ChatGPT / free MCPs",
+   "url": "https://www.validatorai.com/",
+   "pricing": "Free to $20/mo",
+   "positioning": "Free idea scoring and deep research",
+   "strengths": [
+    "Free, already habitual"
+   ],
+   "weaknesses": [
+    "Flattery and invented output (e21-e28)"
+   ],
+   "evidence": [
+    "c11",
+    "r1",
+    "r8"
+   ]
+  }
+ ],
+ "features": {
+  "columns": [
+   "No Reddit dependency",
+   "App store reviews",
+   "GitHub issues",
+   "HN",
+   "Per-quote re-verification",
+   "Under $30/mo"
+  ],
+  "rows": [
+   {
+    "name": "GripeFind",
+    "values": [
+     "yes",
+     "unknown",
+     "unknown",
+     "yes",
+     "unknown",
+     "yes"
+    ]
+   },
+   {
+    "name": "Syften",
+    "values": [
+     "partial",
+     "no",
+     "yes",
+     "yes",
+     "no",
+     "yes"
+    ]
+   },
+   {
+    "name": "F5Bot",
+    "values": [
+     "partial",
+     "no",
+     "no",
+     "yes",
+     "no",
+     "yes"
+    ]
+   },
+   {
+    "name": "DimeADozen",
+    "values": [
+     "unknown",
+     "unknown",
+     "unknown",
+     "unknown",
+     "partial",
+     "yes"
+    ]
+   },
+   {
+    "name": "Feedback Synthesis MCP (free)",
+    "values": [
+     "yes",
+     "yes",
+     "yes",
+     "yes",
+     "unknown",
+     "yes"
+    ]
+   },
+   {
+    "name": "Hosted Wedge (proposed)",
+    "values": [
+     "yes",
+     "yes",
+     "yes",
+     "yes",
+     "yes",
+     "yes"
+    ]
+   }
+  ]
+ },
+ "critic": [
+  {
+   "risk": "GripeFind already sells 'no Reddit API, coming from GummySearch?' at $29/mo to the same buyer.",
+   "severity": "high",
+   "evidence": [
+    "c1",
+    "c2",
+    "c3",
+    "c13"
+   ]
+  },
+  {
+   "risk": "A free MIT-licensed MCP already mines GitHub issues, HN and App Store reviews into evidence-linked pain clusters; with the open-source Wedge skill, that is two free agent-native options. (Its repo shows 0 stars, so it has no traction yet; partial rebuttal only.)",
+   "severity": "high",
+   "evidence": [
+    "r1",
+    "r2",
+    "r3",
+    "r4",
+    "e34",
+    "e35"
+   ]
+  },
+  {
+   "risk": "The GummySearch founder says he will build more market research products in 2026 and owns the 135k-user list.",
+   "severity": "high",
+   "evidence": [
+    "r5",
+    "r6",
+    "e4"
+   ]
+  },
+  {
+   "risk": "ChatGPT Deep Research is already a known $20/mo way to mine reviews, with direct quotes. (Wedge's re-checked quotes answer the distrust in e21-e28, but no source shows deep-research users complaining about fake review quotes; partial rebuttal only.)",
+   "severity": "high",
+   "evidence": [
+    "r8",
+    "r9",
+    "r10"
+   ]
+  },
+  {
+   "risk": "Real pain, but nobody pays monthly: category launches get 0-2 comments; the proven paid model here is $9 one-time.",
+   "severity": "medium",
+   "evidence": [
+    "c14",
+    "c15",
+    "e29",
+    "c8",
+    "c9"
+   ]
+  },
+  {
+   "risk": "Leaving out Reddit avoids GummySearch's fate but drops the source its users valued; there is no evidence that buyers accept the substitute sources.",
+   "severity": "medium",
+   "evidence": [
+    "e1"
+   ]
+  },
+  {
+   "risk": "Apple's guidelines forbid apps from scraping Apple sites; this binds submitted apps, not web services, but volume access to review feeds could be throttled or removed.",
+   "severity": "medium",
+   "evidence": [
+    "r11"
+   ]
+  },
+  {
+   "risk": "GitHub terms could bar commercial collection of issues.",
+   "severity": "low",
+   "evidence": [
+    "r12",
+    "r13"
+   ],
+   "rebuttal": "GitHub says collecting through its API is not scraping, and it bans only spam and the sale of personal information (r12, r13)."
+  },
+  {
+   "risk": "Copyable in a week: the engine is open source.",
+   "severity": "medium",
+   "evidence": [
+    "r1"
+   ]
+  }
+ ],
+ "pricing": {
+  "recommendation": "Don't launch a $19-29/mo subscription. If you test anything, test a one-off report.",
+  "competitor_range": "Free (F5Bot, ValidatorAI) to $29-$99/mo (GripeFind, Syften, Reddinbox); $9-$129 one-time (DimeADozen)",
+  "rationale": "The monthly price slot is taken by GripeFind at $29. The only large paying base found buys one-off reports (c8, c9)."
+ },
+ "validation": {
+  "experiment": "Before writing code, post one free verified Wedge report on HN and Indie Hackers with a $19 'run one for my idea' button.",
+  "pass_bar": "5 paid orders in 7 days",
+  "days": 7,
+  "steps": [
+   "Day 1: run Wedge on 3 ideas from public Ask HN threads and publish the reports",
+   "Day 2-6: offer paid runs in the threads where founders ask for validation",
+   "Day 7: count orders against the pass bar"
+  ]
+ },
+ "kill_criteria": [
+  "Under 5 paid orders in 7 days",
+  "Most buyers ask for Reddit data first"
+ ]
+}

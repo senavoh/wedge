@@ -1,0 +1,12 @@
+# Competitors (quick)
+- SourceForge's funeral-home category lists ~30 products (raw/sf-urls.txt): crowded.
+- Osiris: from $79/mo by call volume on its own pricing page (o1); SourceForge lists $65/mo (o12). Month-to-month, cancel anytime (o2), QuickBooks integration (o3), 30-day free trial.
+- Gather: pricing hidden, "get in touch" (o4); one-time activation + monthly (o5); phone case access, unlimited users (o6).
+- Passare: no public pricing (/pricing 404). Mobile app 3.9 stars from 14 ratings; the one written review is scathing (e1-e3).
+- Parting Pro: $469/mo per SourceForge (o8). /pricing 404.
+- Sacred Grounds: $49/mo, free version (o7). No accounting built in (e11).
+- TerraPro: $125/mo + $35/extra user (o9). Loved for personal support (e12, e15).
+- Funeral Buddy (ANZ-focused): $99/mo + $18/case and up (o10).
+- SRS Computing: $2,495 one-time (o11).
+- Substitutes: Excel/Google Docs (e5).
+- Crowded: cloud case files, e-sign, QuickBooks link, month-to-month, sub-$100 tiers. Empty: nothing verified.

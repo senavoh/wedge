@@ -1,0 +1,468 @@
+{
+ "title": "Sync-health monitor for large WooCommerce catalogs",
+ "subtitle": "Follow-up run testing the pivot from the earlier throttled-sync report: a plugin that watches whichever Meta/Google sync plugin a store already uses and alerts on failures.",
+ "mode": "idea",
+ "depth": "quick",
+ "date": "2026-10-18",
+ "follows": {
+  "title": "Throttled catalog sync for large WooCommerce stores",
+  "verdict": "PIVOT 61",
+  "url": "../woocommerce-plugin-opportunity/"
+ },
+ "founder": {
+  "budget": "under $1k",
+  "skills": "WordPress/WooCommerce plugin dev, PHP, 8 years",
+  "hours": "15/week",
+  "risk": "side income first",
+  "channel": "online"
+ },
+ "verdict": {
+  "call": "PIVOT",
+  "score": 54,
+  "summary": "The pain holds up. Different store owners, across four sync plugins and three sites, describe jobs that stall for days while dashboards say there are no errors (e1, e7, e10). But the monitor as pitched doesn't clear GO. Nobody visibly pays for monitoring on its own: the closest WP.org twin, CatalogCanary, has fewer than 10 installs, and a Shopify monitor has 0 reviews. Feed vendors already email on failed runs. Google pushes approval changes for free. Reading Meta-side status needs App Review. The pivot left to test is an agency multi-site watchdog that reads local jobs only, pre-sold before any build."
+ },
+ "opportunities": [
+  {
+   "name": "Sync-health monitor alongside existing sync plugins",
+   "one_liner": "Alerts when Meta/Google/feed plugin jobs fail, products silently stop syncing, or get disapproved. Freemium, $79-149/yr.",
+   "score": 54,
+   "scores": {
+    "pain": 7,
+    "willingness_to_pay": 4,
+    "competition_gap": 4,
+    "founder_fit": 6,
+    "reachability": 6,
+    "build_cost": 5
+   },
+   "why": "Pain 7: two high themes from different authors on WP.org, wpde.org and the Merchant Center community, mostly from 2026 (e1-e12, e20). Not 8, because posters noticed and asked for help, and few say they left. WTP 4: stores pay for Pro feed plugins (e22-e26), a substitute, but there's no evidence anyone pays for monitoring alone (e43, e52). Gap 4: Google covers big drops for free (e28) and pushes approval changes through its API (e55); WP Product Feed Manager and RexTheme already email on failed runs (e53, e38); CatalogCanary ships a stuck-run watchdog (e50); six other 2026 entrants do local audits (e34, e36, e37). A cross-plugin job monitor wasn't found. Fit 6: local job watching is core Woo work, but Meta status needs App Review (e57). Reach 6: the WooCommerce Facebook group (e46), Woo Slack (e47), wpde.org (e9) and the GMC community (e20) exist, but only WP.org shows volume, and it bans promotion (e48). Build 5: a local MVP takes weeks, but platform reads need OAuth verification (e58) and a hosted endpoint.",
+   "evidence": [
+    "e1",
+    "e7",
+    "e10",
+    "e22",
+    "e28",
+    "e43",
+    "e50",
+    "e53",
+    "e55",
+    "e57"
+   ]
+  }
+ ],
+ "gap": {
+  "statement": "WooCommerce stores with thousands of products that already run a sync or feed plugin can't tell when sync quietly stops, because the plugin dashboards and job logs report \"no errors\" while products stay unsynced or feeds go stale, and the free platform alerts only fire on large Google-side drops.",
+  "evidence": [
+   "e1",
+   "e2",
+   "e7",
+   "e8",
+   "e9",
+   "e10"
+  ]
+ },
+ "pains": [
+  {
+   "theme": "Sync looks healthy while nothing syncs",
+   "severity": "high",
+   "summary": "The dashboard says no errors or setup is complete, and jobs show as completed, but products stay unsynced or at 0.",
+   "by_competitor": {
+    "Google for WooCommerce": 5,
+    "wpde.org (Google for Woo)": 1
+   },
+   "evidence": [
+    "e7",
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12"
+   ]
+  },
+  {
+   "theme": "Jobs stall or stop quietly for days",
+   "severity": "high",
+   "summary": "Feeds stuck at a percentage, frozen Action Scheduler queues, and stale last-updated dates.",
+   "by_competitor": {
+    "Product Feed PRO": 3,
+    "CTX Feed": 1,
+    "Google for WooCommerce": 2
+   },
+   "evidence": [
+    "e1",
+    "e2",
+    "e3",
+    "e4",
+    "e5",
+    "e6"
+   ]
+  },
+  {
+   "theme": "Products go missing or are rejected in bulk",
+   "severity": "medium",
+   "summary": "Whole categories or catalogs drop out of feeds or get rejected, often found late.",
+   "by_competitor": {
+    "Product Feed PRO": 2,
+    "Google for WooCommerce": 3,
+    "CTX Feed": 1,
+    "Meta for WooCommerce": 1,
+    "Other": 2
+   },
+   "evidence": [
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21"
+   ]
+  }
+ ],
+ "competitors": [
+  {
+   "name": "Google Merchant Center + Merchant API",
+   "url": "https://support.google.com/merchants/answer/9262984",
+   "pricing": "free",
+   "positioning": "Product data alerts allow Google to notify you by email as soon as a problem with your eligible products is detected.",
+   "strengths": [
+    "Default email when active products drop significantly (e28)",
+    "Real-time approval-status push API (e55)"
+   ],
+   "weaknesses": [
+    "Only Google-side, and only large drops by default",
+    "Doesn't see the store's own stuck jobs"
+   ],
+   "evidence": [
+    "e27",
+    "e28",
+    "e55"
+   ]
+  },
+  {
+   "name": "Meta Commerce Manager / Meta for WooCommerce",
+   "url": "https://developers.facebook.com/documentation/ads-commerce/catalog/overview",
+   "pricing": "free",
+   "positioning": "Manually : regularly check the Diagnostics view of your catalog.",
+   "strengths": [
+    "Per-product validation box in Woo (e32)"
+   ],
+   "weaknesses": [
+    "Monitoring is manual or build-your-own API (e30, e31)",
+    "Email alerts unconfirmed (e56, third-party)"
+   ],
+   "evidence": [
+    "e30",
+    "e31",
+    "e32",
+    "e56"
+   ]
+  },
+  {
+   "name": "CatalogCanary",
+   "url": "https://wordpress.org/plugins/catalogcanary/",
+   "pricing": "free + Pro (price not captured)",
+   "positioning": "When the feed breaks — products silently vanish, required fields go missing, a run hangs and never finishes — you find out weeks later when your ad performance craters.",
+   "strengths": [
+    "Stuck-run watchdog (e50)",
+    "Slack alerts in Pro (e51)"
+   ],
+   "weaknesses": [
+    "Meta only; replaces the feed rather than monitoring alongside it",
+    "Fewer than 10 installs (e52)"
+   ],
+   "evidence": [
+    "e50",
+    "e51",
+    "e52",
+    "e62"
+   ]
+  },
+  {
+   "name": "Product Feed Manager (RexTheme) / WP Product Feed Manager",
+   "url": "https://wordpress.org/plugins/best-woocommerce-feed/",
+   "pricing": "freemium",
+   "positioning": "New: Add smart feed health monitoring with admin notices and email alerts for failed or incomplete feed runs.",
+   "strengths": [
+    "Vendor-owned failure emails (e38, e53)"
+   ],
+   "weaknesses": [
+    "Only for their own feeds; alerts paused (e39) or noisy (e54)"
+   ],
+   "evidence": [
+    "e38",
+    "e39",
+    "e53",
+    "e54"
+   ]
+  },
+  {
+   "name": "Feed Health Monitor / FeedProof / PodSync (2026 WP.org entrants)",
+   "url": "https://wordpress.org/plugins/feed-health-monitor-for-woocommerce/",
+   "pricing": "free; PodSync paid alert add-on",
+   "positioning": "No Feed Generation Required This plugin does not generate product feeds.",
+   "strengths": [
+    "Email on new critical data errors (e34, e37)"
+   ],
+   "weaknesses": [
+    "Local data audits, not job or platform monitoring (e36)",
+    "0-10 installs each (WP.org API)"
+   ],
+   "evidence": [
+    "e34",
+    "e35",
+    "e36",
+    "e37"
+   ]
+  },
+  {
+   "name": "Shopify monitors (Feed Guard, Feed Sentinel, FeedKill Watch)",
+   "url": "https://apps.shopify.com/feed-guard",
+   "pricing": "$4.99-$19.99/mo",
+   "positioning": "Feed Guard watches your Merchant Center, explains in plain language what is wrong, and repairs the product directly inside your Shopify admin.",
+   "strengths": [
+    "Merchant Center-connected alerts (e41)"
+   ],
+   "weaknesses": [
+    "Shopify only",
+    "0 reviews (e43)"
+   ],
+   "evidence": [
+    "e41",
+    "e42",
+    "e43"
+   ]
+  }
+ ],
+ "features": {
+  "columns": [
+   "Watches other plugins' jobs",
+   "Google-side status",
+   "Meta-side status",
+   "Email/Slack alerts",
+   "WooCommerce"
+  ],
+  "rows": [
+   {
+    "name": "Merchant Center (free)",
+    "values": [
+     "no",
+     "yes",
+     "no",
+     "yes",
+     "partial"
+    ]
+   },
+   {
+    "name": "Meta Commerce Manager",
+    "values": [
+     "no",
+     "no",
+     "yes",
+     "unknown",
+     "partial"
+    ]
+   },
+   {
+    "name": "Google for WooCommerce",
+    "values": [
+     "no",
+     "yes",
+     "no",
+     "unknown",
+     "yes"
+    ]
+   },
+   {
+    "name": "CatalogCanary",
+    "values": [
+     "no",
+     "no",
+     "partial",
+     "yes",
+     "yes"
+    ]
+   },
+   {
+    "name": "RexTheme / WP Product Feed Manager",
+    "values": [
+     "no",
+     "no",
+     "no",
+     "yes",
+     "yes"
+    ]
+   },
+   {
+    "name": "Feed Health Monitor / FeedProof",
+    "values": [
+     "no",
+     "no",
+     "no",
+     "partial",
+     "yes"
+    ]
+   },
+   {
+    "name": "Shopify monitors",
+    "values": [
+     "no",
+     "yes",
+     "no",
+     "yes",
+     "no"
+    ]
+   }
+  ]
+ },
+ "critic": [
+  {
+   "risk": "A direct twin already exists: CatalogCanary ships a stuck-run watchdog and Slack alerts, yet has under 10 installs.",
+   "severity": "high",
+   "evidence": [
+    "e50",
+    "e51",
+    "e52"
+   ]
+  },
+  {
+   "risk": "Nobody pays for monitoring alone: a Shopify monitor has 0 reviews, and CatalogCanary has fewer than 10 installs.",
+   "severity": "high",
+   "evidence": [
+    "e43",
+    "e52"
+   ]
+  },
+  {
+   "risk": "WP.org forums, where the pain lives, ban promotion.",
+   "severity": "medium",
+   "evidence": [
+    "e48"
+   ]
+  },
+  {
+   "risk": "Feed vendors already email on failed runs (WP Product Feed Manager, RexTheme) and can improve that cheaply.",
+   "severity": "high",
+   "evidence": [
+    "e53",
+    "e38"
+   ]
+  },
+  {
+   "risk": "Google side becoming free: real-time approval-status push API, plus a default drop email.",
+   "severity": "high",
+   "evidence": [
+    "e55",
+    "e28"
+   ]
+  },
+  {
+   "risk": "Meta may already email on catalog errors (third-party source only).",
+   "severity": "medium",
+   "evidence": [
+    "e56"
+   ]
+  },
+  {
+   "risk": "Reading Meta-side status needs catalog_management App Review.",
+   "severity": "high",
+   "evidence": [
+    "e57"
+   ]
+  },
+  {
+   "risk": "Google Merchant API requires OAuth verification.",
+   "severity": "medium",
+   "evidence": [
+    "e58"
+   ],
+   "rebuttal": "Google says verification typically takes 3-5 business days (e59)."
+  },
+  {
+   "risk": "Someone tried and died.",
+   "severity": "low",
+   "rebuttal": "Two searches found no shutdown. The pattern is entrants with no traction, not deaths (e52, e43)."
+  }
+ ],
+ "win_plan": {
+  "positioning": "The watchdog for the sync plugin you already run: it tells you when the dashboard says \"no errors\" and nothing is syncing.",
+  "switching_triggers": [
+   {
+    "trigger": "A plugin update leaves feeds or sync frozen",
+    "move": "Answer the thread with the Scheduled Actions diagnosis (no links on WP.org)",
+    "evidence": [
+     "e3",
+     "e5",
+     "e11"
+    ]
+   }
+  ],
+  "offers": [
+   "Agency license covering all client stores",
+   "Local-only, so no Google or Meta account access needed"
+  ],
+  "build_first": [
+   {
+    "feature": "Pending/failed Action Scheduler watcher for gla, wc_facebook, adt_pfp and woo_feed hooks",
+    "why": "pain: jobs stall quietly (e5, e6, e10)"
+   },
+   {
+    "feature": "Feed file staleness and item-count drop alerts",
+    "why": "pain: missing products (e1, e3, e18)"
+   },
+   {
+    "feature": "Multi-site agency digest",
+    "why": "pivot buyer (e60, e61)"
+   }
+  ],
+  "where_to_find": [
+   {
+    "place": "WooCommerce Facebook Group",
+    "url": "https://woocommerce.com/welcome-facebook/",
+    "why": "Official store-owner group (e46)"
+   },
+   {
+    "place": "Woo Community Slack",
+    "url": "https://woocommerce.com/community-support/",
+    "why": "Developers and agencies (e47)"
+   },
+   {
+    "place": "wpde.org WooCommerce forum",
+    "url": "https://wpde.org/thread/202930-products-not-syncing-despite-connected-status-and-completed-actions/",
+    "why": "German store owners with sync failures (e9)"
+   },
+   {
+    "place": "Merchant Center Help Community",
+    "url": "https://support.google.com/merchants/community",
+    "why": "Large-catalog disapproval questions (e20)"
+   }
+  ],
+  "trust": [
+   "Reads only local data; no account tokens"
+  ],
+  "stop_doing": [
+   "Health-score data audits (crowded)",
+   "Meta/Google API reads in v1"
+  ]
+ },
+ "pricing": {
+  "recommendation": "Test a $149/yr agency license (unlimited client sites), not $79 per store",
+  "competitor_range": "$4.99/mo Shopify monitors to $249.50/yr agency feed tiers; Optmyzr from $209/mo",
+  "rationale": "Single-store monitoring shows no buyers. Agencies already pay multi-site tiers and sell monitoring as a service (e60, e61)."
+ },
+ "validation": {
+  "experiment": "Offer 10 WooCommerce agencies a refundable $149/yr founding license for a local-only multi-site sync watchdog.",
+  "pass_bar": "3 prepaid licenses in 7 days",
+  "days": 7,
+  "steps": [
+   "Day 1: list 20 agencies from the Woo Slack and the Facebook group",
+   "Days 2-5: DM with the 'dashboard says no errors' story",
+   "Day 7: count prepaids"
+  ]
+ },
+ "kill_criteria": [
+  "0 to 1 prepaid after 7 days",
+  "Agencies say vendor failure emails are enough"
+ ]
+}

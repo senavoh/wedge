@@ -8,6 +8,8 @@ Conventions:
 - `features.rows[].values` takes `yes`, `no`, `partial` or `unknown`. Use `unknown` rather than guessing.
 - `pains[].by_competitor` can name products that aren't in `competitors`.
 - Leave out `critic[].rebuttal` when a risk is unresolved. The report shows "Unresolved."
+- `critic[].evidence` lists the ids behind a risk (claim `risk-<n>`). A `high` risk needs at least one.
+- `follows` is set only on a follow-up run that tests an earlier run's pivot. The report links back to it.
 
 ```json
 {
@@ -16,6 +18,7 @@ Conventions:
   "mode": "scratch | expertise | idea | compete",
   "depth": "quick | deep",
   "date": "2026-10-17",
+  "follows": {"title": "Earlier run this one follows up", "verdict": "PIVOT 61", "url": "../earlier-slug/report.html"},
 
   "founder": {"budget": "under $1k", "skills": "web dev", "hours": "10/week", "risk": "side income", "channel": "online"},
 
@@ -43,7 +46,7 @@ Conventions:
   "features": {"columns": ["Bulk import", "Client portal", "Month-to-month"],
                "rows": [{"name": "Acme", "values": ["yes", "partial", "no"]}]},
 
-  "critic": [{"risk": "Intuit could bundle this.", "severity": "high | medium | low", "rebuttal": "Evidence-backed answer, or omit for Unresolved."}],
+  "critic": [{"risk": "Intuit already bundles receipt requests in QuickBooks.", "severity": "high | medium | low", "evidence": ["e21"], "rebuttal": "Evidence-backed answer, or omit for Unresolved."}],
 
   "win_plan": {
     "positioning": "The only X for Y that Z.",

@@ -1,0 +1,72 @@
+{
+  "title": "Route-and-invoice app for small pool service companies",
+  "subtitle": "Quick stress-test of a cheaper, simpler Skimmer alternative for solo and small pool routes, from App Store reviews and vendor pricing pages.",
+  "mode": "idea",
+  "depth": "quick",
+  "date": "2026-10-18",
+  "founder": {"budget": "under $2k", "skills": "full-stack dev (React Native + Node)", "hours": "15/week", "risk": "side income first", "channel": "online; cousin runs a 2-truck pool route and can make intros"},
+  "verdict": {"call": "PIVOT", "score": 56, "summary": "The pain is real: six different Skimmer reviewers describe repeated price hikes, and another app's owner-operator with 20 stops saw his bill go from $65 to $115. But \"cheaper\" is already for sale (Paythepoolman at $50 + $15 per tech, QuoteIQ from $29.99) and Skimmer's own $1-per-pool tier is cheap for a small route, so a price wedge alone is thin. Pivot the angle to an offline-first, fast route log with a written price lock for owner-operators, and test it through your cousin's network before building. Customer voice comes from App Store reviews only (Reddit and the review sites blocked this network), so treat it as directional."},
+  "opportunities": [
+    {"name": "Cheaper, simpler Skimmer for small pool routes", "one_liner": "Route, service log and invoicing at a lower, predictable price for solo and 1-3 truck pool companies.",
+     "score": 56,
+     "scores": {"pain": 6, "willingness_to_pay": 7, "competition_gap": 3, "founder_fit": 7, "reachability": 5, "build_cost": 5},
+     "why": "Pain 6: price hikes and reliability complaints repeat across 7+ different App Store reviewers on three apps (e1-e9, e10-e14, e25, e26), but it is one source type and Skimmer still holds 4.62 stars on 3,716 ratings, with loyal fans (e23, e24). Willingness to pay 7: they already pay $49 to $147+ a month and complain about the amount, not about paying (e3, e8, e9, o1-o5). Competition gap 3: per-tech pricing from Paythepoolman and QuoteIQ already undercuts per-pool billing for small routes (o3, o6), Skimmer's own $1 tier is cheap at small scale (o1), and at least nine new pool-route apps are already in the App Store (o8-o11). Founder fit 7: React Native + Node is exactly the stack, $2k covers it, but offline sync, payments and accounting integration at 15 hours a week is months, not weeks. Reachability 5: the cousin's network is a real warm channel, but this run could not verify any public community (Reddit blocked), and App Store reviewers can't be contacted. Build cost 5: a few months of work for offline sync, invoicing and payments.",
+     "evidence": ["e1", "e2", "e3", "e5", "e8", "e9", "e11", "e12", "e15", "o1", "o3", "o6"]}
+  ],
+  "gap": {"statement": "Owner-operators with a small pool route can't get a route-and-invoice app that stays fast and stays the same price, because every option keeps adding features, repricing per pool or per tech, and slowing down in the field.", "evidence": ["e2", "e7", "e9", "e15", "e16", "e1"]},
+  "pains": [
+    {"theme": "Price keeps going up", "severity": "high", "summary": "Per-pool rates doubled, legacy features repriced, repeated increase notices.", "by_competitor": {"Skimmer": 6, "Pool Brain": 1}, "evidence": ["e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8", "e9"]},
+    {"theme": "Slow, crashing, loses sync in the field", "severity": "high", "summary": "Crashes, scrambled routes, no offline mode on bad signal.", "by_competitor": {"Skimmer": 3, "Pool Brain": 2, "PoolTracPro": 2}, "evidence": ["e10", "e11", "e12", "e13", "e14", "e25", "e26"]},
+    {"theme": "Features nobody asked for, then a higher bill", "severity": "medium", "summary": "Bloat slows the app; old features gated behind new tiers.", "by_competitor": {"Skimmer": 4}, "evidence": ["e15", "e16", "e17", "e18"]},
+    {"theme": "Support takes weeks", "severity": "medium", "summary": "Weeks to hear back; months of calls about the same issue.", "by_competitor": {"Skimmer": 2}, "evidence": ["e12", "e19", "e20"]},
+    {"theme": "Billing and invoicing friction", "severity": "low", "summary": "Payment fees above QuickBooks; wants invoicing from the app.", "by_competitor": {"Skimmer": 2}, "evidence": ["e21", "e27"]}
+  ],
+  "competitors": [
+    {"name": "Skimmer", "url": "https://getskimmer.com", "pricing": "$1 or $2 per serviced location per month; Scaling Up $98 base + $2 per extra location", "positioning": "Pool service software for the modern pool pro.", "strengths": ["Loved by many long-time users", "Customer service reports"], "weaknesses": ["Repeated price increases", "Reliability and sync complaints", "Slow support"], "evidence": ["o1", "o2", "e23", "e24", "e5", "e12"]},
+    {"name": "Pool Brain", "url": "https://www.poolbrain.com", "pricing": "$65 per tech per month", "positioning": "All features included, no hidden costs.", "strengths": ["unknown from this run"], "weaknesses": ["77% price increase reported", "Battery drain, scrambled routes"], "evidence": ["o4", "o13", "e8", "e13", "e25"]},
+    {"name": "Paythepoolman", "url": "https://www.paythepoolman.com", "pricing": "$50 base + $15 per tech per month", "positioning": "Prices itself directly against Skimmer and Pool Brain.", "strengths": ["Already the cheap per-tech alternative"], "weaknesses": ["unknown from this run"], "evidence": ["o3"]},
+    {"name": "Pool Office Manager", "url": "https://www.poolofficemanager.com", "pricing": "$125 first user + $25 per extra user", "positioning": "Straightforward pricing.", "strengths": ["Unlimited customers and pictures"], "weaknesses": ["Expensive for a solo"], "evidence": ["o5"]},
+    {"name": "QuoteIQ", "url": "https://myquoteiq.com", "pricing": "Per user, $29.99 to $699 tiers", "positioning": "Attacks Skimmer's per-pool pricing directly.", "strengths": ["Low entry price"], "weaknesses": ["General field-service, not pool-specific (vendor claims only)"], "evidence": ["o6"]},
+    {"name": "PoolDial", "url": "https://www.pooldial.com", "pricing": "$2 per pool per month", "positioning": "Same price as Skimmer.", "strengths": ["unknown from this run"], "weaknesses": ["No cheaper than Skimmer"], "evidence": ["o7", "o12"]}
+  ],
+  "features": {"columns": ["Per-pool pricing", "Per-tech/user pricing", "Free trial"],
+    "rows": [
+      {"name": "Skimmer", "values": ["yes", "no", "yes"]},
+      {"name": "Pool Brain", "values": ["no", "yes", "yes"]},
+      {"name": "Paythepoolman", "values": ["no", "yes", "yes"]},
+      {"name": "Pool Office Manager", "values": ["no", "yes", "unknown"]},
+      {"name": "QuoteIQ", "values": ["no", "yes", "unknown"]},
+      {"name": "PoolDial", "values": ["yes", "no", "unknown"]}
+    ]},
+  "critic": [
+    {"risk": "Cheaper alternatives already exist: Paythepoolman ($50 + $15/tech), QuoteIQ (from $29.99), and at least nine new pool-route apps in the App Store with almost no ratings.", "severity": "high"},
+    {"risk": "Skimmer's own Getting Started tier is $1 per pool, so a solo with a small route already pays little; the price wedge is thin.", "severity": "high"},
+    {"risk": "Switching cost: owners have years of customer and service data in Skimmer (one reviewer says so).", "severity": "medium", "rebuttal": "Only one reviewer raised it (e22); free CSV import and a done-for-you migration address it directly."},
+    {"risk": "Nobody pays for this.", "severity": "low", "rebuttal": "They pay today and complain about the amount, not about paying (e3, e8, e9)."},
+    {"risk": "Someone tried and died.", "severity": "low", "rebuttal": "One search found no shutdowns, only consolidation (Fluidra bought Pooltrackr). The category is being bought, not abandoned."},
+    {"risk": "Skimmer can cut small-route prices whenever it wants.", "severity": "medium"}
+  ],
+  "win_plan": {
+    "positioning": "The pool route app for owner-operators that works with no signal and never changes price.",
+    "switching_triggers": [
+      {"trigger": "A price-increase notice", "move": "Written lifetime price lock plus free import, offered through warm intros the week notices go out", "evidence": ["e5", "e6"]},
+      {"trigger": "A bad day in the field from crashes or lost sync", "move": "Offline-first route log demo on the owner's own route", "evidence": ["e11", "e12", "e14"]}
+    ],
+    "offers": ["Written price lock for as long as you stay", "Free customer-list import", "Month-to-month, cancel anytime"],
+    "build_first": [
+      {"feature": "Offline route and service log that syncs later", "why": "Answers the reliability theme (e12, e14)."},
+      {"feature": "One-tap invoice from the stop", "why": "Answers billing friction (e21, e27)."},
+      {"feature": "CSV import of customers and pools", "why": "Answers switching cost (e22)."}
+    ],
+    "where_to_find": [
+      {"place": "Your cousin's route-owner network", "why": "Only warm channel confirmed; start every test here"},
+      {"place": "Skimmer App Store reviews", "url": "https://apps.apple.com/us/app/skimmer-pro/id1249069756", "why": "Where the price complaints in this report came from; read for language, not for outreach"},
+      {"place": "r/poolprofessionals", "url": "https://www.reddit.com/r/poolprofessionals/", "why": "Not verified this run (Reddit blocked); check activity and self-promotion rules before posting"}
+    ],
+    "trust": ["Public price with a written no-increase promise", "Data export at any time"],
+    "stop_doing": ["Per-pool metering that grows with every customer", "Moving old features behind new tiers (e17)"]
+  },
+  "pricing": {"recommendation": "Flat $29 to $39/mo per company up to ~75 pools, price-locked; test the number in interviews", "competitor_range": "$1 to $2 per pool (Skimmer, PoolDial), $15 to $65 per tech, $29.99+ per user", "rationale": "Must at least match QuoteIQ and Paythepoolman on price, so price is a floor, not the wedge; the lock and the offline reliability are the pitch."},
+  "validation": {"experiment": "Ten 20-minute calls with owner-operators via your cousin, showing a clickable offline route-log prototype and a price-lock offer.", "pass_bar": "5 of 10 agree to pre-pay the first month or join a paid pilot", "days": 7, "steps": ["Day 1: ask your cousin for 10 intros to solo or 1-3 truck owners", "Day 2-3: build a clickable prototype of the offline route log and invoice", "Day 4-6: run the calls; ask what they pay now, last price notice, and what broke last week", "Day 7: count pre-pay commitments against the pass bar"]},
+  "kill_criteria": ["Fewer than 3 of 10 owners will pre-pay", "Most owners say Skimmer's $1 tier or Paythepoolman is fine for them", "Nobody names a reliability or offline problem unprompted"]
+}

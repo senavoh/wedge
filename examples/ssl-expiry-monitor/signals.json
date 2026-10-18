@@ -1,0 +1,290 @@
+{
+  "records": 363,
+  "sources": {
+    "hn": 259,
+    "github": 104
+  },
+  "categories": {
+    "wish": {
+      "count": 0,
+      "distinct_sources": 0,
+      "top": []
+    },
+    "switching": {
+      "count": 5,
+      "distinct_sources": 5,
+      "top": [
+        {
+          "quote": "We moved from AWS to Hetzner, saved 90%, kept ISO 27001 with Ansible Earlier this year I led our migration off AWS to European cloud (Hetzner + OVHcloud), driven by cost (we cut 90%) and data sovereignty (GDPR + CLOUD Act concerns).",
+          "url": "https://news.ycombinator.com/item?id=44335920",
+          "source": "hn",
+          "date": "2025-06-21",
+          "weight": 5.0
+        },
+        {
+          "quote": "It's an alternative to either treating DNS as \"set and forget\", or doing manual checks / DIY scripts.",
+          "url": "https://news.ycombinator.com/item?id=45720670",
+          "source": "hn",
+          "date": "2025-10-27",
+          "weight": 1.0
+        },
+        {
+          "quote": "AFAIK it only forces the browser to use HTTPS and never plain HTTP for that domain, but if you switch from a legit Let's Encrypt to a legit ZeroSSL cert, HSTS won't care about it; only the browser if you have a not-trusted certificate from another CA (or self-signed).",
+          "url": "https://news.ycombinator.com/item?id=45120607",
+          "source": "hn",
+          "date": "2025-09-03",
+          "weight": 1.0
+        },
+        {
+          "quote": "vault agent certificate renewal troubles Have decided to replace our CA with Vault but I'm now facing 2 issues: 1.",
+          "url": "https://github.com/hashicorp/vault/issues/26367",
+          "source": "github",
+          "date": "2024-04-11",
+          "weight": 1.0
+        }
+      ]
+    },
+    "price": {
+      "count": 11,
+      "distinct_sources": 9,
+      "top": [
+        {
+          "quote": "My calc: SES pricing is around $0.1 per 1,000 emails.",
+          "url": "https://news.ycombinator.com/item?id=43701747",
+          "source": "hn",
+          "date": "2025-04-16",
+          "weight": 1.12
+        },
+        {
+          "quote": "Pricing: It's free, but considering a paid version.",
+          "url": "https://news.ycombinator.com/item?id=37408368",
+          "source": "hn",
+          "date": "2023-09-06",
+          "weight": 1.12
+        },
+        {
+          "quote": "I am interested to hear if anyone has had similar problems, whether people 'get' the idea of Silo, and finally would be willing to pay for this simple product (pricing at http://getsilo.com/plans).",
+          "url": "https://news.ycombinator.com/item?id=2556658",
+          "source": "hn",
+          "date": "2011-05-17",
+          "weight": 1.08
+        },
+        {
+          "quote": "Show HN: Uptime monitoring is table stakes I'm trying to disrupt the insane pricing of uptime monitoring.",
+          "url": "https://news.ycombinator.com/item?id=47736853",
+          "source": "hn",
+          "date": "2026-04-12",
+          "weight": 1.04
+        },
+        {
+          "quote": "I made this after getting frustrated with overpriced monitoring tools that were too heavy for simple projects and didn’t offer helpful features like EC2 instance control or intelligent alerts.",
+          "url": "https://news.ycombinator.com/item?id=43953014",
+          "source": "hn",
+          "date": "2025-05-11",
+          "weight": 1.02
+        }
+      ]
+    },
+    "support": {
+      "count": 0,
+      "distinct_sources": 0,
+      "top": []
+    },
+    "bugs": {
+      "count": 25,
+      "distinct_sources": 21,
+      "top": [
+        {
+          "quote": "Back Story: I built the basic tool kit for my previous startup - we were doing SEO and had very slow page speed across a wide variety of pages, so I ran lighthouse on an instance every day and put the results in the database and on a chart.",
+          "url": "https://news.ycombinator.com/item?id=39974850",
+          "source": "hn",
+          "date": "2024-04-08",
+          "weight": 1.18
+        },
+        {
+          "quote": "Slow Performance alerts - if a page goes below a certain performance threshold, alert you 3.",
+          "url": "https://news.ycombinator.com/item?id=39974850",
+          "source": "hn",
+          "date": "2024-04-08",
+          "weight": 1.18
+        },
+        {
+          "quote": "This tool keeps track of your SSL certificates in one dashboard and sends alerts before they expire, eliminating downtime risks and SEO penalties that can harm your business.",
+          "url": "https://news.ycombinator.com/item?id=37408368",
+          "source": "hn",
+          "date": "2023-09-06",
+          "weight": 1.12
+        },
+        {
+          "quote": "Time lost, money spent, website glitches, and unhappy visitors complaining when their browsers say the website is not secure.",
+          "url": "https://news.ycombinator.com/item?id=2556658",
+          "source": "hn",
+          "date": "2011-05-17",
+          "weight": 1.08
+        },
+        {
+          "quote": "A little while ago two major, yet easily avoidable problems occurred, resulting in downtime, lost revenue, stress, and unhappy clients: 1.",
+          "url": "https://news.ycombinator.com/item?id=2560954",
+          "source": "hn",
+          "date": "2011-05-18",
+          "weight": 1.06
+        }
+      ]
+    },
+    "missing": {
+      "count": 27,
+      "distinct_sources": 22,
+      "top": [
+        {
+          "quote": "Add SSL Certificate checks for General TCP ports ### ⚠️ Please verify that this feature request has NOT been suggested before.",
+          "url": "https://github.com/louislam/uptime-kuma/issues/1079",
+          "source": "github",
+          "date": "2021-12-19",
+          "weight": 2.64
+        },
+        {
+          "quote": "[X] I checked and didn't find similar feature request ### 🏷️ Feature Request Type New Notification, New Monitor ### 🔖 Feature description Say you have an application running on a TCP port using an SSL Certificate that will expire eventually.",
+          "url": "https://github.com/louislam/uptime-kuma/issues/1079",
+          "source": "github",
+          "date": "2021-12-19",
+          "weight": 2.64
+        },
+        {
+          "quote": "Notify when SSL/TLS certificate changes ### ⚠️ Please verify that this feature request has NOT been suggested before.",
+          "url": "https://github.com/louislam/uptime-kuma/issues/4143",
+          "source": "github",
+          "date": "2023-12-01",
+          "weight": 1.26
+        },
+        {
+          "quote": "Customizable Alerts for Certificate Expiration: ### 🏷️ Feature Request Type Certificate expiry ### 🔖 Feature description Allow users to configure notifications for certificate expiration: Example: Notify 60, 30, 15, and 5 days before the expiration date.",
+          "url": "https://github.com/louislam/uptime-kuma/issues/5358",
+          "source": "github",
+          "date": "2024-11-18",
+          "weight": 1.08
+        },
+        {
+          "quote": "🏷️ Feature Request Type Dashboard, Status-page, Certificate expiry ### 🔖 Feature description A dashboard that gives the status of all the HTTPs monitors without having to manually add/build them into it.",
+          "url": "https://github.com/louislam/uptime-kuma/issues/4962",
+          "source": "github",
+          "date": "2024-07-25",
+          "weight": 1.08
+        }
+      ]
+    },
+    "complexity": {
+      "count": 2,
+      "distinct_sources": 2,
+      "top": [
+        {
+          "quote": "The problem: Most uptime tools I tried were either too complex, too expensive, or bundled with features I didn’t need.",
+          "url": "https://news.ycombinator.com/item?id=45394922",
+          "source": "hn",
+          "date": "2025-09-27",
+          "weight": 1.0
+        },
+        {
+          "quote": "However, I agree that, unless you really know what you're doing, x509 is too complicated for that.",
+          "url": "https://news.ycombinator.com/item?id=25382508",
+          "source": "hn",
+          "date": "2020-12-11",
+          "weight": 1.0
+        }
+      ]
+    },
+    "lockin": {
+      "count": 15,
+      "distinct_sources": 13,
+      "top": [
+        {
+          "quote": "For contrast, **`aisstream.io`** itself is fine — valid through 26 Aug 2026 — so this looks isolated to the `stream.` subdomain's auto-renewal rather than a site-wide issue.",
+          "url": "https://github.com/aisstream/issues/issues/236",
+          "source": "github",
+          "date": "2026-07-20",
+          "weight": 1.08
+        },
+        {
+          "quote": "This is most likely a failed auto-renewal of certbot or whatever Let's Encrypt agent runs your renewal cron.",
+          "url": "https://github.com/aisstream/issues/issues/189",
+          "source": "github",
+          "date": "2026-05-20",
+          "weight": 1.02
+        },
+        {
+          "quote": "Just check expiration of the active certificate; if it’s under a threshold (say 1 week, assuming you auto-renew it when it’s 3 weeks to expiry; still serving a cert when it’s 1 week to expiration is enough signal that something went wrong) then you alert.",
+          "url": "https://news.ycombinator.com/item?id=46407333",
+          "source": "hn",
+          "date": "2025-12-28",
+          "weight": 1.0
+        },
+        {
+          "quote": "I think I received about 15 'we're disabling email notifications soon' emails over the past several months - one of which was interesting, but none were needed, as I'd originally set this up, per documentation, to auto-renew every 30 days.",
+          "url": "https://news.ycombinator.com/item?id=44642480",
+          "source": "hn",
+          "date": "2025-07-22",
+          "weight": 1.0
+        },
+        {
+          "quote": "Furthermore, their autorenew should have been failing loud and clear, everyone should know from metrics or logs… but nobody noticed anything.",
+          "url": "https://news.ycombinator.com/item?id=46406880",
+          "source": "hn",
+          "date": "2025-12-28",
+          "weight": 1.0
+        }
+      ]
+    }
+  },
+  "competitors": {
+    "UptimeRobot": {
+      "mentions": 2,
+      "pain_by_category": {
+        "bugs": 1
+      }
+    },
+    "Better Stack": {
+      "mentions": 0,
+      "pain_by_category": {}
+    },
+    "StatusCake": {
+      "mentions": 0,
+      "pain_by_category": {}
+    },
+    "updown": {
+      "mentions": 0,
+      "pain_by_category": {}
+    },
+    "HetrixTools": {
+      "mentions": 0,
+      "pain_by_category": {}
+    },
+    "Cert Spotter": {
+      "mentions": 0,
+      "pain_by_category": {}
+    },
+    "TrackSSL": {
+      "mentions": 0,
+      "pain_by_category": {}
+    },
+    "Red Sift": {
+      "mentions": 0,
+      "pain_by_category": {}
+    },
+    "Uptime Kuma": {
+      "mentions": 23,
+      "pain_by_category": {
+        "missing": 9,
+        "bugs": 1
+      }
+    },
+    "Let's Encrypt": {
+      "mentions": 57,
+      "pain_by_category": {
+        "missing": 2,
+        "lockin": 6,
+        "price": 1,
+        "bugs": 3,
+        "switching": 1
+      }
+    }
+  }
+}

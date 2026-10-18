@@ -71,14 +71,30 @@ founder fit → niche scout → competitor map → review mining → gap ranking
 
 ## See real runs
 
-Four real runs, one per mode, unedited. Every quote is checked against its source. All four came back PIVOT: the pain was real every time, and so was the competition.
+**16 real runs. 0 GO.** That isn't a bug. Wedge only says GO when the pain is sharp, people already pay, nobody serves them well, you can reach them for free, and a skeptical critic can't find a sourced reason it fails. Most markets with public complaints already have someone serving them, so most ideas come back PIVOT or KILL. Better to hear that before you build than after.
+
+Every run below is unedited, and every quote links to its source. Re-check any of them with `verify.py`. One of them is Wedge stress-testing a paid version of itself (KILL), and one is Wedge testing its own pivot (the score went down).
 
 | Run | Mode | Verdict | What it found |
 |---|---|---|---|
-| [A simpler invoicing app for solo tradespeople](https://getwedge.dev/examples/tradesperson-invoicing/) ([files](examples/tradesperson-invoicing/)) | Stress-test an idea | **PIVOT 66** | Invoice caps and price hikes are real pain, but indie builders already make the generic app. Build the uncapped, price-locked, offline version. 28 quotes. |
-| [Tools for Shopify merchants, from a small Shopify merchant](https://getwedge.dev/examples/shopify-merchant-tools/) ([files](examples/shopify-merchant-tools/)) | From what you know | **PIVOT 57** | Shopify shut down Stocky and shops are scrambling, but free replacement apps already exist. Sell a done-for-you setup service instead of another app. 93 quotes. |
-| [Taking customers from Bookly and Amelia](https://getwedge.dev/examples/wordpress-booking-plugin/) ([files](examples/wordpress-booking-plugin/)) | Beat my competitors | **PIVOT 63** | Updates that break bookings and slow support drive people away, but good alternatives and importers exist. Lead with a done-for-you rescue and migration. 93 quotes. |
-| [Update-proof event ticketing for WordPress agencies](https://getwedge.dev/examples/wordpress-event-ticketing/) ([files](examples/wordpress-event-ticketing/)) | From scratch, **deep** | **PIVOT 55** | Scouted 7 niches and picked WordPress event ticketing. The critic found a hosted checkout already fixes the main pain, so sell to the agencies that run these sites. 78 quotes, 29 minutes. |
+| [A simpler invoicing app for solo tradespeople](https://getwedge.dev/examples/tradesperson-invoicing/) ([files](examples/tradesperson-invoicing/)) | Stress-test an idea | **PIVOT 66** | Invoice caps and price hikes are real pain, but indie builders already make the generic app. Build the uncapped, price-locked, offline version. |
+| [What WooCommerce plugin to build next](https://getwedge.dev/examples/woocommerce-plugin-opportunity/) ([files](examples/woocommerce-plugin-opportunity/)) | From what you know | **PIVOT 61** | Official Meta and Google sync plugins are rated 2.1 and 2.7 across 1.2M installs. But paid feed plugins already sell large-catalog sync. |
+| [↳ Follow-up: a sync-health monitor for those stores](https://getwedge.dev/examples/woo-sync-health-monitor/) ([files](examples/woo-sync-health-monitor/)) | Stress-test the pivot | **PIVOT 54** | Wedge tested its own pivot. A near-twin exists, nobody pays for monitoring alone, and Google now pushes status changes for free. Score went down. |
+| [What public Shopify app to build](https://getwedge.dev/examples/shopify-app-opportunity/) ([files](examples/shopify-app-opportunity/)) | From what you know | **PIVOT 58** | Stocky's shutdown left a label-printing gap, but free purchase-order apps already print labels. |
+| [Tools for Shopify merchants, from a small Shopify merchant](https://getwedge.dev/examples/shopify-merchant-tools/) ([files](examples/shopify-merchant-tools/)) | From what you know | **PIVOT 57** | Same Stocky gap, found from the merchant side. Sell a done-for-you setup service instead of another app. |
+| [Taking customers from Bookly and Amelia](https://getwedge.dev/examples/wordpress-booking-plugin/) ([files](examples/wordpress-booking-plugin/)) | Beat my competitors | **PIVOT 63** | Updates that break bookings drive people away, but good alternatives and importers exist. Lead with a rescue and migration service. |
+| [Local delivery and pickup scheduling for Shopify](https://getwedge.dev/examples/shopify-local-delivery/) ([files](examples/shopify-local-delivery/)) | Stress-test an idea | **PIVOT 56** | The pain is real, but Pickeasy is rated 4.9 from 1,327 reviews with a free plan, in a category of about 70 apps. |
+| [A cheaper route app than Skimmer for pool cleaners](https://getwedge.dev/examples/pool-service-software/) ([files](examples/pool-service-software/)) | Stress-test an idea | **PIVOT 56** | Six reviewers describe per-pool price hikes, but cheaper apps already exist. Win on a price lock and offline use, not price. |
+| [A booking app for mobile dog groomers](https://getwedge.dev/examples/dog-grooming-software/) ([files](examples/dog-grooming-software/)) | Stress-test an idea | **PIVOT 55** | Groomers complain about MoeGo, but two cheaper "switching from MoeGo?" apps already exist. |
+| [Find me a business (deep run)](https://getwedge.dev/examples/wordpress-event-ticketing/) ([files](examples/wordpress-event-ticketing/)) | From scratch, **deep** | **PIVOT 55** | Scouted 7 niches and picked WordPress event ticketing, then pivoted to selling to agencies. 29 minutes. |
+| [A $4.99/month Pomodoro app for students](https://getwedge.dev/examples/pomodoro-timer-app/) ([files](examples/pomodoro-timer-app/)) | Stress-test an idea | **PIVOT 54** | People are angry at focus apps that added subscriptions, which is exactly what this would be. Sell it once instead. |
+| [An app for independent music teachers](https://getwedge.dev/examples/music-teacher-studio/) ([files](examples/music-teacher-studio/)) | From what you know | **KILL 56** | My Music Staff and free tiers already cover scheduling and billing, and many teachers say free tools are enough. |
+| [A paid, hosted version of Wedge itself](https://getwedge.dev/examples/hosted-wedge/) ([files](examples/hosted-wedge/)) | Stress-test an idea | **KILL 54** | We ran Wedge on Wedge. GummySearch's shutdown is real, but GripeFind already sells the same pitch at the same price. |
+| [A $9/month SSL certificate expiry monitor](https://getwedge.dev/examples/ssl-expiry-monitor/) ([files](examples/ssl-expiry-monitor/)) | Stress-test an idea | **KILL 47** | Expiry emails are already free from several tools, and the people who feel the pain fix it with a script. |
+| [A Peppol e-invoicing plugin for Belgian web shops](https://getwedge.dev/examples/belgium-peppol-woocommerce/) ([files](examples/belgium-peppol-woocommerce/)) | Stress-test an idea | **KILL 46** | The law is real and in force, but the invoicing plugin shops already use sends over Peppol for about €5 a month. |
+| [Software for small independent funeral homes](https://getwedge.dev/examples/funeral-home-software/) ([files](examples/funeral-home-software/)) | Stress-test an idea | **KILL 42** | About 30 products, including a free tier, and most directors' reviews praise the tool they already use. |
+
+What would a GO take? See [what each verdict means](skills/wedge/references/scoring.md). If you get a real one, open a pull request and add it under `examples/`.
 
 ## The skills
 
@@ -128,7 +144,7 @@ curl -fsSL https://getwedge.dev/install.sh | sh -s -- ~/.claude/skills ~/.codex/
 
 Requirements: Python 3.8 or newer, which is preinstalled on macOS and most Linux systems.
 
-**Optional, for Reddit.** Reddit blocks anonymous requests from many networks. To use its official API instead, create a free "script" app at [reddit.com/prefs/apps](https://www.reddit.com/prefs/apps) and set `REDDIT_CLIENT_ID` and `REDDIT_CLIENT_SECRET`. Without them, Wedge uses your agent's own web search for Reddit (`site:reddit.com`). `GITHUB_TOKEN`, if set, raises GitHub's rate limit.
+**Optional, for Reddit.** Reddit blocks anonymous requests from many networks. Without keys, Wedge uses your agent's own web search for Reddit (`site:reddit.com`) and leans on sources that need no keys, such as app store and plugin marketplace reviews. If you already have approved Reddit API access, set `REDDIT_CLIENT_ID` and `REDDIT_CLIENT_SECRET` to use the official API. New Reddit apps now need Reddit's approval under its [Responsible Builder Policy](https://support.reddithelp.com/hc/en-us/articles/42728983564564-Responsible-Builder-Policy), so don't count on getting keys quickly. `GITHUB_TOKEN`, if set, raises GitHub's rate limit.
 
 ## The scripts
 

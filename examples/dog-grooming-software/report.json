@@ -1,0 +1,79 @@
+{
+  "title": "Booking and client app for independent and mobile dog groomers",
+  "subtitle": "Quick idea check: is a MoeGo alternative for solo and mobile groomers worth building for a solo iOS developer?",
+  "mode": "idea",
+  "depth": "quick",
+  "date": "2026-10-18",
+  "founder": {"budget": "under $1k", "skills": "iOS (Swift + Firebase)", "hours": "12/week", "risk": "side income first", "channel": "online, plus partner's groomer Facebook groups"},
+  "verdict": {"call": "PIVOT", "score": 55,
+    "summary": "The pain is real but narrow. About 15 different groomers in App Store reviews complain about slow, buggy apps on the road, wrong addresses, metered texts and payment fees, and charges after cancelling. But a general 'cheaper MoeGo' is already taken: MoeGo is well rated, and ZendPaw ($39) and BooknBuddy (from $29.99) already pitch solo groomers and MoeGo switchers. Only build if the speed-on-the-road angle passes a 10-groomer interview test first. Evidence comes from App Store reviews only; Reddit, Capterra, G2 and Trustpilot were blocked."},
+  "opportunities": [
+    {"name": "Booking + client app for independent/mobile groomers", "one_liner": "Scheduling, client and pet records, reminders and payments for solo groomers.",
+     "score": 55,
+     "scores": {"pain": 6, "willingness_to_pay": 7, "competition_gap": 3, "founder_fit": 6, "reachability": 6, "build_cost": 5},
+     "why": "pain 6: different groomers repeat the same complaints and some cancel (e9, e11, e12, e18, e5), but all of it comes from one source type, and MoeGo averages 4.59 across 297 ratings, so it stays out of 7+. willingness_to_pay 7: they already pay $49+ and complain about price and fees, not about paying at all (e1, e2, e3, e4, e24). competition_gap 3: a well-liked leader (e21, e22, e23) plus cheap solo plans aimed at MoeGo switchers (e26, e27, e31). founder_fit 6: a phone-first app suits a Swift developer, but matching the leaders needs payments, SMS, web booking and import (e24, e25). reachability 6: the partner's groomer Facebook groups (not checked), a MoeGo users' Facebook group (e34), and public App Store reviews. build_cost 5: matching the leaders is months of work at 12 hours a week.",
+     "evidence": ["e1", "e3", "e9", "e11", "e12", "e18", "e21", "e26", "e31"]}
+  ],
+  "gap": {"statement": "Solo mobile groomers who work from a van can't get a scheduling app that stays fast and gets addresses right on the road at a flat price, because the leading apps stall mid-route, send them to the wrong address, and charge extra for texts and payments.",
+    "evidence": ["e1", "e3", "e9", "e11", "e12", "e16"]},
+  "pains": [
+    {"theme": "Slow and buggy on the road, wrong addresses", "severity": "high", "summary": "Mobile groomers pull over waiting for the app, get sent to wrong addresses, or lose appointments.", "by_competitor": {"MoeGo": 4, "DaySmart Pet": 4}, "evidence": ["e9", "e10", "e11", "e12", "e13", "e14", "e15", "e16"]},
+    {"theme": "Charged after cancelling, payout errors", "severity": "high", "summary": "Charges continue after cancel or pause; deposits and withdrawals don't add up.", "by_competitor": {"DaySmart Pet": 2, "MoeGo": 3}, "evidence": ["e2", "e5", "e6", "e7", "e8"]},
+    {"theme": "Overpriced, metered texts and payment fees", "severity": "medium", "summary": "Paying extra for texts and a 3-5% payment fee feels like too much for what the app does.", "by_competitor": {"MoeGo": 3, "Gingr": 1}, "evidence": ["e1", "e2", "e3", "e4"]},
+    {"theme": "Painful setup and import, support fades", "severity": "medium", "summary": "Weeks of setup, failed imports lead to cancelling, and support goes quiet after signup.", "by_competitor": {"MoeGo": 3, "Groomore": 1}, "evidence": ["e17", "e18", "e19", "e20"]}
+  ],
+  "competitors": [
+    {"name": "MoeGo", "url": "https://www.moego.pet/pricing", "pricing": "Mobile: $49/mo Basic, $99/mo per van Growth; SMS capped on lower tiers", "positioning": "The all-in-one solution for solo groomers with simple operations.", "strengths": ["Well rated: 4.59 across 297 App Store ratings; 35 of the 50 most recent reviews are 5-star", "Route optimization, 24/7 support praised"], "weaknesses": ["Slow on the road", "Metered texts, MoeGo Pay fees", "Billing disputes"], "evidence": ["e24", "e25", "e21", "e22", "e1", "e9"]},
+    {"name": "DaySmart Pet", "url": "https://www.daysmart.com/pet/pricing/", "pricing": "Base price not captured from the pricing page; paid add-ons; 14-day trial", "positioning": "Long-standing salon and pet business suite.", "strengths": ["Large installed base (1,099 App Store ratings)"], "weaknesses": ["Crashes, lost appointments", "Charges after cancellation", "Clumsy for mobile groomers"], "evidence": ["e28", "e5", "e13", "e16"]},
+    {"name": "ZendPaw", "url": "https://zendpaw.com/pricing", "pricing": "$39/mo Solo, no contract, 14-day trial", "positioning": "For solo groomers & mobile operators.", "strengths": ["Cheap flat solo price", "Openly targets MoeGo switchers"], "weaknesses": ["No customer reviews collected"], "evidence": ["e26", "e27"]},
+    {"name": "BooknBuddy", "url": "https://www.booknbuddy.com/blog/moego-alternative.html", "pricing": "Revenue-tiered: $29.99/mo up to $3,000 revenue, up to $149.99", "positioning": "MoeGo alternative whose price drops in slow months.", "strengths": ["Lowest entry price found"], "weaknesses": ["No customer reviews collected"], "evidence": ["e31"]},
+    {"name": "Pawfinity", "url": "https://www.pawfinity.com/pricing", "pricing": "$100/mo annual, $110/mo monthly; SMS pay-per-use", "positioning": "For grooming, boarding, daycare, training, therapy, and more.", "strengths": ["Transparent usage pricing"], "weaknesses": ["Expensive for a solo groomer"], "evidence": ["e29", "e33"]},
+    {"name": "Groomer.io", "url": "https://groomer.io/pricing", "pricing": "Not shown on the fetched page", "positioning": "Software and websites purpose-built for grooming salons and mobile groomers.", "strengths": ["Mobile routing, ETA texts"], "weaknesses": ["No US App Store reviews returned"], "evidence": ["e32"]},
+    {"name": "Square Appointments", "url": "https://squareup.com/us/en/appointments/pricing", "pricing": "Square Free tier, paid Plus/Premium", "positioning": "Generic appointments plus payments.", "strengths": ["Free tier"], "weaknesses": ["Not grooming-specific"], "evidence": ["e30"]}
+  ],
+  "features": {"columns": ["Route optimization", "Flat price incl. texts", "Solo plan under $40", "Offline-first on the road", "Hand-done import"],
+    "rows": [
+      {"name": "MoeGo", "values": ["partial", "no", "no", "unknown", "unknown"]},
+      {"name": "ZendPaw", "values": ["unknown", "unknown", "yes", "unknown", "unknown"]},
+      {"name": "BooknBuddy", "values": ["unknown", "unknown", "yes", "unknown", "unknown"]},
+      {"name": "Pawfinity", "values": ["unknown", "no", "no", "unknown", "unknown"]},
+      {"name": "Groomer.io", "values": ["yes", "unknown", "unknown", "unknown", "unknown"]}
+    ]},
+  "critic": [
+    {"risk": "Crowded at the low end: ZendPaw ($39) and BooknBuddy ($29.99) already sell cheap solo plans and target MoeGo switchers, so 'cheaper MoeGo' is not a gap.", "severity": "high"},
+    {"risk": "MoeGo is well liked: 4.59 across 297 ratings, with most recent reviews 5-star.", "severity": "high", "rebuttal": "Partly. The complaints that do exist cluster on speed and addresses while mobile (e9, e11, e12), a narrow angle MoeGo's marketing doesn't lead with. That is a hypothesis to test, not a proven gap."},
+    {"risk": "A free generic substitute (Square Free) exists.", "severity": "medium", "rebuttal": "Not grooming-specific: no pet records or routing (e30)."},
+    {"risk": "Switching cost: client and pet history is hard to move, and a failed import made a groomer cancel.", "severity": "medium", "rebuttal": "Doing the import by hand for the first users turns this into an offer (e18)."},
+    {"risk": "iOS-only leaves out Android groomers, and their clients will need a web booking page anyway.", "severity": "medium"},
+    {"risk": "Someone tried and died: the search found no shutdowns.", "severity": "low", "rebuttal": "No dead competitors found; the market is alive and crowded instead."}
+  ],
+  "win_plan": {
+    "positioning": "The grooming app that doesn't make you pull over: fast on the road, addresses that are right, one flat price with texts included.",
+    "switching_triggers": [
+      {"trigger": "Charged after cancelling or pausing", "move": "One-tap cancel, a written no-charge-after-cancel promise", "evidence": ["e2", "e5", "e7"]},
+      {"trigger": "App stalls mid-route", "move": "Offline-first day view the partner can demo in a van", "evidence": ["e9", "e10"]},
+      {"trigger": "Text and payment fees", "move": "Flat price including texts; use any card processor", "evidence": ["e1", "e3"]}
+    ],
+    "offers": ["Hand-done import from MoeGo or DaySmart", "Flat monthly price including texts", "No forced in-house payments", "Cancel in one tap, never charged after"],
+    "build_first": [
+      {"feature": "Offline day route and client card", "why": "Slow on the road (e9)"},
+      {"feature": "Editable, pinned client addresses", "why": "Wrong addresses (e11, e12)"},
+      {"feature": "Quick grooming report send", "why": "e9"},
+      {"feature": "SMS reminders, flat price", "why": "Metered texts (e1)"},
+      {"feature": "CSV import", "why": "Failed import leads to cancel (e18)"}
+    ],
+    "where_to_find": [
+      {"place": "Partner's groomer Facebook groups", "url": "", "why": "Direct access through the partner; check each group's self-promotion rules"},
+      {"place": "MoeGo App Store 1-3 star reviews", "url": "https://apps.apple.com/us/app/id1561621817?see-all=reviews", "why": "Where unhappy users already post"},
+      {"place": "MoeGo users' Facebook group", "url": "", "why": "Mentioned by a reviewer (e34); not opened"}
+    ],
+    "trust": ["Public flat price", "Written cancel promise", "Data export anytime"],
+    "stop_doing": ["Metered texts", "Forcing an in-house payment processor", "Charging after cancel"]
+  },
+  "pricing": {"recommendation": "$29/mo flat including texts, only if the interviews pass", "competitor_range": "$29.99 (BooknBuddy entry) to $49 (MoeGo mobile Basic), $99+ per van", "rationale": "The low end is already at $30-39, so price can't be the wedge. Texts included and no processor lock-in are the differences."},
+  "validation": {"experiment": "Your partner interviews 10 solo mobile groomers from their Facebook groups: current app, all-in monthly cost, top 2 annoyances. No pitch and no links.",
+    "pass_bar": "6 of 10 name speed or addresses on the road among their top 2 annoyances, AND 3 say they'd switch for $29 flat with import done for them, AND fewer than half are already happy on ZendPaw, BooknBuddy or similar",
+    "days": 7,
+    "steps": ["Day 1-2: partner posts a no-link question in 3 groups, books 10 calls", "Day 3-5: calls, log answers in a sheet", "Day 6: ask the 3 most interested for a $29 pre-order or a migration slot", "Day 7: score against the pass bar"]},
+  "kill_criteria": ["Fewer than 6 of 10 rank on-the-road speed or addresses in their top 2", "Most are already happy with a $30-40 alternative", "Nobody pre-orders"]
+}

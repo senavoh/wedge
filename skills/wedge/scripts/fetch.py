@@ -19,8 +19,9 @@ Usage:
 Always add --out FILE: records are appended there and nothing big is printed.
 Without --out you get a short preview (use --json for full JSONL on stdout).
 Python 3.8+ standard library only. No API keys required. Optional: GITHUB_TOKEN raises
-GitHub's rate limit; REDDIT_CLIENT_ID + REDDIT_CLIENT_SECRET (a free Reddit
-"script" app) use Reddit's official API where the public JSON is blocked.
+GitHub's rate limit; REDDIT_CLIENT_ID + REDDIT_CLIENT_SECRET (a Reddit "script" app;
+Reddit now approves new API apps case by case) use Reddit's official API where
+the public JSON is blocked.
 """
 import argparse
 import base64
@@ -140,8 +141,8 @@ _reddit_token = None
 def reddit_get(path, params):
     """GET a Reddit JSON endpoint, through the official API when possible.
 
-    With REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET set (a free "script" app
-    from https://www.reddit.com/prefs/apps), requests go to oauth.reddit.com,
+    With REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET set (a "script" app; new apps
+    need Reddit's approval under its Responsible Builder Policy), requests go to oauth.reddit.com,
     which works from networks where the public JSON is blocked. Without them,
     the public www.reddit.com JSON is tried.
     """
@@ -164,9 +165,10 @@ def reddit_get(path, params):
     except urllib.error.HTTPError as e:
         if e.code in (403, 429):
             sys.stderr.write(
-                "wedge fetch: reddit.com refused the request (HTTP %s). Set REDDIT_CLIENT_ID and "
-                "REDDIT_CLIENT_SECRET (free app at https://www.reddit.com/prefs/apps) to use Reddit's "
-                "official API, or use your own web search with site:reddit.com for this step.\n" % e.code)
+                "wedge fetch: reddit.com refused the request (HTTP %s). Use your own web search with "
+                "site:reddit.com for this step, or ask the user to paste threads they've seen. If the user "
+                "already has approved Reddit API access, set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET "
+                "(new apps need Reddit's approval, so don't count on it).\n" % e.code)
         raise
 
 

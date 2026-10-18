@@ -1,0 +1,315 @@
+{
+  "records": 210,
+  "sources": {
+    "appstore": 54,
+    "hn": 153,
+    "withorbital.com": 1,
+    "softwarefinder.com": 1,
+    "toolradar.com": 1
+  },
+  "categories": {
+    "wish": {
+      "count": 1,
+      "distinct_sources": 1,
+      "top": [
+        {
+          "quote": "Especially for business software/services, one thing I've heard over and over again is: \"We would pay for this, but there is no way to get an invoice\".",
+          "url": "https://news.ycombinator.com/item?id=19716298",
+          "source": "hn",
+          "date": "2019-04-22",
+          "weight": 1.0
+        }
+      ]
+    },
+    "switching": {
+      "count": 10,
+      "distinct_sources": 5,
+      "top": [
+        {
+          "quote": "We started to migrate to GKE in 2017 and finished within a year or so.",
+          "url": "https://news.ycombinator.com/item?id=32311884",
+          "source": "hn",
+          "date": "2022-08-01",
+          "weight": 1.0
+        },
+        {
+          "quote": "Many routers will have a toggle in there to tell it to switch to #2 for that device.",
+          "url": "https://news.ycombinator.com/item?id=46534444",
+          "source": "hn",
+          "date": "2026-01-07",
+          "weight": 1.0
+        },
+        {
+          "quote": "I'll occasionally switch from one app to the other and there are definite waves in driver quality, pricing, routes (for pool/line).",
+          "url": "https://news.ycombinator.com/item?id=13883018",
+          "source": "hn",
+          "date": "2017-03-16",
+          "weight": 1.0
+        },
+        {
+          "quote": "Quick answer Housecall Pro is the top alternative to Skimmer on our list , followed by Jobber and ServiceFusion .",
+          "url": "https://toolradar.com/alternatives/skimmer",
+          "source": "toolradar.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Teams most often switch away when one of these starts to bite: • Pricing at scale as usage or premium tiers add up.",
+          "url": "https://toolradar.com/alternatives/skimmer",
+          "source": "toolradar.com",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "price": {
+      "count": 26,
+      "distinct_sources": 13,
+      "top": [
+        {
+          "quote": "Horrible Service and Pricing They raised the price on monthly subscription by 77% last month.",
+          "url": "https://apps.apple.com/us/app/id1477150635?see-all=reviews#review-14372362288",
+          "source": "appstore",
+          "date": "2026-07-31",
+          "weight": 2.0
+        },
+        {
+          "quote": "Small businesses need not apply I’m very disappointed with skimmers latest price increase.",
+          "url": "https://apps.apple.com/us/app/id1249069756?see-all=reviews#review-12794784781",
+          "source": "appstore",
+          "date": "2025-06-19",
+          "weight": 2.0
+        },
+        {
+          "quote": "Loyal customer since 2021 has seen 5x price increase If you like disappearing functionality, price increases, and getting nickel and dimed, this is the app for you.",
+          "url": "https://apps.apple.com/us/app/id1249069756?see-all=reviews#review-12604064943",
+          "source": "appstore",
+          "date": "2025-04-30",
+          "weight": 2.0
+        },
+        {
+          "quote": "So expect price increases and having to periodically adjust your business to suit Skimmer.",
+          "url": "https://apps.apple.com/us/app/id1249069756?see-all=reviews#review-12604064943",
+          "source": "appstore",
+          "date": "2025-04-30",
+          "weight": 2.0
+        },
+        {
+          "quote": "Its pay as you go model makes the procurement easy even for Universities, which may also benefit from academic pricing.",
+          "url": "https://news.ycombinator.com/item?id=1810538",
+          "source": "hn",
+          "date": "2010-10-20",
+          "weight": 1.02
+        }
+      ]
+    },
+    "support": {
+      "count": 1,
+      "distinct_sources": 1,
+      "top": [
+        {
+          "quote": "Horrible Service and Pricing They raised the price on monthly subscription by 77% last month.",
+          "url": "https://apps.apple.com/us/app/id1477150635?see-all=reviews#review-14372362288",
+          "source": "appstore",
+          "date": "2026-07-31",
+          "weight": 2.0
+        }
+      ]
+    },
+    "bugs": {
+      "count": 28,
+      "distinct_sources": 24,
+      "top": [
+        {
+          "quote": "App completely destroys your phone battery The new update is absolutely terrible, the app continuously crashes time and time again even with full LTE.",
+          "url": "https://apps.apple.com/us/app/id1477150635?see-all=reviews#review-14132531497",
+          "source": "appstore",
+          "date": "2026-06-01",
+          "weight": 2.0
+        },
+        {
+          "quote": "It’s slow and glitchy constantly.",
+          "url": "https://apps.apple.com/us/app/id1477150635?see-all=reviews#review-13169701654",
+          "source": "appstore",
+          "date": "2025-09-22",
+          "weight": 2.0
+        },
+        {
+          "quote": "Super buggy, crashes 2-4 times with every pool after being clocked in.",
+          "url": "https://apps.apple.com/us/app/id730187022?see-all=reviews#review-6334963188",
+          "source": "appstore",
+          "date": "2020-08-18",
+          "weight": 2.0
+        },
+        {
+          "quote": "Buggy garbage It worked fine for a month or so, now it won't stop begging me to sync the records no matter what screen I'm at or which option I push.",
+          "url": "https://apps.apple.com/us/app/id730187022?see-all=reviews#review-1671474379",
+          "source": "appstore",
+          "date": "2017-07-06",
+          "weight": 2.0
+        },
+        {
+          "quote": "Has managed to become almost unusable I previously left a 2 star review because of how buggy it was.",
+          "url": "https://apps.apple.com/us/app/id1249069756?see-all=reviews#review-12499001337",
+          "source": "appstore",
+          "date": "2025-04-03",
+          "weight": 2.0
+        }
+      ]
+    },
+    "missing": {
+      "count": 11,
+      "distinct_sources": 11,
+      "top": [
+        {
+          "quote": "On one hand, the only reason I feel okay just working intermittently like this is that a) my kiddos are grown and I don't want more b) I have enough in the bank that I can jut bum around doing these gigs indefinitely and c) my living situation is simple and doesn't have a lot of costs.",
+          "url": "https://news.ycombinator.com/item?id=38434428",
+          "source": "hn",
+          "date": "2023-11-27",
+          "weight": 1.0
+        },
+        {
+          "quote": "In particular, it doesn't have to be clear if you have a Ph.D.",
+          "url": "https://news.ycombinator.com/item?id=2236529",
+          "source": "hn",
+          "date": "2011-02-18",
+          "weight": 1.0
+        },
+        {
+          "quote": "For a project that of course we had no way to make go faster or get more direction on (and for a lot of us was our first internship!).",
+          "url": "https://news.ycombinator.com/item?id=19176522",
+          "source": "hn",
+          "date": "2019-02-16",
+          "weight": 1.0
+        },
+        {
+          "quote": "TL;DR: in my opinion 30h/week is the best bang for the buck for both me and my employer because i only work when i'm productive, so the company doesn't have to pay for my idle time and i can minimize stress and frustration.",
+          "url": "https://news.ycombinator.com/item?id=13602673",
+          "source": "hn",
+          "date": "2017-02-08",
+          "weight": 1.0
+        },
+        {
+          "quote": "If GA becomes the state that doesn't have tenure, all the best faculty will go to other states and/or to industry.",
+          "url": "https://news.ycombinator.com/item?id=28864321",
+          "source": "hn",
+          "date": "2021-10-14",
+          "weight": 1.0
+        }
+      ]
+    },
+    "complexity": {
+      "count": 6,
+      "distinct_sources": 6,
+      "top": [
+        {
+          "quote": "The way routes are set up is confusing and inefficient, and you can’t reorder pools in a way that actually sticks for future use.",
+          "url": "https://apps.apple.com/us/app/id1477150635?see-all=reviews#review-14184135297",
+          "source": "appstore",
+          "date": "2026-06-14",
+          "weight": 2.0
+        },
+        {
+          "quote": "It is horrible unintuitive and I hate that my company pays for this garbage.",
+          "url": "https://apps.apple.com/us/app/id730187022?see-all=reviews#review-13759302601",
+          "source": "appstore",
+          "date": "2026-02-17",
+          "weight": 2.0
+        },
+        {
+          "quote": "Graphics from clipart, no logic to the layout, and UI is clunky at best.",
+          "url": "https://apps.apple.com/us/app/id730187022?see-all=reviews#review-9420030736",
+          "source": "appstore",
+          "date": "2022-12-21",
+          "weight": 2.0
+        },
+        {
+          "quote": "Sign-up and set-up take less than 5 minutes, and with Monitis’ heralded, hyper-intuitive interface, there is no learning curve – an incredible claim given that Monitis is perhaps the most powerful application performance management tool available today.",
+          "url": "https://news.ycombinator.com/item?id=1810538",
+          "source": "hn",
+          "date": "2010-10-20",
+          "weight": 1.02
+        },
+        {
+          "quote": "The problem is that attached DBs throw a wrench and make it even more confusing.",
+          "url": "https://news.ycombinator.com/item?id=45012531",
+          "source": "hn",
+          "date": "2025-08-25",
+          "weight": 1.0
+        }
+      ]
+    },
+    "lockin": {
+      "count": 5,
+      "distinct_sources": 3,
+      "top": [
+        {
+          "quote": "Super buggy, crashes 2-4 times with every pool after being clocked in.",
+          "url": "https://apps.apple.com/us/app/id730187022?see-all=reviews#review-6334963188",
+          "source": "appstore",
+          "date": "2020-08-18",
+          "weight": 2.0
+        },
+        {
+          "quote": "It's to be expected that, as free software gains momentum, the first companies to benefit will be the ones that build applications that need to run on reliable, non-locked-in stacks, because a reliable, non-locked in stack is the first thing that free software needed to build.",
+          "url": "https://news.ycombinator.com/item?id=7235209",
+          "source": "hn",
+          "date": "2014-02-13",
+          "weight": 1.0
+        },
+        {
+          "quote": "If your motion is one annual contract with the 5 largest national pool-service consolidators, you do not need the full operator file.",
+          "url": "https://withorbital.com/data/software/skimmer/",
+          "source": "withorbital.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "The typical shop runs 25 to 500 pools and signs annual contracts with one chemical supplier and one equipment distributor.",
+          "url": "https://withorbital.com/data/software/skimmer/",
+          "source": "withorbital.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Third, if your sales motion only fires above 100,000 dollars in annual contract value, the long tail of owner-operators with 3 to 15 trucks will not fit your unit economics.",
+          "url": "https://withorbital.com/data/software/skimmer/",
+          "source": "withorbital.com",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    }
+  },
+  "competitors": {
+    "Skimmer": {
+      "mentions": 19,
+      "pain_by_category": {
+        "complexity": 1,
+        "price": 18,
+        "bugs": 4,
+        "lockin": 3,
+        "missing": 1,
+        "switching": 7
+      }
+    },
+    "Pool Brain": {
+      "mentions": 4,
+      "pain_by_category": {
+        "complexity": 1
+      }
+    },
+    "PoolTracPro": {
+      "mentions": 0,
+      "pain_by_category": {}
+    },
+    "Paythepoolman": {
+      "mentions": 0,
+      "pain_by_category": {}
+    },
+    "Pool Office Manager": {
+      "mentions": 1,
+      "pain_by_category": {}
+    }
+  }
+}

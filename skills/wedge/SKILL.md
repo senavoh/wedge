@@ -43,8 +43,8 @@ python3 $W/fetch.py --out ideas/<slug>/raw/pricing.jsonl pages https://a.com/pri
 
 If a fetcher fails (network, rate limit, blocked source), fall back to your own web search and fetch tools for that source and keep going. Don't stop the run.
 
-- **Reddit** blocks anonymous requests from many networks. If `fetch.py reddit` says so, either ask the user to set `REDDIT_CLIENT_ID` and `REDDIT_CLIENT_SECRET` (a free app at reddit.com/prefs/apps), or search with `site:reddit.com <words>` and read threads with your own fetch tool. Quotes you get that way may end up `unreachable` in `verify.py`. That's acceptable, but say so in the report.
-- **If no customer-voice source works** (Reddit blocked, App Store feeds empty, no marketplace with public reviews), stop collecting and ask the user once. They can paste 10 to 20 reviews or complaints they've seen, add Reddit API credentials, or tell you to finish without them. Save pasted text with its source to `raw/user-provided.jsonl`, mark those quotes `"source": "user-provided"`, and say so in the report. If they choose to finish without, the verdict is INCONCLUSIVE (see `references/scoring.md`).
+- **Reddit** blocks anonymous requests from many networks. If `fetch.py reddit` says so, search with `site:reddit.com <words>` and read threads with your own fetch tool, and lean on sources that work without keys (App Store, Shopify App Store and WordPress.org reviews, community forums). Reddit API credentials (`REDDIT_CLIENT_ID`, `REDDIT_CLIENT_SECRET`) help only if the user already has them: new Reddit apps need Reddit's approval, so don't send the user to create one. Quotes you get that way may end up `unreachable` in `verify.py`. That's acceptable, but say so in the report.
+- **If no customer-voice source works** (Reddit blocked, App Store feeds empty, no marketplace with public reviews), stop collecting and ask the user once. They can paste 10 to 20 reviews or complaints they've seen, add Reddit API credentials if they already have approved access, or tell you to finish without them. Save pasted text with its source to `raw/user-provided.jsonl`, mark those quotes `"source": "user-provided"`, and say so in the report. If they choose to finish without, the verdict is INCONCLUSIVE (see `references/scoring.md`).
 - **A page that returns only a cookie or consent banner,** or under about 300 characters of real text, counts as not fetched. Don't quote search snippets of it as fact.
 
 ## Start a run
@@ -147,4 +147,5 @@ Your final message has exactly these parts:
 1. The verdict and the single best gap, in two or three sentences.
 2. The paths to `report.html` and `card.svg`.
 3. The next action: usually the 7-day test, or `wedge-watch` for an existing business.
+   - For a PIVOT, also offer once: "Want me to stress-test the pivot as a new run?" If yes, start a new `idea`-mode run with its own slug, read the old run only for leads (collect and verify fresh evidence), answer the old critic's risks with evidence, and set `follows` in `report.json`. Run at most one follow-up per original run, so the verdict isn't fished for.
 4. In `quick`, one line offering the extras: "Want a deep run, the landing page, or the comparison and outreach drafts?"

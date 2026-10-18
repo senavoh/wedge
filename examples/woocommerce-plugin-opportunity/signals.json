@@ -1,0 +1,400 @@
+{
+  "records": 371,
+  "sources": {
+    "wordpress.org": 371
+  },
+  "categories": {
+    "wish": {
+      "count": 2,
+      "distinct_sources": 2,
+      "top": [
+        {
+          "quote": "I wish them well and it has some potentially really nice features such as the messenger link up.",
+          "url": "https://wordpress.org/support/topic/a-long-way-to-go-yet-but-could-be-very-good-when-it-is/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Of course we would love to have zero bugs on every release as well!",
+          "url": "https://wordpress.org/support/topic/good-features-badly-coded-slow-support/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "switching": {
+      "count": 13,
+      "distinct_sources": 13,
+      "top": [
+        {
+          "quote": "But having switched to the Woocommerce Product Feed Manager (I have no affiliation to that) the extra clarity of mapping and filtering that gives and the ability to view the generated file was what I needed.",
+          "url": "https://wordpress.org/support/topic/a-long-way-to-go-yet-but-could-be-very-good-when-it-is/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Cons: We moved from another plugin which caused a lot of trouble to the paid version of this plugin.",
+          "url": "https://wordpress.org/support/topic/amazing-support-828/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "We ultimately replaced it with separate dedicated plugins for Meta Pixel/CAPI tracking and catalogue feed generation, giving us much better control over each process.",
+          "url": "https://wordpress.org/support/topic/caused-multiple-site-crashes/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "We see the same thing on both of the 2 sites we have running Booster, so we are just looking for alternatives to do what Booster did.",
+          "url": "https://wordpress.org/support/topic/good-features-but-terrible-performance/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "I am switching to another plugin.",
+          "url": "https://wordpress.org/support/topic/lots-of-problems-6/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "price": {
+      "count": 16,
+      "distinct_sources": 12,
+      "top": [
+        {
+          "quote": "My second ticket (14263) was placed on 22/4 and included a login access as well as a 3-step way to easily reproduce a problem about Open Pricing and WPML.",
+          "url": "https://wordpress.org/support/topic/buyer-beware-infuriating-plus-version-support/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "However, there are some things that do not work 100% with pricing and there is no response in support (as per all the empty threads) Spend many hours researching this and am disappointed in the end.",
+          "url": "https://wordpress.org/support/topic/could-have-been-great-but-no-support/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "This plugin offers a lot of options but with out documentation its not worth the trouble.",
+          "url": "https://wordpress.org/support/topic/documentation-fail/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Now they seem to have changed their pricing strategy and are refusing to continue to provide free updates.",
+          "url": "https://wordpress.org/support/topic/elite-license-fraud/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "We appreciate your feedback about our new pricing and the changes to free updates.",
+          "url": "https://wordpress.org/support/topic/elite-license-fraud/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "support": {
+      "count": 34,
+      "distinct_sources": 27,
+      "top": [
+        {
+          "quote": "Viewing 2 replies - 1 through 2 (of 2 total) The topic ‘AVOID, Abandoned plugin, no answer from support and not working’ is closed to new replies.",
+          "url": "https://wordpress.org/support/topic/avoid-abandoned-plugin-no-answer-from-support-and-not-working/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Viewing 1 replies (of 1 total) The topic ‘Bad Support’ is closed to new replies.",
+          "url": "https://wordpress.org/support/topic/bad-support-101/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "And even then, the speed of the support is slow of not existing.",
+          "url": "https://wordpress.org/support/topic/be-aware-that-the-support-is-129-99-a-year-and-very-slow/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Viewing 2 replies - 1 through 2 (of 2 total) The topic ‘Be warned – serious exploit bug and terrible support’ is closed to new replies.",
+          "url": "https://wordpress.org/support/topic/be-warned-serious-exploit-bug-and-terrible-support/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Terrible customer service.",
+          "url": "https://wordpress.org/support/topic/buyer-beware-15/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "bugs": {
+      "count": 90,
+      "distinct_sources": 59,
+      "top": [
+        {
+          "quote": "https://wordpress.org/support/topic/slow-support-july-7th-2023-till-july-29th-2023/ Viewing 1 replies (of 1 total) The topic ‘Awfull support’ is closed to new replies.",
+          "url": "https://wordpress.org/support/topic/awfull-support/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Be aware that the support is $129.99 a year and very slow!",
+          "url": "https://wordpress.org/support/topic/be-aware-that-the-support-is-129-99-a-year-and-very-slow/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "[Booster for WooCommerce – PDF Invoices, Abandoned Cart, Variation Swatches & 100+ Tools] Review | WordPress.org Be aware that the support is $129.99 a year and very slow!",
+          "url": "https://wordpress.org/support/topic/be-aware-that-the-support-is-129-99-a-year-and-very-slow/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Search for: Search forums Be aware that the support is $129.99 a year and very slow!",
+          "url": "https://wordpress.org/support/topic/be-aware-that-the-support-is-129-99-a-year-and-very-slow/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "The support reaction speed is very slow.",
+          "url": "https://wordpress.org/support/topic/be-aware-that-the-support-is-129-99-a-year-and-very-slow/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "missing": {
+      "count": 23,
+      "distinct_sources": 21,
+      "top": [
+        {
+          "quote": "I recontacted support on 29/4, but still no answer.",
+          "url": "https://wordpress.org/support/topic/buyer-beware-infuriating-plus-version-support/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Have deleted their user account and FTP account (still not sure why they needed that given it was a fresh install and I’ve not needed to use FTP to manage my own site yet).",
+          "url": "https://wordpress.org/support/topic/didnt-work-support-is-ignoring-refund-requests/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Issue still not resolved and haven’t received a response since Mar 22, 2021.",
+          "url": "https://wordpress.org/support/topic/do-not-buy-no-support-once-upgrade/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "I’ll note your “Feed Only” mode suggestion as a feature request, though we can’t make any promises on timing given the current roadmap priorities .",
+          "url": "https://wordpress.org/support/topic/great-for-merchant-center-feeds-but-conversion-tracking-creates-conflicts-with/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "( so have ppom 1 applies to b2b category, and ppom 2 to shoes category makes the system only choose 1 on some products with both categories applied.) The “attach product” feature lacks category and multi-selection.",
+          "url": "https://wordpress.org/support/topic/it-is-a-good-idea-and-a-much-needed-plugin-but/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "complexity": {
+      "count": 4,
+      "distinct_sources": 4,
+      "top": [
+        {
+          "quote": "We know this can be confusing, and we’re here to help.",
+          "url": "https://wordpress.org/support/topic/elite-license-fraud/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Thank you, ksaltik (@ksaltik) 3 years, 3 months ago The answer was a little bit confusing.",
+          "url": "https://wordpress.org/support/topic/pro-version-not-recommending/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Viewing 1 replies (of 1 total) The topic ‘Too complex for its own good’ is closed to new replies.",
+          "url": "https://wordpress.org/support/topic/too-complex-for-its-own-good/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "The setup is confusing and lacking.",
+          "url": "https://wordpress.org/support/topic/wouldnt-work-out-of-the-box-and-no-directions-at-all/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "lockin": {
+      "count": 11,
+      "distinct_sources": 4,
+      "top": [
+        {
+          "quote": "I didn’t know my payment was set to auto-renew, and my old domain was deactivated so I didn’t get any notifications (which they claim they sent).",
+          "url": "https://wordpress.org/support/topic/scam-company-will-not-give-your-money-back/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "They actually added their excuse of auto-renewals being non-refundable onto the policy page AFTER my conversation with them (and I have photographic proof of this).",
+          "url": "https://wordpress.org/support/topic/scam-company-will-not-give-your-money-back/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Viewing 2 replies - 1 through 2 (of 2 total) Plugin Support ansarybadal (@ansarybadal) 3 years, 10 months ago Hi, First of all, the auto-renewal option completely depends upon a user’s choice.",
+          "url": "https://wordpress.org/support/topic/scam-company-will-not-give-your-money-back/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "A user chooses to keep the auto-renewal enabled from his/her account, which is why your account got renewed automatically.",
+          "url": "https://wordpress.org/support/topic/scam-company-will-not-give-your-money-back/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "s However, to make our users aware of the auto-renewal, we send 3 consecutive emails before auto-renewals so they can know that their account is going to be charged.",
+          "url": "https://wordpress.org/support/topic/scam-company-will-not-give-your-money-back/",
+          "source": "wordpress.org",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    }
+  },
+  "competitors": {
+    "YITH": {
+      "mentions": 76,
+      "pain_by_category": {
+        "support": 4,
+        "bugs": 2,
+        "price": 2,
+        "switching": 2,
+        "missing": 3,
+        "lockin": 1,
+        "complexity": 1
+      }
+    },
+    "Booster": {
+      "mentions": 47,
+      "pain_by_category": {
+        "support": 10,
+        "bugs": 18,
+        "price": 6,
+        "missing": 6,
+        "wish": 1,
+        "switching": 2,
+        "complexity": 1
+      }
+    },
+    "Google Listings": {
+      "mentions": 6,
+      "pain_by_category": {
+        "switching": 1,
+        "missing": 3
+      }
+    },
+    "Facebook": {
+      "mentions": 371,
+      "pain_by_category": {
+        "switching": 13,
+        "wish": 2,
+        "support": 34,
+        "bugs": 90,
+        "price": 16,
+        "missing": 23,
+        "complexity": 4,
+        "lockin": 11
+      }
+    },
+    "PPOM": {
+      "mentions": 34,
+      "pain_by_category": {
+        "bugs": 9,
+        "support": 8,
+        "price": 1,
+        "missing": 6,
+        "switching": 1
+      }
+    },
+    "Product Feed PRO": {
+      "mentions": 41,
+      "pain_by_category": {
+        "support": 3,
+        "bugs": 7,
+        "price": 3,
+        "complexity": 1,
+        "missing": 2
+      }
+    },
+    "CTX Feed": {
+      "mentions": 49,
+      "pain_by_category": {
+        "switching": 1,
+        "bugs": 7,
+        "support": 9,
+        "complexity": 1,
+        "lockin": 10
+      }
+    },
+    "HUSKY": {
+      "mentions": 26,
+      "pain_by_category": {
+        "support": 1,
+        "bugs": 9,
+        "switching": 1
+      }
+    },
+    "WOOF": {
+      "mentions": 15,
+      "pain_by_category": {
+        "support": 1,
+        "bugs": 7,
+        "switching": 1
+      }
+    }
+  }
+}

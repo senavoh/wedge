@@ -1,0 +1,483 @@
+{
+ "title": "Shopify app opportunity for a Remix + Polaris developer",
+ "subtitle": "Where merchants already pay and the top apps are badly rated, repriced or shutting down: Stocky refugees, Shopify's Retail Barcode Labels, and subscription migrations.",
+ "mode": "expertise",
+ "depth": "quick",
+ "date": "2026-10-18",
+ "founder": {
+  "budget": "under $2k",
+  "skills": "Shopify app dev (Remix + Polaris), 2 private client apps",
+  "hours": "20/week",
+  "risk": "side income first",
+  "channel": "online"
+ },
+ "verdict": {
+  "call": "PIVOT",
+  "score": 58,
+  "summary": "The pain is real and recent. Shopify shut Stocky on Aug 31 2026, and retailers can't print labels for what they just received on native purchase orders. But at least 8 apps already chase that exact gap, some for free, so a new public app has no opening. Pivot to a fixed-fee migration and receiving/label setup for small POS retailers, built on the new PO Read API, and only productize if 3 or more pay."
+ },
+ "opportunities": [
+  {
+   "name": "Receive-to-label for Stocky refugees",
+   "one_liner": "Print barcode labels for exactly what was received on a native Shopify PO.",
+   "score": 58,
+   "scores": {
+    "pain": 8,
+    "willingness_to_pay": 5,
+    "competition_gap": 2,
+    "founder_fit": 7,
+    "reachability": 7,
+    "build_cost": 6
+   },
+   "why": "pain 8: merchants threaten to leave POS or Shopify over Stocky (e2, e5), many authors across App Store and Community (e1-e9). wtp 5: Stocky was bundled with POS Pro (e31), and price ceilings are low: $40 'insulting', nothing over $100 (e20, e21, e22, e23). gap 2: EasyScan already has POs plus unlimited labels at $9.99 with a 5.0 rating (e32). LabelCraft labels transfers (e33), FyreTrail prints only what was delivered (e42), Stockroom is free with labels (e41, e47), and native POs plus Quick count are free (e29, e30). fit 7: the founder's exact stack. reach 7: active Community threads and review pages, but promotion is limited to the Ask and Offer board (e44). build 6: weeks, on a new read-only PO API (e43).",
+   "evidence": [
+    "e2",
+    "e5",
+    "e8",
+    "e11",
+    "e20",
+    "e32",
+    "e41",
+    "e42",
+    "e43",
+    "e44"
+   ]
+  },
+  {
+   "name": "Better barcode label app",
+   "one_liner": "Replace Shopify's 2.3-star Retail Barcode Labels.",
+   "score": 54,
+   "scores": {
+    "pain": 6,
+    "willingness_to_pay": 4,
+    "competition_gap": 2,
+    "founder_fit": 8,
+    "reachability": 7,
+    "build_cost": 8
+   },
+   "why": "Retail Barcode Labels is rated 2.3: 293 of its 476 reviews are 1-2 stars, and updates keep breaking layouts (e13-e19). But Shopify itself points merchants to alternatives (e39), those alternatives are free to $7.99 and rated 4.9-5.0, and merchants balk at any monthly fee for labels (e24).",
+   "evidence": [
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e24",
+    "e39"
+   ]
+  },
+  {
+   "name": "Subscriptions for Bold / Shopify Subscriptions refugees",
+   "one_liner": "A calmer subscription app for small merchants.",
+   "score": 45,
+   "scores": {
+    "pain": 6,
+    "willingness_to_pay": 5,
+    "competition_gap": 2,
+    "founder_fit": 4,
+    "reachability": 6,
+    "build_cost": 3
+   },
+   "why": "Migrations double-charge customers (e25-e28), but Appstle (5.0, 9,042), Seal and Loop are loved. Payments edge cases and support load don't fit 20 h/week.",
+   "evidence": [
+    "e25",
+    "e26",
+    "e27",
+    "e28"
+   ]
+  }
+ ],
+ "gap": {
+  "statement": "POS Pro retailers who lost Stocky can't print labels for exactly what they just received on a Shopify purchase order, because native POs have no label path and Shopify's Retail Barcode Labels makes them re-add every product by hand.",
+  "evidence": [
+   "e8",
+   "e9",
+   "e10",
+   "e11",
+   "e12"
+  ]
+ },
+ "pains": [
+  {
+   "theme": "Stocky shutdown left retail ops without a home",
+   "severity": "high",
+   "summary": "Merchants say POS is 'no longer worth the pain' and call other platforms.",
+   "by_competitor": {
+    "Stocky": 6,
+    "Shopify native": 1
+   },
+   "evidence": [
+    "e1",
+    "e2",
+    "e3",
+    "e4",
+    "e5",
+    "e6",
+    "e7"
+   ]
+  },
+  {
+   "theme": "Can't print labels for received PO items",
+   "severity": "high",
+   "summary": "Labels have to be rebuilt by hand after receiving.",
+   "by_competitor": {
+    "Retail Barcode Labels": 3,
+    "Stocky": 1,
+    "Yanet": 1,
+    "Shopify native": 1
+   },
+   "evidence": [
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13"
+   ]
+  },
+  {
+   "theme": "Shopify's Retail Barcode Labels breaks workflows",
+   "severity": "medium",
+   "summary": "Default and layout changes, duplicate barcodes, English only.",
+   "by_competitor": {
+    "Retail Barcode Labels": 7
+   },
+   "evidence": [
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e19"
+   ]
+  },
+  {
+   "theme": "Low price ceiling after a free tool died",
+   "severity": "medium",
+   "summary": "They will pay, but expect well under $40-$100/mo.",
+   "by_competitor": {
+    "Stocky": 3,
+    "BarcodeMan": 1
+   },
+   "evidence": [
+    "e20",
+    "e21",
+    "e22",
+    "e23",
+    "e24"
+   ]
+  },
+  {
+   "theme": "Subscription migrations double-charge customers",
+   "severity": "high",
+   "summary": "Bold v2 and Seal break renewals.",
+   "by_competitor": {
+    "Bold": 2,
+    "Seal": 2
+   },
+   "evidence": [
+    "e25",
+    "e26",
+    "e27",
+    "e28"
+   ]
+  }
+ ],
+ "competitors": [
+  {
+   "name": "Shopify native POs + POS Quick count",
+   "url": "https://help.shopify.com/en/manual/products/inventory/transitioning-from-stocky",
+   "pricing": "Free",
+   "positioning": "Create and manage purchase orders in the admin",
+   "strengths": [
+    "Free, built in",
+    "PO Read API since 2026-10 (e43)"
+   ],
+   "weaknesses": [
+    "No PO-to-label path (e11)",
+    "Quick count is for spot checks (e30)"
+   ],
+   "evidence": [
+    "e29",
+    "e30",
+    "e43"
+   ]
+  },
+  {
+   "name": "Stocky (shut down)",
+   "url": "https://apps.shopify.com/stocky",
+   "pricing": "Included with POS Pro",
+   "positioning": "Inventory management for Shopify POS Pro",
+   "strengths": [
+    "Was free with POS Pro"
+   ],
+   "weaknesses": [
+    "Shut down Aug 31 2026",
+    "Rated 3.0 (211)"
+   ],
+   "evidence": [
+    "e31",
+    "e9"
+   ]
+  },
+  {
+   "name": "EasyScan Inventory & Barcode",
+   "url": "https://apps.shopify.com/easyscan-inventory-and-order",
+   "pricing": "From $9.99/mo",
+   "positioning": "Create purchase orders and barcodes, forecast and count stock",
+   "strengths": [
+    "5.0 (374)",
+    "POs + unlimited label printing"
+   ],
+   "weaknesses": [
+    "No complaints found"
+   ],
+   "evidence": [
+    "e32"
+   ]
+  },
+  {
+   "name": "Stockroom (MyWorks)",
+   "url": "https://apps.shopify.com/stock-room",
+   "pricing": "Free",
+   "positioning": "Purchase orders, receiving, labels",
+   "strengths": [
+    "Free",
+    "4.9 (56)"
+   ],
+   "weaknesses": [
+    "Not checked"
+   ],
+   "evidence": [
+    "e41",
+    "e47"
+   ]
+  },
+  {
+   "name": "Retail Barcode Labels (Shopify)",
+   "url": "https://apps.shopify.com/retail-barcode-labels",
+   "pricing": "Free",
+   "positioning": "Create and print barcode labels for your products",
+   "strengths": [
+    "Free, built by Shopify"
+   ],
+   "weaknesses": [
+    "2.3 (476)",
+    "Re-enter items per PO (e11)"
+   ],
+   "evidence": [
+    "e39",
+    "e15"
+   ]
+  },
+  {
+   "name": "New 2026 entrants (Binly, Alfred, FyreTrail, LabelCraft...)",
+   "url": "https://community.shopify.com/t/last-minute-stocky-replacement-recommendations/653016",
+   "pricing": "$0-$19/mo typical; Alfred $29-$99",
+   "positioning": "Stocky replacement",
+   "strengths": [
+    "Already ship PO labels"
+   ],
+   "weaknesses": [
+    "Few reviews"
+   ],
+   "evidence": [
+    "e33",
+    "e35",
+    "e36",
+    "e37",
+    "e40",
+    "e42"
+   ]
+  }
+ ],
+ "features": {
+  "columns": [
+   "Native POs",
+   "Labels from received qty",
+   "Barcode stocktake",
+   "Free plan",
+   "Rated 4.5+"
+  ],
+  "rows": [
+   {
+    "name": "Shopify native",
+    "values": [
+     "yes",
+     "no",
+     "partial",
+     "yes",
+     "unknown"
+    ]
+   },
+   {
+    "name": "EasyScan",
+    "values": [
+     "unknown",
+     "partial",
+     "yes",
+     "no",
+     "yes"
+    ]
+   },
+   {
+    "name": "Stockroom",
+    "values": [
+     "unknown",
+     "yes",
+     "unknown",
+     "yes",
+     "yes"
+    ]
+   },
+   {
+    "name": "LabelCraft",
+    "values": [
+     "unknown",
+     "partial",
+     "no",
+     "yes",
+     "yes"
+    ]
+   },
+   {
+    "name": "Retail Barcode Labels",
+    "values": [
+     "no",
+     "no",
+     "no",
+     "yes",
+     "no"
+    ]
+   }
+  ]
+ },
+ "critic": [
+  {
+   "risk": "Pain is real but the price anchor is $0: free PO apps with labels already exist.",
+   "severity": "high"
+  },
+  {
+   "risk": "Channel closed: Community allows app recommendations only on Ask and Offer, and new apps sit at 0 reviews.",
+   "severity": "high"
+  },
+  {
+   "risk": "Copyable / already copied: at least 5 apps print labels from received quantities.",
+   "severity": "high"
+  },
+  {
+   "risk": "Shopify could add 'print received items' to its own label app.",
+   "severity": "medium"
+  },
+  {
+   "risk": "Someone tried and died.",
+   "severity": "low",
+   "rebuttal": "No graveyard found. Genie Inventory merged with Doss; the space is crowded, not dead."
+  },
+  {
+   "risk": "No public API for native POs.",
+   "severity": "low",
+   "rebuttal": "PO Read API shipped in 2026-10 (read-only), enough for receive-to-label (e43)."
+  }
+ ],
+ "win_plan": {
+  "positioning": "Your Stocky receiving and labels back, set up for your printer, in a week, for a one-time fee.",
+  "switching_triggers": [
+   {
+    "trigger": "Stocky shutdown and the read-only export window",
+    "move": "Fixed-fee migration offer on the Ask and Offer board",
+    "evidence": [
+     "e1",
+     "e6"
+    ]
+   },
+   {
+    "trigger": "A Retail Barcode Labels update breaks a label layout",
+    "move": "Printer-specific template setup",
+    "evidence": [
+     "e15",
+     "e16"
+    ]
+   }
+  ],
+  "offers": [
+   "Fixed-price setup",
+   "Supplier + PO history import from Stocky CSVs",
+   "Printer/label template included",
+   "30 days of fixes"
+  ],
+  "build_first": [
+   {
+    "feature": "Labels for received quantities from a native PO shipment",
+    "why": "pain: PO labels (e8-e12)"
+   },
+   {
+    "feature": "Per-printer templates",
+    "why": "pain: RBL layout breakage (e16)"
+   },
+   {
+    "feature": "Duplicate-barcode check",
+    "why": "pain: RBL duplicates (e17)"
+   }
+  ],
+  "where_to_find": [
+   {
+    "place": "Shopify Community Ask and Offer board",
+    "url": "https://community.shopify.com/guidelines",
+    "why": "The only place app/service offers are allowed (e44)"
+   },
+   {
+    "place": "Stocky threads (helpful answers, no links)",
+    "url": "https://community.shopify.com/t/removing-stocky-is-a-material-retail-operations-risk/589102",
+    "why": "Retailers describing the gap"
+   },
+   {
+    "place": "Retail Barcode Labels 1-2 star reviews",
+    "url": "https://apps.shopify.com/retail-barcode-labels/reviews?ratings%5B%5D=1&ratings%5B%5D=2&sort_by=newest&page=1",
+    "why": "Active complaints in 2026"
+   }
+  ],
+  "trust": [
+   "Public fixed price",
+   "Written scope",
+   "Code handed over"
+  ],
+  "stop_doing": [
+   "Changing label defaults without warning",
+   "Monthly fees for basic labels"
+  ]
+ },
+ "pricing": {
+  "recommendation": "$300-$500 fixed setup + optional $15/mo maintenance",
+  "competitor_range": "Apps $0-$19/mo (Alfred $29-$99); ERPs $350-$1,000+/mo (e46, secondhand)",
+  "rationale": "Public app pricing has collapsed to $0-$19. A service gets paid for the setup work that free apps don't do."
+ },
+ "cost": {
+  "monthly": "$5 to $10",
+  "stack": [
+   {
+    "item": "Shopify Partner account",
+    "cost": "$0"
+   },
+   {
+    "item": "Remix app hosting (Fly.io/Render)",
+    "cost": "$5-$10"
+   }
+  ]
+ },
+ "validation": {
+  "experiment": "One Ask and Offer listing plus 10 helpful thread answers without links.",
+  "pass_bar": "3 booked calls and 1 paid deposit",
+  "days": 7,
+  "steps": [
+   "Day 1: post the Ask and Offer listing",
+   "Days 1-5: answer 10 Stocky/label threads helpfully",
+   "Day 3: ask 2 past clients for retail referrals",
+   "Day 7: count calls and deposits"
+  ]
+ },
+ "kill_criteria": [
+  "0 deposits after 14 days",
+  "Every lead says a free app already covers it"
+ ]
+}

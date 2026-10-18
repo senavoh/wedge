@@ -166,7 +166,7 @@ onScroll();
 
 /* ---------- scroll reveal ---------- */
 if (!reduceMotion) {
-  const els = document.querySelectorAll(".block .head, .vs, .runs, .block .split > *, .quotes, .points, .modes, .steps, .skills, .report, .wins, .itabs, .faq, .support");
+  const els = document.querySelectorAll(".block .head, .vs, .runs, .record, .gosample, .block .split > *, .quotes, .points, .modes, .steps, .skills, .report, .wins, .itabs, .faq, .support");
   els.forEach((el) => el.classList.add("reveal"));
   // Reveal anything whose top has entered the lower edge of the viewport, including
   // anything already scrolled past (fast jumps and anchor links).

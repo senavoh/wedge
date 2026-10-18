@@ -1,0 +1,248 @@
+{
+  "records": 223,
+  "sources": {
+    "appstore": 86,
+    "hn": 137
+  },
+  "categories": {
+    "wish": {
+      "count": 4,
+      "distinct_sources": 4,
+      "top": [
+        {
+          "quote": "Very upset and looking for an alternative.",
+          "url": "https://apps.apple.com/us/app/id866450515?see-all=reviews#review-14637499282",
+          "source": "appstore",
+          "date": "2026-10-07",
+          "weight": 2.0
+        },
+        {
+          "quote": "I wish the developers would bring back the simplicity and minimalism that made Forest so good in the first place.",
+          "url": "https://apps.apple.com/us/app/id866450515?see-all=reviews#review-14590580077",
+          "source": "appstore",
+          "date": "2026-09-24",
+          "weight": 2.0
+        },
+        {
+          "quote": "I wish the bean world was a lot bigger…",
+          "url": "https://apps.apple.com/us/app/id6742278016?see-all=reviews#review-14577203042",
+          "source": "appstore",
+          "date": "2026-09-21",
+          "weight": 1.0
+        },
+        {
+          "quote": "I wish I had learned better self-control when I was younger instead of learning how to grind through hours of other activities, just to get back to grinding in the game.",
+          "url": "https://news.ycombinator.com/item?id=8746843",
+          "source": "hn",
+          "date": "2014-12-13",
+          "weight": 1.0
+        }
+      ]
+    },
+    "switching": {
+      "count": 1,
+      "distinct_sources": 1,
+      "top": [
+        {
+          "quote": "It feels like the app has moved away from the very concept it was built around: focus.",
+          "url": "https://apps.apple.com/us/app/id866450515?see-all=reviews#review-14590580077",
+          "source": "appstore",
+          "date": "2026-09-24",
+          "weight": 2.0
+        }
+      ]
+    },
+    "price": {
+      "count": 2,
+      "distinct_sources": 2,
+      "top": [
+        {
+          "quote": "Paid $10 to still have ads Not worth it.",
+          "url": "https://apps.apple.com/us/app/id1265128036?see-all=reviews#review-13515392977",
+          "source": "appstore",
+          "date": "2025-12-14",
+          "weight": 2.0
+        },
+        {
+          "quote": "I may eventually add optional AI-assisted timer creation as a paid feature, but I haven’t settled on the business model or pricing.",
+          "url": "https://news.ycombinator.com/item?id=49571102",
+          "source": "hn",
+          "date": "2026-09-04",
+          "weight": 1.08
+        }
+      ]
+    },
+    "support": {
+      "count": 1,
+      "distinct_sources": 1,
+      "top": [
+        {
+          "quote": "Support was contacted and they never responded.",
+          "url": "https://apps.apple.com/us/app/id1265128036?see-all=reviews#review-12453837690",
+          "source": "appstore",
+          "date": "2025-03-23",
+          "weight": 2.0
+        }
+      ]
+    },
+    "bugs": {
+      "count": 20,
+      "distinct_sources": 16,
+      "top": [
+        {
+          "quote": "The new subscription model adds so much unnecessary bloat, on top of the repeated UI changes and constant glitching.",
+          "url": "https://apps.apple.com/us/app/id866450515?see-all=reviews#review-14656549519",
+          "source": "appstore",
+          "date": "2026-10-11",
+          "weight": 2.0
+        },
+        {
+          "quote": "Why try and “fix” what isn’t broken Updates made it way worse— and more complicated.",
+          "url": "https://apps.apple.com/us/app/id866450515?see-all=reviews#review-14646070537",
+          "source": "appstore",
+          "date": "2026-10-09",
+          "weight": 2.0
+        },
+        {
+          "quote": "New UI/Update The new update and UI is atrocious, laggy, and cumbersome.",
+          "url": "https://apps.apple.com/us/app/id866450515?see-all=reviews#review-14616298921",
+          "source": "appstore",
+          "date": "2026-10-01",
+          "weight": 2.0
+        },
+        {
+          "quote": "Start from lock screen broken again Every update it seems like something breaks.",
+          "url": "https://apps.apple.com/us/app/id866450515?see-all=reviews#review-14593540360",
+          "source": "appstore",
+          "date": "2026-09-25",
+          "weight": 2.0
+        },
+        {
+          "quote": "Starting the timer again from lock screen worked then stopped working, worked again and now broken again You used to be able to start the timer again straight from the lock screen and not even have to go through all the nonsense dialogues they keep adding with every update.",
+          "url": "https://apps.apple.com/us/app/id866450515?see-all=reviews#review-14593540360",
+          "source": "appstore",
+          "date": "2026-09-25",
+          "weight": 2.0
+        }
+      ]
+    },
+    "missing": {
+      "count": 3,
+      "distinct_sources": 3,
+      "top": [
+        {
+          "quote": "2 stars because I do use it, not 5 because it wastes my time I use this as a phone block and it’s effective, but it’ll randomly make me go through a 5 prompt series on wow, we’re so grateful, here’s a new tree, and there is no way to bypass this.",
+          "url": "https://apps.apple.com/us/app/id866450515?see-all=reviews#review-14564852133",
+          "source": "appstore",
+          "date": "2026-09-18",
+          "weight": 2.0
+        },
+        {
+          "quote": "The Mac app has been highly requested, so I’m very excited to finally release it Always happy to hear feedback, questions, feature requests, or ideas to make FlipCloc even better.",
+          "url": "https://news.ycombinator.com/item?id=49098103",
+          "source": "hn",
+          "date": "2026-07-29",
+          "weight": 1.04
+        },
+        {
+          "quote": "You can argue that OpenAI lacks focus, or that they waste energy on these experiments.",
+          "url": "https://news.ycombinator.com/item?id=45658240",
+          "source": "hn",
+          "date": "2025-10-21",
+          "weight": 1.0
+        }
+      ]
+    },
+    "complexity": {
+      "count": 8,
+      "distinct_sources": 8,
+      "top": [
+        {
+          "quote": "New update is way too clunky The new update requires too many more interactions just to start another session.",
+          "url": "https://apps.apple.com/us/app/id866450515?see-all=reviews#review-14639105828",
+          "source": "appstore",
+          "date": "2026-10-07",
+          "weight": 2.0
+        },
+        {
+          "quote": "its so ugly and hard to use.",
+          "url": "https://apps.apple.com/us/app/id866450515?see-all=reviews#review-14619357443",
+          "source": "appstore",
+          "date": "2026-10-02",
+          "weight": 2.0
+        },
+        {
+          "quote": "Why implement all these clunky animations?",
+          "url": "https://apps.apple.com/us/app/id866450515?see-all=reviews#review-14617689693",
+          "source": "appstore",
+          "date": "2026-10-01",
+          "weight": 2.0
+        },
+        {
+          "quote": "Over time, the interface has become increasingly cluttered, with a bunch of unnecessary features and a more complex, confusing design.",
+          "url": "https://apps.apple.com/us/app/id866450515?see-all=reviews#review-14590580077",
+          "source": "appstore",
+          "date": "2026-09-24",
+          "weight": 2.0
+        },
+        {
+          "quote": "distracting This app is too complicated.",
+          "url": "https://apps.apple.com/us/app/id1459096306?see-all=reviews#review-13514620937",
+          "source": "appstore",
+          "date": "2025-12-14",
+          "weight": 2.0
+        }
+      ]
+    },
+    "lockin": {
+      "count": 0,
+      "distinct_sources": 0,
+      "top": []
+    }
+  },
+  "competitors": {
+    "Forest": {
+      "mentions": 52,
+      "pain_by_category": {
+        "bugs": 6,
+        "wish": 2,
+        "complexity": 4,
+        "switching": 1,
+        "missing": 1
+      }
+    },
+    "Flora": {
+      "mentions": 3,
+      "pain_by_category": {}
+    },
+    "FocusPomo": {
+      "mentions": 0,
+      "pain_by_category": {}
+    },
+    "Focus Keeper": {
+      "mentions": 0,
+      "pain_by_category": {}
+    },
+    "Study Bunny": {
+      "mentions": 0,
+      "pain_by_category": {}
+    },
+    "Focus Friend": {
+      "mentions": 1,
+      "pain_by_category": {}
+    },
+    "Focus Tree": {
+      "mentions": 1,
+      "pain_by_category": {}
+    },
+    "Session": {
+      "mentions": 27,
+      "pain_by_category": {
+        "bugs": 7,
+        "complexity": 1,
+        "wish": 1,
+        "missing": 1
+      }
+    }
+  }
+}

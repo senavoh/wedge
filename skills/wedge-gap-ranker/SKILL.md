@@ -39,6 +39,13 @@ The critic's brief: "You are a skeptical investor who has seen 1,000 of these. F
 
 For each risk, record its severity and either a rebuttal backed by evidence or "Unresolved". Write `ideas/<slug>/critic.md`.
 
+**How to set severity.** Only `high` can block a GO, so it has to be earned:
+- **high:** specific to this idea and backed by a source you found and cited. Put the quote in `evidence.jsonl` with the claim `risk-<n>`, and list its id in the risk's `evidence`. Examples: a named product that already does this exact wedge, a company that tried it and shut down, a platform policy or law that blocks it.
+- **medium:** a risk that could apply to almost any small software business, with no source showing it is happening here: "an incumbent could copy it", "the platform might add this someday", "forums don't allow self-promotion". Keep it in the report; it just can't block a GO alone.
+- **low:** worth knowing, unlikely to matter.
+
+A rebuttal also needs a source. Don't resolve a risk by arguing.
+
 ## Part 3: Verdict
 
 Apply the thresholds in the `wedge` skill's `references/scoring.md`. Don't restate or loosen them here. For PIVOT, name the specific pivot: a different buyer, price or channel. For KILL, name the next best opportunity. Never KILL only because sources were unreachable for verification; cap the verdict at PIVOT and say why.

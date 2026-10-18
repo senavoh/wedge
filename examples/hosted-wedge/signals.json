@@ -1,0 +1,417 @@
+{
+  "records": 1815,
+  "sources": {
+    "hn": 1530,
+    "news.ycombinator.com": 20,
+    "github": 239,
+    "reddinbox.com": 1,
+    "painonsocial.com": 1,
+    "sparktoro.com": 1,
+    "f5bot.com": 1,
+    "gripefind.com": 1,
+    "syften.com": 1,
+    "validatorai.com": 1,
+    "trend-seeker.app": 1,
+    "xpoz.ai": 2,
+    "dimeadozen.ai": 1,
+    "redship.io": 1,
+    "newsletter.failory.com": 1,
+    "producthunt.com": 3,
+    "github.com": 1,
+    "gummysearch.com": 5,
+    "syncsuptech.substack.com": 1,
+    "rdk.taprun.dev": 1,
+    "web.archive.org": 2
+  },
+  "categories": {
+    "wish": {
+      "count": 28,
+      "distinct_sources": 26,
+      "top": [
+        {
+          "quote": "behind the scenes, my computer randomly turns off or python exits, the \"robust lead finding system\" aka my janky script is down for hours because I am sleeping and didnt put it back up But users are happy, they give positive feedback and say its something they would pay for!",
+          "url": "https://news.ycombinator.com/item?id=43968074",
+          "source": "hn",
+          "date": "2025-05-12",
+          "weight": 1.08
+        },
+        {
+          "quote": "Is there a way for Reddit to detect that this isn't authentic traffic from an actual user?",
+          "url": "https://news.ycombinator.com/item?id=36343196",
+          "source": "hn",
+          "date": "2023-06-15",
+          "weight": 1.06
+        },
+        {
+          "quote": "Meanwhile, real potential customers were out there on Reddit and HN literally asking \"is there a tool that does X?\" – and I had no idea.",
+          "url": "https://news.ycombinator.com/item?id=46467598",
+          "source": "hn",
+          "date": "2026-01-02",
+          "weight": 1.02
+        },
+        {
+          "quote": "It finds: - High-intent posts (\"looking for a tool that...\") - Pain point discussions (people complaining about the problem you solve) - Competitor complaints (\"I wish [competitor] would...\") The fun part: I'm now using Needfind to find customers for Needfind itself.",
+          "url": "https://news.ycombinator.com/item?id=46467598",
+          "source": "hn",
+          "date": "2026-01-02",
+          "weight": 1.02
+        },
+        {
+          "quote": "Ask HN: Looking for a Tool to Monitor Hacker News Have you tried this one?",
+          "url": "https://news.ycombinator.com/item?id=36627454",
+          "source": "hn",
+          "date": "2023-07-07",
+          "weight": 1.0
+        }
+      ]
+    },
+    "switching": {
+      "count": 59,
+      "distinct_sources": 51,
+      "top": [
+        {
+          "quote": "For this to be a reliable product I decided to ditch the whole Windows \"hooks are kinda useless\" shitshow, and went for Linux/BSD/Unizes in general first, while leveraging a mixture of golang for userspace and eBPF for kernelspace.",
+          "url": "https://news.ycombinator.com/item?id=36149904",
+          "source": "hn",
+          "date": "2023-06-01",
+          "weight": 1.84
+        },
+        {
+          "quote": "[Feature]: Support public Reddit scrapers as an alternative to API keys ### Summary Allow the bot to fetch Reddit posts using public JSON endpoints as an alternative to the official Reddit API, so users don't need to go through the Reddit app approval process.",
+          "url": "https://github.com/elebumm/RedditVideoMakerBot/issues/2545",
+          "source": "github",
+          "date": "2026-05-04",
+          "weight": 1.14
+        },
+        {
+          "quote": "Proposed Solution Add support for public Reddit scrapers as an alternative to the official Reddit API.",
+          "url": "https://github.com/elebumm/RedditVideoMakerBot/issues/2545",
+          "source": "github",
+          "date": "2026-05-04",
+          "weight": 1.14
+        },
+        {
+          "quote": "https://www.reddit.com/r/{subreddit}/top.json) as an alternative to the official Reddit API.",
+          "url": "https://github.com/elebumm/RedditVideoMakerBot/issues/2545",
+          "source": "github",
+          "date": "2026-05-04",
+          "weight": 1.14
+        },
+        {
+          "quote": "I'm working on https://syften.com - a few of my users switched from Mention.",
+          "url": "https://news.ycombinator.com/item?id=40245049",
+          "source": "hn",
+          "date": "2024-05-03",
+          "weight": 1.0
+        }
+      ]
+    },
+    "price": {
+      "count": 107,
+      "distinct_sources": 69,
+      "top": [
+        {
+          "quote": "Reddit API Pricing Would Cost Apollo Developer $20M per Year",
+          "url": "https://news.ycombinator.com/item?id=36142285",
+          "source": "hn",
+          "date": "2023-05-31",
+          "weight": 5.0
+        },
+        {
+          "quote": "Reddit’s API pricing results in shocking $20M-a-year bill for Apollo",
+          "url": "https://news.ycombinator.com/item?id=36147252",
+          "source": "hn",
+          "date": "2023-06-01",
+          "weight": 3.42
+        },
+        {
+          "quote": "Templates like Product Market Fit surveys are live now with more advanced ones like Van Westendorp pricing surveys coming soon (email me for early access).",
+          "url": "https://news.ycombinator.com/item?id=26079141",
+          "source": "hn",
+          "date": "2021-02-09",
+          "weight": 2.8
+        },
+        {
+          "quote": "For example, one of our early customers qualifies leads with questions like, \"Do they offer subscription or usage-based pricing?\" Most existing lead generation tools have forced founders to choose between thoughtful qualification research and increasing the reach of their high-quality outbound.",
+          "url": "https://news.ycombinator.com/item?id=41322730",
+          "source": "hn",
+          "date": "2024-08-22",
+          "weight": 2.1
+        },
+        {
+          "quote": "Open letter on Reddit API pricing changes and their impact on communities",
+          "url": "https://news.ycombinator.com/item?id=36159487",
+          "source": "hn",
+          "date": "2023-06-02",
+          "weight": 1.14
+        }
+      ]
+    },
+    "support": {
+      "count": 3,
+      "distinct_sources": 3,
+      "top": [
+        {
+          "quote": "There is a very close correlation between high prices and bad service and monopolistic behavior.",
+          "url": "https://news.ycombinator.com/item?id=23385491",
+          "source": "hn",
+          "date": "2020-06-01",
+          "weight": 1.0
+        },
+        {
+          "quote": "No response from the CRA?",
+          "url": "https://news.ycombinator.com/item?id=7135833",
+          "source": "hn",
+          "date": "2014-01-28",
+          "weight": 1.0
+        },
+        {
+          "quote": "There's a note from the account manager: *\"Client says this is market rate for the concept stage.\"* Thabo leans back.",
+          "url": "https://github.com/proxima424/westworld/issues/108",
+          "source": "github",
+          "date": "2026-05-18",
+          "weight": 1.0
+        }
+      ]
+    },
+    "bugs": {
+      "count": 121,
+      "distinct_sources": 98,
+      "top": [
+        {
+          "quote": "At my job we collectively have several small but annoying, tedious, confusing or slow operations.",
+          "url": "https://news.ycombinator.com/item?id=5727598",
+          "source": "hn",
+          "date": "2013-05-18",
+          "weight": 1.18
+        },
+        {
+          "quote": "If your store is slow this pages will be also slow.",
+          "url": "https://news.ycombinator.com/item?id=39589725",
+          "source": "hn",
+          "date": "2024-03-04",
+          "weight": 1.06
+        },
+        {
+          "quote": "Google Alerts Doesn't Work.",
+          "url": "https://news.ycombinator.com/item?id=29340359",
+          "source": "hn",
+          "date": "2021-11-25",
+          "weight": 1.06
+        },
+        {
+          "quote": "I'm at a big, slow, highly process-driven and regulated company, our tools are rough, and would love to steer the PM org there into 2021 (let's all forget 2020).",
+          "url": "https://news.ycombinator.com/item?id=25452166",
+          "source": "hn",
+          "date": "2020-12-17",
+          "weight": 1.04
+        },
+        {
+          "quote": "Booking customer discovery calls has been very slow.",
+          "url": "https://news.ycombinator.com/item?id=43882589",
+          "source": "hn",
+          "date": "2025-05-03",
+          "weight": 1.02
+        }
+      ]
+    },
+    "missing": {
+      "count": 84,
+      "distinct_sources": 74,
+      "top": [
+        {
+          "quote": "The state of some travel startups and why some are missing the pain point",
+          "url": "https://news.ycombinator.com/item?id=5826480",
+          "source": "hn",
+          "date": "2013-06-05",
+          "weight": 1.9
+        },
+        {
+          "quote": "Is your feature request related to a problem?",
+          "url": "https://github.com/elebumm/RedditVideoMakerBot/issues/2545",
+          "source": "github",
+          "date": "2026-05-04",
+          "weight": 1.14
+        },
+        {
+          "quote": "🚀 Feature Request **Problem** Reddit's app approval process has become significantly harder to get through.",
+          "url": "https://github.com/elebumm/RedditVideoMakerBot/issues/2545",
+          "source": "github",
+          "date": "2026-05-04",
+          "weight": 1.14
+        },
+        {
+          "quote": "But problem is they have to build each product pages manually, there’s no way to create landing page where many products are listed (in short no e-commerce like template available).",
+          "url": "https://news.ycombinator.com/item?id=39589725",
+          "source": "hn",
+          "date": "2024-03-04",
+          "weight": 1.06
+        },
+        {
+          "quote": "I'd love to get feedback and feature requests.",
+          "url": "https://news.ycombinator.com/item?id=44234249",
+          "source": "hn",
+          "date": "2025-06-10",
+          "weight": 1.04
+        }
+      ]
+    },
+    "complexity": {
+      "count": 20,
+      "distinct_sources": 19,
+      "top": [
+        {
+          "quote": "At my job we collectively have several small but annoying, tedious, confusing or slow operations.",
+          "url": "https://news.ycombinator.com/item?id=5727598",
+          "source": "hn",
+          "date": "2013-05-18",
+          "weight": 1.18
+        },
+        {
+          "quote": "another doc issue: the documentation for d-pad navigation and emulated cursor is very confusing.",
+          "url": "https://news.ycombinator.com/item?id=20564678",
+          "source": "hn",
+          "date": "2019-07-30",
+          "weight": 1.0
+        },
+        {
+          "quote": "Some reasons are quite obvious: interfaces are confusing, libraries are sparse, documentation is poor, error messages are mysterious.",
+          "url": "https://news.ycombinator.com/item?id=45312122",
+          "source": "hn",
+          "date": "2025-09-20",
+          "weight": 1.0
+        },
+        {
+          "quote": "The tools available to retail traders were either too expensive, too slow, too complex, or straight up lying to you with curve-fit backtests.",
+          "url": "https://news.ycombinator.com/item?id=47293170",
+          "source": "hn",
+          "date": "2026-03-08",
+          "weight": 1.0
+        },
+        {
+          "quote": "In Praise of AutoHotKey You can use Quick Actions (formerly Services) to trigger Mac automations, with customized Keyboard Shortcuts and text input replacements but it’s all scattered across a dozen apps and it’s kind of clunky to piece a workflow together from all these parts.",
+          "url": "https://news.ycombinator.com/item?id=23164750",
+          "source": "hn",
+          "date": "2020-05-13",
+          "weight": 1.0
+        }
+      ]
+    },
+    "lockin": {
+      "count": 10,
+      "distinct_sources": 9,
+      "top": [
+        {
+          "quote": "We suffered great harm when the electric grid and phone lines and oil and shipping consolidation was unimpeded and unlocked innovation and broad wealth creation when we broke them up.",
+          "url": "https://news.ycombinator.com/item?id=49945296",
+          "source": "hn",
+          "date": "2026-10-03",
+          "weight": 1.0
+        },
+        {
+          "quote": "The challenge, of course, is that you need to be very cautious about which urls you guarantee will be stable, or you'll be locked into a site structure you might regret.",
+          "url": "https://news.ycombinator.com/item?id=38811398",
+          "source": "hn",
+          "date": "2023-12-29",
+          "weight": 1.0
+        },
+        {
+          "quote": "But now we are locked in to how GO was conceived at it's inception....",
+          "url": "https://news.ycombinator.com/item?id=31236158",
+          "source": "hn",
+          "date": "2022-05-02",
+          "weight": 1.0
+        },
+        {
+          "quote": "Listing prices by month, but charging annually, or requiring an annual contract.",
+          "url": "https://news.ycombinator.com/item?id=4044140",
+          "source": "hn",
+          "date": "2012-05-30",
+          "weight": 1.0
+        },
+        {
+          "quote": "Building A Paid App For Firefox OS I think it's a fair argument to say that one is locked into Mozilla today with our receipt protocol.",
+          "url": "https://news.ycombinator.com/item?id=5294499",
+          "source": "hn",
+          "date": "2013-02-27",
+          "weight": 1.0
+        }
+      ]
+    }
+  },
+  "competitors": {
+    "GummySearch": {
+      "mentions": 40,
+      "pain_by_category": {
+        "price": 18,
+        "switching": 9,
+        "lockin": 2,
+        "wish": 1,
+        "bugs": 1
+      }
+    },
+    "GripeFind": {
+      "mentions": 2,
+      "pain_by_category": {
+        "price": 1,
+        "wish": 1
+      }
+    },
+    "Syften": {
+      "mentions": 33,
+      "pain_by_category": {
+        "switching": 2,
+        "wish": 2,
+        "price": 6
+      }
+    },
+    "F5Bot": {
+      "mentions": 45,
+      "pain_by_category": {
+        "wish": 1,
+        "missing": 1,
+        "complexity": 1,
+        "switching": 3,
+        "bugs": 1,
+        "price": 4
+      }
+    },
+    "Reddinbox": {
+      "mentions": 5,
+      "pain_by_category": {
+        "wish": 1,
+        "switching": 1,
+        "price": 6,
+        "lockin": 1
+      }
+    },
+    "DimeADozen": {
+      "mentions": 14,
+      "pain_by_category": {}
+    },
+    "PainOnSocial": {
+      "mentions": 4,
+      "pain_by_category": {
+        "price": 7,
+        "wish": 1,
+        "switching": 2
+      }
+    },
+    "ValidatorAI": {
+      "mentions": 3,
+      "pain_by_category": {}
+    },
+    "ChatGPT": {
+      "mentions": 148,
+      "pain_by_category": {
+        "price": 16,
+        "missing": 13,
+        "lockin": 2,
+        "switching": 12,
+        "bugs": 8,
+        "complexity": 4,
+        "wish": 3
+      }
+    }
+  }
+}

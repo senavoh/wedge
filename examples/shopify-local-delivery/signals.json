@@ -1,0 +1,345 @@
+{
+  "records": 143,
+  "sources": {
+    "apps.shopify.com": 143
+  },
+  "categories": {
+    "wish": {
+      "count": 3,
+      "distinct_sources": 3,
+      "top": [
+        {
+          "quote": "We would love for you to try our app again and have sent you a personal message to see if we can make that possible.",
+          "url": "https://apps.shopify.com/click-and-collect/reviews?ratings%5B%5D=1&ratings%5B%5D=2&page=2",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "I do wish there weren't so many glitches and nuances with implementations between Zapiet and Shopify, themes, or delivery services that require resolving.",
+          "url": "https://apps.shopify.com/click-and-collect/reviews?ratings%5B%5D=3&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "I wish I could write a good review, but in my experience the app is unhelpful and I would caution others.",
+          "url": "https://apps.shopify.com/store-pickup-by-genie-apps/reviews?ratings%5B%5D=1&ratings%5B%5D=2&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "switching": {
+      "count": 10,
+      "distinct_sources": 7,
+      "top": [
+        {
+          "quote": "I hope they’ll reconsider, but we’re starting the process of migrating to another app or building our own.",
+          "url": "https://apps.shopify.com/click-and-collect/reviews?ratings%5B%5D=1&ratings%5B%5D=2&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Regards, Siva Customer Success Team Logbase.io Show more Edited November 5, 2025 I moved from Zapiet to this app thinking it would be an upgrade, but it turned out to be a complete waste of time.",
+          "url": "https://apps.shopify.com/order-delivery-date-time/reviews?ratings%5B%5D=1&ratings%5B%5D=2&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "There are so many options like this app so we should switch to other apps.",
+          "url": "https://apps.shopify.com/order-delivery-date-by-identixweb/reviews?ratings%5B%5D=1&ratings%5B%5D=2&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "You finally responded after I requested that a Shopify agent contact you, \"Confirmation that all our assets have been removed from your theme.\" But that's not true, you still have coding on my cart template page and I am not sure what all I have to remove.",
+          "url": "https://apps.shopify.com/click-and-collect/reviews?ratings%5B%5D=1&ratings%5B%5D=2&page=4",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "We have been inundated recently with support requests as merchants around the globe quickly switch to pickup/delivery first commerce in response to the COVID-19 crisis.",
+          "url": "https://apps.shopify.com/click-and-collect/reviews?ratings%5B%5D=1&ratings%5B%5D=2&page=4",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "price": {
+      "count": 31,
+      "distinct_sources": 24,
+      "top": [
+        {
+          "quote": "Overall, Zapiet works reliably for zone-based delivery, but the postcode validation step is unavoidable if you want accurate, zone-specific pricing and scheduling.",
+          "url": "https://apps.shopify.com/click-and-collect/reviews?ratings%5B%5D=1&ratings%5B%5D=2&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Best wishes, Bogi Show more March 2, 2026 this app is ridiculously overpriced with terrible pricing transparency.",
+          "url": "https://apps.shopify.com/click-and-collect/reviews?ratings%5B%5D=1&ratings%5B%5D=2&page=2",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "We understand how important pricing transparency is when choosing an app, especially when setting up delivery zones and rates.",
+          "url": "https://apps.shopify.com/click-and-collect/reviews?ratings%5B%5D=1&ratings%5B%5D=2&page=2",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Our tiered pricing structure reflects the development and maintenance costs associated with our services.",
+          "url": "https://apps.shopify.com/click-and-collect/reviews?ratings%5B%5D=3&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "The app can handle pickup and zones, but advanced distance-based pricing is not very intuitive to configure.",
+          "url": "https://apps.shopify.com/click-and-collect/reviews?ratings%5B%5D=3&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "support": {
+      "count": 8,
+      "distinct_sources": 5,
+      "top": [
+        {
+          "quote": "Kind Regards, Sam Show more April 8, 2019 Terrible customer service and support.",
+          "url": "https://apps.shopify.com/click-and-collect/reviews?ratings%5B%5D=1&ratings%5B%5D=2&page=2",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Have been trying for over a week to get help from support but I have received no response from the developer nor have they responded to the Shopify Expert who is trying to help me get this installed and working.",
+          "url": "https://apps.shopify.com/click-and-collect/reviews?ratings%5B%5D=1&ratings%5B%5D=2&page=2",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "The app has bug and poor customer service.",
+          "url": "https://apps.shopify.com/order-delivery-date-by-identixweb/reviews?ratings%5B%5D=1&ratings%5B%5D=2&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Very poor customer service.",
+          "url": "https://apps.shopify.com/click-and-collect/reviews?ratings%5B%5D=1&ratings%5B%5D=2&page=4",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Unfortunately I will likely have to figure something else out as their customer support is awful/unresponsive and the app does not seem to work with my (paid) theme, even though they have a widget for it.",
+          "url": "https://apps.shopify.com/click-and-collect/reviews?ratings%5B%5D=1&ratings%5B%5D=2&page=4",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "bugs": {
+      "count": 34,
+      "distinct_sources": 15,
+      "top": [
+        {
+          "quote": "Unless Zapiet improves its support infrastructure to provide more reliable and timely assistance, businesses reliant on seamless online transactions may find the risk of downtime unacceptable.",
+          "url": "https://apps.shopify.com/click-and-collect/reviews?ratings%5B%5D=1&ratings%5B%5D=2&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "I do wish there weren't so many glitches and nuances with implementations between Zapiet and Shopify, themes, or delivery services that require resolving.",
+          "url": "https://apps.shopify.com/click-and-collect/reviews?ratings%5B%5D=3&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "I am very tech savvy so it's frustrating when I think I'm doing the right thing but it isn't working due to a glitch that has to be dealt with on their end.",
+          "url": "https://apps.shopify.com/click-and-collect/reviews?ratings%5B%5D=3&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Glitches: Occasional glitches can be anticipated, which is common for most applications.",
+          "url": "https://apps.shopify.com/click-and-collect/reviews?ratings%5B%5D=3&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "EXPLICITLY telling them that they needed to fix the issue in the backup copy of the theme NOT TOGGLE BACL ON THE BROKEN SETTING IN MY LIVR THME.",
+          "url": "https://apps.shopify.com/order-delivery-date-time/reviews?ratings%5B%5D=1&ratings%5B%5D=2&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "missing": {
+      "count": 16,
+      "distinct_sources": 15,
+      "top": [
+        {
+          "quote": "We spent the entire holiday season trying to get help with Zapiet order issues and two weeks later with the holiday season behind us still no \"support\" Show more St.",
+          "url": "https://apps.shopify.com/click-and-collect/reviews?ratings%5B%5D=1&ratings%5B%5D=2&page=2",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "I requested support on Monday and it is now Friday and still no response.",
+          "url": "https://apps.shopify.com/click-and-collect/reviews?ratings%5B%5D=3&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Documentation: The provided literature lacks clarity, presenting challenges for user navigation.",
+          "url": "https://apps.shopify.com/click-and-collect/reviews?ratings%5B%5D=3&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "That said, I understand it may still not feel fully resolved from your end, and I sincerely apologize for that.",
+          "url": "https://apps.shopify.com/order-delivery-date-time/reviews?ratings%5B%5D=1&ratings%5B%5D=2&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Support is frequently praised as fast, knowledgeable, and hands-on with setup, styling, and feature requests.",
+          "url": "https://apps.shopify.com/store-pickup-and-delivery-date/reviews?ratings%5B%5D=1&ratings%5B%5D=2&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "complexity": {
+      "count": 4,
+      "distinct_sources": 4,
+      "top": [
+        {
+          "quote": "Show more March 30, 2025 It rarely works, and when it does, it's very confusing.",
+          "url": "https://apps.shopify.com/click-and-collect/reviews?ratings%5B%5D=1&ratings%5B%5D=2&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Support was helpful, but expect a learning curve for more complex delivery setups.",
+          "url": "https://apps.shopify.com/click-and-collect/reviews?ratings%5B%5D=3&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "I completely understand how confusing this can be and truly wish it were something we could control directly.",
+          "url": "https://apps.shopify.com/order-delivery-date-time/reviews?ratings%5B%5D=1&ratings%5B%5D=2&page=1",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Ronan Show more July 18, 2019 Clunky app and even worse support.",
+          "url": "https://apps.shopify.com/click-and-collect/reviews?ratings%5B%5D=1&ratings%5B%5D=2&page=6",
+          "source": "apps.shopify.com",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "lockin": {
+      "count": 0,
+      "distinct_sources": 0,
+      "top": []
+    }
+  },
+  "competitors": {
+    "Zapiet": {
+      "mentions": 14,
+      "pain_by_category": {
+        "price": 9,
+        "complexity": 4,
+        "bugs": 23,
+        "switching": 9,
+        "wish": 2,
+        "support": 7,
+        "missing": 7
+      }
+    },
+    "Pickeasy": {
+      "mentions": 12,
+      "pain_by_category": {
+        "price": 2,
+        "complexity": 2,
+        "bugs": 5,
+        "switching": 2,
+        "missing": 1
+      }
+    },
+    "Buunto": {
+      "mentions": 11,
+      "pain_by_category": {}
+    },
+    "Omega": {
+      "mentions": 1,
+      "pain_by_category": {
+        "bugs": 1
+      }
+    },
+    "Identixweb": {
+      "mentions": 3,
+      "pain_by_category": {
+        "price": 6,
+        "support": 1,
+        "switching": 1,
+        "bugs": 5
+      }
+    },
+    "Appstle": {
+      "mentions": 11,
+      "pain_by_category": {}
+    },
+    "Stellar": {
+      "mentions": 11,
+      "pain_by_category": {
+        "price": 14,
+        "support": 1,
+        "switching": 1,
+        "bugs": 5
+      }
+    },
+    "EasyRoutes": {
+      "mentions": 11,
+      "pain_by_category": {
+        "missing": 1
+      }
+    },
+    "Flare": {
+      "mentions": 11,
+      "pain_by_category": {}
+    }
+  }
+}

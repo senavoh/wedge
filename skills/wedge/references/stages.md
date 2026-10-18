@@ -14,7 +14,7 @@ If installing isn't possible, follow these short versions. Scripts are in `scrip
 
 **reviews** (`wedge-review-miner`): Collect 1 to 3 star App Store reviews, Reddit searches and threads, HN and GitHub issues for each competitor. Get G2, Capterra and Yelp through web search only. Run `signals.py --names`. Write 4 to 8 themes with severity, counts per competitor and 2+ exact quotes from different URLs. Write `pains.md`.
 
-**gaps and critic** (`wedge-gap-ranker`): Write each gap as "<Buyer> who <situation> can't get <outcome> because every option <failure>." Score using `scoring.md`. Then argue against the winner: who tried and died, a free incumbent, pain without payment, a closed channel, copyable in a week, regulation. Write `gaps.md` and `critic.md`.
+**gaps and critic** (`wedge-gap-ranker`): Write each gap as "<Buyer> who <situation> can't get <outcome> because every option <failure>." Score using `scoring.md`. Then argue against the winner: who tried and died, a free incumbent, pain without payment, a closed channel, copyable in a week, regulation. A risk is `high` only when it is specific to this idea and backed by a cited source (claim `risk-<n>`); generic, unsourced risks are `medium`. Write `gaps.md` and `critic.md`.
 
 **win** (`wedge-win-plan`): Cover switching triggers and moves, positioning in customers' words, offers for switchers, what to build first, where unhappy customers are (with URLs), trust signals, what to stop doing, and a first-10-customers plan. Draft assets: a comparison page, outreach, ads and an FAQ. Write `win-plan.md`.
 

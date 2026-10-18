@@ -1,0 +1,348 @@
+{
+  "records": 324,
+  "sources": {
+    "appstore": 100,
+    "hn": 224
+  },
+  "categories": {
+    "wish": {
+      "count": 5,
+      "distinct_sources": 5,
+      "top": [
+        {
+          "quote": "We boarded our pet at All American Pet Resort in Greensboro, and I wish I would have been told I would not be able to see my pet during our trip.",
+          "url": "https://apps.apple.com/us/app/id1580056094?see-all=reviews#review-14133319502",
+          "source": "appstore",
+          "date": "2026-06-01",
+          "weight": 2.0
+        },
+        {
+          "quote": "Is there any way or hope that these scandals will get the fair light under the limelight, just like how New York Times first aired the Weinstein rape scandals and how the Wall Street Journal first exposed what's really going on inside Theranos?",
+          "url": "https://news.ycombinator.com/item?id=37306129",
+          "source": "hn",
+          "date": "2023-08-29",
+          "weight": 1.24
+        },
+        {
+          "quote": "Getting better but still not there I wish this app had many of the features of the other scheduling apps.",
+          "url": "https://apps.apple.com/us/app/id476675123?see-all=reviews#review-4579373453",
+          "source": "appstore",
+          "date": "2019-08-06",
+          "weight": 1.0
+        },
+        {
+          "quote": "I wish more people got to enjoy those kinds of freedoms.",
+          "url": "https://news.ycombinator.com/item?id=48737715",
+          "source": "hn",
+          "date": "2026-06-30",
+          "weight": 1.0
+        },
+        {
+          "quote": "I wish I had the time and fortitude.",
+          "url": "https://news.ycombinator.com/item?id=17096060",
+          "source": "hn",
+          "date": "2018-05-17",
+          "weight": 1.0
+        }
+      ]
+    },
+    "switching": {
+      "count": 8,
+      "distinct_sources": 8,
+      "top": [
+        {
+          "quote": "From a workers pov I currently work at a doggy daycare and we’ve switched to MoeGo and all I can say is… THIS IS TERRIBLE.",
+          "url": "https://apps.apple.com/us/app/id1561621817?see-all=reviews#review-13885905958",
+          "source": "appstore",
+          "date": "2026-03-25",
+          "weight": 2.0
+        },
+        {
+          "quote": "If you have multiple locations and try to switch from one to the other, good luck!!",
+          "url": "https://apps.apple.com/us/app/id1023050786?see-all=reviews#review-14186251652",
+          "source": "appstore",
+          "date": "2026-06-15",
+          "weight": 2.0
+        },
+        {
+          "quote": "An easier alternative to Bubble.io with a simpler learning curve and fewer technicalities is PagePalooza.com.",
+          "url": "https://news.ycombinator.com/item?id=41497309",
+          "source": "hn",
+          "date": "2024-09-10",
+          "weight": 1.0
+        },
+        {
+          "quote": "As the world switched to software being more important then hardware they didn't switch to valuing those that make software.",
+          "url": "https://news.ycombinator.com/item?id=5804940",
+          "source": "hn",
+          "date": "2013-06-01",
+          "weight": 1.0
+        },
+        {
+          "quote": "Or migrating from Mongo to DynamoDB.",
+          "url": "https://news.ycombinator.com/item?id=37863093",
+          "source": "hn",
+          "date": "2023-10-12",
+          "weight": 1.0
+        }
+      ]
+    },
+    "price": {
+      "count": 17,
+      "distinct_sources": 14,
+      "top": [
+        {
+          "quote": "Why am I paying for text messsges anyway when this app is heavily OVERPRICED for what it does.",
+          "url": "https://apps.apple.com/us/app/id1561621817?see-all=reviews#review-14241246821",
+          "source": "appstore",
+          "date": "2026-06-29",
+          "weight": 2.0
+        },
+        {
+          "quote": "Very much a headache to set up… not worth the price but still cheaper than Gingr!",
+          "url": "https://apps.apple.com/us/app/id1561621817?see-all=reviews#review-13410294321",
+          "source": "appstore",
+          "date": "2025-11-17",
+          "weight": 2.0
+        },
+        {
+          "quote": "Not worth it I signed up, they weren’t capable to import all my appointments from my current system for the next two months, so I cancel.",
+          "url": "https://apps.apple.com/us/app/id1561621817?see-all=reviews#review-12163896877",
+          "source": "appstore",
+          "date": "2025-01-09",
+          "weight": 2.0
+        },
+        {
+          "quote": "It’s up to you to decide and discuss with the engineer since it affects pricing and implementation time.",
+          "url": "https://news.ycombinator.com/item?id=41497309",
+          "source": "hn",
+          "date": "2024-09-10",
+          "weight": 1.0
+        },
+        {
+          "quote": "What is at risk is IBM's growth , which is fueled by price increases at every renewal point not the sale of new software or new clients - there are no new clients for IBM anywhere anymore!",
+          "url": "https://news.ycombinator.com/item?id=46203121",
+          "source": "hn",
+          "date": "2025-12-09",
+          "weight": 1.0
+        }
+      ]
+    },
+    "support": {
+      "count": 2,
+      "distinct_sources": 2,
+      "top": [
+        {
+          "quote": "Downhill Terrible Service!!",
+          "url": "https://apps.apple.com/us/app/id1561621817?see-all=reviews#review-13393081187",
+          "source": "appstore",
+          "date": "2025-11-13",
+          "weight": 2.0
+        },
+        {
+          "quote": "I proved what they did they agreed and just sent one refund and never responded again!",
+          "url": "https://apps.apple.com/us/app/id1561621817?see-all=reviews#review-11604620666",
+          "source": "appstore",
+          "date": "2024-08-13",
+          "weight": 2.0
+        }
+      ]
+    },
+    "bugs": {
+      "count": 24,
+      "distinct_sources": 22,
+      "top": [
+        {
+          "quote": "The system is SO slow, the petty BS with the messages not renewing on time every time is a HUGE issue.",
+          "url": "https://apps.apple.com/us/app/id1561621817?see-all=reviews#review-14241246821",
+          "source": "appstore",
+          "date": "2026-06-29",
+          "weight": 2.0
+        },
+        {
+          "quote": "Unreliable It has always been SLOW from the start.",
+          "url": "https://apps.apple.com/us/app/id1561621817?see-all=reviews#review-14089691215",
+          "source": "appstore",
+          "date": "2026-05-21",
+          "weight": 2.0
+        },
+        {
+          "quote": "Their software is not only buggy because they add updates almost everyday, but their customer services lacks any kind of sentiment or care on how the consumer relies on their software to run their day to day operations.",
+          "url": "https://apps.apple.com/us/app/id1561621817?see-all=reviews#review-13393081187",
+          "source": "appstore",
+          "date": "2025-11-13",
+          "weight": 2.0
+        },
+        {
+          "quote": "Glitch Kicks me in and out of the Appointment app and erases my appointment and I’m double booked.",
+          "url": "https://apps.apple.com/us/app/id476675123?see-all=reviews#review-14383070537",
+          "source": "appstore",
+          "date": "2026-08-03",
+          "weight": 2.0
+        },
+        {
+          "quote": "Won’t stop crashing Opens to days appointment.",
+          "url": "https://apps.apple.com/us/app/id476675123?see-all=reviews#review-12650972698",
+          "source": "appstore",
+          "date": "2025-05-13",
+          "weight": 2.0
+        }
+      ]
+    },
+    "missing": {
+      "count": 7,
+      "distinct_sources": 6,
+      "top": [
+        {
+          "quote": "Their software is not only buggy because they add updates almost everyday, but their customer services lacks any kind of sentiment or care on how the consumer relies on their software to run their day to day operations.",
+          "url": "https://apps.apple.com/us/app/id1561621817?see-all=reviews#review-13393081187",
+          "source": "appstore",
+          "date": "2025-11-13",
+          "weight": 2.0
+        },
+        {
+          "quote": "Lastly, there was no way to delete a client and no fast way to add a pets birthday without having to take back the birth year one slow click at a time.",
+          "url": "https://apps.apple.com/us/app/id476675123?see-all=reviews#review-2560764104",
+          "source": "appstore",
+          "date": "2018-05-17",
+          "weight": 2.0
+        },
+        {
+          "quote": "Getting better but still not there I wish this app had many of the features of the other scheduling apps.",
+          "url": "https://apps.apple.com/us/app/id476675123?see-all=reviews#review-4579373453",
+          "source": "appstore",
+          "date": "2019-08-06",
+          "weight": 1.0
+        },
+        {
+          "quote": "Even with an ungroomed backlog, it's very easy to say \"this feature request/bug is very similar to ticket 12345; let's merge them\".",
+          "url": "https://news.ycombinator.com/item?id=43788646",
+          "source": "hn",
+          "date": "2025-04-24",
+          "weight": 1.0
+        },
+        {
+          "quote": "The backlog doesn't have to be something super complex and time-consuming.",
+          "url": "https://news.ycombinator.com/item?id=43788646",
+          "source": "hn",
+          "date": "2025-04-24",
+          "weight": 1.0
+        }
+      ]
+    },
+    "complexity": {
+      "count": 7,
+      "distinct_sources": 7,
+      "top": [
+        {
+          "quote": "Clunky Having to scroll through all of the pet breeds to get to W is to time consuming.",
+          "url": "https://apps.apple.com/us/app/id1580056094?see-all=reviews#review-14098165185",
+          "source": "appstore",
+          "date": "2026-05-23",
+          "weight": 2.0
+        },
+        {
+          "quote": "Report card - Audio wont play This app is clunky and has options that aren’t even useful for the purpose of checking on my pet while he’s at daycare.",
+          "url": "https://apps.apple.com/us/app/id1580056094?see-all=reviews#review-13929666498",
+          "source": "appstore",
+          "date": "2026-04-06",
+          "weight": 2.0
+        },
+        {
+          "quote": "Awful app This app is so unintuitive and useless.",
+          "url": "https://apps.apple.com/us/app/id1580056094?see-all=reviews#review-13363703177",
+          "source": "appstore",
+          "date": "2025-11-06",
+          "weight": 2.0
+        },
+        {
+          "quote": "An easier alternative to Bubble.io with a simpler learning curve and fewer technicalities is PagePalooza.com.",
+          "url": "https://news.ycombinator.com/item?id=41497309",
+          "source": "hn",
+          "date": "2024-09-10",
+          "weight": 1.0
+        },
+        {
+          "quote": "For a reasonably technical software engineer with a bit of hardware experience, it's not a big deal, but for everyone else, it's too complex a problem.",
+          "url": "https://news.ycombinator.com/item?id=7374541",
+          "source": "hn",
+          "date": "2014-03-10",
+          "weight": 1.0
+        }
+      ]
+    },
+    "lockin": {
+      "count": 4,
+      "distinct_sources": 4,
+      "top": [
+        {
+          "quote": "But I'm concerned that the typical POS company has their customers locked into a support contract that would not allow a 3rd party access to the system.",
+          "url": "https://news.ycombinator.com/item?id=6527058",
+          "source": "hn",
+          "date": "2013-10-10",
+          "weight": 1.0
+        },
+        {
+          "quote": "IBM lives off huge multi-year contract deals with their customers, each are multi-multi-million dollars worth.",
+          "url": "https://news.ycombinator.com/item?id=46203121",
+          "source": "hn",
+          "date": "2025-12-09",
+          "weight": 1.0
+        },
+        {
+          "quote": "The mergers which created the modern Meta should have been blocked in the first place.",
+          "url": "https://news.ycombinator.com/item?id=47099030",
+          "source": "hn",
+          "date": "2026-02-21",
+          "weight": 1.0
+        },
+        {
+          "quote": "The people I know who are \"financially independent\" (wealthy or otherwise, money isn't in the top 10 of their concerns) -- the first step was getting out of \"hell\", you can't get out of debt/become wealthy if you're searching for money for your next meal.",
+          "url": "https://news.ycombinator.com/item?id=26189910",
+          "source": "hn",
+          "date": "2021-02-19",
+          "weight": 1.0
+        }
+      ]
+    }
+  },
+  "competitors": {
+    "MoeGo": {
+      "mentions": 28,
+      "pain_by_category": {
+        "bugs": 2,
+        "switching": 1,
+        "price": 1,
+        "support": 1,
+        "missing": 1
+      }
+    },
+    "DaySmart": {
+      "mentions": 6,
+      "pain_by_category": {
+        "bugs": 1,
+        "price": 1
+      }
+    },
+    "Gingr": {
+      "mentions": 3,
+      "pain_by_category": {
+        "price": 1
+      }
+    },
+    "Groomer.io": {
+      "mentions": 0,
+      "pain_by_category": {}
+    },
+    "Groomore": {
+      "mentions": 3,
+      "pain_by_category": {}
+    },
+    "Square": {
+      "mentions": 12,
+      "pain_by_category": {
+        "bugs": 1
+      }
+    }
+  }
+}

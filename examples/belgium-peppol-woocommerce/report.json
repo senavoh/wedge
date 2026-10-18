@@ -1,0 +1,353 @@
+{
+ "title": "WooCommerce Peppol plugin for small Belgian web shops",
+ "subtitle": "Idea stress-test: a EUR 9-19/month WooCommerce plugin that sends and receives B2B invoices over Peppol, after Belgium's 1 January 2026 mandate.",
+ "mode": "idea",
+ "depth": "quick",
+ "date": "2026-10-18",
+ "founder": {
+  "budget": "under $2k",
+  "skills": "WordPress/WooCommerce plugin dev (PHP); reads Dutch and French",
+  "hours": "15/week",
+  "risk": "side income first",
+  "channel": "online"
+ },
+ "verdict": {
+  "call": "KILL",
+  "score": 46,
+  "summary": "The mandate is real and in force (since 1 Jan 2026, tolerance ended 31 Mar 2026, Hermes shut 31 Dec 2025), but the job is already done for free or almost free: GoRoute's Woo plugin gives 50 invoices a month free with VAT/Peppol-ID lookup, WP Overnight's 300k-install plugin sends from about EUR 5/month, and accounting tools like Accountable receive for free. The pain left is setup friction (missing VAT numbers or Peppol IDs, UBL rejected by receivers), not something shops will pay EUR 9-19 a month for. Next best: sell fixed-price Peppol setup and fixes for Belgian Woo shops on top of the existing free connectors (untested)."
+ },
+ "opportunities": [
+  {
+   "name": "WooCommerce Peppol send+receive plugin",
+   "one_liner": "Send B2B invoices from Woo orders over Peppol and receive supplier invoices, EUR 9-19/mo.",
+   "score": 46,
+   "scores": {
+    "pain": 5,
+    "willingness_to_pay": 4,
+    "competition_gap": 2,
+    "founder_fit": 8,
+    "reachability": 4,
+    "build_cost": 6
+   },
+   "why": "pain 5: repeated friction from different authors across WP.org, Shopify reviews, HN and Belgian press (e31-e40, e23-e28), but nobody in the evidence leaves a tool over it. willingness_to_pay 4: shops do pay for substitutes (WP Overnight credits e14/e46, B2Brouter from EUR 15 e16), but the loudest complaint is about paying at all (e25, e26), and free tiers cap the price (e15, e21). competition_gap 2: free or very cheap Woo plugins with certified Access Points already exist (e15, e18, e19, e50, e51), the incumbent Woo invoicing plugin ships Peppol (e12-e14), and receiving is free in accounting tools (e20, e48). founder_fit 8: plays to PHP/Woo skills and fits the budget, but needs an Access Point partner. reachability 4: WP.org forums ban self-promotion, and I found no free Belgian Woo merchant community; the main routes are accountants or paid search. build_cost 6: a few weeks on an Access Point API, plus ongoing validation upkeep.",
+   "evidence": [
+    "e15",
+    "e31",
+    "e36",
+    "e46",
+    "e50"
+   ]
+  }
+ ],
+ "gap": {
+  "statement": "Belgian WooCommerce shops with occasional B2B buyers can't get Peppol invoices that go through first time from a Woo order, because the tools don't capture or look up the buyer's VAT number or Peppol ID and they produce UBL that receivers reject. GoRoute's free plugin already claims the lookup half.",
+  "evidence": [
+   "e31",
+   "e32",
+   "e33",
+   "e34",
+   "e36",
+   "e37",
+   "e38"
+  ]
+ },
+ "pains": [
+  {
+   "theme": "Buyer VAT number / Peppol ID not captured from the order",
+   "severity": "medium",
+   "summary": "Sends fail after the fact because the order lacks a usable buyer identifier.",
+   "by_competitor": {
+    "Sufio": 2,
+    "WP Overnight": 3
+   },
+   "evidence": [
+    "e31",
+    "e32",
+    "e33",
+    "e34",
+    "e35"
+   ]
+  },
+  {
+   "theme": "Generated UBL rejected by the receiver's software",
+   "severity": "medium",
+   "summary": "Belgian 6% VAT category, due dates and regenerated UBL break imports in Moneybird and Accountable.",
+   "by_competitor": {
+    "WP Overnight": 5
+   },
+   "evidence": [
+    "e36",
+    "e37",
+    "e38",
+    "e39",
+    "e40"
+   ]
+  },
+  {
+   "theme": "Peppol costs money for tiny firms",
+   "severity": "medium",
+   "summary": "Complaints are about the mandate costing money at all; free and EUR 30/yr options answer it.",
+   "by_competitor": {
+    "Peppol (general)": 6
+   },
+   "evidence": [
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27",
+    "e28",
+    "e29",
+    "e30"
+   ]
+  },
+  {
+   "theme": "Merchants asking if their plugin is Peppol-ready",
+   "severity": "low",
+   "summary": "Demand signal, already answered by the incumbent and new connectors.",
+   "by_competitor": {
+    "WP Overnight": 3
+   },
+   "evidence": [
+    "e41",
+    "e42",
+    "e43"
+   ]
+  }
+ ],
+ "competitors": [
+  {
+   "name": "WP Overnight PDF Invoices + eDocuments Peppol",
+   "url": "https://wpovernight.com/downloads/woocommerce-edocuments-peppol/",
+   "pricing": "Free plugin makes Peppol BIS XML; Peppol sending on yearly credit bundles (1,000 credits = EUR 120/yr)",
+   "positioning": "Default Woo invoice plugin, 300k+ active installs",
+   "strengths": [
+    "Already installed on most Woo shops",
+    "Peppol BIS 3.0 in the free plugin"
+   ],
+   "weaknesses": [
+    "No receiving",
+    "UBL validation complaints (e36-e40)"
+   ],
+   "evidence": [
+    "e12",
+    "e13",
+    "e14",
+    "e46",
+    "e47"
+   ]
+  },
+  {
+   "name": "GoRoute E-Invoicing for WooCommerce",
+   "url": "https://wordpress.org/plugins/goroute-e-invoicing-for-woocommerce/",
+   "pricing": "Free 50 invoices/mo; $19-$249/mo",
+   "positioning": "Certified Access Point with Woo plugin",
+   "strengths": [
+    "VIES + Peppol lookup before send",
+    "Free tier"
+   ],
+   "weaknesses": [
+    "Tiny install base"
+   ],
+   "evidence": [
+    "e15",
+    "e50",
+    "e51"
+   ]
+  },
+  {
+   "name": "B2Brouter for WooCommerce",
+   "url": "https://www.b2brouter.net/be/woocommerce/",
+   "pricing": "From EUR 15/mo for 50 transactions",
+   "positioning": "Certified Peppol Access Point",
+   "strengths": [
+    "Peppol BIS 3.0"
+   ],
+   "weaknesses": [
+    "Paid from the first invoice after trial"
+   ],
+   "evidence": [
+    "e16"
+   ]
+  },
+  {
+   "name": "GestOO / Peppol Plugged / POP / SendPol / Scrada",
+   "url": "https://wordpress.org/plugins/search/peppol/",
+   "pricing": "EUR 99/yr (GestOO); free 20 XML/mo (Peppol Plugged); 10 free credits/mo (POP)",
+   "positioning": "Belgian-market Woo connectors",
+   "strengths": [
+    "Already on WP.org"
+   ],
+   "weaknesses": [
+    "0-100 installs each"
+   ],
+   "evidence": [
+    "e17",
+    "e18",
+    "e19"
+   ]
+  },
+  {
+   "name": "Accountable / Peppyrus (receive side)",
+   "url": "https://www.accountable.eu/nl-be/?p=10162",
+   "pricing": "Free plans send and receive Peppol",
+   "positioning": "Free Peppol inbox for self-employed and SMEs",
+   "strengths": [
+    "Free receiving",
+    "Accountant-friendly"
+   ],
+   "weaknesses": [
+    "Not Woo-native"
+   ],
+   "evidence": [
+    "e20",
+    "e21",
+    "e48"
+   ]
+  },
+  {
+   "name": "Sufio (Shopify comparison)",
+   "url": "https://apps.shopify.com/sufio",
+   "pricing": "Per successfully sent e-invoice fee on top of plan",
+   "positioning": "Shopify invoicing with Peppol",
+   "strengths": [
+    "4.9 rating, 469 reviews"
+   ],
+   "weaknesses": [
+    "Belgian merchant: Peppol workflow impractical (e31, e32)"
+   ],
+   "evidence": [
+    "e22",
+    "e31",
+    "e32"
+   ]
+  }
+ ],
+ "features": {
+  "columns": [
+   "Peppol send",
+   "Receive",
+   "Free tier",
+   "VAT/Peppol-ID lookup",
+   "Belgian focus"
+  ],
+  "rows": [
+   {
+    "name": "WP Overnight",
+    "values": [
+     "yes",
+     "no",
+     "partial",
+     "unknown",
+     "partial"
+    ]
+   },
+   {
+    "name": "GoRoute",
+    "values": [
+     "yes",
+     "unknown",
+     "yes",
+     "yes",
+     "partial"
+    ]
+   },
+   {
+    "name": "B2Brouter",
+    "values": [
+     "yes",
+     "yes",
+     "no",
+     "unknown",
+     "yes"
+    ]
+   },
+   {
+    "name": "Peppol Plugged",
+    "values": [
+     "partial",
+     "unknown",
+     "yes",
+     "unknown",
+     "yes"
+    ]
+   },
+   {
+    "name": "Accountable",
+    "values": [
+     "yes",
+     "yes",
+     "yes",
+     "unknown",
+     "yes"
+    ]
+   }
+  ]
+ },
+ "critic": [
+  {
+   "risk": "The default Woo invoicing plugin (WP Overnight, 300k+ installs) already sends over Peppol on credits from about EUR 5/month, below the EUR 9-19 price.",
+   "severity": "high",
+   "evidence": [
+    "e46",
+    "e13",
+    "e14"
+   ]
+  },
+  {
+   "risk": "Receiving is free in accounting tools, and you can't run several e-invoicing solutions each with its own Access Point, so receiving in Woo means moving the shop's whole inbox.",
+   "severity": "high",
+   "evidence": [
+    "e47",
+    "e48",
+    "e49"
+   ]
+  },
+  {
+   "risk": "The claimed gap (VAT/Peppol-ID lookup before sending) already ships in GoRoute's free plugin.",
+   "severity": "high",
+   "evidence": [
+    "e50",
+    "e51",
+    "e15"
+   ]
+  },
+  {
+   "risk": "The founder must resell an Access Point, and the 2028 e-reporting plan adds duties to Access Points; no source shows resellers being hurt.",
+   "severity": "medium",
+   "evidence": [
+    "e52",
+    "e53"
+   ]
+  },
+  {
+   "risk": "Copyable in a week: every Access Point already has a Woo connector.",
+   "severity": "medium",
+   "evidence": []
+  },
+  {
+   "risk": "No free channel: WP.org forums ban promotion and accountants push their own tools.",
+   "severity": "medium",
+   "evidence": []
+  }
+ ],
+ "pricing": {
+  "recommendation": "Don't charge EUR 9-19/mo for the plugin",
+  "competitor_range": "EUR 0 (GoRoute 50/mo, Peppyrus 100/mo, Accountable) to EUR 15/mo (B2Brouter); WP Overnight about EUR 5-10/mo",
+  "rationale": "Free tiers with certified Access Points sit under the proposed price, and they already cover the shop volumes of small B2B sellers."
+ },
+ "validation": {
+  "experiment": "Test the next-best idea instead: fixed-price Peppol setup and fixes for Belgian Woo shops, built on the free connectors.",
+  "pass_bar": "3 paid setups at EUR 150+ in 7 days",
+  "days": 7,
+  "steps": [
+   "Day 1-3: answer 10 public WP.org Peppol/UBL threads helpfully, with no links",
+   "Day 2-5: offer the fixed-price setup through your own site and LinkedIn to Belgian accountants",
+   "Day 7: count paid setups"
+  ]
+ },
+ "kill_criteria": [
+  "0 inquiries after 7 days",
+  "Accountants say their clients' tools already handle it"
+ ]
+}

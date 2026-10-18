@@ -1,0 +1,86 @@
+{
+  "title": "SSL certificate expiry alerts for small business websites",
+  "subtitle": "Quick stress test of a $9/month service that emails site owners before their SSL certificate expires.",
+  "mode": "idea",
+  "depth": "quick",
+  "date": "2026-10-18",
+
+  "founder": {"budget": "under $500", "skills": "solo backend developer (Go)", "hours": "8/week", "risk": "side income first", "channel": "online"},
+
+  "verdict": {"call": "KILL", "score": 47,
+    "summary": "Expired certificates do take sites down, and Let's Encrypt ending its expiry emails in 2025 left some people without a warning. But the exact product, an expiry email, is already free from Red Sift (250 certificates, recommended by Let's Encrypt), HetrixTools, StatusCake, LetsMonitor and self-hosted Uptime Kuma, and the people who hit this pain are developers who solve it with a script. A prior SSL monitor, SSLPing, shut down after its creator never dared to charge. Don't build this as a standalone $9/month product."},
+
+  "opportunities": [
+    {"name": "$9/mo SSL expiry email for small business sites", "one_liner": "Emails the owner before a site's certificate expires.",
+     "score": 47,
+     "scores": {"pain": 5, "willingness_to_pay": 3, "competition_gap": 2, "founder_fit": 8, "reachability": 4, "build_cost": 9},
+     "why": "pain 5: real outages from silently failed renewals across GitHub, HN and WordPress.org (e1, e2, e3, e5, e7), but they happen now and then, not as daily friction, and the authors are mostly developers rather than small-business owners. willingness_to_pay 3: some people pay for bundled monitoring (o1, o9), but users leave paid plans for free or self-hosted ones over price (e15, e16, e29), an uptime founder says SSL checks are low priority for his users (e25), and SSLPing's creator never charged (e24). competition_gap 2: the core feature is free and good (o5, o6, o11, o16, e13). founder_fit 8: a Go backend developer can build it in a weekend within $500 and 8 hours a week; selling to non-technical owners is the stretch. reachability 4: developers gather on HN and GitHub but prefer free; no free place where non-technical small-business owners complain about SSL expiry was found, and hosted builders give them automatic SSL (o14). build_cost 9: a cron job, an openssl check and email.",
+     "evidence": ["e1", "e2", "e5", "e7", "e15", "e16", "e24", "e25", "o5", "o6", "o14"]}
+  ],
+
+  "gap": {"statement": "Site owners whose auto-renewal silently fails can't find out before the site goes down, because Let's Encrypt stopped sending expiry emails and nothing in their own setup warns them. Free tools already fill this gap, so it isn't open.", "evidence": ["e1", "e2", "e4", "e8", "e9"]},
+
+  "pains": [
+    {"theme": "Auto-renewal fails silently, the site goes down", "severity": "high", "summary": "Certbot, cloud or plugin renewals break without warning, and the first sign is an expired certificate.",
+     "by_competitor": {"Let's Encrypt / certbot": 5, "AWS ACM": 1, "WP free-SSL plugins": 1}, "evidence": ["e1", "e2", "e3", "e4", "e5", "e6", "e7"]},
+    {"theme": "Let's Encrypt expiry emails are gone", "severity": "medium", "summary": "Some people relied on the emails as a safety net; others said they never needed them.",
+     "by_competitor": {"Let's Encrypt": 3, "WP free-SSL plugins": 1}, "evidence": ["e2", "e4", "e8", "e9"]},
+    {"theme": "Free or DIY is good enough", "severity": "medium", "summary": "Developers say a script, a cron alert, Uptime Kuma or a calendar reminder covers it.",
+     "by_competitor": {"Uptime Kuma": 1, "DIY script": 3, "Let's Encrypt": 1}, "evidence": ["e10", "e11", "e12", "e13", "e14"]},
+    {"theme": "Monitoring prices push people to free tools", "severity": "medium", "summary": "UptimeRobot's price rise and its ban on free commercial use drove switching to free or self-hosted tools.",
+     "by_competitor": {"UptimeRobot": 5, "WP free-SSL plugins": 1}, "evidence": ["e15", "e16", "e17", "e18", "e19", "e29"]},
+    {"theme": "Small WordPress sites stuck renewing free SSL by hand", "severity": "medium", "summary": "Non-technical owners on shared hosting fight manual renewals and paywalled auto-renew. The pain is renewing, not being alerted.",
+     "by_competitor": {"WP Encryption": 4, "Auto-Install Free SSL": 1}, "evidence": ["e7", "e9", "e20", "e21", "e22", "e23"]}
+  ],
+
+  "competitors": [
+    {"name": "UptimeRobot", "url": "https://uptimerobot.com/pricing/", "pricing": "Free plan without SSL; SSL monitoring only on paid plans (Solo shown at about $12 to $13/month)", "positioning": "Good for freelancers and small sites.", "strengths": ["30/14/7-day SSL expiry alerts", "Huge installed base"], "weaknesses": ["Price rise and ban on free commercial use drove churn (e15, e16)"], "evidence": ["o1", "o2", "o3", "e15", "e16"]},
+    {"name": "Red Sift Certificates Lite", "url": "https://redsift.com/pulse-platform/certificates-lite", "pricing": "Free up to 250 certificates", "positioning": "Free certificate monitoring with instant expiry alerts", "strengths": ["Free", "Recommended by Let's Encrypt when it ended its emails"], "weaknesses": ["Enterprise upsell product; no customer complaints were collected in this run"], "evidence": ["o6", "o7"]},
+    {"name": "HetrixTools", "url": "https://www.hetrixtools.com/pricing/uptime-monitor/", "pricing": "Free plan; paid from $9.95/month", "positioning": "Uptime Monitor Pricing: Free Plan, From $9.95/mo", "strengths": ["SSL expiry monitoring in every plan, including free"], "weaknesses": ["Not checked for complaints in this run"], "evidence": ["o4", "o5"]},
+    {"name": "StatusCake", "url": "https://www.statuscake.com/pricing/", "pricing": "$0 tier; paid tiers above", "positioning": "External monitoring for websites, APIs, SSL certificates, domains, page speed, and servers.", "strengths": ["Free tier", "Bundles SSL with uptime and domain checks"], "weaknesses": ["Not checked for complaints in this run"], "evidence": ["o15", "o16"]},
+    {"name": "updown.io", "url": "https://updown.io/", "pricing": "Pay-as-you-go, about 1.83 EUR/month for 10 sites", "positioning": "Receive alerts in case of invalid or expiring soon certificate.", "strengths": ["Very cheap", "Developer favourite"], "weaknesses": ["Not checked for complaints in this run"], "evidence": ["o12", "o13"]},
+    {"name": "Uptime Kuma (self-hosted)", "url": "https://github.com/louislam/uptime-kuma", "pricing": "Free, open source", "positioning": "Not quoted (open-source project, no pricing page)", "strengths": ["Free; recommended in HN threads (e13)"], "weaknesses": ["Self-hosting; open feature requests about certificate-expiry alert options"], "evidence": ["e13", "e16"]}
+  ],
+
+  "features": {"columns": ["SSL expiry email", "Free tier with SSL", "Domain expiry", "Built for non-technical owners"],
+    "rows": [
+      {"name": "UptimeRobot", "values": ["yes", "no", "yes", "unknown"]},
+      {"name": "Red Sift Lite", "values": ["yes", "yes", "unknown", "unknown"]},
+      {"name": "HetrixTools", "values": ["yes", "yes", "yes", "unknown"]},
+      {"name": "StatusCake", "values": ["yes", "partial", "yes", "unknown"]},
+      {"name": "updown.io", "values": ["yes", "no", "yes", "unknown"]},
+      {"name": "Uptime Kuma", "values": ["yes", "yes", "partial", "no"]}
+    ]},
+
+  "critic": [
+    {"risk": "Free incumbents give the same alert: Red Sift (250 certificates free, recommended by Let's Encrypt), HetrixTools, StatusCake, LetsMonitor.", "severity": "high"},
+    {"risk": "Tried and died: SSLPing shut down in 2022, and its creator never dared to charge for it.", "severity": "high"},
+    {"risk": "The pain is real but nobody pays: an uptime-monitor founder says SSL checks are low priority for his users, and users leave paid tools for free ones.", "severity": "high"},
+    {"risk": "Copyable in a week: every uptime tool already ships it as a checkbox.", "severity": "high"},
+    {"risk": "The buyer you named mostly doesn't have the problem: hosted site builders such as Squarespace give automatic SSL.", "severity": "medium"},
+    {"risk": "Shorter certificate lifetimes (47 days) could raise urgency.", "severity": "low", "rebuttal": "The industry's answer is more automation (Let's Encrypt says so, o8), plus monitoring that is already free. More renewals mean more silent failures, but that still doesn't open a paid gap (e28, e31)."}
+  ],
+
+  "win_plan": {
+    "positioning": "Not recommended as a standalone product. If you test it anyway: the alert that tells you your auto-renewal broke, before your customers see a browser warning.",
+    "switching_triggers": [
+      {"trigger": "Let's Encrypt ended its expiry emails", "move": "Answer existing threads with a free checker; no paid pitch", "evidence": ["e8", "e4"]},
+      {"trigger": "UptimeRobot's free plan barred commercial use and SSL moved to paid", "move": "Flat low price for commercial sites", "evidence": ["e15", "o1"]}
+    ],
+    "offers": ["Free for a few certificates; paid only for agencies with many client sites"],
+    "build_first": [{"feature": "Detect stuck renewals (certificate not rotated at two-thirds of its lifetime)", "why": "Answers the silent-failure theme (e1, e4, e5)."}],
+    "where_to_find": [
+      {"place": "Hacker News Let's Encrypt outage threads", "url": "https://news.ycombinator.com/item?id=44641877", "why": "People who lost their expiry emails"},
+      {"place": "Uptime Kuma GitHub issues", "url": "https://github.com/louislam/uptime-kuma/issues", "why": "Feature requests about certificate-expiry alerts"},
+      {"place": "WordPress.org free-SSL plugin reviews", "url": "https://wordpress.org/support/plugin/wp-letsencrypt-ssl/reviews/", "why": "Small-site owners fighting renewals. Self-promotion is forbidden there."}
+    ],
+    "trust": ["Public, flat price"],
+    "stop_doing": ["Charging for an alert that Red Sift and HetrixTools give free"]
+  },
+
+  "pricing": {"recommendation": "$9/month is not supportable for the alert alone", "competitor_range": "$0 (Red Sift, HetrixTools, LetsMonitor, StatusCake) to $15/month (Cert Spotter)", "rationale": "The core alert costs $0 elsewhere, and the evidence shows people leaving paid monitoring for free tools, not paying more."},
+
+  "validation": {"experiment": "Only if you still want to try: a one-page pre-sale aimed at small web agencies (multi-client SSL, domain and uptime report, white-label), plus 20 direct conversations.", "pass_bar": "5 paid pre-orders at $9 or more per month", "days": 7,
+    "steps": ["Day 1: list 40 small web agencies that publish their client portfolios", "Days 2-5: 20 conversations about how they track client certificates and domains today", "Days 6-7: ask for pre-payment; count the yes answers"]},
+  "kill_criteria": ["Fewer than 5 paid pre-orders after 7 days", "Most agencies say they already use HetrixTools, UptimeRobot or Uptime Kuma"]
+}

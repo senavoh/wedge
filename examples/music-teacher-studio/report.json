@@ -1,0 +1,449 @@
+{
+  "title": "Studio tools for independent music teachers",
+  "subtitle": "Expertise run for a piano teacher who builds in Next.js: scheduling, makeups, billing and practice tracking for solo studios.",
+  "mode": "expertise",
+  "depth": "quick",
+  "date": "2026-10-18",
+  "founder": {
+    "budget": "under $1k",
+    "skills": "web dev (Next.js + Postgres), teaches piano",
+    "hours": "10/week",
+    "risk": "side income first",
+    "channel": "online; member of music teacher forums and Facebook groups"
+  },
+  "verdict": {
+    "call": "KILL",
+    "score": 56,
+    "summary": "The admin pain is real, but it's covered. Teachers complain about makeups, reschedules and late tuition, yet My Music Staff already does makeup credits, self-rescheduling and auto-invoicing for $16.95/mo, Nova is free up to 10 students, and many teachers say Venmo and Excel are enough. The best open gap, practice logs that teachers can correct, comes from three reviews of a single app, in a niche whose best-known app (Tonara) shut down in 2023. Caveat: Capterra, G2, Trustpilot and Reddit were blocked from this network, so complaints about incumbents on those sites weren't read."
+  },
+  "opportunities": [
+    {
+      "name": "Editable practice log companion",
+      "one_liner": "Assignment and practice tracking where teachers and parents can fix the minutes.",
+      "score": 56,
+      "scores": {
+        "pain": 5,
+        "willingness_to_pay": 4,
+        "competition_gap": 4,
+        "founder_fit": 9,
+        "reachability": 7,
+        "build_cost": 7
+      },
+      "why": "pain 5: three different Practice Space reviewers ask to edit or enter practice time (e17, e18, e19), and Tonara's shutdown forced teachers to switch (e28, e29, e31), but it's one app and no one is leaving over it. willingness_to_pay 4: the one paying reviewer says it isn't worth the fee (e20), and Tonara couldn't survive (e41). competition_gap 4: the complaint is specific to Practice Space; My Music Staff and Nova also offer practice tracking (vendor claims). founder_fit 9: a small web app a teacher-developer can build and use with their own students. reachability 7: Piano World, Piano Pantry and the founder's own groups (e42 and e43 show the forum bans ads). build_cost 7: a few weeks at 10 hours a week.",
+      "evidence": [
+        "e17",
+        "e18",
+        "e19",
+        "e20",
+        "e28",
+        "e29",
+        "e31",
+        "e41"
+      ]
+    },
+    {
+      "name": "All-in-one studio manager for solo teachers",
+      "one_liner": "Scheduling, makeup credits, billing and practice in one app.",
+      "score": 54,
+      "scores": {
+        "pain": 6,
+        "willingness_to_pay": 5,
+        "competition_gap": 2,
+        "founder_fit": 9,
+        "reachability": 7,
+        "build_cost": 4
+      },
+      "why": "pain 6: makeups, reschedules and late payments come up again and again, from many authors across a decade of forum threads (e2, e3, e4, e5, e7, e8, e9, e10, e11). It's weekly admin friction, not churn. willingness_to_pay 5: teachers do move to paid software as they grow (e1), but many say doing it for free is easy (e21, e22, e23, e24) and are cutting subscriptions (e25, e26). competition_gap 2: My Music Staff already does exactly what teachers ask for (e27) at $16.95/mo (e32), and Nova is free up to 10 students (e34). build_cost 4: recurring billing, family portals and scheduling would take months at 10 hours a week.",
+      "evidence": [
+        "e1",
+        "e2",
+        "e4",
+        "e8",
+        "e21",
+        "e22",
+        "e27",
+        "e32",
+        "e34"
+      ]
+    },
+    {
+      "name": "Monthly tuition and makeup-credit calculator",
+      "one_liner": "Works out fair monthly tuition across 4- and 5-lesson months, holidays and credits.",
+      "score": 54,
+      "scores": {
+        "pain": 6,
+        "willingness_to_pay": 2,
+        "competition_gap": 3,
+        "founder_fit": 9,
+        "reachability": 7,
+        "build_cost": 9
+      },
+      "why": "pain 6: tuition math with variable months is a long-running argument among teachers (e13, e14, e15, e16, e12). willingness_to_pay 2: it's a calculation teachers already do in spreadsheets or let their studio software handle (e22, e27). It works as a free lead magnet, not a product.",
+      "evidence": [
+        "e12",
+        "e13",
+        "e14",
+        "e15",
+        "e16"
+      ]
+    }
+  ],
+  "gap": {
+    "statement": "Teachers who track student practice in an app can't fix a wrong or missing practice log, because Practice Space, the timer-only app many moved to after Tonara closed, doesn't allow edits.",
+    "evidence": [
+      "e17",
+      "e18",
+      "e19"
+    ]
+  },
+  "pains": [
+    {
+      "theme": "Makeups and reschedules eat admin time",
+      "severity": "medium",
+      "summary": "Weekly texting and rearranging, and pushback from parents. Teachers resist no-makeup policies.",
+      "by_competitor": {
+        "No tool / DIY": 6,
+        "My Music Staff": 1
+      },
+      "evidence": [
+        "e1",
+        "e2",
+        "e3",
+        "e4",
+        "e5",
+        "e6",
+        "e7"
+      ]
+    },
+    {
+      "theme": "Collecting tuition and late payers",
+      "severity": "medium",
+      "summary": "Parents pay late or after the fact, and reminders happen outside Venmo.",
+      "by_competitor": {
+        "Venmo": 1,
+        "No tool / DIY": 4
+      },
+      "evidence": [
+        "e8",
+        "e9",
+        "e10",
+        "e11",
+        "e12"
+      ]
+    },
+    {
+      "theme": "Monthly tuition math with 4- and 5-lesson months",
+      "severity": "low",
+      "summary": "Flat monthly fees with a variable number of lessons cause confusion and disputes.",
+      "by_competitor": {
+        "No tool / DIY": 5
+      },
+      "evidence": [
+        "e12",
+        "e13",
+        "e14",
+        "e15",
+        "e16"
+      ]
+    },
+    {
+      "theme": "Practice logs can't be corrected",
+      "severity": "medium",
+      "summary": "With a timer-only log, a forgotten stop button or a bug corrupts the record and the streak.",
+      "by_competitor": {
+        "Practice Space": 4
+      },
+      "evidence": [
+        "e17",
+        "e18",
+        "e19",
+        "e20"
+      ]
+    },
+    {
+      "theme": "Free tools are good enough",
+      "severity": "low",
+      "summary": "This is a counter-signal: Excel, Venmo, QuickBooks and Notion are called sufficient, and teachers are auditing their subscriptions.",
+      "by_competitor": {
+        "Excel": 1,
+        "Venmo": 1,
+        "QuickBooks": 1,
+        "Notion": 1
+      },
+      "evidence": [
+        "e21",
+        "e22",
+        "e23",
+        "e24",
+        "e25",
+        "e26"
+      ]
+    }
+  ],
+  "competitors": [
+    {
+      "name": "My Music Staff",
+      "url": "https://www.mymusicstaff.com/pricing/",
+      "pricing": "$16.95/mo + $4.95 per extra teacher; 30-day free trial",
+      "positioning": "Student management, flexible scheduling, online payments, and more – all in one place !",
+      "strengths": [
+        "Parent self-reschedule, auto-invoicing, makeup credits, policy enforcement (e27)",
+        "Chosen for business features over Tonara (e30)"
+      ],
+      "weaknesses": [
+        "Not read: Capterra/G2 reviews blocked from this network"
+      ],
+      "evidence": [
+        "e32",
+        "e39",
+        "e27",
+        "e30"
+      ]
+    },
+    {
+      "name": "TutorBird",
+      "url": "https://www.tutorbird.com/pricing/",
+      "pricing": "$16.95/mo + $4.95 per extra tutor",
+      "positioning": "Same vendor and price as My Music Staff, aimed at general tutors.",
+      "strengths": [
+        "Same platform as MMS"
+      ],
+      "weaknesses": [
+        "Not music-specific"
+      ],
+      "evidence": [
+        "e33"
+      ]
+    },
+    {
+      "name": "Nova Music",
+      "url": "https://trynovamusic.com/",
+      "pricing": "Free up to 10 students; Pro $10/mo or $100/yr adds billing",
+      "positioning": "Built for piano teachers ... switching from spreadsheets.",
+      "strengths": [
+        "Free tier",
+        "Gamified practice tracking (vendor claim)"
+      ],
+      "weaknesses": [
+        "Billing only on Pro"
+      ],
+      "evidence": [
+        "e34",
+        "e35"
+      ]
+    },
+    {
+      "name": "Duet Partner",
+      "url": "https://www.duetpartner.com/pricing",
+      "pricing": "Flat rate regardless of studio size (page shows $20 and $9 monthly figures next to an old June 2024 promo); families pay a 1% transaction fee",
+      "positioning": "All your business tools in a single account.",
+      "strengths": [
+        "Flat price",
+        "Took over Music Teacher's Helper (old domain redirects)"
+      ],
+      "weaknesses": [
+        "Pricing page is stale and unclear"
+      ],
+      "evidence": [
+        "e36",
+        "e37"
+      ]
+    },
+    {
+      "name": "Opus1.io",
+      "url": "https://www.opus1.io/pricing",
+      "pricing": "From $99/mo",
+      "positioning": "Everything You Need to Run Your School in One Place",
+      "strengths": [
+        "Built for multi-teacher schools"
+      ],
+      "weaknesses": [
+        "Overkill and too expensive for a solo teacher"
+      ],
+      "evidence": [
+        "e38"
+      ]
+    },
+    {
+      "name": "Practice Space",
+      "url": "https://apps.apple.com/us/app/id1451645821",
+      "pricing": "Free app with a teacher subscription (price not fetched)",
+      "positioning": "Main replacement teachers named after Tonara closed (e31).",
+      "strengths": [
+        "Easy assignment transfer (Piano Pantry)"
+      ],
+      "weaknesses": [
+        "Practice time can't be edited (e17, e18)",
+        "Timer-only entry (e19)",
+        "Subscription price rising (e20)"
+      ],
+      "evidence": [
+        "e17",
+        "e18",
+        "e19",
+        "e20",
+        "e31"
+      ]
+    }
+  ],
+  "features": {
+    "columns": [
+      "Makeup credits",
+      "Parent self-reschedule",
+      "Auto-invoicing",
+      "Free tier",
+      "Editable practice log"
+    ],
+    "rows": [
+      {
+        "name": "My Music Staff",
+        "values": [
+          "yes",
+          "yes",
+          "yes",
+          "no",
+          "unknown"
+        ]
+      },
+      {
+        "name": "Nova Music",
+        "values": [
+          "unknown",
+          "unknown",
+          "partial",
+          "yes",
+          "unknown"
+        ]
+      },
+      {
+        "name": "Duet Partner",
+        "values": [
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown"
+        ]
+      },
+      {
+        "name": "Practice Space",
+        "values": [
+          "no",
+          "no",
+          "no",
+          "yes",
+          "no"
+        ]
+      },
+      {
+        "name": "Excel + Venmo",
+        "values": [
+          "partial",
+          "no",
+          "no",
+          "yes",
+          "yes"
+        ]
+      }
+    ]
+  },
+  "critic": [
+    {
+      "risk": "Tried and died: Tonara, the best-known student practice and assignment app, shut down on December 8, 2023.",
+      "severity": "high"
+    },
+    {
+      "risk": "Free incumbents: Nova is free up to 10 students and $10/mo after that; My Music Staff is $16.95. There's no room to undercut on price.",
+      "severity": "high"
+    },
+    {
+      "risk": "Pain without payment: teachers call free tools sufficient, and the one paying practice-app reviewer says the app isn't worth the fee.",
+      "severity": "high"
+    },
+    {
+      "risk": "Copyable in a week: an 'edit practice time' feature is small for Practice Space or My Music Staff to ship.",
+      "severity": "medium"
+    },
+    {
+      "risk": "Channel: Piano World bans advertising, and most teacher Facebook groups likely do too.",
+      "severity": "medium",
+      "rebuttal": "The founder is already a member of these groups. Helpful answers without links, plus direct questions to peers, are allowed (e42, e43 show the rule)."
+    },
+    {
+      "risk": "Evidence gap: Capterra, G2, Trustpilot, GetApp, Software Advice and Reddit were blocked, so complaints about incumbents there weren't read.",
+      "severity": "medium"
+    }
+  ],
+  "win_plan": {
+    "positioning": "Practice logs your students can't break: you fix the minutes, they keep the streak.",
+    "switching_triggers": [
+      {
+        "trigger": "A practice app shuts down (Tonara, 2023)",
+        "move": "Offer to import assignment history for free when the next one closes",
+        "evidence": [
+          "e28",
+          "e29",
+          "e41"
+        ]
+      }
+    ],
+    "offers": [
+      "Free for small studios",
+      "Teacher and parent can edit any log entry"
+    ],
+    "build_first": [
+      {
+        "feature": "Edit practice time and date after the fact",
+        "why": "pain: practice logs can't be corrected (e17, e18)"
+      },
+      {
+        "feature": "Manual practice entry without a timer",
+        "why": "e19"
+      }
+    ],
+    "where_to_find": [
+      {
+        "place": "Piano World Piano Teachers Forum",
+        "url": "https://forums.pianoworld.com/ubbthreads.php/forums/26/1/piano-teachers-forum",
+        "why": "Ten-plus years of threads on makeups, tuition and software. No ads allowed."
+      },
+      {
+        "place": "Piano Pantry",
+        "url": "https://pianopantry.com/podcast/episode085/",
+        "why": "Teachers shared their Tonara transition plans here"
+      },
+      {
+        "place": "Founder's own music teacher Facebook groups",
+        "why": "The founder is already a member. Ask questions there, don't post promotions."
+      }
+    ],
+    "trust": [
+      "No subscription for small studios"
+    ],
+    "stop_doing": [
+      "Building another all-in-one studio manager",
+      "Posting promotional links in teacher forums"
+    ]
+  },
+  "pricing": {
+    "recommendation": "If tested: free for up to 10 students, then $3-5/mo",
+    "competitor_range": "$0 (Nova free) to $16.95/mo (MMS); $99+ for schools (Opus1)",
+    "rationale": "Solo-studio tools are already $0-17/mo, and teachers are cutting subscriptions. A practice add-on only works priced well below the studio tool it sits next to."
+  },
+  "validation": {
+    "experiment": "Before writing code, ask 15 teachers in your own groups who use Practice Space or a studio tool's practice log whether broken logs cost them time, and whether they'd pay $3-5/mo to fix it.",
+    "pass_bar": "8 of 15 say it happens weekly and 3 ask to try it",
+    "days": 7,
+    "steps": [
+      "Day 1: write a 3-question ask with no link",
+      "Days 2-4: send it to 15 teachers you know from your groups",
+      "Day 5: count weekly-pain answers and asks to try",
+      "Day 7: go or stop"
+    ]
+  },
+  "kill_criteria": [
+    "Fewer than 5 of 15 report broken practice logs as a weekly problem",
+    "Nobody asks to try it",
+    "Teachers say the My Music Staff or Nova practice log already does this"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "title": "Case-management software for small independent funeral homes",
+  "subtitle": "Idea stress-test, quick depth. Customer voice was thin because Capterra, G2 and Reddit were blocked; this verdict rests on what could be read and checked.",
+  "mode": "idea",
+  "depth": "quick",
+  "date": "2026-10-18",
+  "founder": {"budget": "under $3k", "skills": "solo backend dev (Python/Django)", "hours": "15/week", "risk": "side income first", "channel": "online"},
+  "verdict": {"call": "KILL", "score": 42, "summary": "The market is crowded and cheap. About 30 products are listed, with tiers from $49 to $79 a month, a free version and month-to-month terms. Most of the director reviews this run could read praise their current tool. The one sharp complaint, a freezing mobile app, came from a single reviewer, and Gather already sells phone case access. Capterra, G2 and Reddit returned 403, so price and switching complaints there went unread. A cheap check is 10 calls with directors before writing any code."},
+  "opportunities": [
+    {"name": "Case management for small independent funeral homes", "one_liner": "Cloud case file, arrangements and contracts for 1-3 director homes.",
+     "score": 42,
+     "scores": {"pain": 4, "willingness_to_pay": 6, "competition_gap": 2, "founder_fit": 5, "reachability": 4, "build_cost": 5},
+     "why": "Pain 4: the friction is real but mild, from 8 reviewers across 6 URLs, and only one wants to leave (e3). Most reviews read were positive (e12-e16). Willingness to pay 6: homes already pay $49 to $469 a month (o7, o8, o9, o12), but no verified price complaint turned up. Competition gap 2: about 30 vendors, cheap and no-contract (o2, o7, o12), and well-liked support (e12, e15, e16). Founder fit 5: Django suits CRUD case files, but state forms (e10) and 15 hours a week to support a 24/7 business are a stretch. Reachability 4: no free public venue where directors complain was found; Reddit was blocked. Build cost 5: months of work at 15 hours a week, plus migrating data out of incumbents.",
+     "evidence": ["e1", "e3", "e5", "e12", "e15", "o2", "o7", "o12"]}
+  ],
+  "gap": {"statement": "Small independent funeral directors who work cases from their phone can't get reliable mobile case access because the app they use freezes and logs them out. Evidence is thin: one Passare app review and one TerraPro review.", "evidence": ["e1", "e2", "e4"]},
+  "pains": [
+    {"theme": "Mobile and cloud case access is flaky", "severity": "medium", "summary": "Apps freeze, log users out and lose notes. One director wants the company to drop the tool.", "by_competitor": {"Passare": 5, "TerraPro": 1}, "evidence": ["e1", "e2", "e3", "e4", "e17", "e18"]},
+    {"theme": "Dated, clunky interfaces", "severity": "low", "summary": "Old design, too many dialog boxes, a learning curve. One reviewer says a spreadsheet would do.", "by_competitor": {"The Smart Director": 2, "TerraPro": 1, "Funeral Buddy": 1}, "evidence": ["e5", "e6", "e7", "e8"]},
+    {"theme": "Forms don't match my state", "severity": "low", "summary": "National products carry sections a state doesn't use. Only one URL, so unverified.", "by_competitor": {"Funeral Buddy": 2}, "evidence": ["e9", "e10"]},
+    {"theme": "No built-in accounting", "severity": "low", "summary": "One reviewer notes it and shrugs, since Stripe and QuickBooks cover it. Only one URL, so unverified.", "by_competitor": {"Sacred Grounds": 1}, "evidence": ["e11"]}
+  ],
+  "competitors": [
+    {"name": "Osiris", "url": "https://www.osirissoftware.com/", "pricing": "From $79/mo by call volume on its own pricing page; $65/mo on its SourceForge listing; month-to-month", "positioning": "Osiris Software offers worry-free, monthly subscription-based pricing plans.", "strengths": ["No contract", "QuickBooks integration", "30-day free trial"], "weaknesses": ["Capterra complaints could not be read (403)"], "evidence": ["o1", "o2", "o3", "o12"]},
+    {"name": "Gather", "url": "https://www.gather.app/", "pricing": "Not public: activation fee plus monthly", "positioning": "Manage any case from your phone, improve collection rates, provide a better family experience, create contracts and collect e-signatures, and enjoy unlimited support, cases, and users.", "strengths": ["Mobile case access", "Unlimited users"], "weaknesses": ["Hidden pricing"], "evidence": ["o4", "o5", "o6"]},
+    {"name": "Passare", "url": "https://www.passare.com/", "pricing": "Not public (/pricing returns 404)", "positioning": "Cloud case management", "strengths": ["Widely adopted (per search results; not verified)"], "weaknesses": ["Mobile app freezes and logs users out"], "evidence": ["e1", "e2", "e18"]},
+    {"name": "Sacred Grounds", "url": "https://sourceforge.net/software/product/Sacred-Grounds/", "pricing": "$49/mo, free version", "positioning": "Low-cost tool for independent homes", "strengths": ["Cheap and simple"], "weaknesses": ["No built-in accounting"], "evidence": ["o7", "e11", "e19"]},
+    {"name": "TerraPro", "url": "https://sourceforge.net/software/product/TerraPro/", "pricing": "$125/mo plus $35 per extra user", "positioning": "Cloud funeral and cemetery software", "strengths": ["Personal, fast support", "Affordable"], "weaknesses": ["Cloud session drops", "Too many dialog boxes"], "evidence": ["o9", "e12", "e15", "e4", "e7"]},
+    {"name": "Parting Pro", "url": "https://partingpro.com/", "pricing": "$469/mo per SourceForge", "positioning": "Online arrangements plus case management", "strengths": ["Online arrangement flow"], "weaknesses": ["Highest listed price"], "evidence": ["o8"]}
+  ],
+  "features": {"columns": ["Public price", "Month-to-month", "Free tier or trial", "Mobile case access", "QuickBooks link"],
+    "rows": [
+      {"name": "Osiris", "values": ["yes", "yes", "yes", "unknown", "yes"]},
+      {"name": "Gather", "values": ["no", "unknown", "unknown", "yes", "unknown"]},
+      {"name": "Passare", "values": ["no", "unknown", "unknown", "partial", "unknown"]},
+      {"name": "Sacred Grounds", "values": ["yes", "unknown", "yes", "unknown", "unknown"]},
+      {"name": "TerraPro", "values": ["yes", "unknown", "unknown", "partial", "unknown"]},
+      {"name": "Parting Pro", "values": ["partial", "unknown", "unknown", "unknown", "unknown"]}
+    ]},
+  "critic": [
+    {"risk": "Crowded with cheap, well-liked tools: $49 plus a free version, $65 to $79 with no contract, and praised personal support.", "severity": "high"},
+    {"risk": "The one sharp pain, mobile access, is already marketed by Gather and is a single release for Passare to fix.", "severity": "medium"},
+    {"risk": "Consolidation: search results say Batesville bought Halcyon and Directors Investment Group owns Passare. Both page fetches returned no text, so this is unverified.", "severity": "medium"},
+    {"risk": "Forms differ by state, and death-care records need trust that a solo side project lacks.", "severity": "medium"},
+    {"risk": "Capterra, G2 and Reddit were blocked, so price and switching complaints there went unread. They could change the pain score.", "severity": "medium"}
+  ],
+  "validation": {"experiment": "Before writing code, call 10 owners of independent homes (1 to 3 directors, found through state funeral director association member lists). Ask what made them switch software last time, what they pay, and whether mobile case access fails them.", "pass_bar": "6 of 10 name the same unsolved problem and say they would switch for it at $79 to $149 a month", "days": 7, "steps": ["Day 1-2: pull 30 independent homes from one state association directory", "Day 3-6: call or visit, aiming for 10 conversations", "Day 7: tally; kill if there is no shared problem"]},
+  "kill_criteria": ["Fewer than 6 of 10 directors share one unsolved problem", "Most are happy with a sub-$100/mo tool"]
+}

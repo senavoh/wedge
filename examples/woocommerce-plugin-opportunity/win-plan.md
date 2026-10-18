@@ -1,0 +1,8 @@
+# Win plan (quick; verdict is PIVOT, so this is the test plan for the pivot)
+- Pivot angle: don't build another feed generator. Build a sync-health monitor that sits next to whatever sync plugin the store already uses (Meta for WooCommerce, Google for WooCommerce, CTX, AdTribes). It reports which products failed to sync and why, and how many scheduled actions failed, and alerts the store (pain-sync-fails e10-e14; failed scheduled actions e3). A quick search found adjacent tools (Feed Health Monitor for WooCommerce, a catalog-data scanner; PW Merchant, a Google-only readiness and sync tool), and Google Merchant Center has its own Diagnostics page. None was confirmed to alert on failed sync jobs across both Meta and Google. This is an unverified hypothesis.
+- Triggers: a site slowdown or crash during a sync (e1, e2, trigger-2); a feed vendor changing its license or renewal terms (e19, e23, trigger-1).
+- Positioning: "Know when Facebook or Google stopped showing your products, before your sales tell you."
+- Offers: a free scan of sync health; a public price that never rises at renewal (pain-paid-feed-trust).
+- Build first: (1) an Action Scheduler failure dashboard for wc_facebook_* and Google sync jobs (e3, e8); (2) product-level diffs between the store and the Merchant Center and Meta catalog status (e10, e12); (3) email alerts.
+- Where they are: WordPress.org support forums for meta-for-woocommerce, google-listings-and-ads, woo-product-feed-pro and webappick (answer questions only, no links, e51). The woocommerce.com marketplace is gated.
+- Stop doing: changing licenses after sale (e19); auto-renewals with no refunds (e23); updates that rewrite feed settings (e21).
