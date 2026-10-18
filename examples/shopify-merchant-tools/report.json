@@ -1,0 +1,778 @@
+{
+ "title": "Tools for Shopify merchants, from a small Shopify merchant",
+ "subtitle": "Expertise run for a home-goods Shopify store owner: 17 apps across 9 categories scouted from 1- to 3-star App Store reviews, then a deep dive on post-Stocky inventory purchasing.",
+ "mode": "expertise",
+ "depth": "quick",
+ "date": "2026-10-17",
+ "founder": {
+  "budget": "under $2k",
+  "skills": "simple web apps with AI help; runs a ~$8k/mo home-goods Shopify store",
+  "hours": "10/week",
+  "risk": "side income",
+  "channel": "online"
+ },
+ "verdict": {
+  "call": "PIVOT",
+  "score": 57,
+  "summary": "The pain is real: small POS retailers lost Stocky on Aug 31, 2026, and they say Shopify's native POs take triple the time. But don't build another Stocky replacement app. A free, 4.9-rated one (Stockroom) and more than ten cheap apps already cover it, and these shops resist new monthly fees. The pivot is to change the channel and price: sell a one-time $199 setup service on top of the free tools, and run the 7-day test before building anything. Read-only Stocky access ends Nov 29, so test now."
+ },
+ "opportunities": [
+  {
+   "name": "Stocky replacement app for small POS retailers",
+   "one_liner": "POs, receiving, labels and stock counts for brick-and-mortar Shopify shops after Stocky's shutdown.",
+   "score": 57,
+   "scores": {
+    "pain": 8,
+    "willingness_to_pay": 5,
+    "competition_gap": 2,
+    "founder_fit": 7,
+    "reachability": 7,
+    "build_cost": 5
+   },
+   "why": "Strongest pain in the scout: Stocky is rated 3.0 with 28% one-star reviews and was shut down, merchants call native POs brutally inadequate, and some are leaving Shopify POS. But Stockroom is free and unlimited, rated 4.9, and more than ten other apps pitch in the same threads at $0 to $20. Shops cap spend at $100/mo and resent paying for what was free.",
+   "evidence": [
+    "e1",
+    "e3",
+    "e5",
+    "e7",
+    "e22",
+    "c1",
+    "c3",
+    "c14"
+   ]
+  },
+  {
+   "name": "Wholesale ordering for small makers",
+   "one_liner": "Reliable wholesale pricing and net terms for small brands selling to boutiques.",
+   "score": 51,
+   "scores": {
+    "pain": 6,
+    "willingness_to_pay": 6,
+    "competition_gap": 3,
+    "founder_fit": 6,
+    "reachability": 5,
+    "build_cost": 4
+   },
+   "why": "Merchants lose wholesale orders when pricing isn't applied or net terms fail, and they pay $35 to $149/mo for apps. But Shopify B2B now runs on Basic and up, and pricing logic touches checkout and themes. Not deep-dived; needs its own run.",
+   "evidence": [
+    "w1",
+    "w2",
+    "w4",
+    "w5",
+    "w6",
+    "w7"
+   ]
+  },
+  {
+   "name": "Subscriptions for small merchants",
+   "one_liner": "Subscribe-and-save without percentage fees for brands with a few hundred subscribers.",
+   "score": 50,
+   "scores": {
+    "pain": 7,
+    "willingness_to_pay": 6,
+    "competition_gap": 3,
+    "founder_fit": 4,
+    "reachability": 5,
+    "build_cost": 3
+   },
+   "why": "Recharge users complain about no small tier, fees above 10% of recurring revenue, and lock-in. But Seal is free up to 50 subscriptions with 0% fees, Shopify Subscriptions is free, and recurring billing is high-stakes for a 10-hour-a-week builder.",
+   "evidence": [
+    "o1",
+    "o2",
+    "o3",
+    "o4",
+    "o5",
+    "o6",
+    "o8"
+   ]
+  }
+ ],
+ "gap": {
+  "statement": "Small brick-and-mortar Shopify shops forced off Stocky can't get purchasing, receiving and labels running again without days of re-entering vendor and supplier data, because every replacement is self-serve software and Shopify's tools can't carry suppliers across.",
+  "evidence": [
+   "g1",
+   "g2",
+   "g3",
+   "g6"
+  ]
+ },
+ "pains": [
+  {
+   "theme": "Shopify took away the tool we run the shop on",
+   "severity": "high",
+   "summary": "Stocky was neglected, stripped of features, then shut down; some shops are leaving Shopify POS.",
+   "by_competitor": {
+    "Stocky": 11
+   },
+   "evidence": [
+    "e1",
+    "e2",
+    "e3",
+    "e4",
+    "e5",
+    "e6"
+   ]
+  },
+  {
+   "theme": "The native PO tool takes triple the time",
+   "severity": "high",
+   "summary": "Native POs are slow for many-SKU orders and have no fill-shelves reordering.",
+   "by_competitor": {
+    "Stocky": 30,
+    "Shopify native POs (forum posts)": 6
+   },
+   "evidence": [
+    "e7",
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12"
+   ]
+  },
+  {
+   "theme": "Re-entering years of vendor data",
+   "severity": "high",
+   "summary": "Suppliers can't be exported from Stocky, and native POs force vendors to be re-created as suppliers.",
+   "by_competitor": {
+    "Shopify native POs (forum posts)": 4
+   },
+   "evidence": [
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17"
+   ]
+  },
+  {
+   "theme": "Won't pay $100+/mo for what used to be free",
+   "severity": "high",
+   "summary": "Small shops resist new fees; forecasting suites price for bigger stores and raise prices at renewal.",
+   "by_competitor": {
+    "Stocky": 11,
+    "Inventory Planner": 12,
+    "Prediko": 1,
+    "Forum posts": 6
+   },
+   "evidence": [
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27"
+   ]
+  },
+  {
+   "theme": "Nobody can help me set it up",
+   "severity": "medium",
+   "summary": "Support can't fix it, setup eats whole days, and real onboarding costs thousands.",
+   "by_competitor": {
+    "Stocky": 14,
+    "Inventory Planner": 13,
+    "Prediko": 2
+   },
+   "evidence": [
+    "e33",
+    "e34",
+    "e35",
+    "e36",
+    "e37",
+    "e38"
+   ]
+  },
+  {
+   "theme": "Labels and stock counts don't work",
+   "severity": "medium",
+   "summary": "Receiving labels and barcode counts break, so shops pay for extra apps.",
+   "by_competitor": {
+    "Stocky": 13,
+    "Inventory Planner": 2
+   },
+   "evidence": [
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e32"
+   ]
+  },
+  {
+   "theme": "The numbers are wrong",
+   "severity": "medium",
+   "summary": "Sync breaks, forecasts miss seasonality, data has bugs.",
+   "by_competitor": {
+    "Stocky": 4,
+    "Inventory Planner": 12,
+    "Prediko": 1
+   },
+   "evidence": [
+    "e39",
+    "e40",
+    "e41",
+    "e42"
+   ]
+  }
+ ],
+ "competitors": [
+  {
+   "name": "Stocky (Shopify)",
+   "url": "https://apps.shopify.com/stocky",
+   "pricing": "Included with Shopify POS Pro; shut down Aug 31, 2026",
+   "positioning": "Inventory Management for Shopify POS Pro",
+   "strengths": [
+    "Was free with POS Pro",
+    "Did POs, receiving, counts and labels in one place"
+   ],
+   "weaknesses": [
+    "Neglected, then removed",
+    "Label printing broke",
+    "Gated behind POS Pro"
+   ],
+   "evidence": [
+    "c12",
+    "e1",
+    "e3",
+    "e26",
+    "e29"
+   ]
+  },
+  {
+   "name": "Shopify native purchase orders",
+   "url": "https://help.shopify.com/en/manual/products/inventory/getting-started/transitioning-from-stocky",
+   "pricing": "Included in Shopify admin",
+   "positioning": "The built-in replacement Shopify points merchants to",
+   "strengths": [
+    "Free and built in"
+   ],
+   "weaknesses": [
+    "Slow for many-SKU orders",
+    "No fill-shelves reordering",
+    "Vendors must be re-created as suppliers"
+   ],
+   "evidence": [
+    "e7",
+    "e8",
+    "e10",
+    "e15",
+    "e17"
+   ]
+  },
+  {
+   "name": "Stockroom (MyWorks)",
+   "url": "https://apps.shopify.com/stock-room",
+   "pricing": "Free, unlimited POs",
+   "positioning": "Unlimited purchase orders, inventory management & manufacturing.",
+   "strengths": [
+    "Free",
+    "Stocky migration",
+    "Labels, counts, partial receiving",
+    "4.9 rating, no low-star reviews yet"
+   ],
+   "weaknesses": [
+    "Free tier is a loss leader for accounting sync (a risk to it, not an opening)"
+   ],
+   "evidence": [
+    "c1",
+    "c2",
+    "c3"
+   ]
+  },
+  {
+   "name": "EZstock",
+   "url": "https://apps.shopify.com/ezstock",
+   "pricing": "Free (5 POs/mo); Starter $19/mo; Growth $49/mo",
+   "positioning": "Leaving Stocky? Upload your export, then count stock, forecast demand and send purchase orders.",
+   "strengths": [
+    "Stocky import in one upload",
+    "Public pricing"
+   ],
+   "weaknesses": [
+    "Only 1 review; unproven"
+   ],
+   "evidence": [
+    "c6",
+    "c7",
+    "c17"
+   ]
+  },
+  {
+   "name": "Supremo",
+   "url": "https://apps.shopify.com/supremo",
+   "pricing": "Free up to 100 products; Shelf $19/mo",
+   "positioning": "Restock On Time with Inventory Forecasting & Purchase Orders",
+   "strengths": [
+    "Free tier",
+    "Partial receiving, stocktakes"
+   ],
+   "weaknesses": [
+    "7 reviews; unproven"
+   ],
+   "evidence": [
+    "c4",
+    "c5"
+   ]
+  },
+  {
+   "name": "Prediko",
+   "url": "https://apps.shopify.com/prediko",
+   "pricing": "Starter $49/mo (stores up to $100k revenue) and up",
+   "positioning": "AI Inventory Management & Planner.",
+   "strengths": [
+    "Forecasting",
+    "Automatic Stocky migration"
+   ],
+   "weaknesses": [
+    "Data bugs reported",
+    "Priced for DTC brands"
+   ],
+   "evidence": [
+    "c9",
+    "k5",
+    "e42"
+   ]
+  },
+  {
+   "name": "Inventory Planner by Sage",
+   "url": "https://apps.shopify.com/inventory-planner",
+   "pricing": "Not public: contact for a quote",
+   "positioning": "More time, more profit, less guesswork.",
+   "strengths": [
+    "Deep forecasting"
+   ],
+   "weaknesses": [
+    "Price hikes and contracts",
+    "Turns away small stores",
+    "Sync failures"
+   ],
+   "evidence": [
+    "c8",
+    "e19",
+    "e20",
+    "e39"
+   ]
+  }
+ ],
+ "features": {
+  "columns": [
+   "Free plan",
+   "Public price",
+   "Stocky import",
+   "Reorder suggestions",
+   "Partial receiving",
+   "Barcode stocktake",
+   "Labels on receive",
+   "POs under $25/mo",
+   "Hands-on setup"
+  ],
+  "rows": [
+   {
+    "name": "Shopify native POs",
+    "values": [
+     "yes",
+     "yes",
+     "no",
+     "no",
+     "unknown",
+     "partial",
+     "unknown",
+     "yes",
+     "no"
+    ]
+   },
+   {
+    "name": "Stockroom",
+    "values": [
+     "yes",
+     "yes",
+     "yes",
+     "yes",
+     "yes",
+     "yes",
+     "yes",
+     "yes",
+     "unknown"
+    ]
+   },
+   {
+    "name": "EZstock",
+    "values": [
+     "yes",
+     "yes",
+     "yes",
+     "yes",
+     "yes",
+     "yes",
+     "unknown",
+     "partial",
+     "unknown"
+    ]
+   },
+   {
+    "name": "Supremo",
+    "values": [
+     "yes",
+     "yes",
+     "unknown",
+     "yes",
+     "yes",
+     "yes",
+     "unknown",
+     "yes",
+     "unknown"
+    ]
+   },
+   {
+    "name": "Assisty",
+    "values": [
+     "partial",
+     "yes",
+     "yes",
+     "yes",
+     "unknown",
+     "yes",
+     "unknown",
+     "no",
+     "unknown"
+    ]
+   },
+   {
+    "name": "Stockie",
+    "values": [
+     "no",
+     "yes",
+     "unknown",
+     "yes",
+     "unknown",
+     "yes",
+     "unknown",
+     "no",
+     "unknown"
+    ]
+   },
+   {
+    "name": "Prediko",
+    "values": [
+     "no",
+     "yes",
+     "yes",
+     "yes",
+     "unknown",
+     "yes",
+     "yes",
+     "no",
+     "partial"
+    ]
+   },
+   {
+    "name": "Inventory Planner",
+    "values": [
+     "no",
+     "no",
+     "unknown",
+     "yes",
+     "unknown",
+     "unknown",
+     "unknown",
+     "no",
+     "partial"
+    ]
+   }
+  ]
+ },
+ "critic": [
+  {
+   "risk": "A free incumbent (Stockroom) and ten-plus cheap apps already own the app idea.",
+   "severity": "high"
+  },
+  {
+   "risk": "The window is closing: Stocky's API stopped Aug 31, and read-only access ends Nov 29, 2026.",
+   "severity": "high"
+  },
+  {
+   "risk": "The pain is real but these shops resist paying for what used to be free.",
+   "severity": "high"
+  },
+  {
+   "risk": "Shopify killed Stocky itself and can change native POs at any time.",
+   "severity": "medium",
+   "rebuttal": "Native POs are still called brutally inadequate (e7, e8), and a setup service works on whichever tool Shopify pushes."
+  },
+  {
+   "risk": "Free migration tools and vendor walkthroughs already exist.",
+   "severity": "medium",
+   "rebuttal": "They move files; merchants are still asking months later how to map vendors, print labels and train staff (e15, e16, e34)."
+  },
+  {
+   "risk": "Copyable in a week by any vendor or freelancer.",
+   "severity": "medium",
+   "rebuttal": "True; this is a side-income service, not a moat. The edge is being a real merchant who answers in the threads."
+  },
+  {
+   "risk": "The community threads are full of vendor pitches, so another pitch reads as spam.",
+   "severity": "medium",
+   "rebuttal": "Merchants there ask direct questions (e16). Answer first, disclose last."
+  },
+  {
+   "risk": "Touching a shop's inventory data can wreck its counts.",
+   "severity": "medium",
+   "rebuttal": "Work from exports, test on one location, no bulk writes without sign-off."
+  }
+ ],
+ "win_plan": {
+  "positioning": "Your back room, working again after Stocky. One flat fee, done with you in a week, by a shop owner who had to do it too.",
+  "switching_triggers": [
+   {
+    "trigger": "Stocky read-only access ends Nov 29, 2026",
+    "move": "Post a free export checklist in the threads now; offer a 15-minute check call.",
+    "evidence": [
+     "t1",
+     "t2",
+     "k1",
+     "k2"
+    ]
+   },
+   {
+    "trigger": "First big receiving day on native POs",
+    "move": "Build the vendor-to-supplier map and reorder templates.",
+    "evidence": [
+     "e7",
+     "e8",
+     "e10"
+    ]
+   },
+   {
+    "trigger": "Year-end stock count (Dec/Jan)",
+    "move": "'Year-end count ready' package in early December.",
+    "evidence": [
+     "e5",
+     "e28",
+     "e31"
+    ]
+   },
+   {
+    "trigger": "Inventory Planner renewal or price hike for small stores",
+    "move": "Set them up on a free or cheap tool instead.",
+    "evidence": [
+     "t3",
+     "t4",
+     "e19"
+    ]
+   }
+  ],
+  "offers": [
+   "Fixed price on the page, paid once",
+   "Vendor-to-supplier mapping done for you",
+   "Labels printing from your PO before we leave",
+   "Recorded staff walkthrough",
+   "Free 15-minute export check before Nov 29",
+   "Money back if the first PO doesn't go through"
+  ],
+  "build_first": [
+   {
+    "feature": "Vendor-to-supplier mapping sheet and CSV converter",
+    "why": "Top switching blocker (pain: re-entering vendor data)."
+   },
+   {
+    "feature": "Per-tool setup checklists (Stockroom, EZstock, native POs)",
+    "why": "Setup eats whole days (pain: nobody can help me set it up)."
+   },
+   {
+    "feature": "Label printer test kit",
+    "why": "Labels break (pain: labels and counts)."
+   },
+   {
+    "feature": "Booking page and Stripe payment link with the price shown",
+    "why": "Shops resist hidden and monthly pricing (pain: price)."
+   }
+  ],
+  "where_to_find": [
+   {
+    "place": "Shopify Community: Stocky replacement?",
+    "url": "https://community.shopify.com/t/stocky-replacement/621332",
+    "why": "Merchants describe the PO and receiving pain directly."
+   },
+   {
+    "place": "Shopify Community: Removing Stocky is a Material Retail Operations Risk",
+    "url": "https://community.shopify.com/t/removing-stocky-is-a-material-retail-operations-risk/589102",
+    "why": "Retail owners frustrated by data re-entry; some leaving."
+   },
+   {
+    "place": "Shopify Community: Replacement to Stocky?",
+    "url": "https://community.shopify.com/t/replacement-to-stocky/587141",
+    "why": "Small shops asking for simple count-and-adjust."
+   },
+   {
+    "place": "Shopify Community: Stocky Alternatives",
+    "url": "https://community.shopify.com/t/stocky-alternatives/632200",
+    "why": "Small shoe store asking what to do."
+   },
+   {
+    "place": "Shopify Community: Stocky App Going Away after August 31 2026",
+    "url": "https://community.shopify.com/t/stocky-app-going-away-after-august-31-2026/587292",
+    "why": "160+ posts from affected merchants and vendors."
+   },
+   {
+    "place": "Stocky 1-star reviews",
+    "url": "https://apps.shopify.com/stocky/reviews?ratings%5B%5D=1",
+    "why": "Named shops with the exact complaints."
+   }
+  ],
+  "trust": [
+   "Fixed public price",
+   "Run by a real Shopify merchant",
+   "Written scope and timeline",
+   "Work from exports; no bulk writes without sign-off",
+   "Money back if the first PO fails"
+  ],
+  "stop_doing": [
+   "Hiding price behind a demo call",
+   "Annual contracts with renewal hikes",
+   "Pitching in threads without answering the question",
+   "Upselling a paid app the shop doesn't need"
+  ],
+  "assets": [
+   {
+    "name": "vs Stockroom",
+    "path": "assets/vs-stockroom.md"
+   },
+   {
+    "name": "vs Shopify native POs",
+    "path": "assets/vs-native-pos.md"
+   },
+   {
+    "name": "Outreach messages",
+    "path": "assets/outreach.md"
+   },
+   {
+    "name": "Ad copy",
+    "path": "assets/ads.md"
+   },
+   {
+    "name": "FAQ",
+    "path": "assets/faq.md"
+   }
+  ]
+ },
+ "pricing": {
+  "recommendation": "$199 one-time per location (founding offer $99 for the first 3 shops)",
+  "competitor_range": "Apps: free (Stockroom) to $19-$59.99/mo for PO tiers, $49+/mo forecasting suites, quote-only Inventory Planner; paid onboarding seen at $5000",
+  "rationale": "These shops refuse new monthly bills and named a $1000/year ceiling, so a single payment well under that removes the main objection."
+ },
+ "cost": {
+  "monthly": "about $1 plus payment fees (not checked live)",
+  "stack": [
+   {
+    "item": "Cloudflare Pages or GitHub Pages hosting",
+    "cost": "$0"
+   },
+   {
+    "item": "Domain shelfsorted.com",
+    "cost": "registrar price, ~$1/mo amortized (confirm)"
+   },
+   {
+    "item": "Cal.com or Calendly free plan",
+    "cost": "$0"
+   },
+   {
+    "item": "Stripe Payment Link",
+    "cost": "$0/mo + per-transaction fee"
+   },
+   {
+    "item": "Existing email inbox",
+    "cost": "$0"
+   }
+  ]
+ },
+ "first_10": [
+  {
+   "step": "Answer the 'What do you recommend?' post with a concrete small-shop setup; disclose at the end",
+   "where": "https://community.shopify.com/t/stocky-alternatives/632200",
+   "script": "For a shoe store ordering a few pairs per style: [3 steps]. Disclosure: I run a Shopify shop and offer one-time setup help."
+  },
+  {
+   "step": "Reply to the data re-entry posts with the vendor-to-supplier CSV method",
+   "where": "https://community.shopify.com/t/removing-stocky-is-a-material-retail-operations-risk/589102",
+   "script": "Here's how to turn your product vendors into suppliers without retyping: [steps]."
+  },
+  {
+   "step": "Answer the count-and-adjust request with the cheapest working stocktake path",
+   "where": "https://community.shopify.com/t/replacement-to-stocky/587141",
+   "script": "Cheapest working stock count I've found after Stocky: [steps]."
+  },
+  {
+   "step": "Answer the many-SKU PO complaint with a reorder-template tip",
+   "where": "https://community.shopify.com/t/stocky-replacement/621332",
+   "script": "Trick that cut our PO time: [tip]."
+  },
+  {
+   "step": "Post a pure-help export checklist thread",
+   "where": "Shopify Community, Retail & Point of Sale",
+   "script": "Stocky read-only ends Nov 29: a 10-point export checklist from a shop owner."
+  },
+  {
+   "step": "Message up to 10 named Stocky 1-star reviewers via their store contact pages",
+   "where": "https://apps.shopify.com/stocky/reviews?ratings%5B%5D=1",
+   "script": "Saw your review about labels. I run a small Shopify shop too; here's what worked: [tip]. Free checklist: [link]."
+  },
+  {
+   "step": "Offer 3 founding setups at $99 for a testimonial",
+   "where": "Landing page",
+   "script": "First 3 shops: $99 instead of $199, in exchange for an honest testimonial."
+  },
+  {
+   "step": "Ask your own suppliers which stockists use Shopify POS",
+   "where": "Your vendor contacts",
+   "script": "Do any of your retail stockists use Shopify POS? I'm helping shops get POs working after Stocky."
+  }
+ ],
+ "validation": {
+  "experiment": "Post one help thread, answer 8 to 10 open questions in the Stocky threads, and message 10 named Stocky reviewers; point all of it at the landing page with a $99 founding offer.",
+  "pass_bar": "3 shops pay (or put down a $50 deposit), or 10 booked calls from different shops",
+  "days": 7,
+  "steps": [
+   "Day 1: domain, landing page, Stripe link, booking page",
+   "Day 2: post the export checklist thread",
+   "Day 3: answer 4 open thread questions",
+   "Day 4: message 10 named Stocky reviewers",
+   "Day 5: answer 4 more threads, follow up on replies",
+   "Day 6: run calls and ask for the $99",
+   "Day 7: count payments, calls and objections; decide"
+  ]
+ },
+ "kill_criteria": [
+  "0 payments and fewer than 4 booked calls after 7 days",
+  "More than half of calls end with 'I'll just use Stockroom myself'",
+  "Moderators remove posts as promotion",
+  "Inbound questions in the Stocky threads stop after Nov 29",
+  "The first 3 setups each take more than 8 hours"
+ ],
+ "launch": {
+  "name": "Shelf Sorted",
+  "domain": "shelfsorted.com",
+  "domain_status": "available",
+  "alternatives": [
+   {
+    "domain": "backroomfix.com",
+    "status": "available"
+   },
+   {
+    "domain": "shelfsetup.com",
+    "status": "available"
+   },
+   {
+    "domain": "receivewell.com",
+    "status": "available"
+   },
+   {
+    "domain": "backroomdone.com",
+    "status": "available"
+   }
+  ],
+  "landing_page": "landing/index.html"
+ }
+}

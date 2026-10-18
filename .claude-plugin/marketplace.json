@@ -1,0 +1,11 @@
+{
+  "name": "wedge",
+  "owner": { "name": "senavoh", "url": "https://github.com/senavoh" },
+  "plugins": [
+    {
+      "name": "wedge",
+      "source": "./",
+      "description": "Find a business worth building and the gap that wins it, with every claim cited and verified."
+    }
+  ]
+}

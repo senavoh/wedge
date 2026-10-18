@@ -1,0 +1,165 @@
+{
+  "title": "A simpler invoicing app for solo tradespeople",
+  "subtitle": "Idea stress-test. Is there room for one more invoicing app for plumbers, electricians and handymen, and if so, where is the wedge?",
+  "mode": "idea",
+  "depth": "quick",
+  "date": "2026-10-17",
+
+  "founder": {"budget": "under $1k", "skills": "can build web and mobile apps", "hours": "10 a week", "risk": "side income first", "channel": "online"},
+
+  "verdict": {
+    "call": "PIVOT",
+    "score": 66,
+    "summary": "The pain is real and verified: solo tradespeople resent monthly invoice caps, price hikes mid-subscription, and paying $20-$25 a month just to send a PDF. But 'simple invoicing app for trades' is crowded with indie builders making the same pitch, and free tools set a low price ceiling. Don't build the generic version. Build the narrow one: uncapped, price-locked, offline estimate-to-invoice, and prove switchers will pay before writing code."
+  },
+
+  "opportunities": [
+    {"name": "Uncapped, price-locked estimate-to-invoice app", "one_liner": "No invoice or estimate limits on any plan, a price that never goes up, and it works with no signal.",
+     "score": 66,
+     "scores": {"pain": 8, "willingness_to_pay": 6, "competition_gap": 5, "founder_fit": 7, "reachability": 7, "build_cost": 7},
+     "why": "Aims straight at the two most repeated, verified complaints: usage caps used as an upsell (e1, e2, e3, e23) and price increases on existing subscribers (e5, e6, e24). Willingness to pay is proven by people already paying $25 and $69.99 a month (e7, e21). The gap is only medium because one-time-purchase and offline apps already exist (e16).",
+     "evidence": ["e2", "e5", "e21"]},
+    {"name": "Generic 'simple invoicing app for trades' (the original idea)", "one_liner": "A lighter Jobber or Housecall Pro for one-person businesses.",
+     "score": 60,
+     "scores": {"pain": 8, "willingness_to_pay": 5, "competition_gap": 3, "founder_fit": 6, "reachability": 7, "build_cost": 8},
+     "why": "Same verified pain, but 'too expensive and too complicated for one person' (e8) is exactly the pitch at least four other builders are already making (e16, e17, e18, e19). Without a sharper angle you're competing on features with free tools and funded incumbents.",
+     "evidence": ["e8", "e17", "e18"]},
+    {"name": "Done-for-you switching service from Joist and Invoice2go", "one_liner": "Migrate client lists and price books for tradespeople fed up with caps.",
+     "score": 47,
+     "scores": {"pain": 6, "willingness_to_pay": 3, "competition_gap": 6, "founder_fit": 5, "reachability": 6, "build_cost": 9},
+     "why": "Switching friction is real but cheap to solve yourself with a CSV export. Low willingness to pay for a one-off service. Better used as a free offer inside the main product than as a business. No direct evidence of demand for the service itself, so capped at 5 where unproven.",
+     "evidence": ["e4"]}
+  ],
+
+  "gap": {
+    "statement": "Solo tradespeople who send a handful of quotes and invoices a week can't get an app that just lets them do it from the truck, because every option either caps how many they can send, raises the price after they subscribe, or buries invoicing inside a $59+/month field-service suite.",
+    "evidence": ["e15", "e12", "e2", "e7"]
+  },
+
+  "pains": [
+    {"theme": "Monthly caps on invoices and estimates", "severity": "high",
+     "summary": "Apps limit how many invoices or estimates you can send, even on paid plans, and push upgrades to lift the cap.",
+     "by_competitor": {"Joist": 3, "Invoice Fly": 1, "Invoice2go": 1, "Generic apps": 1},
+     "evidence": ["e1", "e2", "e3", "e23", "e4"]},
+    {"theme": "Price increases after you subscribe", "severity": "high",
+     "summary": "Subscribers get price-increase emails soon after signing up, and paying monthly just to send PDFs feels like a tax.",
+     "by_competitor": {"Joist": 3, "Invoice2go": 1},
+     "evidence": ["e5", "e6", "e24", "e7"]},
+    {"theme": "Field-service suites are overkill for one person", "severity": "medium",
+     "summary": "Jobber, Housecall Pro, ServiceTitan and QuickBooks are seen as too expensive and too complex when all you need is quote-to-invoice.",
+     "by_competitor": {"Jobber": 3, "Housecall Pro": 2, "ServiceTitan": 2, "QuickBooks": 1},
+     "evidence": ["e8", "e9", "e10", "e11"]},
+    {"theme": "Clunky estimate-to-invoice and offline flow", "severity": "medium",
+     "summary": "People quit paid apps because turning an estimate into an invoice is clunky, or offline mode fails on site.",
+     "by_competitor": {"Joist": 1, "Generic apps": 2},
+     "evidence": ["e12", "e13", "e14"]}
+  ],
+
+  "competitors": [
+    {"name": "Joist", "url": "https://www.joist.com/pricing/", "pricing": "$8.34 to $58.33/mo (annual), free tier",
+     "positioning": "Built for full-time solo contractors with a steady job flow.",
+     "strengths": ["Closest fit for solo contractors", "Cheap entry plans", "Free tier people actually use"],
+     "weaknesses": ["Caps on invoices, sales and estimates even after upgrading", "Price-increase emails to new subscribers", "Pop-up upsells"],
+     "evidence": ["p1", "e1", "e3", "e5"]},
+    {"name": "Invoice2go", "url": "https://invoice.2go.com/pricing/", "pricing": "About $20 to $25/mo per user reports; caps on lower tiers",
+     "positioning": "Easy invoice maker for small businesses.",
+     "strengths": ["Well known", "Polished invoices"],
+     "weaknesses": ["Low tiers limited to a handful of invoices", "Feels expensive for sending PDFs"],
+     "evidence": ["e7", "e23"]},
+    {"name": "Housecall Pro", "url": "https://www.housecallpro.com/pricing/", "pricing": "From $59/mo, $35/mo per extra user above 8",
+     "positioning": "Full field-service management for home service businesses.",
+     "strengths": ["Complete suite: scheduling, dispatch, payments", "Strong mobile app for crews"],
+     "weaknesses": ["Too expensive and complex for one person", "Priced for teams"],
+     "evidence": ["p4", "p3", "e8"]},
+    {"name": "Jobber", "url": "https://www.getjobber.com/pricing/", "pricing": "Not public to our fetcher (blocked). Third-party listings say $39 to $499/mo",
+     "positioning": "Field-service software for home service businesses.",
+     "strengths": ["Market leader for small crews", "Broad feature set"],
+     "weaknesses": ["Seen as bloated and expensive for solo operators"],
+     "evidence": ["e8", "e9"]},
+    {"name": "Indie apps (FlipBlip, Chippie and others)", "url": "https://www.reddit.com/r/handyman/", "pricing": "One-time $75 to low monthly",
+     "positioning": "Simple, offline, no-subscription apps for solo trades.",
+     "strengths": ["Exactly the 'simple' pitch", "One-time pricing exists already"],
+     "weaknesses": ["Small, little distribution, unproven longevity"],
+     "evidence": ["e16", "e18", "e17"]}
+  ],
+
+  "features": {
+    "columns": ["Free tier", "No invoice caps on paid", "Price lock", "Works offline", "One-tap estimate to invoice", "Flat price for 1 person"],
+    "rows": [
+      {"name": "Joist", "values": ["yes", "no", "no", "partial", "yes", "yes"]},
+      {"name": "Invoice2go", "values": ["partial", "partial", "no", "partial", "yes", "yes"]},
+      {"name": "Housecall Pro", "values": ["no", "yes", "no", "partial", "yes", "no"]},
+      {"name": "Jobber", "values": ["no", "yes", "no", "partial", "yes", "no"]},
+      {"name": "Wave", "values": ["yes", "yes", "no", "no", "partial", "yes"]},
+      {"name": "Billtruck (proposed)", "values": ["partial", "yes", "yes", "yes", "yes", "yes"]}
+    ]
+  },
+
+  "critic": [
+    {"risk": "This exact idea is already being built by several indie developers, including a one-time-purchase offline app. Features won't be the differentiator.", "severity": "high",
+     "rebuttal": "Partly answered. None of them shows real distribution yet, so the race is on channel and trust, not code. Win on a public price-lock promise and showing up in the threads where people hit caps."},
+    {"risk": "Free tools (Wave, Joist's free tier) set the price ceiling near zero for many solo operators.", "severity": "high",
+     "rebuttal": "People who outgrow caps do pay: $25/mo and $69.99/mo are quoted by real users. Target people who just hit a cap, not people happy on free."},
+    {"risk": "Joist or Invoice2go could remove caps overnight.", "severity": "medium",
+     "rebuttal": "Caps are their upsell engine, so removing them would cost them revenue. Possible, but unlikely soon."},
+    {"risk": "App store discovery for 'invoice maker' is dominated by apps with tens of thousands of ratings.", "severity": "medium"}
+  ],
+
+  "win_plan": {
+    "positioning": "Unlimited quotes and invoices for one-person trade businesses. One price that never goes up, and it works with no signal.",
+    "switching_triggers": [
+      {"trigger": "Hitting the monthly invoice or estimate cap", "move": "Rank for 'invoice limit' searches and reply in cap-complaint threads with a free, uncapped plan for switchers.", "evidence": ["e2", "e3"]},
+      {"trigger": "A price-increase email after subscribing", "move": "Put a written price-lock guarantee on the pricing page and in every ad.", "evidence": ["e5", "e24"]},
+      {"trigger": "Offline mode failing on a job site", "move": "Demo a full estimate-to-invoice flow in airplane mode in the first 10 seconds of the App Store video.", "evidence": ["e14", "e12"]}
+    ],
+    "offers": [
+      "No caps on invoices or estimates on any paid plan, ever",
+      "Your price is locked for as long as you stay subscribed",
+      "Free import of clients and items from Joist or Invoice2go (CSV)",
+      "Month-to-month, cancel in one tap, export everything anytime"
+    ],
+    "build_first": [
+      {"feature": "One-tap estimate to invoice", "why": "The 'estimate to invoice hop' is a named reason people quit paid apps (pain: clunky flow)."},
+      {"feature": "True offline mode with sync", "why": "Offline failure on site is a quit trigger (pain: clunky flow)."},
+      {"feature": "CSV import from Joist and Invoice2go", "why": "Removes the switching cost for people hitting caps (pain: caps)."}
+    ],
+    "where_to_find": [
+      {"place": "r/handyman", "url": "https://www.reddit.com/r/handyman/", "why": "Recurring 'what do you use for invoices' threads with real answers"},
+      {"place": "r/Contractor", "url": "https://www.reddit.com/r/Contractor/", "why": "Contractors asking for alternatives to estimating and invoicing tools"},
+      {"place": "r/smallbusiness", "url": "https://www.reddit.com/r/smallbusiness/", "why": "Complaints about paying monthly just to send PDFs"},
+      {"place": "r/FieldService", "url": "https://www.reddit.com/r/FieldService/", "why": "Small teams finding the big suites overkill"}
+    ],
+    "trust": ["A public price-lock guarantee", "Data export in one tap", "No pop-up upsells"],
+    "stop_doing": ["Using invoice caps as an upsell", "Raising prices on existing subscribers", "Pop-up upgrade prompts", "Per-user pricing for a one-person business"],
+    "assets": [{"name": "Landing page", "path": "landing/index.html"}]
+  },
+
+  "pricing": {"recommendation": "$9/mo or $79/yr, price-locked", "competitor_range": "$0 (Wave, Joist free) to $59+/mo (Housecall Pro)",
+              "rationale": "Under Joist Pro ($17/mo) and Invoice2go, above free. The price lock answers the most emotional complaint, and the annual plan is the validation metric."},
+  "cost": {"monthly": "about $10 to $25", "stack": [
+    {"item": "Apple Developer Program ($99/yr)", "cost": "~$8/mo"},
+    {"item": "Google Play developer account (one-time $25)", "cost": "~$0"},
+    {"item": "Landing page on a free static host", "cost": "$0"},
+    {"item": "Backend on a free database tier until traction", "cost": "$0"},
+    {"item": "Domain", "cost": "~$1/mo"}
+  ]},
+
+  "first_10": [
+    {"step": "Answer 10 open 'what do you use for invoices' threads with a genuinely useful comparison, mentioning Billtruck only where allowed", "where": "r/handyman, r/Contractor"},
+    {"step": "DM the 5 people who publicly complained about caps or price increases, offering lifetime price lock for feedback", "where": "Reddit, by thread", "script": "Saw your post about hitting the invoice limit. I'm building an app with no caps and a locked price. Want free access in exchange for 10 minutes of feedback?"},
+    {"step": "Post a 30-second airplane-mode demo video", "where": "r/smallbusiness, X, TikTok trades community"},
+    {"step": "Offer 'founding member' annual plans at $59 to the waitlist", "where": "Waitlist email"}
+  ],
+
+  "validation": {
+    "experiment": "Publish the landing page with a $59/yr founding-member pre-order, then drive traffic only from the threads and DMs above. No code until it passes.",
+    "pass_bar": "40 waitlist signups or 5 paid pre-orders",
+    "days": 7,
+    "steps": ["Day 1: deploy landing page, set up waitlist and pre-order link", "Days 2-3: answer threads, send 20 DMs", "Days 4-5: post demo video, follow up with commenters", "Days 6-7: email the waitlist with the founding offer, count pre-orders"]
+  },
+  "kill_criteria": ["Under 15 signups after 7 days", "Zero pre-orders from people who complained about caps", "Every reply says 'I just use Joist free'"],
+
+  "launch": {"name": "Billtruck", "domain": "billtruck.com", "domain_status": "available",
+             "alternatives": [{"domain": "billtruck.app", "status": "available"}, {"domain": "slipbook.app", "status": "available"}, {"domain": "truckbill.app", "status": "available"}],
+             "landing_page": "landing/index.html"}
+}

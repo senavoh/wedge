@@ -1,0 +1,5 @@
+# Wedge runs you do inside this repo (examples/ is tracked on purpose)
+/ideas/
+__pycache__/
+*.pyc
+.DS_Store

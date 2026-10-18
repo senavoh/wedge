@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Billtruck</title>
+<meta name="description" content="Unlimited quotes and invoices for one-person trade businesses. One price that never goes up. Works with no signal.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23ffcc00'/%3E%3Cpath d='M7 11h13v9H7zM20 14h4l2 3v3h-6z' fill='%23111'/%3E%3Ccircle cx='11' cy='22' r='2' fill='%23111'/%3E%3Ccircle cx='23' cy='22' r='2' fill='%23111'/%3E%3C/svg%3E">
+<style>
+:root{--bg:#fbfaf6;--ink:#111;--mute:#5d5a52;--line:#e4e0d6;--hi:#ffcc00;--card:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#121212;--ink:#f3f1ea;--mute:#a9a59a;--line:#2b2a27;--card:#1b1b1a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-weight:800;letter-spacing:-.02em;font-size:20px;display:flex;gap:8px;align-items:center}
+.logo i{width:22px;height:22px;background:var(--hi);border-radius:5px;display:inline-block}
+.hero{padding:56px 0 40px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+h1{font-size:clamp(38px,6.5vw,68px);line-height:1;letter-spacing:-.035em;margin:0 0 18px;font-weight:800}
+h1 mark{background:var(--hi);color:#111;padding:0 .12em}
+.lede{font-size:20px;color:var(--mute);margin:0 0 26px;max-width:540px}
+form{display:flex;gap:8px;flex-wrap:wrap;max-width:480px}
+input{flex:1 1 220px;font:inherit;padding:14px 16px;border:2px solid var(--ink);border-radius:8px;background:var(--card);color:var(--ink)}
+button{font:inherit;font-weight:700;padding:14px 20px;border:2px solid var(--ink);border-radius:8px;background:var(--ink);color:var(--bg);cursor:pointer}
+.fine{font-size:14px;color:var(--mute);margin-top:10px}
+.phone{border:2px solid var(--ink);border-radius:28px;padding:18px;background:var(--card);box-shadow:8px 8px 0 var(--ink);max-width:300px;justify-self:center;width:100%}
+.phone .bar{display:flex;justify-content:space-between;font-size:12px;color:var(--mute);margin-bottom:14px}
+.inv{border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:10px}
+.inv b{display:block}.inv span{color:var(--mute);font-size:14px}
+.pill{display:inline-block;background:var(--hi);color:#111;font-size:12px;font-weight:700;border-radius:99px;padding:2px 9px;margin-top:6px}
+.cta{display:block;text-align:center;background:var(--ink);color:var(--bg);border-radius:12px;padding:12px;font-weight:700}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(28px,4vw,40px);letter-spacing:-.025em;margin:0 0 26px;line-height:1.05}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{margin:0 0 8px;font-size:20px;letter-spacing:-.01em}.card p{margin:0;color:var(--mute)}
+.card q{display:block;margin-top:14px;font-size:14px;color:var(--mute);font-style:italic;border-left:3px solid var(--hi);padding-left:10px}
+.switch{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;list-style:none;padding:0;margin:0}
+.switch li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;font-weight:600}
+.switch li::before{content:"\2713  ";color:#1f8a4c}
+.price{display:flex;gap:28px;align-items:baseline;flex-wrap:wrap}
+.big{font-size:56px;font-weight:800;letter-spacing:-.03em}.big small{font-size:20px;color:var(--mute);font-weight:600}
+details{border-bottom:1px solid var(--line);padding:14px 0}summary{font-weight:700;cursor:pointer}details p{color:var(--mute);margin:8px 0 0}
+footer{padding:32px 0 48px;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:760px){.hero{grid-template-columns:1fr}.grid,.switch{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><span class="logo"><i></i>Billtruck</span><a href="#waitlist">Get early access</a></nav>
+
+  <header class="hero">
+    <div>
+      <h1>Unlimited invoices. <mark>One price.</mark> No signal needed.</h1>
+      <p class="lede">Quotes and invoices for one-person trade businesses. Turn an estimate into an invoice in one tap, from the truck or the basement. No monthly caps, and your price never goes up.</p>
+      <form id="waitlist" action="mailto:hello@billtruck.com" method="post" enctype="text/plain">
+        <input id="email" name="email" type="email" placeholder="you@yourbusiness.com" aria-label="Email" required>
+        <button type="submit">Join the waitlist</button>
+      </form>
+      <p class="fine">Founding members lock in $59 a year for life. Replace the form action with your own waitlist endpoint.</p>
+    </div>
+    <div class="phone" aria-hidden="true">
+      <div class="bar"><span>9:41</span><span>No service</span></div>
+      <div class="inv"><b>Estimate #214 · Water heater swap</b><span>Labor 3h · Parts · $1,180</span><br><span class="pill">Approved</span></div>
+      <div class="inv"><b>Invoice #214</b><span>Created from estimate · will send when online</span></div>
+      <span class="cta">Turn into invoice</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Built for how you actually work</h2>
+    <div class="grid">
+      <div class="card"><h3>No caps, ever</h3><p>Send as many quotes and invoices as you want on every plan. No "upgrade to send" pop-ups.</p>
+        <q>Now it only lets me make 10 invoices a month or I have to upgrade.</q></div>
+      <div class="card"><h3>A price that stays put</h3><p>Your price is locked for as long as you're a customer. In writing.</p>
+        <q>After I subscribed it sent me an email of a price increase.</q></div>
+      <div class="card"><h3>Works with no signal</h3><p>Estimate, approve and invoice offline. It sends when you're back in range.</p>
+        <q>It was usually the truck/offline flow or the estimate→invoice hop being clunky.</q></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Switching takes five minutes</h2>
+    <ul class="switch">
+      <li>Free import from Joist and Invoice2go</li>
+      <li>Month-to-month, cancel in one tap</li>
+      <li>Export all your data anytime</li>
+      <li>No per-user pricing for a one-person business</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Pricing</h2>
+    <div class="price"><span class="big">$9<small>/month</small></span><span class="big">$79<small>/year</small></span></div>
+    <p class="fine">Everything included. Price locked for as long as you stay.</p>
+  </section>
+
+  <section>
+    <h2>Questions</h2>
+    <details><summary>Is there really no limit?</summary><p>No limit on quotes, estimates, invoices or clients on any paid plan.</p></details>
+    <details><summary>Will you raise my price?</summary><p>Not while you stay subscribed. New customers might pay a different price later. You won't.</p></details>
+    <details><summary>Can I take my data with me?</summary><p>Yes. One tap exports your clients, items, estimates and invoices.</p></details>
+    <details><summary>When can I use it?</summary><p>We're building it now. Join the waitlist and founding members get in first.</p></details>
+  </section>
+
+  <footer>Billtruck · Example landing page generated by Wedge from a real research run. Quotes above are from public App Store reviews and Reddit threads.</footer>
+</div>
+</body>
+</html>

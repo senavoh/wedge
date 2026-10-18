@@ -1,0 +1,556 @@
+{
+  "records": 139,
+  "sources": {
+    "web": 139
+  },
+  "categories": {
+    "wish": {
+      "count": 5,
+      "distinct_sources": 5,
+      "top": [
+        {
+          "quote": "Also, I wish the duration could automatically add a specific amount based on what the client wants, versus having to enter all options for them to choose.",
+          "url": "https://wordpress.org/support/topic/not-impressed-at-all-5/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "I wish you great success on developing this plugin to be the best available on the market!",
+          "url": "https://wordpress.org/support/topic/best-booking-and-appointment-plugin/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "I wish I could get a refund!",
+          "url": "https://wordpress.org/support/topic/useless-annoying/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "I wish I’d never started a project with Amelia… It’s such a mess to customize… TMS products is incompetent and dishonest.",
+          "url": "https://wordpress.org/support/topic/a-masterclass-in-how-to-destroy-customer-trust/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "I wish it would be working properly, then it would be a really great product.",
+          "url": "https://wordpress.org/support/topic/good-idea-but-full-of-bugs/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "switching": {
+      "count": 7,
+      "distinct_sources": 7,
+      "top": [
+        {
+          "quote": "Then, you make a review about it, to find out the review was asked to be removed from the selling site… thing that only happens to the negative ones… cool huh?",
+          "url": "https://wordpress.org/support/topic/you-buy-the-pro-to-find-out-all-important-features-are-paid-addons/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "For client history, I do not wish to delete any appointments, just see them as cancelled but removed from my calendars.",
+          "url": "https://wordpress.org/support/topic/okay-booking-app-but-support-and-documentation-sucks/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "When you change the time zone to your city (which is now in UTC+2), the appointment time will be adjusted to the time saved in the database 08:00 + 2:00, so the appointment time will switch to 10:00.",
+          "url": "https://wordpress.org/support/topic/broken-in-safari-or-chrome-incognito-and-poor-support/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "I dedicated time to write about this, because I am so frustrated and I had insanely high hopes for this plugin, but unfortunately I’m sorely disappointed and regret that I rushed to migrate from my previous system to this one.",
+          "url": "https://wordpress.org/support/topic/best-booking-and-appointment-plugin/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "In the end, I switched to Fluent Booking , which I now use regularly.",
+          "url": "https://wordpress.org/support/topic/needs-more-improvments/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "As for Amelia switching to SaaS, we can assure you that the plugin is not going to be abandoned.",
+          "url": "https://wordpress.org/support/topic/very-promising-but-not-developer-friendly-at-all/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Viewing 1 replies (of 1 total) Plugin Support Sravan Bhaskaravajjula (@bhshravankumar) 7 months, 2 weeks ago Hello @dan009 , Allow me to share that starting from version 5.2.10, we have introduced a setting which, when enabled, ensures that the plugin tables are properly removed from the database upon deletion of the plugin.",
+          "url": "https://wordpress.org/support/topic/db-tables-not-removed-after-the-plugin-is-deleted/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "price": {
+      "count": 10,
+      "distinct_sources": 6,
+      "top": [
+        {
+          "quote": "Pricing is for Pro is fair.",
+          "url": "https://wordpress.org/support/topic/service-scheduling-not-smart-enough/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "I got a bit confused with Categories, Types, and Pricing, but was able to figure it out.",
+          "url": "https://wordpress.org/support/topic/almost-awesome-1/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "The plugin looks solid, but without proper support its not worth it.",
+          "url": "https://wordpress.org/support/topic/terrible-312/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Our dedicated support team handles approximately 150 tickets per day (per agent), and each inquiry is carefully addressed based on its complexity.",
+          "url": "https://wordpress.org/support/topic/best-booking-and-appointment-plugin/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "The current provider is US-based and the associated pricing is a financial challenge for other countries.",
+          "url": "https://wordpress.org/support/topic/best-booking-and-appointment-plugin/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Rest assured, we are actively exploring options to onboard new providers with more competitive pricing.",
+          "url": "https://wordpress.org/support/topic/best-booking-and-appointment-plugin/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Pricing Barrier: As a returning customer who left solely due to the above bug, I am unable to repurchase at my previous annual rate of $243.85 CAD.",
+          "url": "https://wordpress.org/support/topic/a-masterclass-in-how-to-destroy-customer-trust/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Pricing Barrier: When it comes to this issue, we would like to propose a solution that we believe would resolve the pricing barrier, I would like to ask you to check the ticket #68952.",
+          "url": "https://wordpress.org/support/topic/a-masterclass-in-how-to-destroy-customer-trust/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "VERY overpriced for the limited capabilities.",
+          "url": "https://wordpress.org/support/topic/useless-annoying-2/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Refunds are a battle that makes it not worth it.",
+          "url": "https://wordpress.org/support/topic/useless-annoying-2/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "support": {
+      "count": 16,
+      "distinct_sources": 10,
+      "top": [
+        {
+          "quote": "Does not work and Customer Support is bad!",
+          "url": "https://wordpress.org/support/topic/does-not-work-and-customer-support-is-bad/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "[Online Scheduling and Appointment Booking System – Bookly] Review | WordPress.org Does not work and Customer Support is bad!",
+          "url": "https://wordpress.org/support/topic/does-not-work-and-customer-support-is-bad/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Search for: Search forums Does not work and Customer Support is bad!",
+          "url": "https://wordpress.org/support/topic/does-not-work-and-customer-support-is-bad/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "dramaturk (@dramaturk) 2 years, 9 months ago Does not work and Customer Support is bad!",
+          "url": "https://wordpress.org/support/topic/does-not-work-and-customer-support-is-bad/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Viewing 2 replies - 1 through 2 (of 2 total) The topic ‘Does not work and Customer Support is bad!’ is closed to new replies.",
+          "url": "https://wordpress.org/support/topic/does-not-work-and-customer-support-is-bad/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Viewing 1 replies (of 1 total) The topic ‘Unreliable and terrible support’ is closed to new replies.",
+          "url": "https://wordpress.org/support/topic/unreliable-and-terrible-support/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Unfortunately, there were no reply from you after this email.",
+          "url": "https://wordpress.org/support/topic/support-490/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Viewing 1 replies (of 1 total) The topic ‘Good plugin but unfortunately poor support’ is closed to new replies.",
+          "url": "https://wordpress.org/support/topic/good-plugin-but-unfortunately-poor-support/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "I have been reporting and complaining about their Horrible support for months now.",
+          "url": "https://wordpress.org/support/topic/terrible-support-backup-website-before-updates/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Bookly is a GREAT product, but as others have said, your support is terrible and update releases are sometimes buggy.",
+          "url": "https://wordpress.org/support/topic/terrible-support-backup-website-before-updates/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Even if there is a high priority production issue, there is no response from them even after multiple follow-ups.",
+          "url": "https://wordpress.org/support/topic/buggy-product-and-worst-customer-service/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Viewing 2 replies - 1 through 2 (of 2 total) The topic ‘Broken in Safari or Chrome Incognito and poor support’ is closed to new replies.",
+          "url": "https://wordpress.org/support/topic/broken-in-safari-or-chrome-incognito-and-poor-support/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "bugs": {
+      "count": 30,
+      "distinct_sources": 19,
+      "top": [
+        {
+          "quote": "If you use a Google Calendar sync feature, 2-way frontend-only mode may slow down the display of the Time step in the booking form.",
+          "url": "https://wordpress.org/support/topic/worst-support-22/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Viewing 1 replies (of 1 total) The topic ‘Very slow technical support’ is closed to new replies.",
+          "url": "https://wordpress.org/support/topic/it-is-helpful-5/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "The plug-in causes more issues with wordpress, that causes wordpress to crash, this has happen on several occasions.",
+          "url": "https://wordpress.org/support/topic/worst-product-ever/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "I buy a plugin which crashes because of one of their update and I am not even entitled to service … In short, this a good plugin but commercially it’s the scam!",
+          "url": "https://wordpress.org/support/topic/je-ne-recommande-pas/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "vicegodgiarc (@vicegodgiarc) 7 years ago Bookly “core” 17.6 is broken so rollback to 17.5 and working fine.",
+          "url": "https://wordpress.org/support/topic/terrible-support-backup-website-before-updates/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "The “core” was broken, not Pro.",
+          "url": "https://wordpress.org/support/topic/terrible-support-backup-website-before-updates/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Thread Starter vicegodgiarc (@vicegodgiarc) 7 years ago Hello Bookly, as I mentioned, this had nothing to do with PRO It had to do with the fact that 17.6 was broken and you just ignored our support requests and quietly rolled back to 17.5 without an appology or a note to say 17.6 is broken.",
+          "url": "https://wordpress.org/support/topic/terrible-support-backup-website-before-updates/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Bookly is a GREAT product, but as others have said, your support is terrible and update releases are sometimes buggy.",
+          "url": "https://wordpress.org/support/topic/terrible-support-backup-website-before-updates/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "My business takes lots of bookings with this plugin but I am becoming very hesitant to continue with it because it keeps breaking.",
+          "url": "https://wordpress.org/support/topic/fab-plugin-but-a-bit-buggy/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Viewing 1 replies (of 1 total) The topic ‘Fab plugin but a bit buggy’ is closed to new replies.",
+          "url": "https://wordpress.org/support/topic/fab-plugin-but-a-bit-buggy/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Features that used to work fine are now broken — for example, waitlist-enabled time slots get greyed out and customers can’t click to join the waitlist from the front-end, even though it’s enabled and works from the admin side.",
+          "url": "https://wordpress.org/support/topic/completely-buggy-since-the-update/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Viewing 2 replies - 1 through 2 (of 2 total) The topic ‘Completely buggy since the update’ is closed to new replies.",
+          "url": "https://wordpress.org/support/topic/completely-buggy-since-the-update/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "missing": {
+      "count": 18,
+      "distinct_sources": 13,
+      "top": [
+        {
+          "quote": "2 Lacks of WooCommerce check out support.",
+          "url": "https://wordpress.org/support/topic/too-pricey-but-still-lacks-of-functionality/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "4 Lacks of WordPress hooks and filters documentation.",
+          "url": "https://wordpress.org/support/topic/too-pricey-but-still-lacks-of-functionality/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "We can take care of the lacking function if only they can provide hooks and filters to create our own functionality.",
+          "url": "https://wordpress.org/support/topic/too-pricey-but-still-lacks-of-functionality/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "We are using Pro Version and 5 paid add-ons and until now we are stuck in finishing the booking website because this super pricey but lacks of function product.",
+          "url": "https://wordpress.org/support/topic/too-pricey-but-still-lacks-of-functionality/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "If there’s a critical feature for your business that Bookly does not currently support, we encourage you to submit your request on our Feature Request forum .",
+          "url": "https://wordpress.org/support/topic/too-pricey-but-still-lacks-of-functionality/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Viewing 1 replies (of 1 total) The topic ‘Too Pricey but still lacks of functionality’ is closed to new replies.",
+          "url": "https://wordpress.org/support/topic/too-pricey-but-still-lacks-of-functionality/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Nevertheless, we work with users with a valid support pack as we abide by the Envato Item Support Policy, who report to us that a feature is missing after an update done via CodeCanyon, and do everything that we can to restore the functionality.",
+          "url": "https://wordpress.org/support/topic/removes-features-from-premium-version-without-notice/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Then you need to click and create a payment for that and there is no way to make partial payments for the booking from the backend.",
+          "url": "https://wordpress.org/support/topic/feature-rich-and-frequent-updates/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "We prioritize feature requests by the number of similar suggestions and votes, then analyze and study the case in details to prepare detailed specifications and deliver the solution to developers.",
+          "url": "https://wordpress.org/support/topic/great-and-continuously-improving-2/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "most of the time they will answer – it is supossed to work that way ot they will send you to feature request section.",
+          "url": "https://wordpress.org/support/topic/best-booking-and-appointment-plugin/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Their support ticket system is broken – there is no way to submit any questions, even pre-purchase questions.",
+          "url": "https://wordpress.org/support/topic/impossibly-bad-support/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "In the Amelia feature request queue, this has been one of the top ten requests for years, yet no action is being made to introduce the feature which is a real concern.",
+          "url": "https://wordpress.org/support/topic/doesnt-support-multiple-employees-per-appointment/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "complexity": {
+      "count": 4,
+      "distinct_sources": 4,
+      "top": [
+        {
+          "quote": "The plugin is extremely clunky and a huge waste of time.",
+          "url": "https://wordpress.org/support/topic/customer-service-nonexistent/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "If you cinsider this feature confusing for your customers, you can hide the whole ‘I’m available on’ block, so it will disappear from the booking form.",
+          "url": "https://wordpress.org/support/topic/almost-awesome-1/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "This flow feels clunky, and the checkout screen isn’t clear enough in guiding users on what to do next—whether they should go to their dashboard to schedule appointments for packages, or follow through with creating a password.",
+          "url": "https://wordpress.org/support/topic/honest-review-of-amelia-great-potential-but-room-for-growth/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Overall found the experience of this confusing Viewing 1 replies (of 1 total) Plugin Author reputeinfosystems (@reputeinfosystems) 4 years, 5 months ago Hi, BookingPress has the option to set specific times from the beginning.",
+          "url": "https://wordpress.org/support/topic/no-way-to-disable-specific-times/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "lockin": {
+      "count": 3,
+      "distinct_sources": 3,
+      "top": [
+        {
+          "quote": "Certain days can be blocked in the Staff members section > Days Off, or by creating “fake” appointments in the Calendar via admin panel.",
+          "url": "https://wordpress.org/support/topic/effectively-useless-without-addons/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "You are basically a hostage to your own appointments.",
+          "url": "https://wordpress.org/support/topic/best-booking-and-appointment-plugin/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "The option to export attendees is blocked in the Lite version of Amelia, but it is available in the full version.",
+          "url": "https://wordpress.org/support/topic/how-to-export-an-attendee-list-for-an-event/",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    }
+  },
+  "competitors": {
+    "Bookly": {
+      "mentions": 64,
+      "pain_by_category": {
+        "complexity": 2,
+        "support": 10,
+        "bugs": 10,
+        "missing": 9,
+        "switching": 2,
+        "price": 2,
+        "wish": 1,
+        "lockin": 1
+      }
+    },
+    "Amelia": {
+      "mentions": 57,
+      "pain_by_category": {
+        "bugs": 14,
+        "support": 3,
+        "price": 6,
+        "switching": 4,
+        "missing": 7,
+        "lockin": 2,
+        "wish": 3,
+        "complexity": 1
+      }
+    },
+    "BookingPress": {
+      "mentions": 16,
+      "pain_by_category": {
+        "support": 3,
+        "wish": 1,
+        "bugs": 6,
+        "price": 2,
+        "complexity": 1,
+        "missing": 2
+      }
+    },
+    "LatePoint": {
+      "mentions": 2,
+      "pain_by_category": {
+        "switching": 1
+      }
+    }
+  }
+}

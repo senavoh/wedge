@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SteadySlots: switch off Amelia or Bookly without losing a booking</title>
+<meta name="description" content="A WordPress booking plugin for salons, barbers, tutors and therapists. Done-for-you migration from Amelia or Bookly, one-click rollback on every update, and the developer answers your email.">
+<style>
+  :root{
+    --bg:#f7f5f0; --surface:#ffffff; --ink:#1d2321; --muted:#5b6662; --line:#e3ded3;
+    --accent:#1f6f5c; --accent-ink:#ffffff; --soft:#e7f1ed; --warn:#8a5a14;
+    --radius:14px; --max:1080px;
+    --serif: "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    --sans: ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#121614; --surface:#1a201d; --ink:#ecefe9; --muted:#a3ada8; --line:#2b3430;
+      --accent:#5cc2a4; --accent-ink:#0c1512; --soft:#1d2b26; --warn:#e2b56b; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--sans)}
+  a{color:var(--accent)}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+  header.top{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+  .brand{font-family:var(--serif);font-size:22px;font-weight:700;letter-spacing:-.01em;text-decoration:none;color:var(--ink)}
+  .brand span{color:var(--accent)}
+  .pill{font-size:13px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+  .hero{padding:56px 0 40px;display:grid;gap:36px;grid-template-columns:1.25fr .9fr;align-items:center}
+  h1{font-family:var(--serif);font-weight:700;font-size:clamp(34px,5vw,54px);line-height:1.08;letter-spacing:-.02em;margin:0 0 18px}
+  .lede{font-size:19px;color:var(--muted);max-width:36em;margin:0 0 26px}
+  .cta{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:14px 22px;border-radius:10px;font-weight:600;text-decoration:none}
+  .cta:hover{filter:brightness(1.05)}
+  .sub{font-size:14px;color:var(--muted);margin-top:12px}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+  .quote{font-family:var(--serif);font-size:18px;line-height:1.45;margin:0 0 6px}
+  .cite{font-size:13px;color:var(--muted);margin:0 0 18px}
+  .quote:last-of-type{margin-top:6px}
+  section{padding:44px 0}
+  h2{font-family:var(--serif);font-size:clamp(26px,3.4vw,34px);letter-spacing:-.01em;margin:0 0 8px}
+  .kicker{color:var(--muted);margin:0 0 28px;max-width:40em}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .card h3{margin:0 0 8px;font-size:19px}
+  .card p{margin:0;color:var(--muted)}
+  .num{display:inline-flex;width:30px;height:30px;border-radius:50%;background:var(--soft);color:var(--accent);font-weight:700;align-items:center;justify-content:center;margin-bottom:12px;font-size:15px}
+  ul.checks{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+  ul.checks li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px 14px 46px;position:relative}
+  ul.checks li::before{content:"";position:absolute;left:16px;top:18px;width:16px;height:16px;border-radius:50%;background:var(--soft);box-shadow:inset 0 0 0 5px var(--accent)}
+  ul.checks b{display:block}
+  ul.checks span{color:var(--muted);font-size:15px}
+  .price{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .price .amt{font-family:var(--serif);font-size:34px;font-weight:700;margin:6px 0}
+  .price small{color:var(--muted)}
+  .note{font-size:14px;color:var(--warn);margin-top:16px}
+  form{display:grid;gap:12px;max-width:520px}
+  label{font-size:14px;color:var(--muted)}
+  input,select{font:inherit;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);width:100%}
+  button{font:inherit;font-weight:600;padding:14px 18px;border:0;border-radius:10px;background:var(--accent);color:var(--accent-ink);cursor:pointer}
+  details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:10px}
+  summary{cursor:pointer;font-weight:600}
+  details p{color:var(--muted);margin:10px 0 0}
+  footer{padding:36px 0 50px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);margin-top:20px}
+  @media (max-width:860px){
+    .hero{grid-template-columns:1fr;padding-top:28px}
+    .grid3,.price,.grid2{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#">Steady<span>Slots</span></a>
+    <span class="pill">In development · join the waitlist</span>
+  </header>
+
+  <div class="hero">
+    <div>
+      <h1>Switch off Amelia or Bookly without losing a single appointment.</h1>
+      <p class="lede">A WordPress booking plugin for salons, barbers, tutors and therapists. We move your customers, services and future bookings for you. Every update can be rolled back in one click, and the developer answers your email.</p>
+      <a class="cta" href="#waitlist">Get a free migration slot</a>
+      <p class="sub">First 5 switchers: done-for-you migration free with the first year.</p>
+    </div>
+    <aside class="card" aria-label="What booking-plugin users told WordPress.org">
+      <p class="quote">“I’m concerned about installing further updates due to these recurring problems.”</p>
+      <p class="cite">An Amelia user, WordPress.org review, 2026</p>
+      <p class="quote">“They are supposed to get to us within 24 hours, I wait for weeks…”</p>
+      <p class="cite">An Amelia user, WordPress.org review, 2026</p>
+      <p class="quote">“You are basically a hostage to your own appointments.”</p>
+      <p class="cite">An Amelia user, WordPress.org review, 2024</p>
+    </aside>
+  </div>
+
+  <section>
+    <h2>Built around the three things that make people leave</h2>
+    <p class="kicker">We read 139 one-to-three-star reviews of WordPress booking plugins. These came up again and again.</p>
+    <div class="grid3">
+      <div class="card"><div class="num">1</div><h3>Updates that don’t break today’s bookings</h3><p>Before every update we snapshot the plugin’s tables. If anything looks wrong, one click puts you back. Destructive changes never run on their own.</p></div>
+      <div class="card"><div class="num">2</div><h3>A developer who answers</h3><p>You email the person who wrote the code. First reply within one business day, Monday to Friday. No ticket maze, and no “give us your admin password” as step one.</p></div>
+      <div class="card"><div class="num">3</div><h3>Your data comes with you, both ways</h3><p>We migrate you in, with a before/after count you can check. Export everything any time. Uninstalling removes every table we created.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Why switch</h2>
+    <p class="kicker">Offers for people moving from Amelia or Bookly.</p>
+    <ul class="checks">
+      <li><b>Done-for-you migration</b><span>Customers, services, staff and future appointments. Your old plugin stays until you’re happy.</span></li>
+      <li><b>Bookings keep working if you stop paying</b><span>You lose updates and support, never your booking form. No lockouts.</span></li>
+      <li><b>Renewal costs what you paid</b><span>The renewal price is printed next to the first-year price. No crossed-out-price surprise.</span></li>
+      <li><b>Made for small shops</b><span>Solo mode hides the “choose employee” step. The front desk can book several services in one appointment.</span></li>
+      <li><b>30-day refund, no argument</b><span>If it’s not better, you get your money back, and we’ll help you move back.</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Pricing (planned)</h2>
+    <div class="price">
+      <div class="card"><small>Single site</small><div class="amt">$79<span style="font-size:16px">/yr</span></div><p>Every feature, unlimited staff. Renews at $79.</p></div>
+      <div class="card"><small>Freelancers &amp; agencies</small><div class="amt">$199<span style="font-size:16px">/yr</span></div><p>10 sites, documented hooks, priority email.</p></div>
+      <div class="card"><small>Migration or rescue</small><div class="amt">$149</div><p>Done for you, one site. Free with the first year for the first 5 switchers.</p></div>
+    </div>
+    <p class="note">SteadySlots is in development. Prices and features are what we’re building toward, and they may change before launch. We’ll tell you the final price before you pay anything.</p>
+  </section>
+
+  <section id="waitlist">
+    <h2>Join the waitlist</h2>
+    <p class="kicker">Tell us what you use now. We’ll reply personally. No newsletter, no sharing your email.</p>
+    <form action="mailto:you@example.com" method="post" enctype="text/plain">
+      <div><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+      <div><label for="current">What do you use today?</label>
+        <select id="current" name="current_plugin">
+          <option>Amelia</option><option>Bookly</option><option>Another WordPress plugin</option><option>A SaaS (Fresha, Square, Calendly…)</option><option>Phone / paper</option>
+        </select></div>
+      <div><label for="why">What’s the one thing that’s hurting? (optional)</label><input id="why" name="pain" type="text" maxlength="200"></div>
+      <button type="submit">Request a migration slot</button>
+      <p class="sub">This opens your email app with the details filled in. Nothing is sent until you press send.</p>
+    </form>
+  </section>
+
+  <section>
+    <h2>Honest FAQ</h2>
+    <details><summary>Why trust a small plugin over a big vendor?</summary><p>Only if your current setup hurts. You get the developer and a rollback button. You give up a big team and some features. If Amelia or Bookly works for you, stay.</p></details>
+    <details><summary>Will I lose appointments when I move?</summary><p>That’s the thing we’re built to prevent. You get a before/after count of customers, services and future appointments to check before you switch the form over.</p></details>
+    <details><summary>Does it do everything Amelia or Bookly does?</summary><p>No. No events, gift cards or multisite yet. It’s focused on appointments for small service businesses.</p></details>
+    <details><summary>Is this available today?</summary><p>Not yet. It’s in development. The waitlist tells us who to build the importers for first.</p></details>
+    <details><summary>Where do the quotes come from?</summary><p>Public WordPress.org reviews of Amelia, quoted word for word. We don’t name the reviewers here.</p></details>
+  </section>
+
+  <footer>
+    SteadySlots is an independent project and isn’t affiliated with Amelia, Bookly or their makers. Product names belong to their owners.
+  </footer>
+</div>
+</body>
+</html>

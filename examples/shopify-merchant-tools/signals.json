@@ -1,0 +1,726 @@
+{
+  "records": 57,
+  "sources": {
+    "web": 57
+  },
+  "categories": {
+    "wish": {
+      "count": 8,
+      "distinct_sources": 6,
+      "top": [
+        {
+          "quote": "I'm still in the initial \"testing phase\" but seeing some easy but valuable things that I wish it had or I can't find and hope they do :).",
+          "url": "https://apps.shopify.com/stocky/reviews?ratings%5B%5D=3",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Wish there was a way to \"spread freight\" when receiving a purchase order so that cost and be included in the true cost of an item, but not affect the \"Purchase\" cost.",
+          "url": "https://apps.shopify.com/stocky/reviews?ratings%5B%5D=3",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "PegNorman May 5, 2026, 10:16pm 1 Why is there not more talk about Stocky disappearing?",
+          "url": "https://community.shopify.com/t/stocky-replacement/621332",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "mastroke May 11, 2026, 6:58pm 12 PegNorman: Why is there not more talk about Stocky disappearing?",
+          "url": "https://community.shopify.com/t/stocky-replacement/621332",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "I would love to have you, but if FyreTrail is not something you’re even wanting to look at because it costs money then I get it - your priority is then budget and that’s completely fair and understandable.",
+          "url": "https://community.shopify.com/t/stocky-alternatives/632200",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Ty Bailey | VP of Services Show more December 1, 2025 I wish I could've accessed better support for this app.",
+          "url": "https://apps.shopify.com/subscription-payments/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "If you read their contract and it feels one-sided, take that seriously, I wish I had.",
+          "url": "https://apps.shopify.com/inventory-planner/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "If you are looking for an App that takes customer service seriously, I would not suggest Stock Sync.",
+          "url": "https://apps.shopify.com/stock-sync/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "switching": {
+      "count": 32,
+      "distinct_sources": 22,
+      "top": [
+        {
+          "quote": "They only work with DYMO Connect for Mac, which is not compatible with Stocky as the web service was removed from the software.",
+          "url": "https://apps.shopify.com/stocky/reviews?ratings%5B%5D=1&page=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Show more Maison Baum Germany 8 months using the app Inventory Planner by Sage replied May 25, 2023 Hi Maison, Thank you for your feedback, I'm really pleased you find the app useful and you're looking to migrate from your trial to use the app as a paid-up customer.",
+          "url": "https://apps.shopify.com/inventory-planner/reviews?ratings%5B%5D=3",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "I’m a solo founder; if you’re migrating from Stocky before Aug 31, I’ll personally walk you through the import.",
+          "url": "https://community.shopify.com/t/stocky-replacement/621332?page=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "If you’re going to sunset an app, at least have the wherewithal to offer a proper alternative to migrate all data correctly to the new system.",
+          "url": "https://community.shopify.com/t/removing-stocky-is-a-material-retail-operations-risk/589102",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "DaphneOlive May 25, 2026, 6:04pm 17 we have a brick and mortar store and when we migrated from Quickbook POS to Shopify, we were told that we would have the same functionality.",
+          "url": "https://community.shopify.com/t/removing-stocky-is-a-material-retail-operations-risk/589102",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Pipokx June 11, 2026, 11:50am 20 Hey @DaphneOlive , Moving from a dedicated system like QuickBooks POS to Shopify is a massive shift, and losing the condensed, easy-to-read inventory views that Stocky provided is definitely a tough blow.",
+          "url": "https://community.shopify.com/t/removing-stocky-is-a-material-retail-operations-risk/589102",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "RetailPOSUser February 10, 2026, 2:54pm 9 We migrated from a 30 year old POS system to Shopify.",
+          "url": "https://community.shopify.com/t/replacement-to-stocky/587141",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "The original poster tested multiple options and ultimately switched to Sumtracker, saying it better met their need for complete inventory management across stores rather than just forecasting.",
+          "url": "https://community.shopify.com/t/stocky-alternative-recommendation/553677",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Shopifymerchant01 August 13, 2025, 5:07am 8 @Vannesa19 Thanks for the suggestion but I have already made a switch to sumtracker.",
+          "url": "https://community.shopify.com/t/stocky-alternative-recommendation/553677",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "gauravj21sep October 29, 2025, 11:11am 9 We tried free trial of multiple apps but Prediko turned out to be the best alternative to Stocky.",
+          "url": "https://community.shopify.com/t/stocky-alternative-recommendation/553677",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "We developed Logistified Inventory Planning specifically to be the modern, user-friendly alternative to Stocky that you are looking for.",
+          "url": "https://community.shopify.com/t/stocky-alternative-recommendation/553677",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "zoemarley September 11, 2026, 5:33am 70 Hi everyone, Full disclosure: I’m part of the team building Shopvibe , a Shopify app designed for merchants looking for a practical alternative to Stocky.",
+          "url": "https://community.shopify.com/t/stocky-alternative-recommendation/553677?page=3",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "price": {
+      "count": 74,
+      "distinct_sources": 25,
+      "top": [
+        {
+          "quote": "Pricing is based on revenue and does not meet expectations.",
+          "url": "https://apps.shopify.com/inventory-planner/reviews?ratings%5B%5D=3",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Regarding the pricing model, we have gone through a few changes as we wanted to find one which most directly supports the growth of our customers.",
+          "url": "https://apps.shopify.com/inventory-planner/reviews?ratings%5B%5D=1&page=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Denyslg August 18, 2026, 2:35pm 31 On ben’s pricing point, since nobody picked it up: the $49-120 tools are priced for D2C brands, where inventory software is a growth expense.",
+          "url": "https://community.shopify.com/t/stocky-replacement/621332?page=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "muttsonline March 13, 2026, 6:02pm 19 gauravj21sep: Prediko I find it interesting that in the span of 3 weeks Prediko pricing has gone up substantially carriec228 March 17, 2026, 2:40pm 20 I am curious as to how many SKUs your store has?",
+          "url": "https://community.shopify.com/t/stocky-alternative-recommendation/553677",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Two things I’d compare before installing anything: whether the price is on the pricing page at all (a couple of the bigger names hide it behind a demo call, then push an annual contract), and whether the app can pull your history out of Stocky rather than starting you from zero.",
+          "url": "https://community.shopify.com/t/stocky-alternative-recommendation/553677?page=3",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "No need to pay suite pricing for four features you won’t touch.",
+          "url": "https://community.shopify.com/t/stocky-app-going-away-after-august-31-2026/587292?page=7",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Show more March 7, 2026 Started using this app many years ago when they had fair pricing.",
+          "url": "https://apps.shopify.com/subscription-payments/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Ty Bailey | VP of Services Show more October 20, 2025 Title: Extremely Complex Setup, Poor Experience, and Not Worth the Cost Review: We had very high expectations for ReCharge when we installed it back in May.",
+          "url": "https://apps.shopify.com/subscription-payments/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "We are always reviewing our pricing and service structure and your perspective is helpful in that process.",
+          "url": "https://apps.shopify.com/subscription-payments/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "After having used these tools for a number of weeks we've identified that they are absolutely not worth the money that you're paying.",
+          "url": "https://apps.shopify.com/subscription-payments/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "The old pricing structure meant that they took a % of sales.",
+          "url": "https://apps.shopify.com/subscription-payments/reviews?ratings%5B%5D=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "The new pricing structure is still a % of sales plus an added monthly charge of £140 - this can quickly add up.",
+          "url": "https://apps.shopify.com/subscription-payments/reviews?ratings%5B%5D=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "support": {
+      "count": 14,
+      "distinct_sources": 11,
+      "top": [
+        {
+          "quote": "Ty Bailey | VP of Services Show more December 2, 2025 The app works ok, but the support is terrible.",
+          "url": "https://apps.shopify.com/subscription-payments/reviews?ratings%5B%5D=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Best Regards, Seal Subscriptions app team Show more September 23, 2025 Horrible customer service, if you can call it that.",
+          "url": "https://apps.shopify.com/seal-subscriptions/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Thank you, Seal Subscriptions app team Show more January 10, 2026 Very poor support.",
+          "url": "https://apps.shopify.com/seal-subscriptions/reviews?ratings%5B%5D=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Show more AirTac Customs United States Almost 2 years using the app December 29, 2022 Poor Support and Poor App Design/Dev.",
+          "url": "https://apps.shopify.com/wholesale-pricing-discount/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Very bad app & Very bad Support.",
+          "url": "https://apps.shopify.com/wholesale-pricing-discount/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "The problem is with their costumer service and support , very disrespectful , logging out in the middle of the conversation you had with them , replying after 4 days , some of my tickets were never replied and my problems have yet to be fixed - not the best experience .",
+          "url": "https://apps.shopify.com/sparklayer/reviews?ratings%5B%5D=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Show more July 27, 2026 Terrible support provided so far.",
+          "url": "https://apps.shopify.com/loop-returns/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Your account manager has been notified and will follow up with you on our usage-based pricing plan which allows you to pay a flexible fee based on the amount of return volume you do each month, so that you are only paying for what you use.",
+          "url": "https://apps.shopify.com/loop-returns/reviews?ratings%5B%5D=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Really hard to understand, not user-friendly, and poor customer service.",
+          "url": "https://apps.shopify.com/returngo/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "In December I tried to help you, but you never responded on my last email where I explained that your bundles where broken.",
+          "url": "https://apps.shopify.com/bundles/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Please feel free to reach out to your Account Manager if you'd like to reconnect.",
+          "url": "https://apps.shopify.com/inventory-planner/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Now they are trying to lock their loyal customers into contract with terrible customer service and little feature updates.",
+          "url": "https://apps.shopify.com/inventory-planner/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "bugs": {
+      "count": 40,
+      "distinct_sources": 21,
+      "top": [
+        {
+          "quote": "Imogen, Shopify Support Show more September 29, 2023 This app is frequently not working, slow and buggy which means I can't get my job done.",
+          "url": "https://apps.shopify.com/stocky/reviews?ratings%5B%5D=1&page=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Regarding the slow response times, due to your location, you were connected with one of our representatives in the UK.",
+          "url": "https://apps.shopify.com/inventory-planner/reviews?ratings%5B%5D=3",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Instead of scrolling a spreadsheet guessing which SKUs are about to run out, you get a clear Restock Urgent / Trending Up / Slow Mover view at a glance.",
+          "url": "https://community.shopify.com/t/stocky-replacement/621332?page=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "The slow part of Shopify’s own PO screen is that you start from a blank order and type every line.",
+          "url": "https://community.shopify.com/t/stocky-replacement/621332?page=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "vedasuite August 31, 2026, 6:27pm 185 This is the part of the Stocky transition I think can become expensive without looking obviously “broken.” Quantity can be correct while the cost sitting behind that inventory is stale, which means the resulting margin can also be wrong.",
+          "url": "https://community.shopify.com/t/stocky-app-going-away-after-august-31-2026/587292?page=7",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Support team is generally lazy, lacking ownership, slow, and unresponsive.",
+          "url": "https://apps.shopify.com/subscription-payments/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "It turns out it's not Shopify's fault - it's actually Seal's that doesn't work like they said it would.",
+          "url": "https://apps.shopify.com/seal-subscriptions/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Best regards, Seal Subscriptions app support Show more June 10, 2026 Very buggy Show more Brainwave Coffee Roasters United States 10 months using the app June 4, 2026 It is super annoying to be asked to write a review when I need to my job Show more Trygghetssamtalet Sweden 5 months using the app January 18, 2026 Poorly implemented.",
+          "url": "https://apps.shopify.com/seal-subscriptions/reviews?ratings%5B%5D=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "This doesnt work for my business at all.",
+          "url": "https://apps.shopify.com/seal-subscriptions/reviews?ratings%5B%5D=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "It was really unfortunate they were not willing or unable to further assist on a glitch on their app.",
+          "url": "https://apps.shopify.com/back-in-stock/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Show more Adreno Spearfishing Australia 7 months using the app Edited August 19, 2026 App glitches when customers trying to sign up for a notification.",
+          "url": "https://apps.shopify.com/back-in-stock/reviews?ratings%5B%5D=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Had custom code to add shipping insurance and signature options at checkout = Now broken.",
+          "url": "https://apps.shopify.com/wholesale-pricing-discount/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "missing": {
+      "count": 26,
+      "distinct_sources": 16,
+      "top": [
+        {
+          "quote": "I'm still in the initial \"testing phase\" but seeing some easy but valuable things that I wish it had or I can't find and hope they do :).",
+          "url": "https://apps.shopify.com/stocky/reviews?ratings%5B%5D=3",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Imogen, Shopify Support Show more April 18, 2024 Stocky itself is excellent for a small business but it lacks one major thing: integration to Shopify and POS that would enable showing when product will be in stock again.",
+          "url": "https://apps.shopify.com/stocky/reviews?ratings%5B%5D=1&page=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "This is a great feature request and I will make sure to provide this feedback to our developers.",
+          "url": "https://apps.shopify.com/stocky/reviews?ratings%5B%5D=1&page=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Customer service is also lacking.",
+          "url": "https://apps.shopify.com/inventory-planner/reviews?ratings%5B%5D=3",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "The main complaint is that Shopify’s native PO workflow is much slower and lacks key Stocky-style functionality.",
+          "url": "https://community.shopify.com/t/stocky-replacement/621332",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "The suggested replacement is severely lacking at the moment so it’s really a slap in the face to those stores who depend on those features.",
+          "url": "https://community.shopify.com/t/stocky-replacement/621332",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Without it you’re starting with a blank slate and no way to audit the first few months.",
+          "url": "https://community.shopify.com/t/stocky-alternative-recommendation/553677?page=3",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "And, if they do, the functionality you need is lacking.",
+          "url": "https://community.shopify.com/t/stocky-alternatives/632200",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Support team is generally lazy, lacking ownership, slow, and unresponsive.",
+          "url": "https://apps.shopify.com/subscription-payments/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "I had to figure out a solution to manually credit every single order and there is still not a fix.",
+          "url": "https://apps.shopify.com/subscription-payments/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Support is frequently described as fast, responsive, and open to feature requests.",
+          "url": "https://apps.shopify.com/seal-subscriptions/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Lacks proper explanations of features and how they work/what they do.",
+          "url": "https://apps.shopify.com/seal-subscriptions/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "complexity": {
+      "count": 12,
+      "distinct_sources": 9,
+      "top": [
+        {
+          "quote": "Customer Dashboard is really hard to setup and keep it in design you want.",
+          "url": "https://apps.shopify.com/subscription-payments/reviews?ratings%5B%5D=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "It is extremely hard to use and confusing- the way things are worded are not user-friendly.",
+          "url": "https://apps.shopify.com/seal-subscriptions/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "It is very hard to configure, the built in options does not cover basic needs.",
+          "url": "https://apps.shopify.com/back-in-stock/reviews?ratings%5B%5D=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Keep an eye on your search boxes on the front end for this issue as it is confusing to customers.",
+          "url": "https://apps.shopify.com/back-in-stock/reviews?ratings%5B%5D=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "It made it very confusing for me to work with as it wasn't clear at all what the basic plan covered as I was given everything to work with...",
+          "url": "https://apps.shopify.com/wholesale-pricing-discount/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "We will definitely look into how we can make this process easier and less confusing in the future.",
+          "url": "https://apps.shopify.com/wholesale-gorilla/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Show more April 3, 2026 Very confusing setup !",
+          "url": "https://apps.shopify.com/sparklayer/reviews?ratings%5B%5D=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Show more kingzoo.co Türkiye About 15 hours using the app SparkLayer replied April 8, 2026 We're sorry to hear you found the setup confusing - that's not the experience we want for anyone!",
+          "url": "https://apps.shopify.com/sparklayer/reviews?ratings%5B%5D=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Show more February 11, 2025 The backend is easy to use but in your Shopify store it is confusing and difficult to distinguish returns from exchanges.",
+          "url": "https://apps.shopify.com/loop-returns/reviews?ratings%5B%5D=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "It's clunky and difficult to use.",
+          "url": "https://apps.shopify.com/loop-returns/reviews?ratings%5B%5D=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "That said, we completely understand how this could be confusing, and we would be more than happy to guide you through setting up the product page upsells so you can get the most out of the free plan.",
+          "url": "https://apps.shopify.com/bundler-product-bundles/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Erin, Shopify Support Show more December 3, 2024 Frequently glitchy, and with an extremely unintuitive workflow.",
+          "url": "https://apps.shopify.com/stocky/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    },
+    "lockin": {
+      "count": 7,
+      "distinct_sources": 6,
+      "top": [
+        {
+          "quote": "Two things I’d compare before installing anything: whether the price is on the pricing page at all (a couple of the bigger names hide it behind a demo call, then push an annual contract), and whether the app can pull your history out of Stocky rather than starting you from zero.",
+          "url": "https://community.shopify.com/t/stocky-alternative-recommendation/553677?page=3",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Now we are locked into them since we cannot easily move subscribers, and they have massively raised prices while doing nothing.",
+          "url": "https://apps.shopify.com/subscription-payments/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Regarding contract renewals, we do notify customers in advance to ensure they’re aware of upcoming terms, and we’re sorry if that process felt unclear.",
+          "url": "https://apps.shopify.com/loop-returns/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "BUT - when you sign up you are LOCKED in to that monthly payment, no matter what.",
+          "url": "https://apps.shopify.com/loop-returns/reviews?ratings%5B%5D=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "They are requiring us to finish our 1 year contract, even though the app has never really worked 100%.",
+          "url": "https://apps.shopify.com/loop-returns/reviews?ratings%5B%5D=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "Show more Edited December 20, 2022 Held hostage on a 12 month contract with Brightpearl on this Inventory Planner app, was paying about $300/month and they jacked it up over $600/month and required us to sign a 12 month contract.",
+          "url": "https://apps.shopify.com/inventory-planner/reviews?ratings%5B%5D=1",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        },
+        {
+          "quote": "We understand your concerns regarding pricing and contract renewals.",
+          "url": "https://apps.shopify.com/inventory-planner/reviews?ratings%5B%5D=2",
+          "source": "web",
+          "date": "",
+          "weight": 1.0
+        }
+      ]
+    }
+  },
+  "competitors": {
+    "Stocky": {
+      "mentions": 15,
+      "pain_by_category": {
+        "wish": 5,
+        "missing": 9,
+        "bugs": 7,
+        "switching": 17,
+        "price": 4,
+        "lockin": 1,
+        "complexity": 1
+      }
+    },
+    "Inventory Planner": {
+      "mentions": 12,
+      "pain_by_category": {
+        "missing": 5,
+        "price": 17,
+        "switching": 8,
+        "bugs": 8,
+        "wish": 3,
+        "support": 2,
+        "lockin": 2
+      }
+    },
+    "Prediko": {
+      "mentions": 9,
+      "pain_by_category": {
+        "price": 3,
+        "switching": 12,
+        "bugs": 2,
+        "lockin": 1,
+        "missing": 1
+      }
+    },
+    "Stockroom": {
+      "mentions": 9,
+      "pain_by_category": {
+        "missing": 4,
+        "wish": 3,
+        "price": 3,
+        "switching": 9,
+        "bugs": 3,
+        "lockin": 1
+      }
+    },
+    "EZstock": {
+      "mentions": 5,
+      "pain_by_category": {
+        "price": 2,
+        "lockin": 1,
+        "missing": 1,
+        "switching": 4,
+        "bugs": 1
+      }
+    },
+    "Supremo": {
+      "mentions": 3,
+      "pain_by_category": {}
+    }
+  }
+}

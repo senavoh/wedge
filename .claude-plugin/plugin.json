@@ -1,0 +1,10 @@
+{
+  "name": "wedge",
+  "version": "1.0.0",
+  "description": "Find a business worth building and the gap that wins it. Niche discovery, competitor maps, review mining, a critic pass and a win plan, with every claim cited and verified.",
+  "author": { "name": "senavoh", "url": "https://github.com/senavoh" },
+  "homepage": "https://getwedge.dev",
+  "repository": "https://github.com/senavoh/wedge",
+  "license": "MIT",
+  "keywords": ["business", "startup", "niche", "competitors", "market-research", "reviews", "positioning", "validation"]
+}

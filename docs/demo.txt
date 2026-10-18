@@ -1,0 +1,25 @@
+# Recorded from a real run of the scripts (output trimmed for length).
+# Line kinds:  >  agent prompt   $  command   ~  dim note   !  verdict   (none) output
+> Use wedge to stress-test my idea: a simpler invoicing app for solo tradespeople. Quick mode.
+~ wedge · stress-test an idea · quick
+$ state.py init tradesperson-invoicing --mode idea --depth quick
+created ideas/tradesperson-invoicing (idea, quick)
+$ fetch.py --out raw.jsonl hn "invoice app contractor" --limit 40
+wedge fetch: 37 records from hn
+$ fetch.py --out raw.jsonl pages joist.com/pricing housecallpro.com/pricing
+wedge fetch: 2 records from pages
+$ signals.py raw/reviews.jsonl --names "Jobber,Joist,Invoice2go"
+| price      | 425 hits | 130 sources |
+| bugs       |  71 hits |  50 sources |
+| complexity |  69 hits |  63 sources |
+| lockin     |  26 hits |  21 sources |
+$ verify.py evidence.jsonl
+yes         e4   reddit.com/r/Locksmith/comments/1p0fi7a/…
+captured    e1   apps.apple.com/us/app/id592163563#review-14642112222
+Quotes: 21 verified live, 7 captured at fetch, 0 not found (of 28)
+Claims: 9 of 10 meet the 2-source rule
+$ domain.py billtruck --tlds com,app,dev
++ billtruck.com                    available
+$ report.py ideas/tradesperson-invoicing
+wrote ideas/tradesperson-invoicing/report.html and card.svg
+! PIVOT 66/100 · build the uncapped, price-locked, offline version

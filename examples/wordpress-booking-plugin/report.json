@@ -1,0 +1,817 @@
+{
+  "title": "Taking customers from Bookly and Amelia",
+  "subtitle": "Compete mode, quick depth. 139 one-to-three-star WordPress.org reviews mined across Bookly, Amelia, BookingPress and LatePoint, plus vendor pricing pages. Every quote was re-checked by verify.py.",
+  "mode": "compete",
+  "depth": "quick",
+  "date": "2026-10-17",
+  "founder": {
+    "budget": "under $1k",
+    "skills": "WordPress/PHP developer",
+    "hours": "15/week",
+    "risk": "side income first",
+    "channel": "online"
+  },
+  "verdict": {
+    "call": "PIVOT",
+    "score": 63,
+    "summary": "The pain is real and recent, mostly with Amelia: updates break live bookings and support takes days to weeks. But well-rated LatePoint and SSA already catch switchers, and nobody has shown they'll pay a newcomer. Don't launch as booking plugin #785. Sell a done-for-you migration and rescue off Amelia/Bookly first, at $149, with your plugin as the destination. If 3 people pay within 7 days, re-score."
+  },
+  "opportunities": [
+    {
+      "name": "Rescue & migration off Amelia/Bookly (service first, then importers in your plugin)",
+      "one_liner": "Fixed-price, done-for-you move off a broken Amelia or Bookly install, with a no-lost-appointments check.",
+      "score": 63,
+      "scores": {
+        "pain": 7,
+        "willingness_to_pay": 5,
+        "competition_gap": 4,
+        "founder_fit": 9,
+        "reachability": 6,
+        "build_cost": 9
+      },
+      "why": "Business-stopping incidents (e18, e65) and lock-in (e46-e48) are real. Self-serve importers already exist (e84, e85, e86), so the offer is the labour and the guarantee. WTP is capped at 5: no evidence yet that anyone pays a third party to migrate. Cheap to build and fits 15 h/week.",
+      "evidence": [
+        "e18",
+        "e47",
+        "e48",
+        "e84"
+      ]
+    },
+    {
+      "name": "Developer-first, WordPress-native booking engine for freelancers and agencies",
+      "one_liner": "WP users, documented hooks, clean uninstall and a multi-site license for people who install booking on client sites.",
+      "score": 61,
+      "scores": {
+        "pain": 6,
+        "willingness_to_pay": 6,
+        "competition_gap": 5,
+        "founder_fit": 9,
+        "reachability": 6,
+        "build_cost": 4
+      },
+      "why": "Developers complain about Amelia's separate user system, its own tables and missing hooks (e39-e41). Their clients phone them when booking breaks (e62, e63, e65). WP-native rivals exist: a reviewer switched to Fluent Booking (e56). The engine is a months-long build.",
+      "evidence": [
+        "e39",
+        "e40",
+        "e62",
+        "e56"
+      ]
+    },
+    {
+      "name": "Switch-in booking plugin for small salons and practitioners (the current plan, sharpened)",
+      "one_liner": "Import from Bookly/Amelia, rollback-safe updates, bookings that survive a lapsed license, developer support.",
+      "score": 60,
+      "scores": {
+        "pain": 7,
+        "willingness_to_pay": 6,
+        "competition_gap": 5,
+        "founder_fit": 7,
+        "reachability": 6,
+        "build_cost": 4
+      },
+      "why": "Hits the top two themes (updates e10, e13; support e2, e4). But LatePoint (98/100, every feature at $79, e71/e72) and SSA (1-business-day support, e75) already serve unhappy switchers well. A one-day support promise is hard at 15 h/week.",
+      "evidence": [
+        "e13",
+        "e4",
+        "e71",
+        "e75"
+      ]
+    }
+  ],
+  "gap": {
+    "statement": "Small appointment businesses on Bookly or Amelia, and the WordPress freelancers who set them up, can't get updates that don't break today's bookings or support that answers within a day, because both market leaders ship breaking updates behind slow ticket queues, and leaving means rebuilding customers, services and future appointments by hand.",
+    "evidence": [
+      "g1",
+      "g2",
+      "g3",
+      "g4",
+      "g5",
+      "g6",
+      "g7"
+    ]
+  },
+  "pains": [
+    {
+      "theme": "Support is slow, scripted or absent",
+      "severity": "high",
+      "summary": "Tickets wait days to weeks while bookings are down; reviewers leave over it.",
+      "by_competitor": {
+        "Bookly": 18,
+        "Amelia": 20,
+        "BookingPress": 9,
+        "LatePoint": 0
+      },
+      "evidence": [
+        "e4",
+        "e5",
+        "e2",
+        "e6",
+        "e1",
+        "e3",
+        "e7",
+        "e8",
+        "e9"
+      ]
+    },
+    {
+      "theme": "An update breaks live bookings or loses data",
+      "severity": "high",
+      "summary": "Lost appointments, wiped customers, payments with no booking. Recent for Amelia (2025-2026).",
+      "by_competitor": {
+        "Bookly": 13,
+        "Amelia": 13,
+        "BookingPress": 7,
+        "LatePoint": 0
+      },
+      "evidence": [
+        "e13",
+        "e10",
+        "e14",
+        "e15",
+        "e11",
+        "e12",
+        "e16",
+        "e17",
+        "e18"
+      ]
+    },
+    {
+      "theme": "Lapsed license means no fixes, nags or a broken dashboard",
+      "severity": "high",
+      "summary": "Bookly support expiry called 'ransom'. Amelia renews at the full crossed-out price.",
+      "by_competitor": {
+        "Bookly": 9,
+        "Amelia": 1,
+        "BookingPress": 1,
+        "LatePoint": 0
+      },
+      "evidence": [
+        "e19",
+        "e20",
+        "e21",
+        "e22",
+        "e23"
+      ]
+    },
+    {
+      "theme": "Basics locked behind add-ons or tiers",
+      "severity": "medium",
+      "summary": "Historic Bookly complaint (2018-2023); Bookly now bundles tiers. Free versions called an 'advertisement'.",
+      "by_competitor": {
+        "Bookly": 20,
+        "Amelia": 5,
+        "BookingPress": 2,
+        "LatePoint": 1
+      },
+      "evidence": [
+        "e25",
+        "e26",
+        "e27",
+        "e28",
+        "e29",
+        "e30",
+        "e31"
+      ]
+    },
+    {
+      "theme": "Scheduling logic doesn't fit service businesses",
+      "severity": "medium",
+      "summary": "Idle gaps, forced employee step for solo shops, no multi-service front-desk booking, no multi-staff.",
+      "by_competitor": {
+        "Bookly": 12,
+        "Amelia": 10,
+        "BookingPress": 3,
+        "LatePoint": 0
+      },
+      "evidence": [
+        "e35",
+        "e32",
+        "e33",
+        "e34",
+        "e36",
+        "e37",
+        "e38"
+      ]
+    },
+    {
+      "theme": "Not WordPress-native, hostile to developers",
+      "severity": "medium",
+      "summary": "Separate user system, own tables, no hooks or docs, tables left after uninstall.",
+      "by_competitor": {
+        "Bookly": 3,
+        "Amelia": 14,
+        "BookingPress": 1,
+        "LatePoint": 1
+      },
+      "evidence": [
+        "e39",
+        "e40",
+        "e41",
+        "e42",
+        "e43",
+        "e44",
+        "e45"
+      ]
+    },
+    {
+      "theme": "Clunky admin for day-to-day running",
+      "severity": "medium",
+      "summary": "Hard to add a booking or client from the backend; a salon left in 2026 over it.",
+      "by_competitor": {
+        "Bookly": 6,
+        "Amelia": 5,
+        "BookingPress": 2,
+        "LatePoint": 0
+      },
+      "evidence": [
+        "e50",
+        "e51",
+        "e52",
+        "e53"
+      ]
+    },
+    {
+      "theme": "Locked in: data hard to get out, sunk license cost",
+      "severity": "medium",
+      "summary": "Rare, but it's the barrier to every switch.",
+      "by_competitor": {
+        "Bookly": 2,
+        "Amelia": 3,
+        "BookingPress": 0,
+        "LatePoint": 0
+      },
+      "evidence": [
+        "e48",
+        "e47",
+        "e46",
+        "e49"
+      ]
+    },
+    {
+      "theme": "Refund refused",
+      "severity": "low",
+      "summary": "Marketplace refund rules used to refuse refunds.",
+      "by_competitor": {
+        "Bookly": 2,
+        "Amelia": 1,
+        "BookingPress": 2,
+        "LatePoint": 0
+      },
+      "evidence": [
+        "e60",
+        "e61"
+      ]
+    }
+  ],
+  "competitors": [
+    {
+      "name": "Bookly",
+      "url": "https://www.booking-wp-plugin.com/pricing/",
+      "pricing": "Pro $99/yr list ($39 on sale) or $129 lifetime ($99 on sale), 1 site; Business and Ultimate tiers above",
+      "positioning": "No hidden costs or add-ons",
+      "strengths": [
+        "Mature: 60,000+ installs, 88/100 from 585 ratings",
+        "Polished booking form",
+        "Add-ons now bundled into tiers"
+      ],
+      "weaknesses": [
+        "Updates breaking bookings (mostly older reviews)",
+        "Support tied to license expiry",
+        "Slow support",
+        "0 low-star reviews in the last 12 months in the sample, so a weaker target today"
+      ],
+      "evidence": [
+        "e66",
+        "e67",
+        "e10",
+        "e19"
+      ]
+    },
+    {
+      "name": "Amelia",
+      "url": "https://wpamelia.com/pricing/",
+      "pricing": "4 tiers; geo-based pricing (annual figures JS-rendered, not captured); renews at the full crossed-out price",
+      "positioning": "No hidden costs or add-ons (pricing page); up to 40% off the first year",
+      "strengths": [
+        "Slick UI, big feature list",
+        "90,000+ installs, 92/100 from 790 ratings"
+      ],
+      "weaknesses": [
+        "Recent (2025-2026) update and data-loss reports",
+        "Support waits of days to weeks",
+        "Separate user system, few hooks",
+        "No multi-service booking from the admin"
+      ],
+      "evidence": [
+        "e24",
+        "e70",
+        "e13",
+        "e4"
+      ]
+    },
+    {
+      "name": "LatePoint",
+      "url": "https://latepoint.com/pricing/",
+      "pricing": "Starter $99/yr list ($79 on sale), every feature on every plan; renewals at full price",
+      "positioning": "Pricing that scales with your business.",
+      "strengths": [
+        "98/100 from 104 ratings, 2 one-star",
+        "No feature locking by plan",
+        "Multiple agents on the entry plan"
+      ],
+      "weaknesses": [
+        "Google Calendar missing from free version",
+        "Leaves tables after uninstall"
+      ],
+      "evidence": [
+        "e71",
+        "e72",
+        "e73",
+        "e44"
+      ]
+    },
+    {
+      "name": "Simply Schedule Appointments",
+      "url": "https://simplyscheduleappointments.com/pricing/",
+      "pricing": "Plus $129/yr list ($99 sale); team scheduling only in Business $499 list ($399 sale)",
+      "positioning": "Try it. Love it. Or get a full refund within 30-days, guaranteed!",
+      "strengths": [
+        "100/100 from 155 ratings",
+        "1-business-day email replies promised"
+      ],
+      "weaknesses": [
+        "Team scheduling gated to the top tier"
+      ],
+      "evidence": [
+        "e74",
+        "e75"
+      ]
+    },
+    {
+      "name": "BookingPress",
+      "url": "https://www.bookingpressplugin.com/pricing/",
+      "pricing": "Standard $89/yr; Professional $139/yr; Enterprise $249/yr",
+      "positioning": "The best WordPress booking plugin, at the best price.",
+      "strengths": [
+        "Ships a Migration Addon (from Amelia, Bookly, Booknetic, LatePoint)",
+        "Developer hooks and REST API"
+      ],
+      "weaknesses": [
+        "WordPress.org listing closed for a guideline violation (2025-02-01)",
+        "Bug and slow-support reviews"
+      ],
+      "evidence": [
+        "e76",
+        "e84",
+        "e78",
+        "e83",
+        "e18"
+      ]
+    },
+    {
+      "name": "Fresha (SaaS substitute)",
+      "url": "https://www.fresha.com/pricing",
+      "pricing": "Independent $19.95/month; Team $14.95 per team member/month; 20% one-time marketplace commission on new clients",
+      "positioning": "Software that grows with your business",
+      "strengths": [
+        "Salon-specific: processing times, patch tests, packages"
+      ],
+      "weaknesses": [
+        "Not on your own WordPress site; marketplace commission"
+      ],
+      "evidence": [
+        "e79"
+      ]
+    }
+  ],
+  "features": {
+    "columns": [
+      "All features in entry tier",
+      "Same renewal price",
+      "Bookings work on lapse",
+      "Stated <=1-day support",
+      "Multi-service admin booking",
+      "WordPress users",
+      "Clean uninstall",
+      "Bookly/Amelia import"
+    ],
+    "rows": [
+      {
+        "name": "Bookly",
+        "values": [
+          "partial",
+          "unknown",
+          "partial",
+          "unknown",
+          "unknown",
+          "unknown",
+          "no",
+          "unknown"
+        ]
+      },
+      {
+        "name": "Amelia",
+        "values": [
+          "no",
+          "no",
+          "unknown",
+          "partial",
+          "no",
+          "no",
+          "no",
+          "unknown"
+        ]
+      },
+      {
+        "name": "LatePoint",
+        "values": [
+          "yes",
+          "no",
+          "yes",
+          "unknown",
+          "unknown",
+          "unknown",
+          "no",
+          "unknown"
+        ]
+      },
+      {
+        "name": "SSA",
+        "values": [
+          "no",
+          "no",
+          "unknown",
+          "yes",
+          "unknown",
+          "partial",
+          "unknown",
+          "unknown"
+        ]
+      },
+      {
+        "name": "BookingPress",
+        "values": [
+          "no",
+          "unknown",
+          "unknown",
+          "unknown",
+          "partial",
+          "unknown",
+          "unknown",
+          "yes"
+        ]
+      },
+      {
+        "name": "Fresha",
+        "values": [
+          "yes",
+          "unknown",
+          "no",
+          "unknown",
+          "unknown",
+          "no",
+          "unknown",
+          "unknown"
+        ]
+      }
+    ]
+  },
+  "critic": [
+    {
+      "risk": "Loved, cheap alternatives already catch switchers: LatePoint (98/100, every feature at $79) and SSA (100/100, 1-day support).",
+      "severity": "high"
+    },
+    {
+      "risk": "Migration isn't empty: BookingPress, Sugar Calendar and PW Amelia Migration already import or move Amelia/Bookly data.",
+      "severity": "high",
+      "rebuttal": "So the angle is the done-for-you labour and a no-lost-appointments guarantee, not the importer code. Reviewers still describe being 'stuck' (e47) and a 'hostage' (e48) despite importers existing."
+    },
+    {
+      "risk": "The directory is saturated: 784 results for 'appointment booking', and recent small entrants sit at 70 to 2,000 installs.",
+      "severity": "high"
+    },
+    {
+      "risk": "Nobody has shown they'll pay a third party to rescue or migrate a booking plugin.",
+      "severity": "high"
+    },
+    {
+      "risk": "WordPress.org forums forbid promoting plugins, which closes the obvious channel.",
+      "severity": "medium",
+      "rebuttal": "Contact reviewers through their own published sites. Use Amelia's public r/WPAmelia and Discord within their rules, plus search content. Many reviewers are agencies (e62-e65)."
+    },
+    {
+      "risk": "Salons may leave WordPress booking for SaaS (Fresha $19.95/mo, Square solo tier).",
+      "severity": "medium"
+    },
+    {
+      "risk": "At 15 h/week you can become the next 'slow support' review.",
+      "severity": "medium",
+      "rebuttal": "Cap customers during the service phase, publish honest Mon-Fri hours, and ship rollback as code to cut support load."
+    },
+    {
+      "risk": "Bookly's famous add-on complaint is stale (Bookly now says 'No hidden costs or add-ons'), and its low-star stream is empty for the last 12 months.",
+      "severity": "medium",
+      "rebuttal": "Target Amelia first (11 low-star reviews in the last 12 months in the sample); lead with updates, support and migration, not add-on pricing."
+    },
+    {
+      "risk": "WP.org guideline enforcement (BookingPress was closed for a guideline violation).",
+      "severity": "low",
+      "rebuttal": "No license kill-switches or nags; follow the plugin guidelines from day one."
+    }
+  ],
+  "win_plan": {
+    "positioning": "The WordPress booking plugin you can switch to without losing a single appointment, and that won't break your bookings on update.",
+    "switching_triggers": [
+      {
+        "trigger": "An update broke bookings or wiped data",
+        "move": "Publish an honest rollback guide; offer a 48-hour rescue or migration.",
+        "evidence": [
+          "e13",
+          "e14",
+          "e15"
+        ]
+      },
+      {
+        "trigger": "Support went silent while bookings are down",
+        "move": "Named developer, published 1-business-day reply time on the pricing page.",
+        "evidence": [
+          "e4",
+          "e5",
+          "e58"
+        ]
+      },
+      {
+        "trigger": "License renewal or expiry",
+        "move": "'Switch before you renew': free migration on showing a renewal notice, plus a renewal price locked for life.",
+        "evidence": [
+          "e24",
+          "e19",
+          "e54"
+        ]
+      },
+      {
+        "trigger": "A freelancer's client is phoning about broken booking",
+        "move": "Agency program: one free client migration, multi-site license, documented hooks.",
+        "evidence": [
+          "e62",
+          "e63",
+          "e65"
+        ]
+      },
+      {
+        "trigger": "Hitting a scheduling wall",
+        "move": "Ship multi-service admin booking, solo mode and gap-free slots; one short page per wall.",
+        "evidence": [
+          "e35",
+          "e34",
+          "e32"
+        ]
+      }
+    ],
+    "offers": [
+      "Done-for-you migration from Amelia or Bookly with a before/after count",
+      "Bookings never stop if your license lapses",
+      "Renewal price is the price you paid, printed on the pricing page",
+      "Named developer, first reply within 1 business day (Mon-Fri)",
+      "Automatic table backup and one-click rollback before every update",
+      "30-day refund, no argument"
+    ],
+    "build_first": [
+      {
+        "feature": "Bookly + Amelia importer with dry run and diff report",
+        "why": "Lock-in is the barrier to every switch (pain: lock-in)."
+      },
+      {
+        "feature": "Schema versioning, pre-migration snapshot, one-click rollback",
+        "why": "Top high-severity theme (pain: updates break bookings)."
+      },
+      {
+        "feature": "Lapse-safe licensing, no kill switch",
+        "why": "Pain: lapsed license."
+      },
+      {
+        "feature": "Solo mode (hide employee/category steps)",
+        "why": "Pain: scheduling logic (e34)."
+      },
+      {
+        "feature": "Front-desk admin: create client in the booking, multiple services per appointment",
+        "why": "Pain: clunky admin and scheduling (e35, e51, e52)."
+      },
+      {
+        "feature": "Gap-free slots for mixed durations",
+        "why": "Pain: scheduling logic (e32, e33)."
+      },
+      {
+        "feature": "WordPress users, documented hooks, full uninstall",
+        "why": "Pain: not WordPress-native (e39-e44)."
+      }
+    ],
+    "where_to_find": [
+      {
+        "place": "Amelia 1-3 star reviews on WordPress.org (read only)",
+        "url": "https://wordpress.org/support/plugin/ameliabooking/reviews/?filter=1",
+        "why": "Most recent complaints (11 in the last 12 months in the sample); many authors are agencies with public sites."
+      },
+      {
+        "place": "Bookly 1-3 star reviews on WordPress.org (read only)",
+        "url": "https://wordpress.org/support/plugin/bookly-responsive-appointment-booking-tool/reviews/?filter=1",
+        "why": "Long history of update, support and renewal complaints; renewal trigger."
+      },
+      {
+        "place": "Amelia unresolved support topics",
+        "url": "https://wordpress.org/support/plugin/ameliabooking/unresolved/",
+        "why": "Live problems; genuine help (no pitch) builds reputation."
+      },
+      {
+        "place": "r/WPAmelia",
+        "url": "https://www.reddit.com/r/WPAmelia/",
+        "why": "Amelia's public community, linked from its help center (not fetched; Reddit blocked on this network)."
+      },
+      {
+        "place": "Amelia Discord",
+        "url": "https://discord.gg/zx6HVQeCxB",
+        "why": "Linked from Amelia's help center; not checked."
+      },
+      {
+        "place": "Amelia feature request board",
+        "url": "https://features.wpamelia.com/",
+        "why": "Long-standing upvoted requests = your build list (403 to the fetcher; open in a browser)."
+      },
+      {
+        "place": "Bookly ideas board",
+        "url": "https://ideas.booking-wp-plugin.com/",
+        "why": "Same for Bookly (JS-rendered, not fetched)."
+      },
+      {
+        "place": "jobs.wordpress.net",
+        "url": "https://jobs.wordpress.net/",
+        "why": "Where WP.org sends paid-fix requests; fits the rescue service."
+      }
+    ],
+    "trust": [
+      "Renewal price printed next to the first-year price",
+      "Support hours and reply-time promise with the developer's real name",
+      "Export everything (CSV + JSON) and an uninstall that removes all tables",
+      "Changelog entry per release saying what changes in your data, plus a rollback button",
+      "30-day refund"
+    ],
+    "stop_doing": [
+      "License kill switches or dashboard lockouts",
+      "Moving existing features into paid add-ons in minor updates",
+      "Asking for site credentials as the first support step",
+      "Intro prices that jump at renewal",
+      "A separate user system and dozens of custom tables",
+      "Asking for or rewarding 5-star reviews",
+      "Refusing refunds behind marketplace rules"
+    ],
+    "assets": [
+      {
+        "name": "SteadySlots vs Bookly",
+        "path": "assets/vs-bookly.md"
+      },
+      {
+        "name": "SteadySlots vs Amelia",
+        "path": "assets/vs-amelia.md"
+      },
+      {
+        "name": "Outreach messages",
+        "path": "assets/outreach.md"
+      },
+      {
+        "name": "FAQ: six objections",
+        "path": "assets/faq.md"
+      },
+      {
+        "name": "Landing page",
+        "path": "landing/index.html"
+      }
+    ]
+  },
+  "pricing": {
+    "recommendation": "$79/yr per site, every feature, unlimited staff, renews at the same price; $199/yr for 10 sites; $149 done-for-you migration (free with the first year for the first 5).",
+    "competitor_range": "$39 (Bookly Pro first-year sale) to $499/yr (SSA Business list); Fresha $19.95/month",
+    "rationale": "You can't undercut a $39 intro price. Instead, fix the price complaints directly (renewal jumps, tier gating, lapse lockouts) and charge for migration labour, the scarce part."
+  },
+  "cost": {
+    "monthly": "about $1/month plus payment fees, plus about $100-250 one-time for Bookly/Amelia test licenses",
+    "stack": [
+      {
+        "item": "WordPress.org listing (free version)",
+        "cost": "$0"
+      },
+      {
+        "item": "Landing on Cloudflare Pages or GitHub Pages",
+        "cost": "$0"
+      },
+      {
+        "item": "Email forwarding on your domain",
+        "cost": "$0"
+      },
+      {
+        "item": "steadyslots.com domain (registrar price not checked)",
+        "cost": "~$10-15/yr"
+      },
+      {
+        "item": "Lemon Squeezy or Freemius for payments and licenses (fees checked by web search 2026-10-17)",
+        "cost": "% per sale"
+      },
+      {
+        "item": "Bookly Pro + Amelia copies to test importers",
+        "cost": "~$100-250 one-time"
+      }
+    ]
+  },
+  "first_10": [
+    {
+      "step": "List every Amelia/Bookly 1-3 star review from the last 24 months; mark authors with public business or agency sites",
+      "where": "WordPress.org review pages (read only)"
+    },
+    {
+      "step": "Contact 15 of them through their own site's contact form, never on WP.org",
+      "where": "Reviewers' own sites",
+      "script": "I read your WordPress.org review about [problem]. I'm a WordPress developer building a booking plugin focused on rollback-safe updates and moving off Amelia/Bookly without losing appointments. I'll migrate one site free, with a before/after count you can check. No obligation, no review required."
+    },
+    {
+      "step": "Offer 5 free done-for-you migrations in exchange for an honest review after 30 days (not conditional on rating)",
+      "where": "Replies from step 2"
+    },
+    {
+      "step": "Publish the rollback guide and 'Migrating from Amelia without losing appointments'",
+      "where": "Your site"
+    },
+    {
+      "step": "Quote a fixed $149 on booking-plugin fix requests",
+      "where": "jobs.wordpress.net"
+    },
+    {
+      "step": "Help people for two weeks before mentioning your work; disclose if you do",
+      "where": "r/WPAmelia, Amelia Discord"
+    },
+    {
+      "step": "Message 10 WordPress freelancers: one client migration free",
+      "where": "Freelancers who reviewed or posted about booking plugins",
+      "script": "You mentioned configuring Amelia for several clients. I'd like to do one client migration free so you can judge it on a real site."
+    },
+    {
+      "step": "List the free version on WordPress.org once importer + rollback work; state the promises in the readme",
+      "where": "wordpress.org/plugins"
+    },
+    {
+      "step": "15-minute call with every migrated customer; record their words for why they left",
+      "where": "Video call"
+    },
+    {
+      "step": "Check the pass bar: 3 paid migrations or 10 active installs from switchers in 30 days",
+      "where": "Your notes"
+    }
+  ],
+  "validation": {
+    "experiment": "Offer a $149 done-for-you migration or rescue to people with a recent public Amelia/Bookly problem, and collect waitlist signups from two honest guides.",
+    "pass_bar": "3 people agree to pay (or deposit) for a $149 migration, or 25 waitlist signups with 5 yes replies to $79/yr",
+    "days": 7,
+    "steps": [
+      "Day 1: buy steadyslots.com, deploy landing/index.html, build the reviewer list",
+      "Day 2: send message A to 15 reviewers via their own sites",
+      "Day 3: publish the rollback guide; answer 5 unresolved WP.org threads with no pitch",
+      "Day 4: send message B to 10 freelancers; quote $149 on jobs.wordpress.net posts",
+      "Day 5: publish the migration guide and the vs pages (with untrue promises removed)",
+      "Day 6: join r/WPAmelia and the Amelia Discord within their rules; do a timed migration dry run",
+      "Day 7: count signups, replies and paid asks; re-score willingness_to_pay"
+    ]
+  },
+  "kill_criteria": [
+    "Under 10 waitlist signups after 7 days and 25 direct messages",
+    "0 people willing to pay for a migration or rescue at any price you name",
+    "Most replies say they already moved to LatePoint, SSA or Fresha",
+    "Contacted reviewers say the vendor has since fixed their problem",
+    "Migration dry runs take more than 4 hours each, which breaks 15 h/week at $149"
+  ],
+  "launch": {
+    "name": "SteadySlots",
+    "domain": "steadyslots.com",
+    "domain_status": "available",
+    "alternatives": [
+      {
+        "domain": "steadyslots.app",
+        "status": "available"
+      },
+      {
+        "domain": "switchslots.com",
+        "status": "available"
+      },
+      {
+        "domain": "slotkeep.app",
+        "status": "available"
+      },
+      {
+        "domain": "keepbooked.app",
+        "status": "available"
+      },
+      {
+        "domain": "bookingkeel.com",
+        "status": "available"
+      }
+    ],
+    "landing_page": "landing/index.html"
+  }
+}

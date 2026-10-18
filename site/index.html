@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wedge — find the gap, take the customers</title>
+<meta name="description" content="Wedge is a set of open-source agent skills that finds a business worth building and the gap that lets you win it. Every claim cited, every quote re-checked. Works in Claude Code, Codex, Cursor, Gemini CLI and OpenCode.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f6f5f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e0e0d" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://getwedge.dev/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://getwedge.dev/">
+<meta property="og:title" content="Wedge — find the gap, take the customers">
+<meta property="og:description" content="Open-source agent skills that find a business worth building and the gap that lets you win it. Every claim cited and checked.">
+<meta property="og:image" content="https://getwedge.dev/examples/tradesperson-invoicing/card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://getwedge.dev/examples/tradesperson-invoicing/card.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111'/%3E%3Cpath d='M24 8v16H8z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css?v=7">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="top">
+  <div class="wrap nav__in">
+    <a class="logo" href="#top" aria-label="Wedge home"><span class="logo__mark" aria-hidden="true"></span>Wedge</a>
+    <nav aria-label="Primary">
+      <ul class="nav__links">
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#example">Example</a></li>
+        <li><a href="#install">Install</a></li>
+      </ul>
+    </nav>
+    <a class="gh" data-gh href="https://github.com/senavoh/wedge">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+      <span>Star on GitHub</span><span class="gh__count" data-stars></span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <a class="pill" href="#example"><span class="pill__tag">New</span> See a real run, every quote checked <span aria-hidden="true">→</span></a>
+      <h1 id="hero-title" class="hero__title">Wedge</h1>
+      <p class="hero__tag">Find the gap.<br><span>Take the customers.</span></p>
+      <p class="hero__sub">Open-source skills that turn Claude Code, Codex, Cursor and more into a market research team. It finds a business that fits you, mines what customers hate about the competition, and tells you how to win, with every claim cited.</p>
+
+      <div class="cmd">
+        <code class="cmd__text"><span class="cmd__prompt" aria-hidden="true">$</span> <span data-cmd="npx">npx skills add senavoh/wedge</span></code>
+        <button class="copy" type="button" data-copy-from="npx" aria-label="Copy install command">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M5.5 5.5V3a1 1 0 0 1 1-1H13a1 1 0 0 1 1 1v6.5a1 1 0 0 1-1 1h-2.5M3 5.5h6.5a1 1 0 0 1 1 1V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6.5a1 1 0 0 1 1-1Z"/></svg>
+          <span>Copy</span>
+        </button>
+      </div>
+      <div class="ctas">
+        <a class="btn btn--dark" href="examples/tradesperson-invoicing/">See a real report</a>
+        <a class="btn btn--light" href="#how">How it works <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+
+    <div class="hero__visual" aria-label="Preview of a real Wedge report">
+      <div class="window window--back" aria-hidden="true">
+        <img src="examples/tradesperson-invoicing/card.png" alt="" width="1200" height="630">
+      </div>
+      <a class="window window--front" href="examples/tradesperson-invoicing/" aria-label="Open the example report">
+        <span class="window__bar" aria-hidden="true"><i></i><i></i><i></i><span>report.html</span></span>
+        <span class="window__frame">
+          <iframe src="examples/tradesperson-invoicing/index.html" title="Example Wedge report" loading="lazy" tabindex="-1" aria-hidden="true" scrolling="no"></iframe>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- AGENTS -->
+<section class="block" aria-labelledby="agents-title">
+  <div class="wrap split">
+    <div>
+      <h2 id="agents-title" class="h2">Works with<br><span>every agent.</span></h2>
+      <p class="lede">One install for any tool that reads SKILL.md files. The scripts are plain Python, so there's nothing else to set up.</p>
+      <a class="link" href="#install">Install guide <span aria-hidden="true">→</span></a>
+    </div>
+    <ul class="agents">
+      <li>Claude Code</li>
+      <li>Codex</li>
+      <li>Cursor</li>
+      <li>Gemini CLI</li>
+      <li>OpenCode</li>
+      <li>Any SKILL.md agent</li>
+    </ul>
+  </div>
+</section>
+
+<!-- EVIDENCE -->
+<section class="block" id="evidence" aria-labelledby="ev-title">
+  <div class="wrap">
+    <header class="head">
+      <h2 id="ev-title" class="h2">Evidence,<br><span>or it didn't happen.</span></h2>
+      <p class="lede">AI is great at sounding sure. Wedge re-opens every page it cites and checks the quote is really there. Made-up quotes get caught before they reach your report.</p>
+    </header>
+
+    <div class="quotes">
+      <figure class="qcard">
+        <div class="qcard__meta"><span class="badge badge--ok">✓ Verified</span><span>App Store review</span></div>
+        <blockquote>“Now it only lets me make 10 invoices a month or I have to upgrade for another 300$ to the unlimited.”</blockquote>
+        <figcaption>Re-opened the source, quote matched.</figcaption>
+      </figure>
+      <figure class="qcard qcard--bad">
+        <div class="qcard__meta"><span class="badge badge--bad">✕ Not found</span><span>Illustrative example</span></div>
+        <blockquote><s>“Every plumber I know would happily pay $40 a month for this.”</s></blockquote>
+        <figcaption>The kind of convenient line an AI might invent. It's flagged and can't affect the verdict.</figcaption>
+      </figure>
+    </div>
+
+    <ul class="points">
+      <li><h3>Two sources per claim</h3><p>A claim needs two checked sources from different pages, or it's labeled unverified.</p></li>
+      <li><h3>A critic that argues back</h3><p>A second pass tries to kill the top idea before it's ranked: who tried and failed, free rivals, people who complain but won't pay.</p></li>
+      <li><h3>No API keys</h3><p>Free sources only: Reddit, Hacker News, App Store reviews, GitHub issues, pricing pages and web search.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- VS -->
+<section class="block" id="vs" aria-labelledby="vs-title">
+  <div class="wrap">
+    <header class="head">
+      <h2 id="vs-title" class="h2">Why not just<br><span>ask an AI?</span></h2>
+      <p class="lede">Same question, two very different answers. On the left is the pattern most AI chats follow. On the right is what Wedge produced for the invoicing app idea.</p>
+    </header>
+    <div class="vs">
+      <div class="vs__col vs__col--plain">
+        <p class="vs__who">A plain AI chat</p>
+        <p class="vs__ask">“Is a simpler invoicing app for tradespeople a good idea?”</p>
+        <ul>
+          <li>“Great idea!” Almost every idea gets encouragement</li>
+          <li>Market-size numbers with no source you can check</li>
+          <li>A feature list every competitor already has</li>
+          <li>Guesses about what customers want</li>
+          <li>No idea who else is already building it</li>
+          <li>Ends with “good luck!” and no next step</li>
+        </ul>
+      </div>
+      <div class="vs__col vs__col--wedge">
+        <p class="vs__who"><span class="vs__mark" aria-hidden="true"></span>Wedge</p>
+        <p class="vs__ask">Verdict: <span class="verdict verdict--pivot">PIVOT</span> 66/100</p>
+        <ul>
+          <li>Honest verdict, with the narrower version that could work</li>
+          <li>28 real customer quotes, each checked against its source</li>
+          <li>Real prices from competitors' own pricing pages</li>
+          <li>Ranked complaints: invoice caps, price hikes, bloat</li>
+          <li>Found several small apps already chasing the same idea</li>
+          <li>A 7-day test with a pass bar, and when to walk away</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODES -->
+<section class="block" id="modes" aria-labelledby="modes-title">
+  <div class="wrap">
+    <header class="head">
+      <h2 id="modes-title" class="h2">Start<br><span>wherever you are.</span></h2>
+      <p class="lede">Four ways in. Choose quick (about 10 minutes) or deep (the full run).</p>
+    </header>
+    <ul class="modes">
+      <li><span class="modes__k">From scratch</span><p class="modes__q">“Find me a business I can start.”</p><p>Five quick questions about your budget, skills and time, then niches with real demand that fit you.</p></li>
+      <li><span class="modes__k">From what you know</span><p class="modes__q">“I’m a dental hygienist. What could I build?”</p><p>Starts from your industry and the access you already have.</p></li>
+      <li><span class="modes__k">Stress-test an idea</span><p class="modes__q">“Is a dog-walking app for apartment buildings any good?”</p><p>Your idea against real complaints and real competitors. It will tell you to walk away if it should.</p></li>
+      <li><span class="modes__k">Beat my competitors</span><p class="modes__q">“How do I take customers from Jobber?”</p><p>For a business you already run: when customers leave them, and how to be there.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- HOW -->
+<section class="block" id="how" aria-labelledby="how-title">
+  <div class="wrap">
+    <header class="head">
+      <h2 id="how-title" class="h2">How a run<br><span>works.</span></h2>
+      <p class="lede">Ten stages in four steps. Progress is saved as it goes, so you can stop and pick it up later, even in a different agent.</p>
+    </header>
+    <ol class="steps">
+      <li><span class="steps__n">1</span><h3>Research</h3><p>Asks about you, finds niches, maps competitors with real prices, and reads hundreds of reviews and complaint threads.</p></li>
+      <li><span class="steps__n">2</span><h3>Decide</h3><p>Scores each opportunity on six factors with the reasoning shown, then a critic tries to kill the winner. Verdict: GO, PIVOT or KILL.</p></li>
+      <li><span class="steps__n">3</span><h3>Win</h3><p>Turns competitor weaknesses into a plan: when customers switch, what to offer them, where to find them, and what to build first.</p></li>
+      <li><span class="steps__n">4</span><h3>Prove</h3><p>Checks every quote, then writes one shareable report, a launch kit with a 7-day test, and a share image.</p></li>
+    </ol>
+    <figure class="demo">
+      <img src="demo.svg" alt="A Wedge run in the terminal: fetching reviews, mining complaints, verifying every quote, and a PIVOT verdict" width="860" height="631" loading="lazy">
+      <figcaption>What your agent runs under the hood, recorded from a real run.</figcaption>
+    </figure>
+    <div class="verdicts" aria-label="Possible verdicts">
+      <span class="verdict verdict--go">GO</span>
+      <span class="verdict verdict--pivot">PIVOT</span>
+      <span class="verdict verdict--kill">KILL</span>
+      <p>Honest verdicts. It will tell you to pivot or walk away, and show why.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="block" id="skills" aria-labelledby="skills-title">
+  <div class="wrap">
+    <header class="head">
+      <h2 id="skills-title" class="h2">Pick the right skill<br><span>for the job.</span></h2>
+      <p class="lede">Eight skills, one install. Run the whole pipeline, or just the piece you need.</p>
+    </header>
+    <div class="seg" role="toolbar" aria-label="Filter skills" data-filter>
+      <button type="button" aria-pressed="true" data-cat="all">All <span>8</span></button>
+      <button type="button" aria-pressed="false" data-cat="core">Core <span>1</span></button>
+      <button type="button" aria-pressed="false" data-cat="research">Research <span>3</span></button>
+      <button type="button" aria-pressed="false" data-cat="strategy">Strategy <span>2</span></button>
+      <button type="button" aria-pressed="false" data-cat="launch">Launch <span>2</span></button>
+    </div>
+    <p class="sr-only" aria-live="polite" data-filter-status></p>
+    <ul class="skills" data-skills></ul>
+    <div class="more"><button type="button" class="btn btn--light" data-more>Show all 8 skills</button></div>
+  </div>
+</section>
+
+<!-- EXAMPLE -->
+<section class="block" id="example" aria-labelledby="ex-title">
+  <div class="wrap">
+    <header class="head">
+      <h2 id="ex-title" class="h2">A real run.<br><span>Unedited.</span></h2>
+      <p class="lede">The idea: a simpler invoicing app for solo tradespeople. Quick mode, 28 quotes from App Store reviews, Reddit and pricing pages. All 28 checked out against their sources.</p>
+    </header>
+
+    <article class="report">
+      <div class="report__top">
+        <span class="verdict verdict--pivot verdict--lg">PIVOT</span>
+        <div class="score"><b>66</b><span>/100</span></div>
+        <p class="report__sum">The complaints are real: monthly invoice caps, price hikes right after subscribing, paying $25 a month to send PDFs. But several small developers are already building the generic version. Build the narrow one.</p>
+      </div>
+      <div class="report__grid">
+        <div>
+          <h3 class="label">The gap it found</h3>
+          <p class="gap">Solo tradespeople can't get an app that just lets them invoice from the truck, because every option either <mark>caps how many they can send</mark>, <mark>raises the price after they subscribe</mark>, or <mark>buries invoicing in a $59+/month suite</mark>.</p>
+          <h3 class="label">How to win</h3>
+          <p class="pos">“Unlimited quotes and invoices for one-person trade businesses. One price that never goes up, and it works with no signal.”</p>
+        </div>
+        <div class="report__quotes">
+          <h3 class="label">What customers said</h3>
+          <figure><blockquote>“Context: I keep hearing from solo plumbers/electricians/HVAC techs that Jobber and Housecall Pro are too expensive and too complicated for one person, and ServiceTitan is completely out of reach.”</blockquote><figcaption><span class="badge badge--ok">✓ Verified</span> r/smallbusiness</figcaption></figure>
+          <figure><blockquote>“QuickBooks is solid for the accounting side but overkill if you just need quote-to-invoice.”</blockquote><figcaption><span class="badge badge--ok">✓ Verified</span> r/handyman</figcaption></figure>
+        </div>
+      </div>
+      <div class="report__foot">
+        <a class="btn btn--dark" href="examples/tradesperson-invoicing/">Open the full report</a>
+        <a class="link" href="examples/tradesperson-invoicing/card.png">See the share image <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+
+    <div class="runs">
+      <h3 class="runs__title">More real runs</h3>
+      <ul class="runs__grid" data-runs>
+        <li><a class="run" href="examples/tradesperson-invoicing/">
+          <img src="examples/tradesperson-invoicing/card.png" alt="" width="1200" height="630" loading="lazy">
+          <span class="run__meta"><span class="verdict verdict--pivot">PIVOT</span><span>66/100</span><span class="run__mode">Stress-test an idea</span></span>
+          <span class="run__title">A simpler invoicing app for solo tradespeople</span>
+          <span class="run__sub">28 quotes · App Store, Reddit, pricing pages</span>
+        </a></li>
+        <li><a class="run" href="examples/shopify-merchant-tools/">
+          <img src="examples/shopify-merchant-tools/card.png" alt="" width="1200" height="630" loading="lazy">
+          <span class="run__meta"><span class="verdict verdict--pivot">PIVOT</span><span>57/100</span><span class="run__mode">From what you know</span></span>
+          <span class="run__title">What should a small Shopify store owner build for other merchants?</span>
+          <span class="run__sub">93 quotes · 17 apps, 9 categories, Shopify Community</span>
+        </a></li>
+        <li><a class="run" href="examples/wordpress-booking-plugin/">
+          <img src="examples/wordpress-booking-plugin/card.png" alt="" width="1200" height="630" loading="lazy">
+          <span class="run__meta"><span class="verdict verdict--pivot">PIVOT</span><span>63/100</span><span class="run__mode">Beat my competitors</span></span>
+          <span class="run__title">How a small WordPress booking plugin can take customers from Bookly and Amelia</span>
+          <span class="run__sub">93 quotes · 139 WordPress.org reviews, pricing pages</span>
+        </a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- WIN -->
+<section class="block" id="win" aria-labelledby="win-title">
+  <div class="wrap split split--top">
+    <div>
+      <h2 id="win-title" class="h2">Not just what to build.<br><span>How to win.</span></h2>
+      <p class="lede">A gap only matters if you can get customers through it. The win plan turns competitor weaknesses into moves you can make this week.</p>
+    </div>
+    <ul class="wins">
+      <li><h3>Switching moments</h3><p>When people leave: a price hike, a new limit, a bad update. Each one backed by quotes.</p></li>
+      <li><h3>Positioning in their words</h3><p>Lifted from the complaints themselves, not a brainstorm.</p></li>
+      <li><h3>Offers that pull switchers</h3><p>Free import, locked prices, no contracts: whatever removes their reason to stay.</p></li>
+      <li><h3>Where they hang out</h3><p>The specific communities and review pages where unhappy customers already talk.</p></li>
+      <li><h3>Ready-to-edit drafts</h3><p>A comparison page, outreach messages, ad copy and an FAQ.</p></li>
+      <li><h3>A monthly check-in</h3><p>Re-checks competitors for new complaints, price changes and new rivals.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- INSTALL -->
+<section class="block" id="install" aria-labelledby="install-title">
+  <div class="wrap narrow">
+    <header class="head head--center">
+      <h2 id="install-title" class="h2">Install in<br><span>one command.</span></h2>
+      <p class="lede">No accounts, no API keys. Needs Python 3, which Macs and most Linux machines already have.</p>
+    </header>
+    <div class="itabs">
+      <div class="seg seg--center" role="tablist" aria-label="Install method">
+        <button type="button" role="tab" id="tab-npx" aria-controls="panel-npx" aria-selected="true">npx</button>
+        <button type="button" role="tab" id="tab-plugin" aria-controls="panel-plugin" aria-selected="false" tabindex="-1">Claude Code</button>
+        <button type="button" role="tab" id="tab-curl" aria-controls="panel-curl" aria-selected="false" tabindex="-1">Script</button>
+        <button type="button" role="tab" id="tab-manual" aria-controls="panel-manual" aria-selected="false" tabindex="-1">Manual</button>
+      </div>
+      <div class="panel" role="tabpanel" id="panel-npx" aria-labelledby="tab-npx" tabindex="0">
+        <p>Installs every skill into the agents on your machine.</p>
+        <div class="cmd"><code class="cmd__text"><span class="cmd__prompt" aria-hidden="true">$</span> <span data-cmd="npx">npx skills add senavoh/wedge</span></code><button class="copy" type="button" data-copy-from="npx" aria-label="Copy npx command"><span>Copy</span></button></div>
+      </div>
+      <div class="panel" role="tabpanel" id="panel-plugin" aria-labelledby="tab-plugin" tabindex="0" hidden>
+        <p>Inside Claude Code, add the marketplace, then install the plugin.</p>
+        <div class="cmd"><code class="cmd__text"><span data-cmd="pluginAdd">/plugin marketplace add senavoh/wedge</span></code><button class="copy" type="button" data-copy-from="pluginAdd" aria-label="Copy marketplace command"><span>Copy</span></button></div>
+        <div class="cmd"><code class="cmd__text"><span data-cmd="pluginInstall">/plugin install wedge@wedge</span></code><button class="copy" type="button" data-copy-from="pluginInstall" aria-label="Copy plugin install command"><span>Copy</span></button></div>
+      </div>
+      <div class="panel" role="tabpanel" id="panel-curl" aria-labelledby="tab-curl" tabindex="0" hidden>
+        <p>Copies the skills into every agent folder it finds. <a href="install.sh">Read the script first.</a></p>
+        <div class="cmd"><code class="cmd__text"><span class="cmd__prompt" aria-hidden="true">$</span> <span data-cmd="curl">curl -fsSL https://getwedge.dev/install.sh | sh</span></code><button class="copy" type="button" data-copy-from="curl" aria-label="Copy script command"><span>Copy</span></button></div>
+      </div>
+      <div class="panel" role="tabpanel" id="panel-manual" aria-labelledby="tab-manual" tabindex="0" hidden>
+        <p>Clone the repo and copy the skills into your agent's skills folder.</p>
+        <div class="cmd"><code class="cmd__text"><span class="cmd__prompt" aria-hidden="true">$</span> <span data-cmd="clone">git clone https://github.com/senavoh/wedge</span></code><button class="copy" type="button" data-copy-from="clone" aria-label="Copy clone command"><span>Copy</span></button></div>
+        <div class="cmd"><code class="cmd__text"><span class="cmd__prompt" aria-hidden="true">$</span> <span data-cmd="manualCopy">cp -r wedge/skills/* ~/.claude/skills/</span></code><button class="copy" type="button" data-copy-from="manualCopy" aria-label="Copy copy command"><span>Copy</span></button></div>
+        <p class="fine">That path is for Claude Code. Use your own agent's skills folder.</p>
+      </div>
+    </div>
+    <div class="ask">
+      <span class="label">Then ask your agent</span>
+      <p data-usage>“Use wedge to find me a business I can start with $500 and 10 hours a week.”</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="block" id="faq" aria-labelledby="faq-title">
+  <div class="wrap split split--top">
+    <h2 id="faq-title" class="h2">Questions<br><span>and answers.</span></h2>
+    <div class="faq">
+      <details><summary>Is it free?</summary><p>Yes. Wedge is open source under the MIT license, needs no API keys and uses only free data sources. The only cost is your agent's own usage.</p></details>
+      <details><summary>Which agents does it work with?</summary><p>Claude Code, Codex, Cursor, Gemini CLI, OpenCode, and any agent that reads SKILL.md files.</p></details>
+      <details><summary>Can it make things up?</summary><p>It can try, but it won't get far. Every quote is re-checked against its source. Anything that can't be confirmed is labeled, and unconfirmed claims can't drive the verdict.</p></details>
+      <details><summary>Does it scrape sites like G2 or Capterra?</summary><p>No. Those only come in through ordinary web search results, which respects their terms. Direct sources are Reddit, Hacker News, App Store reviews, GitHub issues and public pricing pages.</p></details>
+      <details><summary>How long does a run take?</summary><p>Quick mode takes about 10 minutes. A deep run takes longer, and you can stop and resume it any time.</p></details>
+      <details><summary>Can it help a business I already run?</summary><p>Yes. "Beat my competitors" mode skips the idea hunt and goes straight to what competitors' customers complain about and how to win them over.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- SUPPORT -->
+<section class="block block--last" aria-labelledby="support-title">
+  <div class="wrap">
+    <div class="support">
+      <div>
+        <h2 id="support-title" class="h2">Support<br><span>Wedge.</span></h2>
+        <p class="lede">Wedge is completely open source. If it saves you from building the wrong thing, a star helps other founders find it.</p>
+      </div>
+      <div class="ctas">
+        <a class="btn btn--dark" data-gh href="https://github.com/senavoh/wedge">Star on GitHub</a>
+        <a class="btn btn--light" data-gh-issues href="https://github.com/senavoh/wedge/issues">Suggest an idea</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <a class="logo" href="#top"><span class="logo__mark" aria-hidden="true"></span>Wedge</a>
+    <p>Open source · MIT · <span data-domain>getwedge.dev</span></p>
+    <ul>
+      <li><a data-gh href="https://github.com/senavoh/wedge">GitHub</a></li>
+      <li><a href="examples/tradesperson-invoicing/">Example report</a></li>
+      <li><a href="install.sh">install.sh</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="main.js?v=5" defer></script>
+</body>
+</html>
