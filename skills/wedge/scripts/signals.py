@@ -144,7 +144,8 @@ def main(argv=None):
     p.add_argument("--topic", default="", help="comma-separated topic words; drop records that mention none of these or of --names")
     a = p.parse_args(argv)
     records = load(a.files)
-    terms = [t.strip().lower() for t in (a.topic + "," + a.names).split(",") if t.strip()]
+    # --topic filters; competitor --names count as on-topic too, but never filter on their own.
+    terms = [t.strip().lower() for t in (a.topic + "," + a.names).split(",") if t.strip()] if a.topic.strip() else []
     if terms:
         records = (r for r in records
                    if any(t in ("%s %s" % (r.get("title", ""), r.get("text", ""))).lower() for t in terms))
