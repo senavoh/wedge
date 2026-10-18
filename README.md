@@ -118,6 +118,12 @@ The `skills` installer needs Node.js 22 or newer. On older Node versions, use th
 curl -fsSL https://getwedge.dev/install.sh | sh
 ```
 
+To choose the folders yourself, pass them after `sh -s --`:
+
+```bash
+curl -fsSL https://getwedge.dev/install.sh | sh -s -- ~/.claude/skills ~/.codex/skills
+```
+
 **Manual.** Copy the folders in `skills/` into your agent's skills folder.
 
 Requirements: Python 3.8 or newer, which is preinstalled on macOS and most Linux systems.

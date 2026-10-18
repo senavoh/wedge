@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 # Wedge installer: copies the skills into every agent skills folder it finds.
 # Usage: curl -fsSL https://getwedge.dev/install.sh | sh
+#    or: curl -fsSL https://getwedge.dev/install.sh | sh -s -- ~/.claude/skills ~/.codex/skills
 #    or: ./install.sh [target-dir ...]
 set -eu
 
