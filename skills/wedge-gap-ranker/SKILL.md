@@ -48,6 +48,16 @@ A rebuttal also needs a source. Don't resolve a risk by arguing.
 
 ## Part 3: Verdict
 
-Apply the thresholds in the `wedge` skill's `references/scoring.md`. Don't restate or loosen them here. For PIVOT, name the specific pivot: a different buyer, price or channel. For KILL, name the next best opportunity. Never KILL only because sources were unreachable for verification; cap the verdict at PIVOT and say why.
+Apply the thresholds in the `wedge` skill's `references/scoring.md`. Don't restate or loosen them here.
+
+**For PIVOT, the pivot must score higher than what it replaces.** A pivot is a recommendation, so it gets the same scrutiny as the original idea:
+
+1. List 2 or 3 candidate pivots, each a change to one thing: buyer, angle, price or channel.
+2. Run the two cheapest critic checks on each one before scoring it: search for a product that already does exactly this pivot, and for a free incumbent that covers it. Save what you find as evidence (claim `pivot-<n>`).
+3. Score each candidate on the six axes from evidence in this run, citing ids. A pivot inherits the original's scores only where the change doesn't touch that axis. Write down the axis it is meant to raise, such as competition_gap or willingness_to_pay, and the evidence for the raise.
+4. Recommend only the candidate with the highest projected total, and only if that total beats the current score. Show both numbers: "projected 68 vs 61 now".
+5. If no candidate beats the current score, don't invent one. Say so, and make the next step a cheap test of the original (interviews or a pre-sale) instead of a pivot.
+
+For KILL, name the next best opportunity. For KILL, name the next best opportunity. Never KILL only because sources were unreachable for verification; cap the verdict at PIVOT and say why.
 
 Run `state.py done <slug> gaps` and `state.py done <slug> critic`.

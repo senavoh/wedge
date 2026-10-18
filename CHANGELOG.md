@@ -5,7 +5,8 @@
 - 12 new real example runs, 16 in total: 11 PIVOT, 5 KILL, 0 GO. They include Wedge stress-testing a paid version of itself (KILL) and Wedge testing its own pivot (the score went down). README and site list them all; raw data is trimmed to the records behind each quote.
 - Site: a labelled illustration of what a GO takes, kept separate from the real runs.
 - Critic risks are `high` (and can block a GO) only when they are specific to the idea and backed by a cited source. Generic risks like "an incumbent could copy it" are `medium`. Reports show the source behind each risk.
-- After a PIVOT, Wedge offers once to stress-test the pivot as a new run. The follow-up report links back to the original.
+- A recommended pivot must beat the current score: Wedge pre-checks 2 or 3 candidate pivots (does it already exist? is there a free incumbent?), scores them, and recommends one only if its projected total is higher. If none is, it says so and suggests a cheap test instead. Reports show the projected score.
+- After a PIVOT, Wedge offers once to stress-test the pivot as a new run. The follow-up report links back to the original and shows projected vs actual score.
 - Docs and the `fetch.py` Reddit message no longer call Reddit API keys free and self-serve: new Reddit apps need Reddit's approval. The fallback is web search, keyless marketplace reviews, or reviews the user pastes.
 
 ## 1.1.0 (2026-10-18)

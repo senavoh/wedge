@@ -96,10 +96,25 @@ def s_verdict(rep):
     cls = {"GO": "go", "PIVOT": "pivot", "KILL": "kill", "INCONCLUSIVE": "inconclusive"}.get(call, "pivot")
     f = rep.get("founder") or {}
     fit = "".join("<div><dt>%s</dt><dd>%s</dd></div>" % (E(k.replace("_", " ")), E(str(val))) for k, val in f.items() if val)
-    return ('<div class="verdict %s"><div class="call">%s</div><div class="vtext"><p>%s</p>%s</div>%s</div>%s'
+    return ('<div class="verdict %s"><div class="call">%s</div><div class="vtext"><p>%s</p>%s</div>%s</div>%s%s'
             % (cls, E(call or "-"), E(v.get("summary", "")),
                ('<p class="score"><b>%s</b> / 100</p>' % E(str(v["score"]))) if v.get("score") is not None else "",
-               "", ('<dl class="fit">%s</dl>' % fit) if fit else ""))
+               "", s_pivot(v), ('<dl class="fit">%s</dl>' % fit) if fit else ""))
+
+
+def s_pivot(v):
+    p = v.get("pivot") or {}
+    if not p or p.get("projected_score") is None:
+        return ""
+    now, proj = v.get("score"), p["projected_score"]
+    sc = p.get("scores") or {}
+    axes = "".join("<span>%s %s</span>" % (E(k.replace("_", " ")), E(str(val))) for k, val in sc.items())
+    return ('<div class="pivot"><p class="pv-h"><b>Recommended pivot</b> (%s): %s</p>'
+            '<p class="pv-n">Projected <b>%s</b> / 100%s</p>%s%s</div>'
+            % (E(p.get("change", "angle")), E(p.get("name", "")), E(str(proj)),
+               (" vs %s now" % E(str(now))) if now is not None else "",
+               ('<p class="pv-r">Raises %s</p>' % E(p["raises"])) if p.get("raises") else "",
+               ('<p class="pv-a">%s</p>' % axes) if axes else ""))
 
 
 def s_opps(rep, ev):
@@ -291,6 +306,7 @@ code{font:13px ui-monospace,SFMono-Regular,Menlo,monospace}
 .mk{width:24px;height:24px;border-radius:7px;background:var(--ink);position:relative;display:inline-block}.mk:after{content:"";position:absolute;inset:6px;background:var(--bg);clip-path:polygon(100% 0,100% 100%,0 100%)}
 .meta{display:inline-flex;gap:6px;flex-wrap:wrap}.meta span{background:var(--card);border:1px solid var(--line);border-radius:99px;padding:3px 11px;font-size:13px}
 h1{font-size:clamp(34px,6vw,60px);line-height:1.02;letter-spacing:-.045em;font-weight:600;color:var(--ink);margin:56px 0 14px}
+.pivot{margin:14px 0 0;padding:16px 20px;border:1px dashed var(--line);border-radius:14px;background:var(--card)}.pivot p{margin:0 0 6px}.pv-n b{font-size:22px;color:var(--ink)}.pv-r,.pv-a{color:var(--mute);font-size:14px}.pv-a span{display:inline-block;margin:0 10px 0 0}
 .follows{font-size:14px;color:var(--mute);margin:-14px 0 24px}.follows a{color:inherit}
 .subtitle{font-size:18px;color:var(--mute);max-width:720px;margin:0 0 26px}
 nav.toc{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 48px}
@@ -365,8 +381,13 @@ def follows(rep):
     name = E(f.get("title", "an earlier run"))
     if f.get("url"):
         name = '<a href="%s">%s</a>' % (E(f["url"]), name)
-    return '<p class="follows">Follow-up: this run tests the pivot from %s%s.</p>' % (
-        name, (" (" + E(f["verdict"]) + ")") if f.get("verdict") else "")
+    proj = f.get("projected")
+    now = (rep.get("verdict") or {}).get("score")
+    vs = ""
+    if proj is not None and now is not None:
+        vs = " It was projected to score %s; it scored %s." % (E(str(proj)), E(str(now)))
+    return '<p class="follows">Follow-up: this run tests the pivot from %s%s.%s</p>' % (
+        name, (" (" + E(f["verdict"]) + ")") if f.get("verdict") else "", vs)
 
 
 def render(rep, ev):

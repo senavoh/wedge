@@ -9,6 +9,8 @@ Conventions:
 - `pains[].by_competitor` can name products that aren't in `competitors`.
 - Leave out `critic[].rebuttal` when a risk is unresolved. The report shows "Unresolved."
 - `critic[].evidence` lists the ids behind a risk (claim `risk-<n>`). A `high` risk needs at least one.
+- `verdict.pivot` is required for PIVOT when a pivot beats the current score. Leave it out when none does, and say so in the summary.
+- On a follow-up run, `follows.projected` holds the projected score from the earlier run, so the report can show projected vs actual.
 - `follows` is set only on a follow-up run that tests an earlier run's pivot. The report links back to it.
 
 ```json
@@ -18,11 +20,14 @@ Conventions:
   "mode": "scratch | expertise | idea | compete",
   "depth": "quick | deep",
   "date": "2026-10-17",
-  "follows": {"title": "Earlier run this one follows up", "verdict": "PIVOT 61", "url": "../earlier-slug/report.html"},
+  "follows": {"title": "Earlier run this one follows up", "verdict": "PIVOT 61", "projected": 68, "url": "../earlier-slug/report.html"},
 
   "founder": {"budget": "under $1k", "skills": "web dev", "hours": "10/week", "risk": "side income", "channel": "online"},
 
-  "verdict": {"call": "GO | PIVOT | KILL", "score": 74, "summary": "Two or three sentences a busy person can act on."},
+  "verdict": {"call": "GO | PIVOT | KILL", "score": 74, "summary": "Two or three sentences a busy person can act on.",
+              "pivot": {"name": "Sell to agencies instead of store owners", "change": "buyer", "projected_score": 68,
+                        "scores": {"pain": 7, "willingness_to_pay": 7, "competition_gap": 6, "founder_fit": 7, "reachability": 6, "build_cost": 6},
+                        "raises": "competition_gap: no agency tool found (e40, e41)", "evidence": ["e40", "e41"]}},
 
   "opportunities": [
     {"name": "Receipt chaser for bookkeepers", "one_liner": "Auto-chases clients for missing receipts.",

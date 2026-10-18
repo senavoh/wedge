@@ -147,5 +147,5 @@ Your final message has exactly these parts:
 1. The verdict and the single best gap, in two or three sentences.
 2. The paths to `report.html` and `card.svg`.
 3. The next action: usually the 7-day test, or `wedge-watch` for an existing business.
-   - For a PIVOT, also offer once: "Want me to stress-test the pivot as a new run?" If yes, start a new `idea`-mode run with its own slug, read the old run only for leads (collect and verify fresh evidence), answer the old critic's risks with evidence, and set `follows` in `report.json`. Run at most one follow-up per original run, so the verdict isn't fished for.
+   - For a PIVOT that names a pivot, also offer once: "Want me to stress-test the pivot as a new run?" If yes, start a new `idea`-mode run with its own slug, read the old run only for leads (collect and verify fresh evidence), answer the old critic's risks with evidence, and set `follows` in `report.json` (with `projected` from the old run's `verdict.pivot`). If the follow-up scores below its projection, say which assumption was wrong. Run at most one follow-up per original run, so the verdict isn't fished for.
 4. In `quick`, one line offering the extras: "Want a deep run, the landing page, or the comparison and outreach drafts?"
