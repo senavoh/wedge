@@ -26,7 +26,7 @@ Scripts are in the `wedge` skill's `scripts/` folder, usually `../wedge/scripts/
    - `fetch.py hn "<seed>" --limit 30`
    - Add `appstore-search` for consumer or mobile angles, and `github-issues` for developer or tool angles.
    - Quick depth: 8 seeds. Deep depth: all of them.
-3. **Digest:** `signals.py ideas/<slug>/raw/scout.jsonl --top 10 > ideas/<slug>/signals-scout.md`. Read the digest, not the raw file.
+3. **Digest:** `signals.py ideas/<slug>/raw/scout.jsonl > ideas/<slug>/signals-scout.md`. Read the digest, not the raw file. Use `--find "terms"` for specific quotes.
 4. **Cluster** the wish, switching and price signals into candidate niches. A niche is a specific buyer with a specific job, such as "independent bookkeepers reconciling client receipts". "Accounting software" is too broad to count.
 5. **Use web search to fill gaps** the fetchers can't reach: Google Play, G2 and Capterra snippets, Product Hunt and niche forums. Take quotes only from pages you actually opened.
 6. **Shortlist** 3 niches (quick) or 6 to 8 (deep). Drop any that fail the founder's constraints. Say why each one was dropped.

@@ -175,6 +175,7 @@ code { font-family: var(--mono); font-size: .92em; }
 .verdict--go { background: var(--ok-bg); color: var(--ok); }
 .verdict--pivot { background: var(--warn-bg); color: var(--warn); }
 .verdict--kill { background: var(--bad-bg); color: var(--bad); }
+.verdict--inconclusive { background: var(--sunk); color: var(--mute); }
 .verdict--lg { font-size: 18px; padding: 10px 16px; border-radius: 10px; }
 
 /* skills */

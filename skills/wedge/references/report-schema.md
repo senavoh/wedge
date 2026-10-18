@@ -3,6 +3,7 @@
 `report.py` renders whatever is present and skips empty sections, so a quick run can leave out `first_10`, `cost`, `launch` and `features` if they weren't done. Evidence is referenced by `id` from `evidence.jsonl`, never pasted inline.
 
 Conventions:
+- The gap must rest on customer quotes. Quotes marked `"official": true` don't count toward the gap or any `pain-` claim.
 - Give the evidence behind `gap.evidence` the claim `"gap"` in `evidence.jsonl`. It needs two sources from different URLs to show as verified. One quote can back several claims, so use a list rather than copying it: `"claim": ["pain-caps", "gap"]`.
 - `features.rows[].values` takes `yes`, `no`, `partial` or `unknown`. Use `unknown` rather than guessing.
 - `pains[].by_competitor` can name products that aren't in `competitors`.

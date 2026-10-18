@@ -27,7 +27,9 @@ Inputs: `competitors.md`, `pains.md`, `gaps.md` and `critic.md`. For an existing
 6. **Trust signals.** List what competitors fail to show: transparent pricing, real support hours, uptime, a data export promise, a guarantee. List which ones you can credibly show from day one.
 7. **What to stop doing.** List the things competitors do that customers hate, and that a newcomer would be tempted to copy.
 
-## Ready-made assets: `ideas/<slug>/assets/`
+## Ready-made assets: `ideas/<slug>/assets/` (deep, or when asked)
+
+In `quick`, skip these and offer them in one line at the end.
 
 - `vs-<competitor>.md`: a fair comparison page draft. Don't invent claims about them; cite the pricing pages and docs.
 - `outreach.md`: 2 short messages for people who publicly complained. Be helpful, not spammy, and follow each community's self-promotion rules.

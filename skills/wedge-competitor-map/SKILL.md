@@ -24,7 +24,7 @@ Scripts are in the `wedge` skill's `scripts/` folder, usually `../wedge/scripts/
 3. **Feature coverage.** Choose 8 to 15 features the buyer actually cares about. Take them from the review and complaint language, not the vendors' feature lists. Mark each competitor `yes`, `no` or `partial`, based on its docs or pricing page.
 4. **Strengths and weaknesses.** Strengths come from what happy reviewers praise; weaknesses come from complaints. Cite both. `wedge-review-miner` goes deeper; here you only need enough to sketch each competitor.
 
-## Output: `ideas/<slug>/competitors.md`
+## Output: `ideas/<slug>/competitors.md` (short notes in quick mode, full detail in deep)
 
 - A table of name, URL, starting price, model (per seat, flat or usage), free option, contract, and headline.
 - One short section per competitor covering who it's really for, strong at, weak at, and evidence IDs.

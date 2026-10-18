@@ -8,7 +8,12 @@ instead of the raw dump, which keeps runs cheap. Every snippet is an exact
 sentence from the source plus its URL, so it can be quoted and verified.
 
 Usage:
-    python3 signals.py raw.jsonl [more.jsonl ...] [--names "Acme,Globex"] [--top 8] [--json out.json]
+    python3 signals.py raw.jsonl [more.jsonl ...] [--names "Acme,Globex"] [--top 5] [--json out.json]
+    python3 signals.py raw/*.jsonl --find "renewal,price increase" [--limit 15]
+
+--find prints only the exact sentences that contain any of the terms, each
+with its URL and date, ready to paste into evidence.jsonl. Use it instead of
+opening raw files: it is much cheaper than reading whole pages.
 """
 import argparse
 import collections
@@ -48,7 +53,7 @@ SENT_RE = re.compile(r"(?<=[.!?])\s+|\n+")
 def sentences(text):
     for s in SENT_RE.split(text or ""):
         s = s.strip().lstrip("#*->\\ ").strip()
-        if 25 <= len(s) <= 400:
+        if 25 <= len(s) <= 300:
             yield s
 
 
@@ -135,15 +140,42 @@ def to_markdown(d):
     return "\n".join(out) + "\n"
 
 
+def find(records, terms, limit=15):
+    """Print exact sentences containing any term, complaints first, then newest."""
+    rxs = [re.compile(re.escape(t), re.I) for t in terms]
+    pain = [rx for v in COMPILED.values() for rx in v]
+    seen, hits = set(), []
+    for r in records:
+        body = " ".join(x for x in (r.get("title"), r.get("text")) if x)
+        for snt in sentences(body):
+            if any(rx.search(snt) for rx in rxs):
+                k = snt.lower()[:80]
+                if k in seen:
+                    continue
+                seen.add(k)
+                is_pain = 1 if any(rx.search(snt) for rx in pain) else 0
+                low_star = 1 if (r.get("rating") or 5) <= 2 else 0
+                hits.append((is_pain + low_star, r.get("date") or "", snt, r.get("url"), r.get("source")))
+    hits.sort(key=lambda h: (h[0], h[1]), reverse=True)
+    for _, d, snt, url, src in hits[:limit]:
+        print('"%s"\n    %s %s %s' % (snt, src, d, url))
+    sys.stderr.write("signals: %d matching sentences, showing %d\n" % (len(hits), min(limit, len(hits))))
+    return 0
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(description="Wedge: digest raw records into cited pain signals.")
     p.add_argument("files", nargs="+")
     p.add_argument("--names", default="", help="comma-separated competitor names to count")
-    p.add_argument("--top", type=int, default=8, help="quotes kept per category")
+    p.add_argument("--top", type=int, default=5, help="quotes kept per category (default 5)")
+    p.add_argument("--find", help="comma-separated terms: print matching sentences with URLs instead of a digest")
+    p.add_argument("--limit", type=int, default=15, help="max sentences for --find (default 15)")
     p.add_argument("--json", help="also write the full digest as JSON here")
     p.add_argument("--topic", default="", help="comma-separated topic words; drop records that mention none of these or of --names")
     a = p.parse_args(argv)
     records = load(a.files)
+    if a.find:
+        return find(records, [t.strip() for t in a.find.split(",") if t.strip()], a.limit)
     # --topic filters; competitor --names count as on-topic too, but never filter on their own.
     terms = [t.strip().lower() for t in (a.topic + "," + a.names).split(",") if t.strip()] if a.topic.strip() else []
     if terms:

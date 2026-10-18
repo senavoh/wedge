@@ -23,7 +23,9 @@ Anchor to the price ranges in `competitors.md`. Recommend one launch price and a
 
 Choose the cheapest stack that's good enough and list each item with its monthly cost, free tiers first. Typical options: Cloudflare Pages, Vercel or GitHub Pages for hosting; Supabase or Neon free tiers for a database; Stripe or Lemon Squeezy for payments; Resend or SES for email. Free tiers change, so check current limits with a quick search and say when you checked.
 
-## 4. Landing page: `ideas/<slug>/landing/index.html`
+## 4. Landing page: `ideas/<slug>/landing/index.html` (deep, or when asked)
+
+In `quick`, skip it and offer it at the end.
 
 One self-contained HTML file with no build step, deployable to any static host:
 - The headline is the positioning line from `win-plan.md`.

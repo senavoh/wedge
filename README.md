@@ -37,7 +37,7 @@ Ask an AI for business ideas and you get confident, generic, unsourced lists. We
 
 - **Evidence or it didn't happen.** Every pain point and claim about a competitor links to a real review, thread or pricing page. `verify.py` re-fetches each source and checks that the quote is actually there. A claim needs two verified sources from different URLs, or it's labeled **unverified** and can't drive the verdict.
 - **It argues with itself.** A separate critic pass tries to kill the top idea (who already tried, a free incumbent, people who complain but won't pay) before anything is ranked.
-- **It's honest.** The verdict is **GO**, **PIVOT** or **KILL**, with the reasoning shown.
+- **It's honest.** The verdict is **GO**, **PIVOT** or **KILL**, with the reasoning shown. If it couldn't reach any real customers' words (every source blocked or empty), it says **INCONCLUSIVE** and tells you how to finish, instead of guessing.
 - **It tells you how to win, not only what to build.** It finds switching triggers, positioning in customers' own words, offers that pull switchers, where unhappy customers hang out, and drafts comparison pages and outreach.
 - **It's free to run.** No API keys, no paid data. The scripts use only the Python standard library.
 - **It picks up where it left off.** Everything is saved in `ideas/<slug>/`, so a run can continue tomorrow or in a different agent.
@@ -142,6 +142,16 @@ The agent runs these for you. They live in `skills/wedge/scripts/` and you can r
 | `domain.py` | Checks domain availability through public RDAP, and reports "unknown" instead of guessing. |
 | `state.py` | Saves progress so any agent can resume a run. |
 | `report.py` | Renders the HTML report and the share card. |
+
+## How much does a run cost?
+
+Wedge uses your agent's normal usage. There are no API keys and no paid data. It's built to keep that usage low:
+
+- **Quick mode is the default.** Deep mode runs only when you ask for it.
+- **Raw pages never enter the conversation.** The scripts save them to disk, and the agent reads a short digest instead. `signals.py --find` pulls out only the sentences worth quoting.
+- **Extras are on request.** In quick mode, the landing page and the outreach and comparison drafts are offered at the end instead of always built.
+
+Measured across several test runs with the same model, a quick run used about **100k tokens** and took 2 to 6 minutes. A run that hits the evidence floor (150+ records, 15+ customer quotes) costs about the same, because the extra pages are saved to disk, not read. A deep run, which scouts 7 niches and reads over 1,400 pages, took 29 minutes and used a few times that. To spend even less, run a single skill, for example "use wedge-review-miner on Jobber and Housecall Pro".
 
 ## Data and ethics
 

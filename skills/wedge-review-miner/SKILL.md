@@ -12,7 +12,7 @@ Scripts are in the `wedge` skill's `scripts/` folder, usually `../wedge/scripts/
 ## Steps
 
 1. **Collect** for each competitor in `competitors.md`, appending to `ideas/<slug>/raw/reviews.jsonl`:
-   - **App Store:** `fetch.py appstore-search "<name>"` to get the `app_id`, then `fetch.py appstore-reviews <app_id> --max-rating 3 --pages 5`. The 1 to 3 star reviews are where the gaps are. Apple's feed is sometimes empty for an hour or more. If it is, move on and retry at the end of the run.
+   - **App Store:** `fetch.py appstore-search "<name>"` (no `--out`: the preview shows each `app_id` and rating) to get the `app_id`, then `fetch.py appstore-reviews <app_id> --max-rating 3 --pages 5`. The 1 to 3 star reviews are where the gaps are. Apple's feed is sometimes empty for an hour or more. If it is, move on and retry at the end of the run.
    - **Reddit:** `fetch.py reddit "<name>" --limit 60` plus `"<name> alternative"`, `"<name> expensive"`, `"leaving <name>"`. Fetch the comments of the best threads with `fetch.py reddit-thread <url>`. Restrict to the buyer's own communities with `--sub <subreddit>` (for example `--sub doggrooming`), which cuts the noise sharply. If Reddit refuses the request, follow the fallback in the `wedge` skill.
    - **Hacker News:** `fetch.py hn "<name>"`.
    - **GitHub** (open-source or dev tools): `fetch.py github-issues "repo:<owner>/<repo> is:issue sort:reactions-+1-desc"`.
@@ -22,12 +22,12 @@ Scripts are in the `wedge` skill's `scripts/` folder, usually `../wedge/scripts/
      - Use `pages` for any batch of URLs (several apps' review pages, all competitors' pricing pages). One parallel call is much faster than many single `page` calls.
    - **G2, Capterra, Trustpilot, Google Play and Yelp:** use web search, for example `"<name> reviews cons"` or `site:g2.com <name>`, and quote only from pages you opened. Don't scrape those sites directly; their terms forbid it.
    - **Local businesses** (gyms, plumbers, salons): search for `"<name> reviews"` and Google Maps or Yelp review snippets, and include the city.
-   - Quick depth: about 100 records total. Deep depth: as many as the sources give, usually 300 to 1,500.
-2. **Digest:** `signals.py ideas/<slug>/raw/reviews.jsonl --names "<Comp A>,<Comp B>,..." --top 12 --json ideas/<slug>/signals.json > ideas/<slug>/signals.md`. Read `signals.md`. Open raw records only to pull a specific quote.
+   - Quick depth: at least 150 records total (they stay on disk, so this is cheap). Deep depth: as many as the sources give, usually 300 to 1,500.
+2. **Digest:** `signals.py ideas/<slug>/raw/reviews.jsonl --names "<Comp A>,<Comp B>,..." --json ideas/<slug>/signals.json > ideas/<slug>/signals.md`. Read `signals.md`. To pull specific quotes, use `signals.py raw/*.jsonl --find "renewal,price increase" --limit 40`. Don't open or print raw records.
 3. **Theme.** Merge signal categories into 4 to 8 pain themes in the customer's language, such as "Price jumps at renewal" or "Can't export my own data". For each theme:
    - **Severity:** high (people leave or threaten to), medium (daily friction), or low (mild annoyance).
    - **Count per competitor:** this feeds the heat map.
-   - **At least 2 exact quotes from different URLs,** added to `evidence.jsonl` as `claim: pain-<theme-slug>`.
+   - **At least 3 exact customer quotes from 2 or more different URLs,** added to `evidence.jsonl` as `claim: pain-<theme-slug>`. Themes with fewer stay in the report marked unverified.
 4. **Look for silence too.** Are there features nobody complains about because nobody offers them? Note them as hypotheses, not facts.
 
 ## Output: `ideas/<slug>/pains.md`

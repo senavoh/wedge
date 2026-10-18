@@ -12,7 +12,9 @@ TMP=""
 cleanup() { if [ -n "$TMP" ]; then rm -rf "$TMP"; fi; }
 trap cleanup EXIT
 
-if [ -d "$(dirname "$0")/skills/wedge" ]; then
+# Use local files only when this script is run from a checkout (./install.sh).
+# When piped (curl ... | sh), $0 is the shell, so always download from GitHub.
+if [ -f "$0" ] && [ "$(basename "$0")" = "install.sh" ] && [ -d "$(dirname "$0")/skills/wedge" ]; then
   SRC="$(cd "$(dirname "$0")" && pwd)/skills"
 else
   command -v git >/dev/null 2>&1 || { echo "wedge: git is required"; exit 1; }

@@ -224,9 +224,12 @@ def main(argv=None):
     official = set()
     for r in rows:
         for c in claims_of(r):
+            # Customer pain and the gap must come from customers, not vendors' own pages.
+            if r.get("official") and c.startswith(("gap", "pain")):
+                continue
             if r.get("verified") in ("yes", "captured"):
                 by_claim[c].add(r.get("url"))
-                if r.get("official"):
+                if r.get("official") and not c.startswith(("gap", "pain")):
                     official.add(c)  # a vendor's own page is proof of its own price or wording
     claims = sorted({c for r in rows for c in claims_of(r)})
     weak = [c for c in claims if len(by_claim[c]) < a.min_sources and c not in official]
@@ -240,7 +243,19 @@ def main(argv=None):
     print("Claims: %d of %d meet the %d-source rule" % (len(claims) - len(weak), len(claims), a.min_sources))
     for c in weak:
         print("  UNVERIFIED claim: %s (%d verified source%s)" % (c, len(by_claim[c]), "" if len(by_claim[c]) == 1 else "s"))
-    if a.strict and (counts["no"] or counts["partial"] or counts["unreachable"] or weak):
+    ok = [r for r in rows if r.get("verified") in ("yes", "captured")]
+    customer = [r for r in ok if not r.get("official")]
+    print("Evidence: %d customer quote%s, %d vendor quote%s (vendor pages back prices and features only)"
+          % (len(customer), "" if len(customer) == 1 else "s", len(ok) - len(customer), "" if len(ok) - len(customer) == 1 else "s"))
+    if not customer:
+        print("  WARNING: no customer quotes. Pain and the gap are unproven; the verdict should be INCONCLUSIVE "
+              "unless the user supplies reviews or Reddit access (see references/scoring.md).")
+    elif len(customer) < 15:
+        print("  WARNING: only %d customer quotes; the evidence floor is 15. Fetch more review pages and run "
+              "another signals.py --find pass, or explain the shortfall in the report." % len(customer))
+    if "gap" not in claims:
+        print("  WARNING: no quotes carry the claim \"gap\". The report's gap statement has no evidence behind it.")
+    if a.strict and (counts["no"] or counts["partial"] or counts["unreachable"] or weak or not customer or "gap" not in claims):
         return 1
     return 0
 

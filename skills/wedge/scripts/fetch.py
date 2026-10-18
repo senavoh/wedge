@@ -16,7 +16,8 @@ Usage:
     python3 fetch.py pages URL1 URL2 URL3          # many pages in parallel
     python3 fetch.py links LIST_URL --match /support/topic/ | python3 fetch.py --out raw/r.jsonl pages --from -
 
-Add --out FILE to append to a JSONL file instead of printing.
+Always add --out FILE: records are appended there and nothing big is printed.
+Without --out you get a short preview (use --json for full JSONL on stdout).
 Python 3.8+ standard library only. No API keys required. Optional: GITHUB_TOKEN raises
 GitHub's rate limit; REDDIT_CLIENT_ID + REDDIT_CLIENT_SECRET (a free Reddit
 "script" app) use Reddit's official API where the public JSON is blocked.
@@ -411,9 +412,11 @@ def read_urls(items, from_file):
 
 def main(argv=None):
     p = argparse.ArgumentParser(description="Wedge: fetch customer voice from free sources.")
-    p.add_argument("--out", help="append JSONL to this file instead of stdout")
+    p.add_argument("--out", help="append JSONL to this file (recommended: keeps raw text out of your context)")
+    p.add_argument("--json", action="store_true", help="without --out, print full JSONL instead of a short preview")
     common = argparse.ArgumentParser(add_help=False)
     common.add_argument("--out", default=argparse.SUPPRESS, help="append JSONL to this file instead of stdout")
+    common.add_argument("--json", action="store_true", default=argparse.SUPPRESS, help="print full JSONL instead of a preview")
     sp = p.add_subparsers(dest="cmd", required=True)
     _add = sp.add_parser
     sp.add_parser = lambda *a, **k: _add(*a, parents=[common], **k)  # accept --out after the subcommand too
@@ -468,10 +471,21 @@ def main(argv=None):
     if args.out and os.path.dirname(args.out):
         os.makedirs(os.path.dirname(args.out), exist_ok=True)
     out = open(args.out, "a", encoding="utf-8") if args.out else sys.stdout
+    # Without --out, print a short preview: full page text in an agent's
+    # context is the single biggest waste of tokens in a run.
+    preview = not args.out and not getattr(args, "json", False)
     n = 0
     try:
         for r in gen():
-            out.write(json.dumps(r, ensure_ascii=False) + "\n")
+            if preview:
+                if n < 20:
+                    body = (r.get("title") or "") + (" | " if r.get("title") and r.get("text") else "") + (r.get("text") or "")
+                    meta = " ".join("%s=%s" % (k, v) for k, v in (r.get("meta") or {}).items()
+                                    if k in ("app_id", "ratings_count", "price", "subreddit", "comments") and v not in (None, ""))
+                    rating = (" rating=%s" % r["rating"]) if r.get("rating") is not None else ""
+                    out.write("%s  %s  %s%s %s\n    %s\n" % (r.get("source"), r.get("date") or "", r.get("url"), rating, meta, body[:160]))
+            else:
+                out.write(json.dumps(r, ensure_ascii=False) + "\n")
             n += 1
     except urllib.error.HTTPError as e:
         sys.stderr.write("wedge fetch: %s returned HTTP %s. Fall back to web search for this source.\n" % (args.cmd, e.code))
@@ -483,6 +497,9 @@ def main(argv=None):
         if args.out:
             out.close()
     sys.stderr.write("wedge fetch: %d records from %s\n" % (n, args.cmd))
+    if preview and n:
+        sys.stderr.write("wedge fetch: preview only%s. Re-run with --out FILE to save the records.\n"
+                         % (" (first 20)" if n > 20 else ""))
     if n == 0:
         sys.stderr.write("wedge fetch: no results. If no error was printed above, the source answered but had nothing; try broader words.\n")
     return 0

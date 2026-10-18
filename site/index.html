@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="styles.css?v=8">
+<link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -173,7 +173,7 @@
   <div class="wrap">
     <header class="head">
       <h2 id="modes-title" class="h2">Start<br><span>wherever you are.</span></h2>
-      <p class="lede">Four ways in. Choose quick (about 10 minutes) or deep (the full run).</p>
+      <p class="lede">Four ways in. Quick is the default, a few minutes. Ask for deep when you want the full run.</p>
     </header>
     <ul class="modes">
       <li><span class="modes__k">From scratch</span><p class="modes__q">“Find me a business I can start.”</p><p>Five quick questions about your budget, skills and time, then niches with real demand that fit you.</p></li>
@@ -193,7 +193,7 @@
     </header>
     <ol class="steps">
       <li><span class="steps__n">1</span><h3>Research</h3><p>Asks about you, finds niches, maps competitors with real prices, and reads hundreds of reviews and complaint threads.</p></li>
-      <li><span class="steps__n">2</span><h3>Decide</h3><p>Scores each opportunity on six factors with the reasoning shown, then a critic tries to kill the winner. Verdict: GO, PIVOT or KILL.</p></li>
+      <li><span class="steps__n">2</span><h3>Decide</h3><p>Scores each opportunity on six factors with the reasoning shown, then a critic tries to kill the winner. Verdict: GO, PIVOT or KILL, or INCONCLUSIVE if it couldn't reach real customers.</p></li>
       <li><span class="steps__n">3</span><h3>Win</h3><p>Turns competitor weaknesses into a plan: when customers switch, what to offer them, where to find them, and what to build first.</p></li>
       <li><span class="steps__n">4</span><h3>Prove</h3><p>Checks every quote, then writes one shareable report, a launch kit with a 7-day test, and a share image.</p></li>
     </ol>
@@ -205,7 +205,8 @@
       <span class="verdict verdict--go">GO</span>
       <span class="verdict verdict--pivot">PIVOT</span>
       <span class="verdict verdict--kill">KILL</span>
-      <p>Honest verdicts. It will tell you to pivot or walk away, and show why.</p>
+      <span class="verdict verdict--inconclusive">INCONCLUSIVE</span>
+      <p>Honest verdicts. It will tell you to pivot or walk away, and show why. No customer evidence means no guess.</p>
     </div>
   </div>
 </section>
@@ -363,7 +364,8 @@
       <details><summary>Which agents does it work with?</summary><p>Claude Code, Codex, Cursor, Gemini CLI, OpenCode, and any agent that reads SKILL.md files.</p></details>
       <details><summary>Can it make things up?</summary><p>It can try, but it won't get far. Every quote is re-checked against its source. Anything that can't be confirmed is labeled, and unconfirmed claims can't drive the verdict.</p></details>
       <details><summary>Does it scrape sites like G2 or Capterra?</summary><p>No. Those only come in through ordinary web search results, which respects their terms. Direct sources are Reddit, Hacker News, App Store reviews, GitHub issues and public pricing pages.</p></details>
-      <details><summary>How long does a run take?</summary><p>Quick mode takes about 5 to 10 minutes. Our timed deep run took 29 minutes: it scouted 7 niches, read over 1,400 pages and checked 78 quotes. You can stop and resume any run.</p></details>
+      <details><summary>How many tokens does it use?</summary><p>A quick run used about 100k tokens in our tests, on your agent's normal usage. Raw web pages are saved to disk instead of read into the conversation, and extras like the landing page are only built when you ask.</p></details>
+      <details><summary>How long does a run take?</summary><p>Quick mode took 2 to 6 minutes in our tests. Our timed deep run took 29 minutes: it scouted 7 niches, read over 1,400 pages and checked 78 quotes. You can stop and resume any run.</p></details>
       <details><summary>Can it help a business I already run?</summary><p>Yes. "Beat my competitors" mode skips the idea hunt and goes straight to what competitors' customers complain about and how to win them over.</p></details>
     </div>
   </div>

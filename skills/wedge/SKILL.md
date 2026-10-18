@@ -36,7 +36,7 @@ python3 $W/fetch.py --out ideas/<slug>/raw/pricing.jsonl pages https://a.com/pri
 |---|---|
 | `state.py` | Creates `ideas/<slug>/`, tracks finished stages, tells you what's next. Use it to resume. |
 | `fetch.py` | Pulls raw customer voice: `hn`, `reddit`, `reddit-thread`, `appstore-search`, `appstore-reviews`, `github-issues`, `page`, and `pages` (many URLs in parallel). `links` lists a page's links to feed into `pages`. Outputs JSONL. |
-| `signals.py` | Turns raw JSONL into a short, cited digest of pain and demand signals. Read this instead of raw dumps. |
+| `signals.py` | Turns raw JSONL into a short, cited digest of pain and demand signals. Read this instead of raw dumps. `--find "terms"` prints only the matching sentences with URLs, ready to quote. |
 | `verify.py` | Fetches every cited source and checks the quote is really there, then applies the two-source rule. |
 | `domain.py` | Checks domain and GitHub handle availability through public RDAP. |
 | `report.py` | Renders `report.json` + `evidence.jsonl` into `report.html` and a `card.svg` share card. |
@@ -44,6 +44,7 @@ python3 $W/fetch.py --out ideas/<slug>/raw/pricing.jsonl pages https://a.com/pri
 If a fetcher fails (network, rate limit, blocked source), fall back to your own web search and fetch tools for that source and keep going. Don't stop the run.
 
 - **Reddit** blocks anonymous requests from many networks. If `fetch.py reddit` says so, either ask the user to set `REDDIT_CLIENT_ID` and `REDDIT_CLIENT_SECRET` (a free app at reddit.com/prefs/apps), or search with `site:reddit.com <words>` and read threads with your own fetch tool. Quotes you get that way may end up `unreachable` in `verify.py`. That's acceptable, but say so in the report.
+- **If no customer-voice source works** (Reddit blocked, App Store feeds empty, no marketplace with public reviews), stop collecting and ask the user once. They can paste 10 to 20 reviews or complaints they've seen, add Reddit API credentials, or tell you to finish without them. Save pasted text with its source to `raw/user-provided.jsonl`, mark those quotes `"source": "user-provided"`, and say so in the report. If they choose to finish without, the verdict is INCONCLUSIVE (see `references/scoring.md`).
 - **A page that returns only a cookie or consent banner,** or under about 300 characters of real text, counts as not fetched. Don't quote search snippets of it as fact.
 
 ## Start a run
@@ -53,8 +54,24 @@ If a fetcher fails (network, rate limit, blocked source), fall back to your own 
    - `expertise`: start from what they know. "I'm a dental hygienist. What could I build?"
    - `idea`: stress-test their idea. "Is a dog-walking app for apartment buildings good?"
    - `compete`: they already have a business. "How do I take customers from X?"
-2. **Pick the depth.** `quick` takes about 10 minutes. It covers 3 niches in `scratch` and `expertise` modes, 3 to 5 competitors in total, about 100 to 300 raw records, and a short critic pass. `deep` is the full run. Default to `deep` unless the user wants speed.
+2. **Pick the depth. Default to `quick`.** Use `deep` only when the user asks for it ("deep", "thorough", "full run") or the decision is clearly high-stakes, such as quitting a job or spending real money. `quick` takes about 5 to 10 minutes. It covers 3 niches in `scratch` and `expertise` modes, 3 to 5 competitors in total, about 100 to 300 raw records, and a short critic pass. `deep` is the full run. Tell the user which depth you picked and that they can ask for deep.
 3. **Create the run folder:** `state.py init <slug> --mode <mode> --depth <depth>`. If it already exists, read `state.json` and continue from the next unfinished stage. Never redo finished stages unless the user asks.
+
+## Keep it lean (save the user's tokens)
+
+These rules apply at every depth. Follow them strictly in `quick`.
+
+- **Never print or open raw records.** Always fetch with `--out`. To find quotable sentences, use `signals.py raw/*.jsonl --find "term1,term2" --limit 40`, which prints only the matching sentences with their URLs, complaints first. One search with a higher `--limit` beats several small ones. Don't write your own scripts to search raw files, and don't `cat` or read `raw/*.jsonl`.
+- **Batch fetches** with `pages` (see Scripts). Each separate command costs a round trip. For more than about 100 URLs, split the list into batches of about 100 or run the command in the background, so it doesn't hit your tool's time limit.
+- **Write each fact once.** In `quick`, keep each stage file (`competitors.md`, `pains.md`, `gaps.md` and so on) to short bullet notes of about 15 lines, and put the full content only in `report.json`. In `deep`, stage files can be complete.
+- **Extras on request.** In `quick`, skip the landing page and the drafts in `assets/`. At the end, offer them in one line.
+- **Search with specific phrases.** Use `--find` with phrases customers would actually write ("price went up", "cancel my subscription", "no-shows"), not single generic words like "price" or "support", which match noise.
+- **Lean means read less, not know less.** Fetching is cheap because records go to disk, not into your context, so gather plenty before you choose quotes. Evidence floor for `quick`:
+  - at least **150 raw records** across sources (more in `deep`);
+  - at least **3 customer quotes from 2 or more different URLs** for each main pain theme you report, and for the gap;
+  - at least **15 customer quotes** in total.
+
+  Vendor pages (`"official": true`) back prices and features only, never pain or the gap. If you're short, fetch more review pages and run another `--find` pass before writing anything. If sources truly run dry (Reddit blocked, empty App Store feeds), say so in the report rather than padding it.
 
 ## The pipeline
 
@@ -114,7 +131,7 @@ Every quote you use goes in `ideas/<slug>/evidence.jsonl`, one JSON object per l
 
 ## Verdict and scoring
 
-`references/scoring.md` is the single source of truth for the six scores, the total, and the GO / PIVOT / KILL thresholds. In short: GO means a verified gap that people will pay to fix and that you can reach. PIVOT means the pain is real but this angle doesn't work, so name the one that would. KILL means the pain is weak, or nobody will pay to fix it. Saying KILL plainly is a feature, not a failure.
+`references/scoring.md` is the single source of truth for the six scores, the total, and the GO / PIVOT / KILL / INCONCLUSIVE thresholds. In short: GO means a verified gap that people will pay to fix and that you can reach. PIVOT means the pain is real but this angle doesn't work, so name the one that would. KILL means the pain is weak, or nobody will pay to fix it. Saying KILL plainly is a feature, not a failure.
 
 Never KILL only because sources were unreachable for verification. If the pain evidence exists but couldn't be re-checked, say that in the summary and cap the verdict at PIVOT.
 
@@ -124,4 +141,10 @@ Write the way a sharp operator talks: direct, specific, no hype. Use customers' 
 
 ## When done
 
-Tell the user the verdict and the single best gap in two or three sentences. Then give the paths to `report.html` and `card.svg`, and suggest the next action: usually the 7-day test, or `wedge-watch` for an existing business.
+Before you reply, check `verify.py`'s output: no WARNING lines, and the evidence floor above is met (or the shortfall is explained in the report).
+
+Your final message has exactly these parts:
+1. The verdict and the single best gap, in two or three sentences.
+2. The paths to `report.html` and `card.svg`.
+3. The next action: usually the 7-day test, or `wedge-watch` for an existing business.
+4. In `quick`, one line offering the extras: "Want a deep run, the landing page, or the comparison and outreach drafts?"

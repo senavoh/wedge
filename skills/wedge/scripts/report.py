@@ -93,7 +93,7 @@ def bar(v, mx=10):
 def s_verdict(rep):
     v = rep.get("verdict") or {}
     call = (v.get("call") or "").upper()
-    cls = {"GO": "go", "PIVOT": "pivot", "KILL": "kill"}.get(call, "pivot")
+    cls = {"GO": "go", "PIVOT": "pivot", "KILL": "kill", "INCONCLUSIVE": "inconclusive"}.get(call, "pivot")
     f = rep.get("founder") or {}
     fit = "".join("<div><dt>%s</dt><dd>%s</dd></div>" % (E(k.replace("_", " ")), E(str(val))) for k, val in f.items() if val)
     return ('<div class="verdict %s"><div class="call">%s</div><div class="vtext"><p>%s</p>%s</div>%s</div>%s'
@@ -301,7 +301,7 @@ h4{margin:0 0 6px;font-size:15px;color:var(--ink)}.lede{color:var(--mute);margin
 .card,.verdict,.why,.q,.pain,.comp,.crit,.trig,.kv,.test,.launch,.scrollbox{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}
 .verdict{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;padding:28px}
 .call{font:600 22px ui-monospace,Menlo,monospace;letter-spacing:.06em;padding:16px 22px;border-radius:12px}
-.go .call{background:var(--okbg);color:var(--ok)}.pivot .call{background:var(--warnbg);color:var(--warn)}.kill .call{background:var(--badbg);color:var(--bad)}
+.inconclusive .call{background:var(--sunk);color:var(--mute)}.go .call{background:var(--okbg);color:var(--ok)}.pivot .call{background:var(--warnbg);color:var(--warn)}.kill .call{background:var(--badbg);color:var(--bad)}
 .vtext p{margin:0 0 8px;font-size:17px;color:var(--ink)}.score{color:var(--mute)!important;font-size:15px!important}.score b{font-size:28px;letter-spacing:-.03em;color:var(--ink)}
 dl.fit{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0}dl.fit div{background:var(--card);border:1px solid var(--line);padding:8px 14px;border-radius:12px}dl.fit dt{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute)}dl.fit dd{margin:0;font-weight:500;color:var(--ink)}
 .scroll{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}
@@ -420,7 +420,7 @@ def card(rep, ev):
     v = rep.get("verdict") or {}
     call = (v.get("call") or "").upper()
     fg, bg = {"GO": ("#16794a", "#e5f3eb"), "PIVOT": ("#9a6512", "#fbf0dc"),
-              "KILL": ("#b3261e", "#fbe7e5")}.get(call, ("#6f6d67", "#efeee9"))
+              "KILL": ("#b3261e", "#fbe7e5"), "INCONCLUSIVE": ("#6f6d67", "#efeee9")}.get(call, ("#6f6d67", "#efeee9"))
     gap = (rep.get("gap") or {}).get("statement") or rep.get("subtitle", "")
     # The card shows a customer's words: the shortest verified, non-vendor
     # quote behind the gap that is long enough to read as a sentence.

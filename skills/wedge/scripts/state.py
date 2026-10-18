@@ -28,6 +28,29 @@ def path(root, slug):
     return os.path.join(root, slug, "state.json")
 
 
+def find_root(root, slug):
+    """Find the ideas/ folder for a run from wherever the command is run.
+
+    Checks ./ideas, then parent folders, then whether we are already inside
+    ideas/ or inside the run folder itself.
+    """
+    if os.path.exists(path(root, slug)):
+        return root
+    here = os.path.abspath(os.getcwd())
+    while True:
+        cand = os.path.join(here, root)
+        if os.path.exists(path(cand, slug)):
+            return cand
+        if os.path.basename(here) == slug and os.path.exists(os.path.join(here, "state.json")):
+            return os.path.dirname(here)
+        if os.path.exists(path(here, slug)):
+            return here
+        parent = os.path.dirname(here)
+        if parent == here:
+            return root
+        here = parent
+
+
 def load(root, slug):
     try:
         with open(path(root, slug), encoding="utf-8") as f:
@@ -53,11 +76,13 @@ def main(argv=None):
     sp = p.add_subparsers(dest="cmd", required=True)
     a = sp.add_parser("init"); a.add_argument("slug")
     a.add_argument("--mode", choices=["scratch", "expertise", "idea", "compete"], default="scratch")
-    a.add_argument("--depth", choices=["quick", "deep"], default="deep")
+    a.add_argument("--depth", choices=["quick", "deep"], default="quick")
     a = sp.add_parser("done"); a.add_argument("slug"); a.add_argument("stage", choices=STAGES); a.add_argument("--note", default="")
     a = sp.add_parser("status"); a.add_argument("slug")
     sp.add_parser("list")
     a = p.parse_args(argv)
+    if a.cmd in ("done", "status"):
+        a.root = find_root(a.root, a.slug)
 
     if a.cmd == "init":
         os.makedirs(os.path.join(a.root, a.slug, "raw"), exist_ok=True)

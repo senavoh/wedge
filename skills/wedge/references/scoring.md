@@ -13,15 +13,17 @@ Score each axis from 0 to 10. Write one line of reasoning per score that cites e
 | **reachability** | Buyers are hidden and only reachable through gatekeepers | Reachable through paid ads | You can name 3+ free places where they gather and complain |
 | **build_cost** | Hardware, regulation or a big team | A few months of work | A weekend to a few weeks with free or cheap tools |
 
-**Total out of 100** = round(pain×2.5 + willingness_to_pay×2 + competition_gap×2 + founder_fit×1.5 + reachability×1.2 + build_cost×0.8)
+**Total out of 100** = pain×2.5 + willingness_to_pay×2 + competition_gap×2 + founder_fit×1.5 + reachability×1.2 + build_cost×0.8, rounded to the nearest whole number with .5 rounding up (59.5 → 60).
 
 Pain and willingness to pay carry the most weight on purpose: most ideas die because the pain isn't sharp enough or nobody will pay to fix it.
 
 ## Verdict thresholds
 
-Check them in this order:
+Use the pain score before any cap for verification: if pain evidence exists but couldn't be verified, judge the verdict on the evidence you saw, then mark it unverified. Check the verdicts in this order:
 
 - **GO:** total ≥ 65, the gap claim meets the two-source rule, willingness_to_pay ≥ 6, reachability ≥ 6, and no unresolved high-severity critic risk.
 - **PIVOT:** pain ≥ 6, but GO fails. Name the pivot: buyer, angle, price or channel.
-- **PIVOT (unverified):** pain evidence exists, but its sources were unreachable for re-checking, so pain is capped at 5. Don't KILL on that alone. Say verification is incomplete and what would complete it, for example adding Reddit API credentials.
+- **INCONCLUSIVE:** you couldn't reach any customer voice at all: every complaint source was blocked or empty, so you have zero customer quotes (vendor pages don't count). Don't guess a GO, PIVOT or KILL. Report what the competitor research did show (prices, crowding), say exactly which sources failed, and give the cheapest way to finish: Reddit API credentials, the user pasting 10 to 20 reviews they've seen, or a short customer-interview script.
+- **PIVOT (unverified):** pain evidence exists and would score 6 or more, but its sources were unreachable for re-checking, so the scored pain is capped at 5. Don't KILL on that alone. Say verification is incomplete and what would complete it, for example adding Reddit API credentials.
+- **Too little evidence to call:** if you found almost no customer complaints at all (not blocked, just absent), that is itself a finding: score pain low and the verdict will usually be KILL. Say plainly that the search found little pain.
 - **KILL:** anything else. Most often the pain is weak, nobody will pay to fix it, or a free incumbent covers it.

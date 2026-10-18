@@ -1,5 +1,22 @@
 # Changelog
 
+## 1.1.0 (2026-10-18)
+
+Uses fewer tokens by default.
+
+- Quick mode is the default; deep runs only when asked or clearly high-stakes.
+- `fetch.py` prints a short preview instead of raw records when `--out` is missing (preview shows app IDs and ratings).
+- `signals.py --find "terms"` prints only matching sentences with URLs, complaints and low-star reviews first. Digest defaults to 5 quotes per category.
+- "Keep it lean" rules in the skill: never read raw files, write each fact once, extras (landing page, drafts) on request in quick mode.
+- Gap and pain claims must rest on customer quotes; vendor pages only back price and feature claims.
+- Clearer verdict rule when evidence exists but can't be re-checked.
+- New INCONCLUSIVE verdict when no customer voice could be reached, and a fallback: ask the user to paste reviews or add Reddit access.
+- Evidence floor for quick runs: at least 150 raw records, 3 customer quotes per main pain theme, 15 in total. `verify.py` reports customer vs vendor quotes and warns when there are none, fewer than 15, or no gap evidence.
+- `state.py done/status` works from any folder inside the project, including the run folder.
+- Installer: a piped install (`curl … | sh`) always downloads from GitHub, even when run inside a copy of the repo.
+- getwedge.dev now deploys on Vercel; the GitHub Pages workflow is removed.
+- Measured: a quick run dropped from about 123k to about 100k tokens (runs: 99k, 102k, 93k, 102k). The 102k WordPress-backup run met the new evidence floor: 307 records, 19 customer quotes, every pain theme backed by 6–7 sources.
+
 ## 1.0.0 (2026-10-17)
 
 First release.
