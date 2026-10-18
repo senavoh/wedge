@@ -102,6 +102,8 @@ Each skill works on its own too: "Use wedge-review-miner on Jobber and Housecall
 npx skills add senavoh/wedge
 ```
 
+The `skills` installer needs Node.js 22 or newer. On older Node versions, use the install script below.
+
 **Claude Code plugin**
 
 ```text
