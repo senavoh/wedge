@@ -24,6 +24,7 @@ GitHub's rate limit; REDDIT_CLIENT_ID + REDDIT_CLIENT_SECRET (a free Reddit
 import argparse
 import base64
 import concurrent.futures
+import gzip
 import html
 import json
 import os
@@ -39,16 +40,34 @@ UA = "wedge/1.0 (+https://github.com/senavoh/wedge)"
 TIMEOUT = 20
 
 
+class _Redirect308(urllib.request.HTTPRedirectHandler):
+    """Python before 3.11 doesn't follow 308 (permanent redirect); many sites use it."""
+
+    def http_error_308(self, req, fp, code, msg, headers):
+        return self.http_error_302(req, fp, 302, msg, headers)
+
+
+_opener = urllib.request.build_opener(_Redirect308)
+
+
 def get(url, headers=None, retries=1):
-    hdrs = {"User-Agent": UA, "Accept": "*/*"}
+    hdrs = {"User-Agent": UA, "Accept": "*/*", "Accept-Encoding": "identity"}
     hdrs.update(headers or {})
     last = None
     for attempt in range(retries + 1):
         try:
             req = urllib.request.Request(url, headers=hdrs)
-            with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
+            with _opener.open(req, timeout=TIMEOUT) as r:
+                body = r.read()
+                # Some servers compress even when asked not to; decode it
+                # instead of saving binary junk.
+                if r.headers.get("Content-Encoding", "").lower() == "gzip" or body[:2] == b"\x1f\x8b":
+                    try:
+                        body = gzip.decompress(body)
+                    except OSError:
+                        pass
                 charset = r.headers.get_content_charset() or "utf-8"
-                return r.read().decode(charset, errors="replace")
+                return body.decode(charset, errors="replace")
         except urllib.error.HTTPError as e:
             last = e
             if e.code in (429, 503) and attempt < retries:
@@ -303,7 +322,9 @@ def page_text(raw):
 def page(url, max_chars=60000):
     raw = get(url, {"Accept": "text/html,application/xhtml+xml"})
     title, text = page_text(raw)
-    yield rec("web", url, title=title, text=text[:max_chars], chars=len(text))
+    host = urllib.parse.urlparse(url).netloc.lower()
+    host = host[4:] if host.startswith("www.") else host
+    yield rec(host or "web", url, title=title, text=text[:max_chars], chars=len(text))
 
 
 # --- cli -------------------------------------------------------------------
@@ -444,6 +465,8 @@ def main(argv=None):
         "pages": lambda: pages(read_urls(args.urls, args.from_file), args.max_chars, args.workers, args.per_host),
     }[args.cmd]
 
+    if args.out and os.path.dirname(args.out):
+        os.makedirs(os.path.dirname(args.out), exist_ok=True)
     out = open(args.out, "a", encoding="utf-8") if args.out else sys.stdout
     n = 0
     try:

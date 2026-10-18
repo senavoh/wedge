@@ -1,0 +1,892 @@
+{
+ "title": "Update-proof event ticketing for WordPress agencies",
+ "subtitle": "Scratch-mode deep run. Scouted 7 niches from 23 HN seeds and marketplace reviews of 31 Shopify apps and 18 WordPress plugins, then mined 842 records on WordPress event ticketing.",
+ "mode": "scratch",
+ "depth": "deep",
+ "date": "2026-10-17",
+ "founder": {
+  "budget": "under $1k",
+  "skills": "web apps (with AI help)",
+  "hours": "10/week",
+  "risk": "side income first",
+  "channel": "online only"
+ },
+ "verdict": {
+  "call": "PIVOT",
+  "score": 55,
+  "summary": "The pain is real and well documented: on WordPress.org, small organizers and their agencies say events plugin updates break ticket sales, paid support goes silent and renewals jump 50%. But the obvious fix, a hosted checkout that looks native on WordPress, already exists (Ticket Spot, with only 40+ installs; Ticket Tailor's embed). Nonprofits get ticketing free from Zeffy, and the WordPress.org forums forbid promotion, so organizer-direct scores 55. Pivot to WordPress agencies managing many small-org sites (57 on paper, untested) and run the 7-day agency test before building anything."
+ },
+ "opportunities": [
+  {
+   "name": "Update-proof ticketing for WordPress agencies (pivot A′)",
+   "one_liner": "Hosted ticket checkout that looks native on clients' WordPress sites, sold to agencies at one flat price.",
+   "score": 57,
+   "scores": {
+    "pain": 7,
+    "willingness_to_pay": 6,
+    "competition_gap": 4,
+    "founder_fit": 6,
+    "reachability": 5,
+    "build_cost": 6
+   },
+   "why": "The agency buyer has evidence behind it: agencies report updates crashing client sites (a1, a2), are pulling plugins from the sites they built (a3), and hold multiple licences (a4). Ticket Spot already sells the organizer-facing version (k1), so the gap is narrow (4). Reach is unproven: WordPress.org forums forbid promotion (k8). A hypothesis to test, not a proven gap.",
+   "evidence": [
+    "a1",
+    "a2",
+    "a3",
+    "a4",
+    "k1",
+    "k8"
+   ]
+  },
+  {
+   "name": "Shopify packing-slip and invoice printing",
+   "one_liner": "Reliable bulk order printing for Order Printer refugees.",
+   "score": 57,
+   "scores": {
+    "pain": 6,
+    "willingness_to_pay": 5,
+    "competition_gap": 3,
+    "founder_fit": 8,
+    "reachability": 6,
+    "build_cost": 8
+   },
+   "why": "172 of 380 Order Printer reviews are 1-star (s4, s5), but Order Printer Pro is rated 4.9 across 2,989 reviews. Scored at scout depth. Pain is capped at 6 because the evidence is a single review page, short of the rubric's 2+ sources for 7+. Reach is held at 6 because free places to pitch weren't checked at scout depth.",
+   "evidence": [
+    "s4",
+    "s5"
+   ]
+  },
+  {
+   "name": "Shopify digital-file and licence-key delivery",
+   "one_liner": "Simple digital delivery after SendOwl's price change.",
+   "score": 56,
+   "scores": {
+    "pain": 5,
+    "willingness_to_pay": 6,
+    "competition_gap": 3,
+    "founder_fit": 8,
+    "reachability": 6,
+    "build_cost": 8
+   },
+   "why": "SendOwl's price complaints (s10, s11) and regressions in Shopify's own app (s12), but Filemonk and Sky Pilot are rated 4.8 to 4.9. Scored at scout depth. Pain is capped at 6 because the evidence is a single review page, short of the rubric's 2+ sources for 7+. Reach is held at 6 because free places to pitch weren't checked at scout depth.",
+   "evidence": [
+    "s10",
+    "s11",
+    "s12"
+   ]
+  },
+  {
+   "name": "Update-proof ticket checkout for small WordPress organizers (A)",
+   "one_liner": "Hosted checkout and monitored ticket delivery, embedded natively in the organizer's own WordPress site.",
+   "score": 55,
+   "scores": {
+    "pain": 7,
+    "willingness_to_pay": 6,
+    "competition_gap": 3,
+    "founder_fit": 6,
+    "reachability": 5,
+    "build_cost": 6
+   },
+   "why": "Pain is strong and repeated by many authors across 8 plugins: updates break sales (r1, r2), support goes silent (r6, r8), renewal prices jump (r9, r10). Buyers already pay $99 to $399/yr (c2, c4). But the critic found Ticket Spot already selling this exact pitch with 40+ installs (k1, k2), Ticket Tailor claims an embedded WordPress checkout (k5), and Zeffy is free for nonprofits (k7). Gap 3, reach 5.",
+   "evidence": [
+    "r1",
+    "r2",
+    "r6",
+    "r9",
+    "r10",
+    "c2",
+    "k1",
+    "k2",
+    "k5",
+    "k7"
+   ]
+  },
+  {
+   "name": "Shopify search after Search & Discovery regressions",
+   "one_liner": "Exact-match/SKU search for small Shopify catalogs.",
+   "score": 55,
+   "scores": {
+    "pain": 6,
+    "willingness_to_pay": 6,
+    "competition_gap": 3,
+    "founder_fit": 7,
+    "reachability": 6,
+    "build_cost": 5
+   },
+   "why": "Fresh 2026 complaints (s1, s2, s3) from one review page only. Loved paid apps rated 4.7 to 4.9 already exist (scout table). Scored at scout depth. Pain is capped at 6 because the evidence is a single review page, short of the rubric's 2+ sources for 7+. Reach is held at 6 because free places to pitch weren't checked at scout depth.",
+   "evidence": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "name": "Shopify bundles with variants",
+   "one_liner": "Bundles that handle variants without a stack of paid apps.",
+   "score": 53,
+   "scores": {
+    "pain": 6,
+    "willingness_to_pay": 6,
+    "competition_gap": 3,
+    "founder_fit": 6,
+    "reachability": 6,
+    "build_cost": 5
+   },
+   "why": "Shopify Bundles is rated 2.8 (s6, s7), but Simple Bundles and Bundler are both rated 4.9. Scored at scout depth. Pain is capped at 6 because the evidence is a single review page, short of the rubric's 2+ sources for 7+. Reach is held at 6 because free places to pitch weren't checked at scout depth.",
+   "evidence": [
+    "s6",
+    "s7"
+   ]
+  },
+  {
+   "name": "Cookie consent after free tiers went paid",
+   "one_liner": "A free-feeling cookie banner for WordPress.",
+   "score": 48,
+   "scores": {
+    "pain": 5,
+    "willingness_to_pay": 3,
+    "competition_gap": 3,
+    "founder_fit": 7,
+    "reachability": 6,
+    "build_cost": 7
+   },
+   "why": "The complaint is that it should be free (s16, s17), so willingness to pay is low, and compliance liability comes with it.",
+   "evidence": [
+    "s16",
+    "s17"
+   ]
+  }
+ ],
+ "gap": {
+  "statement": "Small organizers who sell tickets from their own WordPress site can't get a checkout that keeps working through updates and reliably delivers tickets at a small, predictable price, because every plugin runs checkout inside their WordPress (where updates break it) and every hosted option charges per ticket or drops an off-brand embed on their page. Critic note: Ticket Spot already targets this exact gap (k1), so the remaining opening is the agency buyer.",
+  "evidence": [
+   "r1",
+   "r2",
+   "r13",
+   "s15",
+   "r23",
+   "r24"
+  ]
+ },
+ "pains": [
+  {
+   "theme": "Updates break the site, events or checkout",
+   "severity": "high",
+   "summary": "About 45 threads say updates crashed sites or stopped ticket sales.",
+   "by_competitor": {
+    "The Events Calendar": 25,
+    "Events Manager": 7,
+    "Event Tickets": 6,
+    "Eventin": 4,
+    "Modern Events Calendar": 1,
+    "Event Espresso": 1
+   },
+   "evidence": [
+    "r1",
+    "r2",
+    "r3",
+    "r4",
+    "r5",
+    "a1",
+    "a2"
+   ]
+  },
+  {
+   "theme": "Paid support doesn't answer",
+   "severity": "high",
+   "summary": "About 92 threads; people paid for a licence partly to get support.",
+   "by_competitor": {
+    "The Events Calendar": 37,
+    "Events Manager": 24,
+    "Event Tickets": 16,
+    "Tickera": 8,
+    "Modern Events Calendar": 4,
+    "Eventin": 3
+   },
+   "evidence": [
+    "r6",
+    "r7",
+    "r8",
+    "r9",
+    "s14"
+   ]
+  },
+  {
+   "theme": "Renewal price rises and licensing mess",
+   "severity": "high",
+   "summary": "About 57 threads; concentrated at The Events Calendar after the Liquid Web / Nexcess takeover.",
+   "by_competitor": {
+    "The Events Calendar": 21,
+    "Events Manager": 11,
+    "Event Tickets": 6,
+    "Eventin": 6,
+    "Modern Events Calendar": 4,
+    "Tickera": 4,
+    "Event Espresso": 2
+   },
+   "evidence": [
+    "s13",
+    "s14",
+    "r9",
+    "r10",
+    "r12"
+   ]
+  },
+  {
+   "theme": "Buyers can't buy, or don't get their tickets",
+   "severity": "high",
+   "summary": "Rare in the corpus (about 6 keyword hits), but it ruins events.",
+   "by_competitor": {
+    "Event Tickets": 3,
+    "The Events Calendar": 2,
+    "Eventin": 1
+   },
+   "evidence": [
+    "s15",
+    "r2",
+    "r13",
+    "r14",
+    "r15"
+   ]
+  },
+  {
+   "theme": "Payment setup breaks, or surprise platform fees",
+   "severity": "medium",
+   "summary": "Stripe webhooks fail; the free tier's 2% fee surprises people.",
+   "by_competitor": {
+    "Event Tickets": 7,
+    "Events Manager": 4,
+    "The Events Calendar": 3,
+    "Eventin": 3
+   },
+   "evidence": [
+    "r16",
+    "r17",
+    "r18",
+    "c1"
+   ]
+  },
+  {
+   "theme": "Bloated, with upsell ads, for people who run 10 events a year",
+   "severity": "medium",
+   "summary": "Small users say it's much more than they need and object to ads in wp-admin.",
+   "by_competitor": {
+    "The Events Calendar": 53,
+    "Events Manager": 12,
+    "Tickera": 10,
+    "Event Tickets": 7,
+    "Eventin": 5
+   },
+   "evidence": [
+    "r19",
+    "r20",
+    "r21",
+    "r11"
+   ]
+  },
+  {
+   "theme": "Hosted options mean per-ticket fees and an off-brand embed",
+   "severity": "medium",
+   "summary": "Hosted tools fix reliability but cost per ticket and look foreign on the site.",
+   "by_competitor": {
+    "Eventbrite": 2,
+    "Ticket Tailor": 1
+   },
+   "evidence": [
+    "r22",
+    "r25",
+    "r23",
+    "r24"
+   ]
+  }
+ ],
+ "competitors": [
+  {
+   "name": "Event Tickets / The Events Calendar",
+   "url": "https://theeventscalendar.com/products/wordpress-event-tickets/",
+   "pricing": "Free with 2% commission on Stripe/Square; Pro $399/yr; Elite $599/yr",
+   "positioning": "Zero-commission ticketing (paid tiers)",
+   "strengths": [
+    "90,000+ active installs",
+    "All-in-one calendar, tickets and RSVPs"
+   ],
+   "weaknesses": [
+    "Updates break sites (r1, r5)",
+    "Licensing and price rises since the takeover (s14, r9)",
+    "Rated 3.5 on WordPress.org"
+   ],
+   "evidence": [
+    "c1",
+    "c2",
+    "c3",
+    "c18",
+    "s13",
+    "s14"
+   ]
+  },
+  {
+   "name": "Tickera",
+   "url": "https://tickera.com/pricing/",
+   "pricing": "$149 year one (incl. $50 activation fee), renews $99/yr; Bundle $199/yr; Lifetime $399",
+   "positioning": "The commission-free event ticketing plugin for WordPress.",
+   "strengths": [
+    "0% commission",
+    "Lifetime option",
+    "Seating charts"
+   ],
+   "weaknesses": [
+    "Strict refund policy (pains corpus)",
+    "Small install base (2,000+)"
+   ],
+   "evidence": [
+    "c4",
+    "c5",
+    "c6"
+   ]
+  },
+  {
+   "name": "FooEvents",
+   "url": "https://www.fooevents.com/pricing/",
+   "pricing": "Bundles $199 / $249 / $399",
+   "positioning": "No commission or ticket fees.",
+   "strengths": [
+    "Wallet passes, POS, check-in apps"
+   ],
+   "weaknesses": [
+    "Requires WooCommerce"
+   ],
+   "evidence": [
+    "c7",
+    "c8"
+   ]
+  },
+  {
+   "name": "Event Espresso",
+   "url": "https://eventespresso.com/pricing",
+   "pricing": "Decaf free with 3%; $129/yr; $399/yr",
+   "positioning": "$0 per-ticket commission fees (paid plans)",
+   "strengths": [
+    "Registration-heavy events"
+   ],
+   "weaknesses": [
+    "Free tier takes 3%"
+   ],
+   "evidence": [
+    "c9",
+    "c10"
+   ]
+  },
+  {
+   "name": "Modern Events Calendar",
+   "url": "https://webnus.net/modern-events-calendar/pricing/",
+   "pricing": "Pro from $99/yr",
+   "positioning": "not captured",
+   "strengths": [
+    "Calendar views"
+   ],
+   "weaknesses": [
+    "Ticketing is one module of a suite"
+   ],
+   "evidence": [
+    "c11"
+   ]
+  },
+  {
+   "name": "Eventin",
+   "url": "https://themewinter.com/eventin/pricing/",
+   "pricing": "From $89/yr",
+   "positioning": "No SaaS fees. No per-ticket cuts. Yours to own.",
+   "strengths": [
+    "10,000+ installs",
+    "Responsive support (r24)"
+   ],
+   "weaknesses": [
+    "Messy purchase flow, per a 250-ticket conference user (r24)"
+   ],
+   "evidence": [
+    "c12",
+    "r24"
+   ]
+  },
+  {
+   "name": "Ticket Tailor",
+   "url": "https://www.tickettailor.com/en-us/pricing",
+   "pricing": "£0.60/ticket pay-as-you-go, from £0.22 prepaid; free events free",
+   "positioning": "Unbeatable prices, no contracts, simple.",
+   "strengths": [
+    "Low flat fees",
+    "Can pass fees to buyers (k6)",
+    "Embedded WordPress checkout claimed (k5)"
+   ],
+   "weaknesses": [
+    "Embed customisation criticised (r23)",
+    "Per-ticket forever"
+   ],
+   "evidence": [
+    "c13",
+    "c14",
+    "k5",
+    "k6"
+   ]
+  },
+  {
+   "name": "Ticket Spot",
+   "url": "https://wordpress.org/plugins/ticket-spot/",
+   "pricing": "Free up to 20 attendees/month; paid from $29.99/month",
+   "positioning": "A theme update or a plugin conflict cannot corrupt an order or interrupt a sale.",
+   "strengths": [
+    "Exactly the hosted, update-proof pitch",
+    "0% platform fee, payouts to the organizer's own processor"
+   ],
+   "weaknesses": [
+    "40+ active installs on WordPress.org"
+   ],
+   "evidence": [
+    "k1",
+    "k2",
+    "k3",
+    "k4"
+   ]
+  },
+  {
+   "name": "Eventbrite",
+   "url": "https://www.eventbrite.com/organizer/pricing/",
+   "pricing": "3.7% + $1.79 per ticket + 2.9% processing",
+   "positioning": "Create an Event for Free",
+   "strengths": [
+    "Discovery marketplace"
+   ],
+   "weaknesses": [
+    "Fees (r22, r25)",
+    "Off-site"
+   ],
+   "evidence": [
+    "c15"
+   ]
+  },
+  {
+   "name": "Humanitix",
+   "url": "https://help.humanitix.com/en/articles/12292391-what-are-the-humanitix-booking-fees",
+   "pricing": "USD 5% + $1.29 per paid ticket",
+   "positioning": "not captured",
+   "strengths": [
+    "No fees for free events"
+   ],
+   "weaknesses": [
+    "Percentage fee"
+   ],
+   "evidence": [
+    "c16"
+   ]
+  },
+  {
+   "name": "Zeffy",
+   "url": "https://www.zeffy.com/",
+   "pricing": "$0 for nonprofits",
+   "positioning": "The only 100% free fundraising platform for nonprofits",
+   "strengths": [
+    "Free for nonprofits"
+   ],
+   "weaknesses": [
+    "Nonprofits only"
+   ],
+   "evidence": [
+    "c17",
+    "k7"
+   ]
+  }
+ ],
+ "features": {
+  "columns": [
+   "0% platform fee",
+   "Under $100/yr for small organizer",
+   "Works without WooCommerce",
+   "QR check-in app",
+   "Tickets on your own site",
+   "Seating charts",
+   "Hosted (updates can't break checkout)",
+   "Delivery log / resend",
+   "No contract"
+  ],
+  "rows": [
+   {
+    "name": "Event Tickets free",
+    "values": [
+     "no",
+     "yes",
+     "yes",
+     "unknown",
+     "yes",
+     "no",
+     "no",
+     "unknown",
+     "unknown"
+    ]
+   },
+   {
+    "name": "Event Tickets Pro",
+    "values": [
+     "yes",
+     "no",
+     "yes",
+     "yes",
+     "yes",
+     "no",
+     "no",
+     "unknown",
+     "no"
+    ]
+   },
+   {
+    "name": "Tickera",
+    "values": [
+     "yes",
+     "partial",
+     "yes",
+     "yes",
+     "yes",
+     "partial",
+     "no",
+     "unknown",
+     "no"
+    ]
+   },
+   {
+    "name": "FooEvents",
+    "values": [
+     "yes",
+     "no",
+     "no",
+     "yes",
+     "yes",
+     "yes",
+     "no",
+     "unknown",
+     "no"
+    ]
+   },
+   {
+    "name": "Event Espresso",
+    "values": [
+     "partial",
+     "no",
+     "yes",
+     "unknown",
+     "yes",
+     "unknown",
+     "no",
+     "unknown",
+     "no"
+    ]
+   },
+   {
+    "name": "Ticket Tailor",
+    "values": [
+     "no",
+     "partial",
+     "yes",
+     "yes",
+     "partial",
+     "yes",
+     "yes",
+     "yes",
+     "yes"
+    ]
+   },
+   {
+    "name": "Ticket Spot",
+    "values": [
+     "yes",
+     "unknown",
+     "yes",
+     "unknown",
+     "yes",
+     "unknown",
+     "yes",
+     "unknown",
+     "unknown"
+    ]
+   },
+   {
+    "name": "Eventbrite",
+    "values": [
+     "no",
+     "no",
+     "yes",
+     "yes",
+     "no",
+     "yes",
+     "yes",
+     "yes",
+     "yes"
+    ]
+   }
+  ]
+ },
+ "critic": [
+  {
+   "risk": "The exact product already exists: Ticket Spot sells a hosted, update-proof WordPress checkout to churches and theatres (k1, k4), and Ticket Tailor claims an embedded WordPress checkout (k5).",
+   "severity": "high"
+  },
+  {
+   "risk": "A free incumbent covers big segments: Zeffy is free for nonprofits (k7), and Ticket Tailor lets organizers pass fees to buyers (k6).",
+   "severity": "high"
+  },
+  {
+   "risk": "The pain may not convert to payment: the exact fix has only 40+ WordPress.org installs (k2), and ticket-delivery failures are rare in the corpus.",
+   "severity": "high"
+  },
+  {
+   "risk": "The channel is closed: WordPress.org forums, where buyers complain, forbid promotion (k8).",
+   "severity": "high"
+  },
+  {
+   "risk": "Ticketing platforms that held funds failed and left organizers unpaid (k9, k10, k12), so buyers distrust new vendors.",
+   "severity": "medium",
+   "rebuttal": "Direct charges into each client's own Stripe account mean no ticket money ever sits with us (k4 shows the model), and all data is exportable."
+  },
+  {
+   "risk": "Chargeback and refund liability, plus event-night on-call for a 10-hour-a-week founder.",
+   "severity": "medium",
+   "rebuttal": "Avoid destination charges, where the platform is liable (k11). Use direct charges on clients' own Standard accounts. Event-night on-call is still a real cost to price in."
+  }
+ ],
+ "win_plan": {
+  "positioning": "Ticketing for your clients' WordPress sites that a plugin update can't break. One flat price per agency, renewals locked.",
+  "switching_triggers": [
+   {
+    "trigger": "Renewal email with a price rise",
+    "move": "Renewal-season comparison page and a locked flat price",
+    "evidence": [
+     "r9",
+     "r10",
+     "c2"
+    ]
+   },
+   {
+    "trigger": "An update breaks a client's site or sales",
+    "move": "A recovery checklist ranked for the error searches, ending in the product",
+    "evidence": [
+     "r1",
+     "r2",
+     "a1",
+     "a2"
+    ]
+   },
+   {
+    "trigger": "Paid support goes silent",
+    "move": "Named human, published response time, status page",
+    "evidence": [
+     "r6",
+     "r8"
+    ]
+   },
+   {
+    "trigger": "Tickets missing before a sold-out event",
+    "move": "Delivery log and resend as the demo",
+    "evidence": [
+     "s15",
+     "r13"
+    ]
+   }
+  ],
+  "offers": [
+   "Free hands-on migration from Event Tickets for the first 10 agencies",
+   "Published flat price that never changes on renewal",
+   "Payouts straight into each client's own Stripe account",
+   "Delivery log and one-click resend",
+   "Named-human support with a stated response time"
+  ],
+  "build_first": [
+   {
+    "feature": "Hosted Stripe Connect (direct charges) checkout plus a WordPress block that inherits the theme",
+    "why": "Updates breaking sales (r1, r2) and the off-brand embed (r23)."
+   },
+   {
+    "feature": "QR ticket email with delivery log and resend",
+    "why": "Tickets never arriving (s15, r13)."
+   },
+   {
+    "feature": "Mobile-web check-in scanner",
+    "why": "Table stakes in the feature matrix."
+   },
+   {
+    "feature": "CSV import from Event Tickets",
+    "why": "Licensing chaos makes people switch (s14)."
+   },
+   {
+    "feature": "Agency dashboard across clients",
+    "why": "Agencies managing many sites (a1 to a4)."
+   }
+  ],
+  "where_to_find": [
+   {
+    "place": "Event Tickets 1-star reviews (read only; no promotion allowed)",
+    "url": "https://wordpress.org/support/plugin/event-tickets/reviews/?filter=1",
+    "why": "Recent price and licensing complaints"
+   },
+   {
+    "place": "The Events Calendar 1-star reviews (read only)",
+    "url": "https://wordpress.org/support/plugin/the-events-calendar/reviews/?filter=1",
+    "why": "328 1-star reviews; agencies among the reviewers"
+   },
+   {
+    "place": "Post Status (WordPress professionals; rules not checked)",
+    "url": "https://poststatus.com/",
+    "why": "Agency owners discuss plugin choices"
+   },
+   {
+    "place": "r/ProWordPress (not fetched; Reddit blocked on this network)",
+    "url": "https://www.reddit.com/r/ProWordPress/",
+    "why": "WordPress developers"
+   },
+   {
+    "place": "Codeable freelancer profiles",
+    "url": "https://www.codeable.io/",
+    "why": "Freelancers who set up sites for small organizations"
+   }
+  ],
+  "trust": [
+   "Fixed public price with a renewal-lock promise",
+   "Money never touches us (direct charges)",
+   "Public status page and delivery stats",
+   "CSV export any time",
+   "Founder's name and support hours on the site"
+  ],
+  "stop_doing": [
+   "Ads or upsell menus in wp-admin (r19, r20)",
+   "Hidden platform fee on a free tier (r17, c1)",
+   "Gating basics in a 'free' version",
+   "Renewal price jumps (r10)"
+  ],
+  "assets": [
+   {
+    "name": "Us vs Event Tickets",
+    "path": "assets/vs-event-tickets.md"
+   },
+   {
+    "name": "Outreach scripts",
+    "path": "assets/outreach.md"
+   },
+   {
+    "name": "Ads",
+    "path": "assets/ads.md"
+   },
+   {
+    "name": "FAQ",
+    "path": "assets/faq.md"
+   }
+  ]
+ },
+ "pricing": {
+  "recommendation": "$29/month per agency, up to 10 client sites, no per-ticket fee from us, locked for early members",
+  "competitor_range": "$89 to $399/yr per site for plugins; $29.99/mo for Ticket Spot; per-ticket fees for hosted tools",
+  "rationale": "Tickera renews at $99/yr per site, so a flat $29/mo undercuts plugins once an agency has 4 or more sites. The lock answers the renewal-hike complaints (r9, r10)."
+ },
+ "cost": {
+  "monthly": "about $0 to $25 (free-tier limits not re-checked this run)",
+  "stack": [
+   {
+    "item": "Cloudflare Pages hosting",
+    "cost": "$0"
+   },
+   {
+    "item": "Supabase or Neon free tier",
+    "cost": "$0"
+   },
+   {
+    "item": "Stripe Connect direct charges (fees paid by client)",
+    "cost": "$0 to us; check Connect pricing"
+   },
+   {
+    "item": "Resend or SES email",
+    "cost": "$0 to about $20"
+   },
+   {
+    "item": "stubhaven.com domain",
+    "cost": "about $10 to $20/yr (not checked)"
+   }
+  ]
+ },
+ "first_10": [
+  {
+   "step": "Publish the landing page, comparison page and a recovery checklist",
+   "where": "Your own site (Cloudflare Pages)",
+   "script": "Your events plugin update broke a client's checkout: a 30-minute recovery checklist."
+  },
+  {
+   "step": "Email 20 agencies who publicly reviewed events plugins, through their own website contact pages",
+   "where": "Agency sites found via public WordPress.org reviewer profiles",
+   "script": "Hi [name], I read your review of [plugin] about updates breaking client sites. I'm building ticketing for agencies where checkout runs off-site, so an update can't take sales down. Would you do a 15-minute call so I can learn what this costs you? No pitch."
+  },
+  {
+   "step": "Email 20 more and offer free migration to the first 10",
+   "where": "Same",
+   "script": "I'll move your client's upcoming events off Event Tickets by hand, free, if you'll try it on one site."
+  },
+  {
+   "step": "Run a $50 ad test on switch-intent searches",
+   "where": "Google Ads: 'the events calendar alternative'",
+   "script": "Events plugin update broke checkout again? Ticketing a WordPress update can't break."
+  },
+  {
+   "step": "Answer, without links, in agency communities whose rules allow it",
+   "where": "Post Status, r/ProWordPress (check rules first)",
+   "script": "A helpful answer on recovering from a broken events plugin update, with no link."
+  },
+  {
+   "step": "Hold 5 calls and ask what agencies pay per client today",
+   "where": "Video calls",
+   "script": "What do you pay per client per year for events plugins, and would you pay one flat agency price instead?"
+  }
+ ],
+ "validation": {
+  "experiment": "Contact 40 WordPress agencies and freelancers who publicly reviewed events plugins (through their own sites), publish two search pages, and run a $50 switch-intent ad test.",
+  "pass_bar": "5 agency calls booked and 2 say they'd pay $29/mo+, or 30 waitlist signups from agency domains",
+  "days": 7,
+  "steps": [
+   "Day 1: publish the landing page, vs-page and recovery checklist",
+   "Day 2: list 40 agencies from public reviews; email 20",
+   "Day 3: email 20 more; start the $50 ad test",
+   "Day 4: answer (no links) in agency communities whose rules allow it",
+   "Days 5 to 6: hold calls",
+   "Day 7: score against the pass bar"
+  ]
+ },
+ "kill_criteria": [
+  "Fewer than 3 calls booked from 40 contacts",
+  "No agency says it would pay a flat agency price",
+  "Fewer than 10 waitlist signups after 7 days",
+  "Agencies are happy sending clients to Ticket Tailor or Zeffy",
+  "Ad CTR under 1% on switch-intent terms"
+ ],
+ "launch": {
+  "name": "Stubhaven",
+  "domain": "stubhaven.com",
+  "domain_status": "available",
+  "alternatives": [
+   {
+    "domain": "stubhaven.app",
+    "status": "available"
+   },
+   {
+    "domain": "stubpath.com",
+    "status": "available"
+   },
+   {
+    "domain": "tixhold.com",
+    "status": "available"
+   },
+   {
+    "domain": "tixsteady.com",
+    "status": "available"
+   },
+   {
+    "domain": "rippass.com",
+    "status": "available"
+   }
+  ],
+  "landing_page": "landing/index.html"
+ }
+}

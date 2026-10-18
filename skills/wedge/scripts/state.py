@@ -60,7 +60,7 @@ def main(argv=None):
     a = p.parse_args(argv)
 
     if a.cmd == "init":
-        os.makedirs(os.path.join(a.root, a.slug), exist_ok=True)
+        os.makedirs(os.path.join(a.root, a.slug, "raw"), exist_ok=True)
         if os.path.exists(path(a.root, a.slug)):
             print("exists: resuming %s" % a.slug)
             a.cmd = "status"

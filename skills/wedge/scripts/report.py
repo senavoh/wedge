@@ -266,7 +266,7 @@ def s_evidence(ev):
     if not ev:
         return ""
     rows = "".join('<tr><td><code>%s</code></td><td>%s</td><td>&ldquo;%s&rdquo;</td><td><a href="%s" target="_blank" rel="noopener">%s</a></td><td>%s</td></tr>'
-                   % (E(str(i)), E(r.get("claim", "")), E(r.get("quote", "")), E(r.get("url", "#")), E(r.get("source", "link")), badge(r.get("verified")))
+                   % (E(str(i)), E(", ".join(r["claim"]) if isinstance(r.get("claim"), list) else str(r.get("claim", ""))), E(r.get("quote", "")), E(r.get("url", "#")), E(r.get("source", "link")), badge(r.get("verified")))
                    for i, r in ev.items())
     n = len(ev)
     ok = sum(1 for r in ev.values() if r.get("verified") == "yes")

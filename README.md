@@ -51,7 +51,7 @@ Ask an AI for business ideas and you get confident, generic, unsourced lists. We
 | **Stress-test an idea** | "Is a dog-walking app for apartment buildings any good?" |
 | **Beat my competitors** | "How do I take customers from Jobber?" |
 
-Choose **quick** (about 10 minutes) or **deep** (the full run).
+Choose **quick** (about 5 to 10 minutes) or **deep** (the full run; our timed deep run took 29 minutes and read over 1,400 pages).
 
 ## How it works
 
@@ -71,13 +71,14 @@ founder fit → niche scout → competitor map → review mining → gap ranking
 
 ## See real runs
 
-Three real runs, one per mode, unedited. Every quote is checked against its source.
+Four real runs, one per mode, unedited. Every quote is checked against its source. All four came back PIVOT: the pain was real every time, and so was the competition.
 
 | Run | Mode | Verdict | What it found |
 |---|---|---|---|
 | [A simpler invoicing app for solo tradespeople](https://getwedge.dev/examples/tradesperson-invoicing/) ([files](examples/tradesperson-invoicing/)) | Stress-test an idea | **PIVOT 66** | Invoice caps and price hikes are real pain, but indie builders already make the generic app. Build the uncapped, price-locked, offline version. 28 quotes. |
 | [Tools for Shopify merchants, from a small Shopify merchant](https://getwedge.dev/examples/shopify-merchant-tools/) ([files](examples/shopify-merchant-tools/)) | From what you know | **PIVOT 57** | Shopify shut down Stocky and shops are scrambling, but free replacement apps already exist. Sell a done-for-you setup service instead of another app. 93 quotes. |
 | [Taking customers from Bookly and Amelia](https://getwedge.dev/examples/wordpress-booking-plugin/) ([files](examples/wordpress-booking-plugin/)) | Beat my competitors | **PIVOT 63** | Updates that break bookings and slow support drive people away, but good alternatives and importers exist. Lead with a done-for-you rescue and migration. 93 quotes. |
+| [Update-proof event ticketing for WordPress agencies](https://getwedge.dev/examples/wordpress-event-ticketing/) ([files](examples/wordpress-event-ticketing/)) | From scratch, **deep** | **PIVOT 55** | Scouted 7 niches and picked WordPress event ticketing. The critic found a hosted checkout already fixes the main pain, so sell to the agencies that run these sites. 78 quotes, 29 minutes. |
 
 ## The skills
 

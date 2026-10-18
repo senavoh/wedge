@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stubhaven: ticketing a WordPress update can't break</title>
+<meta name="description" content="Hosted, update-proof event ticketing for agencies who look after small organizations' WordPress sites. Early access waitlist.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f4ee;--card:#fffdf9;--ink:#1d1b18;--mute:#6b655c;--line:#e4ddd1;--accent:#c2410c;--accent-ink:#fff;--soft:#f1e9dc}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15130f;--card:#1e1b16;--ink:#f2ede4;--mute:#a59d90;--line:#332e26;--accent:#f97316;--accent-ink:#1a0f05;--soft:#26211a}}
+:root[data-theme="dark"]{--bg:#15130f;--card:#1e1b16;--ink:#f2ede4;--mute:#a59d90;--line:#332e26;--accent:#f97316;--accent-ink:#1a0f05;--soft:#26211a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{font:600 20px Fraunces,Georgia,serif;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+.logo i{width:22px;height:22px;border-radius:6px;background:var(--accent);display:inline-block;clip-path:polygon(0 0,100% 0,100% 38%,86% 50%,100% 62%,100% 100%,0 100%,0 62%,14% 50%,0 38%)}
+nav a{color:var(--mute);text-decoration:none;font-size:15px;margin-left:18px}
+.hero{padding:64px 0 48px}
+.eyebrow{display:inline-block;font-size:13px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
+h1{font:600 clamp(36px,6vw,62px)/1.05 Fraunces,Georgia,serif;letter-spacing:-.025em;margin:0 0 20px;max-width:16ch}
+.lede{font-size:clamp(18px,2.2vw,21px);color:var(--mute);max-width:56ch;margin:0 0 30px}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600;padding:14px 22px;border-radius:999px}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line);margin-left:8px}
+section{padding:48px 0;border-top:1px solid var(--line)}
+h2{font:600 clamp(26px,3.6vw,36px)/1.15 Fraunces,Georgia,serif;letter-spacing:-.02em;margin:0 0 26px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.card h3{margin:0 0 8px;font-size:18px}
+.card p{margin:0;color:var(--mute);font-size:15.5px}
+blockquote{margin:14px 0 0;padding:12px 14px;background:var(--soft);border-radius:12px;font-size:14px;color:var(--ink)}
+blockquote cite{display:block;color:var(--mute);font-style:normal;font-size:12.5px;margin-top:6px}
+ul.switch{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+ul.switch li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+ul.switch b{display:block}
+.price{display:flex;gap:24px;align-items:flex-end;flex-wrap:wrap}
+.amount{font:600 54px/1 Fraunces,Georgia,serif}
+.amount small{font:400 17px Inter,sans-serif;color:var(--mute)}
+.note{color:var(--mute);font-size:14.5px;max-width:60ch}
+form{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+input[type=email]{flex:1 1 260px;min-width:0;padding:14px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit}
+button{border:0;cursor:pointer;font:inherit}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:10px}
+summary{font-weight:600;cursor:pointer}
+details p{color:var(--mute);margin:10px 0 0}
+footer{padding:36px 0 48px;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:760px){.grid,ul.switch{grid-template-columns:1fr}nav{display:none}.btn.ghost{margin:10px 0 0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><div class="logo"><i></i>Stubhaven</div><nav><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></nav></header>
+
+<div class="hero">
+<span class="eyebrow">For WordPress agencies and freelancers</span>
+<h1>Ticketing for your clients' sites that a plugin update can't break.</h1>
+<p class="lede">Checkout and ticket emails run off-site. The ticket block on the page takes on your client's theme. Payouts go straight to their own Stripe account. You get one flat price for the whole agency, and it doesn't go up at renewal.</p>
+<a class="btn" href="#waitlist">Join the early-access list</a><a class="btn ghost" href="#faq">Read the honest FAQ</a>
+</div>
+
+<section id="how">
+<h2>Built around what people actually complain about</h2>
+<div class="grid">
+<div class="card"><h3>Updates can't take down sales</h3><p>Checkout isn't inside WordPress, so a core, theme or plugin update can't break it.</p><blockquote>"Updates frequently break existing installations."<cite>Review of an events plugin, WordPress.org</cite></blockquote></div>
+<div class="card"><h3>See every ticket that was sent</h3><p>A delivery log for each order (sent, opened, bounced) and one-click resend, across all your clients.</p><blockquote>"90% of our customers are emailing saying they DIDNT recieve their QR code"<cite>Review of an events plugin, WordPress.org</cite></blockquote></div>
+<div class="card"><h3>A price that stays put</h3><p>One flat agency price, published, with no renewal jumps and no ads in wp-admin.</p><blockquote>"it has gone up BY 50% to $149"<cite>Review of an events plugin, WordPress.org</cite></blockquote></div>
+</div>
+</section>
+
+<section>
+<h2>Why switch</h2>
+<ul class="switch">
+<li><b>Free hands-on migration</b>We move upcoming events and ticket types from Event Tickets for the first 10 agencies.</li>
+<li><b>Money never touches us</b>Direct charges to each client's own Stripe account. Refunds and disputes stay with them.</li>
+<li><b>A named human for support</b>A published response time and a public status page.</li>
+<li><b>Export anytime</b>Attendees and orders as CSV, no lock-in.</li>
+</ul>
+</section>
+
+<section id="pricing">
+<h2>Pricing (planned)</h2>
+<div class="price"><div class="amount">$29<small> / month per agency</small></div><p class="note">Up to 10 client sites, unlimited events, no per-ticket fee from us. Stripe's normal processing fees apply to your clients. Planned launch price: early-list members keep it for life.</p></div>
+</section>
+
+<section id="waitlist">
+<h2>Get early access</h2>
+<p class="note">We're talking to agencies before we build. Leave your email and we'll set up a 15-minute call. We send nothing else.</p>
+<!-- Placeholder waitlist: opens the visitor's email app. Replace the address, or point the form at your own Formspree/Tally endpoint. -->
+<form action="mailto:hello@example.com?subject=Stubhaven%20early%20access" method="post" enctype="text/plain">
+<input type="email" name="email" placeholder="you@youragency.com" required aria-label="Email address">
+<button class="btn" type="submit">Join the list</button>
+</form>
+</section>
+
+<section id="faq">
+<h2>Honest FAQ</h2>
+<details><summary>Don't Ticket Spot and Ticket Tailor already do this?</summary><p>They offer hosted checkout on WordPress for organizers. We're focused on agencies running many client sites from one dashboard. If you manage one site, they may suit you better.</p></details>
+<details><summary>My client is a registered nonprofit. Why not Zeffy?</summary><p>If your client is happy on Zeffy's free hosted pages, they probably should use it.</p></details>
+<details><summary>What if you shut down?</summary><p>Ticket money goes straight into your client's Stripe account, never ours, and you can export all data as CSV at any time.</p></details>
+<details><summary>Do you do calendars, seating or recurring events?</summary><p>Not at launch. We only sell and deliver tickets. Keep your calendar plugin.</p></details>
+<details><summary>Is this live?</summary><p>No. This page tests whether agencies want it. Nothing is for sale yet.</p></details>
+</section>
+
+<footer>Stubhaven (working name). Early-access test page. The quotes are from public WordPress.org reviews of events plugins.</footer>
+</div>
+</body>
+</html>

@@ -324,7 +324,7 @@ code { font-family: var(--mono); font-size: .92em; }
 /* ---------- runs gallery ---------- */
 .runs { margin-top: 56px; }
 .runs__title { font-size: 20px; font-weight: 600; letter-spacing: -.02em; color: var(--ink); margin: 0 0 18px; }
-.runs__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.runs__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
 .run { display: flex; flex-direction: column; gap: 10px; height: 100%; text-decoration: none; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 12px 12px 20px; box-shadow: var(--shadow); transition: transform .2s, border-color .2s; }
 .run:hover { transform: translateY(-3px); border-color: var(--faint); }
 .run img { width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); }
