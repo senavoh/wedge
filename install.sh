@@ -23,18 +23,16 @@ else
   SRC="$TMP/wedge/skills"
 fi
 
-if [ "$#" -gt 0 ]; then
-  TARGETS="$*"
-else
+# Targets live in "$@" so paths with spaces stay intact.
+if [ "$#" -eq 0 ]; then
   # Personal skills folders for agents that read SKILL.md files.
-  TARGETS=""
   for d in "$HOME/.claude" "$HOME/.codex" "$HOME/.gemini" "$HOME/.cursor" "$HOME/.config/opencode" "$HOME/.agents"; do
-    [ -d "$d" ] && TARGETS="$TARGETS $d/skills"
+    if [ -d "$d" ]; then set -- "$@" "$d/skills"; fi
   done
-  [ -z "$TARGETS" ] && TARGETS="$HOME/.agents/skills"
+  if [ "$#" -eq 0 ]; then set -- "$HOME/.agents/skills"; fi
 fi
 
-for t in $TARGETS; do
+for t in "$@"; do
   mkdir -p "$t"
   for s in "$SRC"/*/; do
     name="$(basename "$s")"
